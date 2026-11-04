@@ -22,7 +22,12 @@ Các chỗ sửa nằm trong `i18n/<ngôn ngữ>/review/fixes.json` và đã áp
 - **Tiếng Nhật: 6 nút và tiêu đề "Tư Vấn…" bị lệch dòng** (nhận nhầm bản dịch của dòng bên cạnh). Đã sửa.
 - **Sai nghĩa** như "đối tác" thành "khách hàng" và "tiếp nhận đồ" thành "giao hàng". Tiếng Hindi: đổi "da bò" sang "cowhide leather" để tránh nhạy cảm văn hóa.
 
-## Cần chủ shop quyết
+## Chủ shop đã chốt (04/11/2026, bản p10)
+- **"K" = khuy.** "BE 2K" là be 2 khuy. Cả 5 ngôn ngữ dịch thành số khuy: 2-BUTTON / 两粒扣 / 2버튼 / 2つボタン / 2 बटन.
+- **"Tuyết mưa" được dịch tên vải.** Theo các nguồn tiếng Việt (may10.vn, mitritex.vn, fptshop.com.vn), đây là vải dệt kim đôi (đan đôi) pha polyester–rayon/viscose–spandex, tên quốc tế **Ponte di Roma** (ponte knit). Tên dùng: Ponte Knit / 罗马布 / 폰테 원단 / ポンチ素材 / पोंटे निट. Nếu vải thực tế của shop là vải dệt thoi khác thì phải đổi lại.
+- **Sửa mâu thuẫn bản tiếng Việt: đồng ý.** Đang chờ chủ shop chốt số liệu thật (năm, bảo hành, số đo, đổi trả).
+
+## Cần chủ shop quyết (danh sách ban đầu)
 1. **"BE 2K/4K/6K"** trong tên vest nữ thiết kế: K có phải là số khuy không? Tiếng Anh, Trung và Nhật đã hiểu là số khuy; tiếng Hàn và Hindi giữ chữ "K".
 2. **"Tuyết Mưa"** (dòng vải): giữ tên tiếng Việt hay đặt tên dịch?
 3. **Nội dung gốc tiếng Việt mâu thuẫn**, xem `bao-cao-tieng-viet.md`:
