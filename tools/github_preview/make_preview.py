@@ -35,6 +35,8 @@ def wr(p, s):
 
 def patch_html(s, ver):
     s = re.sub(r'<meta\s+name=["\']robots["\'][^>]*>', '', s, flags=re.I)
+    if '</head>' in s and 'mobile-fit.css' not in s:
+        s = s.replace('</head>', '  <link rel="stylesheet" href="/mobile-fit.css?v=%s" />\n</head>' % ver, 1)
     head = re.search(r'<head[^>]*>', s, re.I)
     ins = '\n  <meta name="robots" content="noindex,nofollow" />\n  <script src="/preview-mode.js?v=%s"></script>' % ver
     return s[:head.end()] + ins + s[head.end():] if head else s
@@ -56,7 +58,7 @@ def main():
             shutil.rmtree(c) if c.is_dir() else c.unlink()
     out.mkdir(parents=True, exist_ok=True)
     import hashlib
-    ver = hashlib.sha1((HERE / 'preview-mode.js').read_bytes()).hexdigest()[:10]
+    ver = hashlib.sha1((HERE / 'preview-mode.js').read_bytes() + (HERE / 'mobile-fit.css').read_bytes()).hexdigest()[:10]
     n = {'copied': 0, 'html': 0, 'media_rewrites': 0}
     for layer in (web, build):
         for f in layer.rglob('*'):
@@ -87,6 +89,7 @@ def main():
     json.loads(prods)
     wr(out / 'api-snapshot' / 'products.json', prods)
     shutil.copyfile(HERE / 'preview-mode.js', out / 'preview-mode.js')
+    shutil.copyfile(HERE / 'mobile-fit.css', out / 'mobile-fit.css')
     wr(out / 'robots.txt', 'User-agent: *\nDisallow: /\n')
     wr(out / '.nojekyll', '')
     shutil.copyfile(HERE / 'README-site.md', out / 'README.md')

@@ -135,7 +135,7 @@
 
   function doText(node) {
     var v = node.nodeValue;
-    if (!v || (!VI.test(v) && !/\d\.\d{3}/.test(v))) return;
+    if (!v || (!VI.test(v) && !/\d\.\d{3}/.test(v) && !Object.prototype.hasOwnProperty.call(U, norm(v)))) return;
     var p = node.parentElement;
     if (!p || skipEl(p)) return;
     var t = tr(v);

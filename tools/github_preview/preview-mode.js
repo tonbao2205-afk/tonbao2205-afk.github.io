@@ -18,9 +18,14 @@
   var BADGE = { vi: 'BẢN THỬ', en: 'PREVIEW', zh: '预览版' };
 
   // ---- mobile home page (nginx serves index-mobile.html at the same URL on the VPS)
-  if (/Mobile|Android|iPhone|iPod|Windows Phone/i.test(navigator.userAgent || '')) {
-    var m = path.match(/^(\/(?:en\/|zh\/)?)(?:index\.html)?$/);
-    if (m) { location.replace(m[1] + 'index-mobile.html' + location.search + location.hash); return; }
+  //      GitHub cannot do that, so pick by device type OR a phone-sized screen.
+  var phone = /Mobile|Android|iPhone|iPod|Windows Phone/i.test(navigator.userAgent || '') ||
+    (window.matchMedia && matchMedia('(max-width: 767px)').matches);
+  var mh = path.match(/^(\/(?:en\/|zh\/)?)(index\.html|index-mobile\.html)?$/);
+  if (mh) {
+    var onMobile = mh[2] === 'index-mobile.html';
+    if (phone && !onMobile) { location.replace(mh[1] + 'index-mobile.html' + location.search + location.hash); return; }
+    if (!phone && onMobile) { location.replace(mh[1] + location.search + location.hash); return; }
   }
 
   function notice() {

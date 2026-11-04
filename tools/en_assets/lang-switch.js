@@ -46,17 +46,17 @@
     '.lhv-mob-actions .mlh-lang-pill{height:24px;min-width:32px;padding:0;margin:0 2px 0 0;justify-content:center;font-size:10.5px}',
     '.lhv-mob-actions .mlh-lang-pill>a,.lhv-mob-actions .mlh-lang-pill>i{display:none}',
     '.lhv-mob-actions .mlh-lang-pill button{display:block;border:0;background:none;color:#9d0208;font:inherit;padding:0 7px;height:100%;cursor:pointer}',
-    '.mlh-lang-menu{display:none;position:absolute;top:calc(100% + 6px);right:0;z-index:10001;min-width:128px;padding:6px;',
-    'background:#fffdf8;border:1px solid #a17f22;border-radius:10px;box-shadow:0 8px 24px rgba(21,17,14,.16)}',
-    '.mlh-lang-pill.open .mlh-lang-menu{display:block}',
-    '.mlh-lang-menu a{display:block;padding:9px 10px;border-radius:6px;font-size:13px;letter-spacing:0;color:#15110e;text-decoration:none}',
+    '.mlh-lang-menu{display:none;position:fixed;z-index:100001;min-width:140px;padding:6px;',
+    "background:#fffdf8;border:1px solid #a17f22;border-radius:10px;box-shadow:0 8px 24px rgba(21,17,14,.18);font:600 14px/1.2 'Be Vietnam Pro',system-ui,'PingFang SC','Microsoft YaHei',sans-serif}",
+    '.mlh-lang-menu.open{display:block}',
+    '.mlh-lang-menu a{display:block;padding:11px 12px;min-height:44px;box-sizing:border-box;border-radius:6px;letter-spacing:0;color:#15110e;text-decoration:none}',
     '.mlh-lang-menu a.on{color:#9d0208;background:#f6efe2}',
     '.mlh-lang-pill.mlh-lang-float{position:fixed;left:14px;bottom:14px;z-index:9990;box-shadow:0 4px 14px rgba(21,17,14,.12)}',
     '.mlh-lang-hint{position:fixed;left:14px;bottom:14px;z-index:9991;display:flex;align-items:center;gap:10px;',
     'max-width:calc(100vw - 28px);padding:10px 12px 10px 14px;background:#fffdf8;color:#15110e;border:1px solid #a17f22;',
     "border-radius:12px;box-shadow:0 8px 24px rgba(21,17,14,.16);font:500 13px/1.35 'Be Vietnam Pro',system-ui,'PingFang SC','Microsoft YaHei',sans-serif}",
-    '.mlh-lang-hint a{color:#fff;background:#9d0208;border-radius:999px;padding:6px 12px;font-weight:700;text-decoration:none;white-space:nowrap}',
-    '.mlh-lang-hint button{border:0;background:none;color:#15110e;font-size:18px;line-height:1;cursor:pointer;padding:2px 4px}'
+    '.mlh-lang-hint a{flex-shrink:0;color:#fff;background:#9d0208;border-radius:999px;padding:6px 12px;font-weight:700;text-decoration:none;white-space:nowrap}',
+    '.mlh-lang-hint button{flex-shrink:0;border:0;background:none;color:#15110e;font-size:18px;line-height:1;cursor:pointer;padding:2px 4px}'
   ].join('');
   (document.head || document.documentElement).appendChild(css);
 
@@ -89,20 +89,32 @@
     var menu = document.createElement('span');
     menu.className = 'mlh-lang-menu';
     LANGS.forEach(function (l) { menu.appendChild(link(l, 'menu')); });
+    menu.setAttribute('data-no-tr', '');
     btn.addEventListener('click', function (e) {
       e.stopPropagation();
-      var open = !box.classList.contains('open');
-      box.classList.toggle('open', open);
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      var open = !menu.classList.contains('open');
+      closeMenus();
+      if (!open) return;
+      // The mobile header clips overflow, so the menu floats on <body> under the button.
+      var r = btn.getBoundingClientRect();
+      menu.style.top = Math.round(r.bottom + 6) + 'px';
+      menu.style.right = Math.max(8, Math.round(window.innerWidth - r.right)) + 'px';
+      document.body.appendChild(menu);
+      menu.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
     });
     box.appendChild(btn);
-    box.appendChild(menu);
     return box;
   }
-  document.addEventListener('click', function () {
-    var o = document.querySelectorAll('.mlh-lang-pill.open');
+  function closeMenus() {
+    var o = document.querySelectorAll('.mlh-lang-menu.open');
     for (var i = 0; i < o.length; i++) o[i].classList.remove('open');
-  });
+    var b = document.querySelectorAll('.mlh-lang-pill button[aria-expanded="true"]');
+    for (var j = 0; j < b.length; j++) b[j].setAttribute('aria-expanded', 'false');
+  }
+  document.addEventListener('click', closeMenus);
+  window.addEventListener('scroll', closeMenus, { passive: true });
+  window.addEventListener('resize', closeMenus);
 
   function place() {
     var ok = false;
