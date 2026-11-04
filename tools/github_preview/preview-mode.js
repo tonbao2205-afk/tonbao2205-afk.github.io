@@ -148,7 +148,7 @@
     b.setAttribute('data-no-tr', '');
     b.setAttribute('aria-hidden', 'true');
     b.textContent = BADGE[lang];
-    b.style.cssText = 'position:fixed;left:50%;bottom:6px;transform:translateX(-50%);z-index:99999;pointer-events:none;' +
+    b.style.cssText = 'position:fixed;left:6px;bottom:6px;z-index:99999;pointer-events:none;' +
       'padding:3px 10px;border-radius:999px;background:rgba(21,17,14,.82);color:#fff;font:700 10px/1.4 system-ui,sans-serif;letter-spacing:.12em';
     document.body.appendChild(b);
   }

@@ -87,6 +87,7 @@ def main():
     shutil.copyfile(HERE / 'preview-mode.js', out / 'preview-mode.js')
     wr(out / 'robots.txt', 'User-agent: *\nDisallow: /\n')
     wr(out / '.nojekyll', '')
+    shutil.copyfile(HERE / 'README-site.md', out / 'README.md')
     print(json.dumps(n))
 
 
