@@ -34,3 +34,19 @@ Khối `#mlh-featured-catalog-links` trên trang chủ ("SẴN MẪU TẠI SHOWR
 Lượt này chỉ đưa lên bản thử GitHub. Chỉ đăng lên VPS khi chủ shop nói rõ "đăng lên web/VPS".
 
 *File này là tài liệu bàn giao. Tạo file không có nghĩa là đã gửi cho Antigravity.*
+
+## Bổ sung: thẻ kiểu phụ kiện, tự chạy (05/11/2026)
+Chủ shop gửi ảnh thẻ phụ kiện trên trang chủ ("Cài Ve Áo", "Sơmi Nam": ảnh lớn, tên chữ serif căn giữa, nút đỏ "XEM BỘ SƯU TẬP"). Yêu cầu khối mẫu tiêu biểu làm thẻ như vậy, **tự chạy ngang**.
+
+Phạm vi: vẫn chỉ điện thoại.
+- **Thẻ:**
+  - nền trắng, bo góc 16px, ảnh vuông phủ kín;
+  - tên mẫu chữ serif đen căn giữa, tối đa 2 dòng, giá đỏ `#9d0208`;
+  - nút đỏ `#9d0208` chữ trắng in hoa "Xem chi tiết". Nút này là phần của liên kết sẵn có, không thêm liên kết mới. Chữ có bản dịch 6 ngôn ngữ.
+- **Tự chạy:**
+  - cứ khoảng 3 giây hàng thẻ trượt sang thẻ kế tiếp; hết hàng thì quay về đầu;
+  - khách chạm hoặc vuốt thì dừng, 6 giây sau chạy tiếp;
+  - dừng khi khối ra khỏi màn hình hoặc tab bị ẩn;
+  - không chạy khi máy bật giảm chuyển động (`prefers-reduced-motion`);
+  - chỉ chạy ở ≤ 767px.
+- Không thêm thư viện. JS nhỏ trong `<script id="mlh-featured-autoplay">`. Không sửa JS/CSS dùng chung và không sửa `index.html`.
