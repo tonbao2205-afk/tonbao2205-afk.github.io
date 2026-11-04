@@ -33,10 +33,10 @@ def wr(p, s):
     p.write_bytes(s.encode('utf-8'))
 
 
-def patch_html(s):
+def patch_html(s, ver):
     s = re.sub(r'<meta\s+name=["\']robots["\'][^>]*>', '', s, flags=re.I)
     head = re.search(r'<head[^>]*>', s, re.I)
-    ins = '\n  <meta name="robots" content="noindex,nofollow" />\n  <script src="/preview-mode.js?v=1"></script>'
+    ins = '\n  <meta name="robots" content="noindex,nofollow" />\n  <script src="/preview-mode.js?v=%s"></script>' % ver
     return s[:head.end()] + ins + s[head.end():] if head else s
 
 
@@ -55,6 +55,8 @@ def main():
                 continue
             shutil.rmtree(c) if c.is_dir() else c.unlink()
     out.mkdir(parents=True, exist_ok=True)
+    import hashlib
+    ver = hashlib.sha1((HERE / 'preview-mode.js').read_bytes()).hexdigest()[:10]
     n = {'copied': 0, 'html': 0, 'media_rewrites': 0}
     for layer in (web, build):
         for f in layer.rglob('*'):
@@ -77,7 +79,7 @@ def main():
                 n['media_rewrites'] += k
             s2 = ''.join(parts)
             if f.suffix == '.html':
-                s2 = patch_html(s2)
+                s2 = patch_html(s2, ver)
                 n['html'] += 1
             if s2 != s:
                 wr(f, s2)
