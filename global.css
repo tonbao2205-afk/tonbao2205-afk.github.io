@@ -1,0 +1,2525 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400..900;1,400..900&family=Be+Vietnam+Pro:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,300..900;1,300..900&display=swap');
+
+/**
+ * global.css — Vest Lê Hương | Flawless Vietnamese Luxury Typography
+ * Tokens:
+ *   Heading: 'Noto Serif', 'Be Vietnam Pro', serif (100% Native Vietnamese Diacritic Accuracy)
+ *   Menu:    'Montserrat', sans-serif (Haute Couture Luxury Navigation Menu)
+ *   Body/UI: 'Be Vietnam Pro', 'Montserrat', sans-serif (Pristine Legibility)
+ */
+
+:root {
+  --font-head: 'Noto Serif', 'Be Vietnam Pro', Georgia, serif;
+  --font-menu: 'Montserrat', sans-serif;
+  --font-body: 'Be Vietnam Pro', 'Montserrat', system-ui, -apple-system, sans-serif;
+  --nav-h: 68px;              /* Exact 68px header height across all pages */
+}
+
+/* ─────────────────────────────────────────────
+   BASE RESET — Prevent layout shift between pages
+───────────────────────────────────────────── */
+body {
+  opacity: 1 !important;
+  background-color: #f5f0eb !important;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  background-color: #f5f0eb;   /* Luxury Warm Beige */
+  color: #000000;              /* Solid Pure Black Text */
+  -webkit-overflow-scrolling: touch !important;
+  touch-action: manipulation;
+  overscroll-behavior-x: none;
+}
+
+/* ─────────────────────────────────────────────
+   MOBILE SMOOTH MOMENTUM TOUCH SCROLL OPTIMIZATION
+───────────────────────────────────────────── */
+body {
+  opacity: 1 !important;
+  background-color: #f5f0eb !important;
+  color: #000000;
+  font-size: 1rem;
+  font-family: var(--font-body) !important;
+  -webkit-overflow-scrolling: touch !important;
+  touch-action: pan-y;
+  overscroll-behavior-y: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Eliminate tap delay & touch scroll lag on mobile elements */
+a, button, input, select, textarea, .cursor-pointer {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* GPU Hardware Layer Promotion for Fixed Floating Elements */
+#lhv-header,
+#lhv-mobile-drawer,
+#lhv-mob-backdrop,
+#cta-toggle,
+#lhv-cta-wrap,
+#backToTop,
+.lhv-float-btn,
+.fixed,
+.sticky {
+  will-change: transform;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Momentum scrolling for all scrollable containers on iOS/Android */
+.overflow-y-auto,
+.overflow-auto,
+.overflow-scroll,
+#lhv-mobile-drawer,
+.modal-body {
+  -webkit-overflow-scrolling: touch !important;
+  overscroll-behavior-y: contain !important;
+}
+
+/* Desktop only: reserve scrollbar slot to prevent layout jump */
+@media (min-width: 769px) {
+  html {
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+  }
+}
+
+/* Mobile: NUCLEAR — hide ALL scrollbar tracks on every element */
+@media (max-width: 768px) {
+  * {
+    scrollbar-width: none !important;       /* Firefox */
+    -ms-overflow-style: none !important;    /* IE/Edge */
+  }
+  *::-webkit-scrollbar {
+    display: none !important;               /* Chrome/Safari/WebKit */
+    width: 0 !important;
+    height: 0 !important;
+    background: transparent !important;
+  }
+}
+
+body {
+  background-color: #f5f0eb;
+  color: #000000;
+  font-size: 1rem;
+  font-family: var(--font-body) !important;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* ─────────────────────────────────────────────
+   UNIFIED TYPOGRAPHY SYSTEM
+   Headings: Noto Serif + Be Vietnam Pro (Zero diacritic bugs)
+   Menu: Montserrat High-Fashion Uppercase
+───────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6,
+.font-headline,
+.font-serif,
+.font-noto-serif {
+  font-family: var(--font-head) !important;
+  color: #000000;
+}
+
+/* Section titles on light/beige background must be solid Black (except when explicitly styled text-white) */
+section h1:not(.text-white):not([class*="text-white"]),
+section h2:not(.text-white):not([class*="text-white"]),
+section h3:not(.text-white):not([class*="text-white"]),
+section h4:not(.text-white):not([class*="text-white"]),
+.text-section-title {
+  color: #000000;
+}
+
+/* Force nav/header to exact height */
+#lhv-header,
+header.fixed,
+nav.fixed,
+header[class*="fixed"],
+nav[class*="fixed"] {
+  height: 68px !important;
+  min-height: 68px !important;
+  max-height: 68px !important;
+  box-sizing: border-box !important;
+}
+
+/* ─────────────────────────────────────────────
+   CRITICAL: Protect Material Symbols icons
+   Must come FIRST before any other rules
+───────────────────────────────────────────── */
+.material-symbols-outlined,
+.material-icons,
+.material-icons-outlined,
+.material-icons-round,
+[class^="material"] {
+  font-family: 'Material Symbols Outlined', 'Material Icons' !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  font-size: inherit;
+  /* CRITICAL: icons break if these are overridden */
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  word-wrap: normal !important;
+  white-space: nowrap !important;
+  direction: ltr !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+/* ─────────────────────────────────────────────
+   CSS VARIABLES
+───────────────────────────────────────────── */
+:root {
+  --gold:      #E6C364;
+  --gold-dim:  rgba(230, 195, 100, 0.65);
+  --burg:      #9D0208;
+  --dark:      #161310;
+  --text:      #FFFFFF;
+  --text-mute: rgba(255, 255, 255, 0.72);
+  --font-head: 'Noto Serif', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+/* ─────────────────────────────────────────────
+   1. HIDE OLD HEADERS — nav-component.js
+      injects #lhv-header as replacement.
+      Old fixed nav/header elements are hidden.
+───────────────────────────────────────────── */
+header.fixed:not(#lhv-header),
+header[class*="fixed"]:not(#lhv-header),
+nav.fixed:not(#lhv-drawer),
+nav[class*="fixed"]:not(#lhv-drawer),
+.lhv-old-header {
+  display: none !important;
+}
+
+/* ─────────────────────────────────────────────
+   2. NAV-COMPONENT.JS — isolation
+      No rules needed here. nav-component.js
+      injects its own <style> and manages all
+      #lhv-header styles internally.
+───────────────────────────────────────────── */
+/* ─────────────────────────────────────────────
+   2b. NAV FONT LOCK — Absolute px, immune to rem/zoom, v5 class names
+───────────────────────────────────────────── */
+#lhv-header .lhv-nav-link,
+#lhv-header .lhv-dropdown-link,
+#lhv-header .lhv-cta-booking,
+#lhv-header .lhv-link,
+#lhv-header .lhv-dd-link,
+#lhv-header .lhv-cta-btn {
+  font-family: 'Inter', system-ui, sans-serif !important;
+  -webkit-text-size-adjust: 100% !important;
+  text-size-adjust: 100% !important;
+}
+#lhv-header .lhv-nav-link {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: #000000 !important;
+}
+
+/* ─────────────────────────────────────────────
+   2. LOGO — consistent style across all pages
+      (image logo or text logo, both handled)
+───────────────────────────────────────────── */
+.lux-logo-img {
+  height: 36px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+  /* invert for dark bg since logo is black on white */
+  filter: invert(1) brightness(2) !important;
+}
+
+/* ─────────────────────────────────────────────
+   3. HEADINGS — Noto Serif, white
+───────────────────────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: var(--font-head) !important;
+  color: var(--text) !important;
+}
+
+/* Product cards have a white background on every catalog page. */
+.vn-card .vn-card-name {
+  color: #000000 !important;
+}
+.vn-card:hover .vn-card-name {
+  color: #9d0208 !important;
+}
+
+/* Italic inside headings → gold */
+h1 em, h2 em, h3 em,
+h1 i,  h2 i,  h3 i {
+  color: var(--gold) !important;
+  font-style: italic;
+}
+
+/* ─────────────────────────────────────────────
+   4. HERO EYEBROW / LABEL TEXT → GOLD
+   IMPORTANT: Only target actual label elements,
+   NOT general paragraphs (avoid ALL CAPS body text bug)
+───────────────────────────────────────────── */
+
+/* Elements that are explicitly styled as labels/kickers */
+[class*="label"]:not(input):not(textarea),
+[class*="kicker"],
+[class*="eyebrow"],
+[class*="badge"],
+[class*="overline"] {
+  color: var(--gold) !important;
+  font-family: var(--font-body) !important;
+  font-size: 0.75rem !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+  font-style: normal !important;
+}
+
+/* Text-color utility classes for gold */
+[class*="text-[#e6c"],
+[class*="text-[#E6C"],
+[class*="text-yellow"],
+[class*="text-gold"],
+[class*="text-amber"] {
+  color: var(--gold) !important;
+}
+
+/* ─────────────────────────────────────────────
+   5. BREADCRUMBS → gold text, uppercase
+───────────────────────────────────────────── */
+[class*="breadcrumb"],
+[class*="crumb"] {
+  font-family: var(--font-body) !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.10em !important;
+  text-transform: uppercase !important;
+}
+[class*="breadcrumb"] *,
+[class*="crumb"] * {
+  color: var(--gold) !important;
+  font-family: inherit !important;
+}
+[class*="breadcrumb"] a:hover,
+[class*="crumb"] a:hover {
+  color: var(--text) !important;
+}
+
+/* ─────────────────────────────────────────────
+   6. SECTION BODY TEXT — Inter, muted white
+       NOTE: No text-transform here (avoids ALL CAPS bug)
+───────────────────────────────────────────── */
+section > p:not(.text-white):not([class*="text-white"]),
+section > div > p:not(.text-white):not([class*="text-white"]),
+article > p:not(.text-white):not([class*="text-white"]) {
+  font-family: var(--font-body) !important;
+  color: #2b231d !important;
+  line-height: 1.72 !important;
+  /* NO text-transform - body text is never all caps */
+}
+
+/* ─────────────────────────────────────────────
+   7. FOOTER
+───────────────────────────────────────────── */
+footer { font-family: var(--font-body) !important; }
+footer h3, footer h4 {
+  font-family: var(--font-body) !important;
+  font-weight: 600 !important;
+  font-size: 0.8rem !important;
+  letter-spacing: 0.10em !important;
+  text-transform: uppercase !important;
+  color: var(--text) !important;
+}
+footer p, footer li {
+  color: rgba(255,255,255,0.58) !important;
+  font-size: 0.875rem !important;
+}
+footer a { color: rgba(255,255,255,0.60) !important; }
+footer a:hover { color: var(--gold) !important; }
+footer [class*="text-[#e6c"], footer [class*="text-gold"] {
+  color: var(--gold) !important;
+}
+
+/* ─────────────────────────────────────────────
+   8. FORM ELEMENTS
+───────────────────────────────────────────── */
+input, textarea, select {
+  font-family: var(--font-body) !important;
+}
+label:not(.material-symbols-outlined):not(.material-icons) {
+  font-family: var(--font-body) !important;
+  color: rgba(255,255,255,0.75) !important;
+  font-size: 0.8125rem !important;
+}
+input:focus, textarea:focus, select:focus {
+  outline-color: var(--gold) !important;
+  border-color: var(--gold) !important;
+}
+
+/* ─────────────────────────────────────────────
+   9. FEATURE/ICON SECTIONS (architecture, verified...)
+   These are Material Symbols — ensure they NEVER get
+   letter-spacing or text-transform from other rules
+───────────────────────────────────────────── */
+.material-symbols-outlined {
+  display: inline-block !important;
+  line-height: 1 !important;
+}
+
+/* Color for feature icons in content areas → gold */
+section .material-symbols-outlined,
+section .material-icons,
+div .material-symbols-outlined,
+div .material-icons {
+  color: var(--gold) !important;
+}
+
+/* ─────────────────────────────────────────────
+   MOBILE RESPONSIVE — All pages
+   Breakpoint: max-width 1023px (below lg)
+───────────────────────────────────────────── */
+@media (max-width: 1023px) {
+
+  /* Header: reduce padding on mobile */
+  header, nav.fixed {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Hide desktop nav links on mobile (drawer handles it) */
+  header nav.hidden, header > nav {
+    display: none !important;
+  }
+
+  /* Hero section: stack vertically */
+  section[class*="flex-row"],
+  section[class*="md:flex-row"] {
+    flex-direction: column !important;
+    min-height: unset !important;
+  }
+
+  /* Hero text: shrink massive headings */
+  h1 {
+    font-size: clamp(2rem, 9vw, 3.5rem) !important;
+    line-height: 1.1 !important;
+  }
+  h2 {
+    font-size: clamp(1.5rem, 7vw, 2.8rem) !important;
+    line-height: 1.15 !important;
+  }
+  h3 {
+    font-size: clamp(1.1rem, 5vw, 1.8rem) !important;
+  }
+
+  /* Hero image: reasonable height on mobile */
+  .hero-image-col,
+  section > div[class*="flex-1"]:last-child {
+    min-height: 260px !important;
+    max-height: 380px !important;
+  }
+
+  /* Reduce section horizontal padding */
+  section {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  /* Make grids single-column */
+  .grid[class*="md:grid-cols-2"],
+  .grid[class*="md:grid-cols-3"],
+  .grid[class*="md:grid-cols-4"],
+  .grid[class*="lg:grid-cols-2"],
+  .grid[class*="lg:grid-cols-3"],
+  .grid[class*="lg:grid-cols-4"] {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* 2-col grids that look ok on mobile — keep them (2 items per row for cards) */
+  .grid[class*="sm:grid-cols-2"] {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* Lookbook: force 1-col */
+  .grid[class*="grid-cols-12"] {
+    grid-template-columns: 1fr !important;
+    height: auto !important;
+  }
+  .grid[class*="grid-cols-12"] > div {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
+    height: 300px !important;
+  }
+
+  /* CTA buttons: full width on mobile */
+  [class*="flex-wrap"][class*="gap"] {
+    flex-direction: column !important;
+  }
+
+  /* Showroom cards: stack & reduce padding */
+  section[class*="bg-surface"] div.p-12,
+  section div.p-12 {
+    padding: 28px !important;
+  }
+
+  /* Timeline: simplify layout */
+  #lhv-mobile-btn {
+    display: flex !important;
+  }
+
+  /* Footer grid */
+  footer .grid[class*="md:grid-cols-4"],
+  footer .grid[class*="grid-cols-4"] {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 28px !important;
+  }
+
+  /* Nav "Đặt Lịch Ngay" button: hide on mobile (drawer has it) */
+  header > div:last-child > a[href*="tu-van"],
+  header button.bg-primary-container {
+    display: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Very small phones */
+  h1 { font-size: clamp(1.7rem, 8vw, 2.5rem) !important; }
+
+  section {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+  }
+
+  /* Timeline year badge position */
+  #lhv-mobile-drawer { width: 85vw !important; }
+}
+/* ═══════════════════════════════════════════════════════════════
+   GLOBAL SLIDER / CAROUSEL — MOBILE OPTIMISATION
+   Applies to ALL pages. Uses explicit selectors to target every
+   known slider arrow variant across the site.
+═══════════════════════════════════════════════════════════════ */
+
+/* ── 1. HIDE ALL NAV ARROWS ON MOBILE ── */
+@media (max-width: 768px) {
+  /* blazer-nam: .gallery-btn.g-prev / .g-next (opacity toggled by hover) */
+  .gallery-btn,
+  .gallery-btn.g-prev,
+  .gallery-btn.g-next {
+    display: none !important;
+  }
+
+  /* index.html hero: .hero-arrow-btn injected by JS */
+  .hero-arrow-btn,
+  .md-only {
+    display: none !important;
+  }
+
+  /* vest-nam-tre.html: inline prev/next buttons inside .swipe-area
+     (they already use `hidden lg:flex` so this is a safety net) */
+  .swipe-area > button {
+    display: none !important;
+  }
+
+  /* Any generic slider prev/next created by JS */
+  [class*="slide-prev"],
+  [class*="slide-next"],
+  [class*="slick-prev"],
+  [class*="slick-next"],
+  [class*="swiper-button"],
+  [class*="carousel-control"] {
+    display: none !important;
+  }
+}
+
+/* ── 2. DESKTOP: KEEP ARROWS VISIBLE ── */
+@media (min-width: 769px) {
+  /* Ensure gallery-btn opacity is driven by hover, not hidden */
+  .gallery-btn {
+    display: flex !important; /* override any accidental hide */
+  }
+}
+
+/* ── 3. CSS SCROLL-SNAP + SMOOTH MOMENTUM — horizontal scroll-based sliders ──
+   Works for any flex/scroll container that acts as a horizontal gallery.
+   Pairs with JS swipe on .swipe-area and .card-gallery.
+──────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Horizontal gallery strip — full smooth scroll with momentum */
+  .lux-hero-strip,
+  [class*="hero-slides"],
+  [class*="slides-track"],
+  [class*="carousel-track"],
+  [class*="slick-track"] {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    scroll-snap-stop: always !important;         /* one slide per swipe */
+    scroll-behavior: smooth !important;          /* smooth deceleration */
+    -webkit-overflow-scrolling: touch !important;/* iOS momentum */
+    scrollbar-width: none !important;
+    /* Axis-lock: let browser handle horizontal vs vertical decision */
+    touch-action: pan-x !important;
+  }
+  .lux-hero-strip::-webkit-scrollbar,
+  [class*="hero-slides"]::-webkit-scrollbar,
+  [class*="slides-track"]::-webkit-scrollbar,
+  [class*="carousel-track"]::-webkit-scrollbar,
+  [class*="slick-track"]::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  /* Each slide (child) snaps to center, no shrink */
+  .lux-hero-strip > *,
+  [class*="hero-slides"] > *,
+  [class*="slides-track"] > *,
+  [class*="carousel-track"] > * {
+    scroll-snap-align: start !important;         /* start = predictable on phones */
+    flex-shrink: 0 !important;
+    width: 100% !important;
+  }
+
+  /* Product card image area (.swipe-area)
+     - touch-action: pan-y allows page scroll, JS intercepts horizontal */
+  .swipe-area {
+    -webkit-overflow-scrolling: touch !important;
+    touch-action: pan-y !important;              /* page scrolls; JS swipe goes horizontal */
+    position: relative !important;
+    overflow: hidden !important;
+    cursor: grab !important;
+  }
+
+  /* Card gallery image cross-fade smooth transition */
+  .card-gallery img,
+  .swipe-area img {
+    transition: opacity 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+                transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  }
+
+  /* Product detail main image viewer */
+  #main-img-viewer img,
+  #main-img-wrap img {
+    transition: opacity 0.40s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.40s cubic-bezier(0.22, 1, 0.36, 1) !important;
+  }
+}
+/* ===== MOBILE HERO CLEANUP ===== */
+@media (max-width: 768px) {
+  section.hero-sec h1, section.hero-sec #hero-title {
+    font-size: 26px !important;
+    line-height: 1.3 !important;
+  }
+  section.hero-sec p, section.hero-sec #hero-desc {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+}
+
+/* ===== HOMEPAGE: XEM CHI TIET BUTTON — WHITE TEXT + ALIGNED ===== */
+
+/* White text on all Xem Chi Tiet buttons */
+button.border-primary-container,
+button[class*="border-primary-container"] {
+  color: #ffffff !important;
+}
+
+/* Cards become flex-column so each card same height per row */
+.bg-surface-container-low.overflow-hidden.group {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Content area inside card takes remaining space */
+.bg-surface-container-low.overflow-hidden.group .p-6 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Button sticks to bottom */
+.bg-surface-container-low.overflow-hidden.group .p-6 button {
+  margin-top: auto;
+}
+
+/* ===== HERO: REMOVE BORDER BOX FROM DAT LICH TU VAN BUTTON ===== */
+
+/* Remove the bordered box from the outlined Tu Van button inside hero */
+section.hero-sec a[class*="border-outline"] {
+  border: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Also reduce large gap between desc and buttons on mobile */
+@media (max-width: 767px) {
+  section.hero-sec #hero-desc {
+    margin-bottom: 14px !important;
+  }
+}
+
+/* ══════════════════════════════════════════════
+   GLOBAL MOBILE RESPONSIVE OVERRIDES (LUXURY UI)
+   Applies to all pages to enforce minimal luxury 
+   standards on screens <= 768px.
+══════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* 1. TYPOGRAPHY (Strict sizing) */
+  h1, .text-5xl, .text-4xl { font-size: clamp(20px, 6vw, 24px) !important; line-height: 1.4 !important; }
+  h2, .text-3xl { font-size: clamp(18px, 5vw, 22px) !important; line-height: 1.4 !important; }
+  h3, h4, .text-2xl, .text-xl { font-size: 16px !important; line-height: 1.5 !important; }
+  
+  /* Body text & labels */
+  p, span:not(.material-symbols-outlined), li, .text-lg, .text-base {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+  [class*="text-sm"], small { font-size: 13px !important; }
+  
+  /* Subheadings & Overlines keeping uppercase */
+  [class*="tracking-widest"], [class*="uppercase"] {
+    letter-spacing: 0.5px !important;
+  }
+
+  /* 2. SPACING & LAYOUT (Collapse to 1 column) */
+  /* Normalize section padding */
+  section {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  
+  /* Force 1 column on all grids & cards */
+  .grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important; /* Unified gap */
+  }
+
+  /* Force stack on flex rows */
+  .flex.md\\:flex-row, .flex.lg\\:flex-row {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  /* Prevent side-scrolling */
+  html, body {
+    overflow-x: hidden !important;
+    width: 100%;
+  }
+
+  /* 3. BUTTONS & CTA (Touch friendly) */
+  button, .btn, a[class*="bg-"], a[class*="border"] {
+    min-height: 44px !important; /* Standard touch target height */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 13px !important;
+  }
+  
+  /* Make primary action buttons full width for ease of access */
+  [class*="flex-wrap"] > a, 
+  [class*="flex-wrap"] > button,
+  section > div > a.bg-primary-container,
+  div.mt-8 > a[href*="tu-van.html"] {
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  /* 4. IMAGES & MEDIA */
+  img, video {
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+
+  /* 5. SPECIFIC FIXES */
+  /* Remove excessive margins in content areas */
+  .mb-12, .mb-16, .my-24 { margin-top: 24px !important; margin-bottom: 24px !important; }
+  .p-12, .px-12, .py-24, .md\\:p-24 { padding: 20px 16px !important; }
+}
+
+/* ===== FLOATING CTA BUTTON (PROMPT REQUEST) ===== */
+.floating-cta {
+  position: fixed !important;
+  right: 16px !important;
+  bottom: 80px !important;
+  top: auto !important;
+  z-index: 999 !important;
+  pointer-events: auto !important;
+}
+/* Ensure Zalo is above CTA */
+.lux-zalo-btn {
+  bottom: 140px !important;
+}
+
+@media (max-width: 768px) {
+  .floating-cta {
+    right: 12px !important;
+    bottom: 70px !important;
+  }
+  .lux-zalo-btn {
+    bottom: 130px !important;
+  }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   PRODUCT DETAIL PAGE — MOBILE OPTIMISATION
+   Applies to: product-detail.html AND product-detail-vn.html
+   Both pages link global.css so one block covers both.
+   Desktop (≥769px): completely UNTOUCHED.
+═══════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* ── 1. LAYOUT: Product detail page mobile 1-column stack ───── */
+  .product-detail-grid,
+  section.grid[class*="lg:grid-cols"] {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+
+  /* Left col (gallery) takes full width */
+  .product-grid > div:first-child,
+  section.grid[class*="lg:grid-cols"] > .lg\\:col-span-6,
+  section.grid[class*="lg:grid-cols"] > [class*="col-span-6"] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Right col (info) also full width */
+  section.grid[class*="lg:grid-cols"] > .lg\\:col-span-4,
+  section.grid[class*="lg:grid-cols"] > [class*="col-span-4"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  /* ── 2. GALLERY: Full-width, correct ratio, smooth swipe ─────── */
+  /* Main image container */
+  .main-img-wrap,
+  section.grid > div > .relative.aspect-\\[4\\/5\\],
+  section.grid > div > div[class*="aspect-"] {
+    width: 100% !important;
+    aspect-ratio: 4 / 5 !important;
+    overflow: hidden !important;
+    position: relative !important;
+    touch-action: pan-y !important;         /* JS intercepts horizontal */
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  /* Main image itself */
+  #main-img,
+  .main-img-wrap img,
+  section.grid > div > .relative.aspect-\\[4\\/5\\] img,
+  .sg-related-img-wrap img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+    display: block !important;
+  }
+
+  /* Thumbnail strip: horizontal scroll */
+  .thumb-row,
+  #thumb-row {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 8px !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x proximity !important;
+    scroll-behavior: smooth !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding-bottom: 4px !important;
+  }
+
+  /* Static thumbnail grid (product-detail.html) */
+  section.grid > div > .grid.grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 6px !important;
+  }
+
+  /* ── 4. TOUCH TARGETS: Size & Colour buttons ─────────────────── */
+  /* Size buttons (product-detail-vn.html: .sz-btn) */
+  .sz-btn {
+    min-width: 48px !important;
+    min-height: 48px !important;
+    padding: 10px 14px !important;
+    font-size: 12px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  /* Size buttons (product-detail.html: .sz-btn & #size-btns button) */
+  #size-btns button,
+  .sz-btn,
+  #somi-size-selector button {
+    min-width: 44px !important;
+    min-height: 44px !important;
+    height: 44px !important;
+    font-size: 12px !important;
+  }
+
+  /* Gap between size/colour buttons */
+  #size-btns,
+  div[class*="flex-wrap"][class*="gap-2"],
+  .flex.flex-wrap.gap-2 {
+    gap: 10px !important;
+  }
+
+  /* Colour swatches */
+  section.grid button[class*="rounded-full"],
+  div[class*="space-x-4"] > button[class*="rounded-full"] {
+    width: 40px !important;
+    height: 40px !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
+  }
+
+  /* ── 5. CTA BUTTONS: Full-width, large touch target ─────────── */
+  /* product-detail.html */
+  section.grid div[class*="space-y-4"] > button,
+  div[class*="space-y"] > button[class*="w-full"] {
+    width: 100% !important;
+    min-height: 56px !important;
+    padding: 16px 20px !important;
+    font-size: 12px !important;
+    letter-spacing: 0.15em !important;
+  }
+
+  /* product-detail-vn.html */
+  #order-btn,
+  div.flex.flex-col.gap-3 > a {
+    display: block !important;
+    width: 100% !important;
+    min-height: 56px !important;
+    padding: 16px 20px !important;
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+
+  /* ── 6. TYPOGRAPHY & SPACING: description + specs ───────────── */
+  /* Main content area horizontal padding */
+  main.pt-24 {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  /* Product name */
+  #prod-name,
+  section.grid h1 {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* Price */
+  section.grid .text-3xl.text-secondary,
+  section.grid .flex.items-baseline {
+    font-size: 22px !important;
+    gap: 10px !important;
+    margin-bottom: 16px !important;
+  }
+
+  /* Description paragraph */
+  section.grid p[class*="text-tertiary"],
+  section.grid p[class*="text-sm"],
+  #prod-desc {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Specs table (product-detail-vn) — use attribute selector, Tailwind slash classes
+     can't be targeted with CSS dot-notation selectors */
+  [class*="border-white"][class*="p-4"] {
+    padding: 14px !important;
+  }
+  /* Stack label + value vertically so long text doesn't get crushed */
+  [class*="border-white"] ul li {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 4px !important;
+    padding: 8px 0 !important;
+    font-size: 12px !important;
+  }
+  [class*="border-white"] ul li span:first-child {
+    font-size: 10px !important;
+    opacity: 0.6 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.08em !important;
+  }
+  [class*="border-white"] ul li span:last-child {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    color: #e9e1dc !important;
+    word-break: break-word !important;
+  }
+
+  /* Feature chips row: wrap nicely */
+  div[class*="flex-wrap"][class*="gap-3"] {
+    gap: 8px !important;
+  }
+  div[class*="flex-wrap"][class*="gap-3"] > span {
+    font-size: 10px !important;
+    padding: 8px 12px !important;
+  }
+
+  /* Breadcrumb: reduce spacing on mobile */
+  nav[class*="mb-12"] {
+    margin-bottom: 16px !important;
+  }
+
+  /* Quantity counter: full-width on mobile */
+  div[class*="flex items-center border border-outline-variant w-fit"] {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* ── CHI TIẾT SẢN PHẨM BOX (p-10 → p-4 on mobile) ────────────
+     The specs box has 40px padding on all sides which is way too
+     much on a 375px screen. Also fixes the flex justify-between
+     list items that cause long values to get crushed.
+  ── */
+
+  /* 1. Reduce padding of the specs container */
+  div[class*="bg-surface-container-low"][class*="p-10"],
+  div[class*="bg-surface-container-low"][class*="p-8"] {
+    padding: 16px !important;
+  }
+
+  /* 2. Stack label+value vertically on mobile (not side-by-side) */
+  div[class*="bg-surface-container-low"] li[class*="flex"][class*="justify-between"],
+  div[class*="bg-surface-container-low"] li {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 4px !important;
+    padding: 10px 0 !important;
+  }
+  div[class*="bg-surface-container-low"] li span:first-child {
+    font-size: 10px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+  }
+  div[class*="bg-surface-container-low"] li span:last-child {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    word-break: break-word !important;
+  }
+
+  /* ── TABS SECTION ──────────────────────────────────────────────
+     Tab buttons have px-10 py-6 which is massive on mobile.
+     Compact them to fit all 4 tabs on screen without horizontal scroll.
+  ── */
+
+  /* 3. Compact tab buttons */
+  div[class*="flex"][class*="border-b"][class*="overflow-x-auto"] button,
+  div[class*="flex border-b"] button[class*="px-10"] {
+    padding: 12px 14px !important;
+    font-size: 9px !important;
+    letter-spacing: 0.15em !important;
+    white-space: nowrap !important;
+  }
+
+  /* 4. Tab content grid: single column, no huge gap */
+  div[class*="grid-cols-1"][class*="md:grid-cols-12"],
+  div[class*="grid"][class*="gap-16"] {
+    gap: 20px !important;
+  }
+
+  /* 5. Description text */
+  div[class*="md:col-span-7"] h3 {
+    font-size: 18px !important;
+    margin-bottom: 12px !important;
+  }
+  div[class*="md:col-span-7"] p {
+    font-size: 13px !important;
+    line-height: 1.75 !important;
+  }
+
+  /* 6. Specs box heading */
+  div[class*="bg-surface-container-low"] h4[class*="tracking"] {
+    font-size: 10px !important;
+    margin-bottom: 12px !important;
+  }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   PRODUCT GALLERY — MOBILE SLIDER (< 768px)
+   Pure CSS scroll-snap. ZERO JS. No library conflicts.
+   Used by product-detail.html and product-detail-vn.html.
+═══════════════════════════════════════════════════════════════ */
+
+/* Visibility helpers (global — applies at all breakpoints) */
+.lhm-mobile-only  { display: none;  } /* hidden on desktop */
+.lhm-desktop-only { display: block; } /* visible on desktop */
+
+@media (max-width: 768px) {
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     STEP 1 — DESTROY DESKTOP GRID / 2-COLUMN LAYOUT
+     Force the section wrapper that holds both gallery and
+     product-info columns to stack vertically as a plain block.
+     This eliminates any grid-column sizing that may leak to mobile.
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .product-detail-section,
+  section.grid,
+  section[class*="grid"] {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Every direct child column → full width block */
+  .product-detail-section > *,
+  section.grid > *,
+  section[class*="grid"] > * {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;           /* kill any flex-basis from desktop */
+    grid-column: auto !important;    /* kill any col-span from desktop */
+    float: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    transform: none !important;
+    position: static !important;
+    box-sizing: border-box !important;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     STEP 2 — MAIN CONTAINER PADDING
+     Remove horizontal padding from main so gallery spans edge to edge.
+     Pad the product-info column (lg:col-span-4) separately.
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+  main.pt-24 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Restore padding for text content (info column + breadcrumbs) */
+  .lg\:col-span-4,
+  [class*="col-span-4"],
+  nav[aria-label*="breadcrumb"],
+  .breadcrumb {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     STEP 3 — GALLERY COLUMN WRAPPER
+     Make the col-span-6 wrapper (gallery column) clean.
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .lg\:col-span-6,
+  [class*="col-span-6"],
+  .space-y-4 {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+    transform: none !important;
+  }
+
+  /* Show mobile slider, hide desktop layout */
+  .lhm-mobile-only  { display: flex !important; }
+  .lhm-desktop-only { display: none  !important; }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     STEP 4 — GALLERY CONTAINER (simple, no tricks)
+     width: 100% = full width of the gallery column
+     which is now 100% viewport width (after steps 1-3).
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .lehuong-mobile-gallery {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    scroll-snap-stop: always !important;
+    scroll-behavior: smooth !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    /* NO transforms, NO negative margins, NO 100vw tricks */
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 16px 0 !important;
+    padding: 0 !important;
+    background: #1e1b18;
+    touch-action: pan-x !important;
+    box-sizing: border-box !important;
+    transform: none !important;
+  }
+  .lehuong-mobile-gallery::-webkit-scrollbar { display: none !important; }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     STEP 5 — EACH SLIDE
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .lehuong-mobile-gallery .gallery-item {
+    flex: 0 0 100% !important;           /* 1 slide = 1 full container width */
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;             /* prevent flexbox auto-min blowout */
+    box-sizing: border-box !important;
+    scroll-snap-align: start !important;
+    overflow: hidden !important;
+    display: flex !important;
+    justify-content: center !important;  /* center image horizontally */
+    align-items: center !important;      /* center image vertically */
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     STEP 6 — IMAGE (show full, no cropping)
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .lehuong-mobile-gallery .gallery-item img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 70vh !important;
+    object-fit: contain !important;      /* full image, no crop */
+    object-position: center !important;
+    aspect-ratio: auto !important;
+    display: block !important;
+    margin: 0 auto !important;
+    transform: none !important;
+    box-sizing: border-box !important;
+  }
+}
+
+
+/* ═══════════════════════════════════════════════════════════════
+   GLOBAL MOBILE OVERFLOW PROTECTION
+   Applied site-wide. Placed LAST in file = highest cascade order.
+   Prevents any element from causing horizontal scroll on mobile.
+═══════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* ── 1. ROOT LOCK ─────────────────────────────────────────────── */
+  html {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+  }
+  body {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* ── 2. SEMANTIC CONTAINERS ──────────────────────────────────── */
+  main, section, article, aside, header, footer,
+  .container, .wrapper, .content, .inner {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
+  }
+
+  /* ── 3. TABLES ───────────────────────────────────────────────── */
+  table {
+    width: 100% !important;
+    max-width: 100% !important;
+    table-layout: fixed !important;
+    box-sizing: border-box !important;
+  }
+  th, td {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    word-break: break-word !important;
+    white-space: normal !important;
+  }
+
+  /* ── 4. MEDIA ────────────────────────────────────────────────── */
+  img:not(.lehuong-mobile-gallery img),
+  video, iframe, embed, object, svg {
+    max-width: 100% !important;
+    height: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  /* ── 5. TEXT ─────────────────────────────────────────────────── */
+  p, span, h1, h2, h3, h4, h5, h6,
+  li, dt, dd, blockquote, figcaption, label, a {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    word-break: break-word !important;
+    white-space: normal !important;
+    max-width: 100% !important;
+  }
+
+  /* ── 6. INTERACTIVE ELEMENTS ─────────────────────────────────── */
+  button, input, select, textarea, .btn {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* ── 7. FLEX/GRID CHILDREN: prevent blowout ──────────────────── */
+  [class*="flex"] > *,
+  [class*="grid"] > * {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SUBPAGE PRODUCT GRIDS — MOBILE OPTIMIZATION SUITE (2 Ô SẢN PHẨM / HÀNG)
+═══════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* Dynamic 2-column grid layout for all product pages */
+  #product-grid,
+  #sg-product-grid,
+  #blazer-grid,
+  #products-grid,
+  .prod-grid,
+  .vn-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Filter bar styling on mobile */
+  .vn-filter-bar {
+    padding: 8px 0 !important;
+    background: #ffffff !important;
+    border-bottom: 1px solid rgba(120, 80, 40, 0.12) !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .vn-frow {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    overflow-x: auto !important;
+    scrollbar-width: none !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding: 4px 2px !important;
+  }
+  .vn-frow::-webkit-scrollbar { display: none !important; }
+  .vn-flabel {
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    color: #a17f22 !important;
+    white-space: nowrap !important;
+  }
+  .vn-btn {
+    font-size: 12px !important;
+    padding: 6px 14px !important;
+    border-radius: 20px !important;
+    white-space: nowrap !important;
+    font-weight: 600 !important;
+    border: 1px solid rgba(120, 80, 40, 0.2) !important;
+    background: #f5f0eb !important;
+    color: #000000 !important;
+  }
+  .vn-btn.active {
+    background: #9d0208 !important;
+    color: #ffffff !important;
+    border-color: #9d0208 !important;
+    font-weight: 700 !important;
+    box-shadow: 0 2px 8px rgba(157, 2, 8, 0.25) !important;
+  }
+
+  /* Mobile Product Card & Thumbnails */
+  .vn-card,
+  .product-card,
+  #products-grid > div,
+  #product-grid > div {
+    border-radius: 14px !important;
+    overflow: hidden !important;
+    background: #ffffff !important;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05) !important;
+    border: 1px solid rgba(120, 80, 40, 0.12) !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .vn-thumb {
+    position: relative !important;
+    width: 100% !important;
+    padding-top: 120% !important;
+    overflow: hidden !important;
+    background: #ffffff !important;
+    border-radius: 14px 14px 0 0 !important;
+  }
+
+  .vn-thumb img {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: top center !important;
+  }
+
+  .vn-info {
+    padding: 10px 10px 12px 10px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
+    background: #ffffff !important;
+  }
+
+  .vn-tag {
+    font-size: 9px !important;
+    letter-spacing: 0.08em !important;
+    color: #a17f22 !important;
+    font-weight: 700 !important;
+    margin-bottom: 3px !important;
+    text-transform: uppercase !important;
+  }
+
+  .vn-card-name {
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    color: #000000 !important;
+    line-height: 1.35 !important;
+    margin-bottom: 6px !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+  }
+
+  .vn-price-row {
+    display: flex !important;
+    align-items: baseline !important;
+    gap: 6px !important;
+    margin-bottom: 8px !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+  }
+
+  .vn-price {
+    color: #9d0208 !important;
+    font-size: 13.5px !important;
+    font-weight: 800 !important;
+    white-space: nowrap !important;
+    display: inline-block !important;
+  }
+
+  .vn-old-price {
+    color: #888888 !important;
+    font-size: 11px !important;
+    text-decoration: line-through !important;
+    white-space: nowrap !important;
+    display: inline-block !important;
+  }
+
+  .vn-cta {
+    margin-top: auto !important;
+    padding: 9px 0 !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    background: #9d0208 !important;
+    color: #ffffff !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 4px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.06em !important;
+    border: none !important;
+    width: 100% !important;
+    box-shadow: 0 2px 6px rgba(157, 2, 8, 0.2) !important;
+  }
+
+  .vn-badge {
+    top: 6px !important;
+    left: 6px !important;
+    font-size: 9px !important;
+    padding: 3px 6px !important;
+    border-radius: 4px !important;
+    font-weight: 800 !important;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   BRAND STYLING — mayLEHUONG (Red "may", Inherited "LEHUONG", Transparent BG)
+───────────────────────────────────────────── */
+.brand-maylehuong {
+  display: inline;
+  background: transparent !important;
+  background-color: transparent !important;
+  color: inherit !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border: none !important;
+  box-shadow: none !important;
+  vertical-align: baseline;
+  line-height: inherit;
+  font-family: inherit;
+}
+
+@media (min-width: 769px) {
+  .brand-maylehuong .brand-may {
+    color: #9d0208 !important;
+    font-weight: 900 !important;
+    margin-right: 1px;
+    background: transparent !important;
+    background-color: transparent !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+  }
+}
+
+.brand-maylehuong .brand-lh {
+  color: inherit !important;
+  font-weight: 700 !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  text-shadow: none !important;
+}
+
+/* Exclude Logos & Social Media Sections */
+header .brand-maylehuong .brand-may,
+nav .brand-maylehuong .brand-may,
+footer .brand-maylehuong .brand-may,
+#lhv-global-footer .brand-maylehuong .brand-may,
+.site-logo .brand-maylehuong .brand-may,
+.logo .brand-maylehuong .brand-may,
+.social-section .brand-maylehuong .brand-may,
+.tu-van-social-grid .brand-maylehuong .brand-may,
+[class*="social"] .brand-maylehuong .brand-may,
+[id*="social"] .brand-maylehuong .brand-may,
+[class*="fanpage"] .brand-maylehuong .brand-may,
+a[href*="facebook.com"] .brand-maylehuong .brand-may,
+a[href*="zalo"] .brand-maylehuong .brand-may,
+a[href*="youtube.com"] .brand-maylehuong .brand-may,
+a[href*="tiktok.com"] .brand-maylehuong .brand-may {
+  color: inherit !important;
+  font-weight: inherit !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   BO TRÒN GÓC PHIÊN BẢN ĐIỆN THOẠI (MOBILE ROUNDED CORNERS FOR BOXES/CARDS)
+═══════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  /* Tự động bo tròn tất cả các thẻ box, khung container, card, panel trên di động */
+  .glass-panel,
+  .bg-surface,
+  .bg-surface-container,
+  .bg-surface-container-low,
+  .bg-surface-container-high,
+  .bg-[#181512],
+  .bg-[#1c1916],
+  .bg-[#1e1b18],
+  .bg-[#12100e],
+  .bg-[#1a1714],
+  .bg-[#25221f],
+  .bg-surface-container-highest,
+  section > div[class*="border"],
+  div[class*="border-outline"],
+  div[class*="border-white"],
+  .rounded-none,
+  .rounded-sm,
+  article,
+  details {
+    border-radius: 16px !important;
+  }
+
+  /* Bo tròn mượt cho các nút bấm, ô nhập liệu, thẻ select trên di động */
+  button, input, select, textarea, .btn {
+    border-radius: 12px !important;
+  }
+
+  /* Giữ nguyên các huy hiệu (badge/pill) bo tròn hoàn toàn */
+  .rounded-full,
+  [class*="rounded-full"] {
+    border-radius: 9999px !important;
+  }
+
+  /* Bo tròn khung thẻ sản phẩm và ảnh sản phẩm trên di động */
+  #product-grid > div,
+  #sg-product-grid > div,
+  #blazer-grid > div,
+  #products-grid > div,
+  .prod-grid > div,
+  .vn-grid > div,
+  .product-card {
+    border-radius: 16px !important;
+    overflow: hidden !important;
+  }
+}
+
+/* ─────────────────────────────────────────────
+   DROPDOWN SUB-LINK COLOR OVERRIDES — Solid Pure Black
+───────────────────────────────────────────── */
+.lhv-dropdown a,
+.lhv-dropdown a:link,
+.lhv-dropdown a:visited,
+.lhv-dd-link,
+.lhv-dd-link:link,
+.lhv-dd-link:visited,
+.lhv-drawer-sub,
+.lhv-drawer-sub:link,
+.lhv-drawer-sub:visited {
+  color: #000000 !important;
+  opacity: 1 !important;
+  font-weight: 600 !important;
+}
+
+.lhv-dropdown a:hover,
+.lhv-dd-link:hover,
+.lhv-drawer-sub:hover {
+  color: #9d0208 !important;
+  background: rgba(157,2,8,0.08) !important;
+}
+
+.lhv-dropdown a.lhv-active,
+.lhv-dd-link.lhv-active,
+.lhv-drawer-sub.lhv-active {
+  color: #9d0208 !important;
+  background: rgba(157,2,8,0.12) !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   PRODUCT DETAIL PAGES — UNIFIED DESKTOP & MOBILE OPTIMIZATION
+═══════════════════════════════════════════════════════════════ */
+
+/* Desktop Detail Page Optimization (≥ 1024px) */
+@media (min-width: 1024px) {
+  .product-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 48px !important;
+    align-items: start !important;
+  }
+  .main-img-wrap {
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid rgba(120, 80, 40, 0.15) !important;
+  }
+  #prod-name {
+    font-size: 32px !important;
+    line-height: 1.25 !important;
+    font-weight: 700 !important;
+  }
+  #prod-price {
+    font-size: 30px !important;
+    font-weight: 800 !important;
+    color: #9d0208 !important;
+  }
+}
+
+/* Mobile Detail Page Optimization (≤ 1023px) */
+@media (max-width: 1023px) {
+  .product-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  #prod-name {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+    font-weight: 700 !important;
+  }
+  #prod-price {
+    font-size: 22px !important;
+    font-weight: 800 !important;
+    color: #9d0208 !important;
+  }
+  .sz-btn {
+    min-width: 44px !important;
+    min-height: 44px !important;
+    border-radius: 10px !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   VIP LUXURY ANIMATIONS SYSTEM v2026 — DESKTOP & MOBILE UNIFIED
+═══════════════════════════════════════════════════════════════ */
+
+/* 1. Metallic Gold Shimmering Keyframes & Classes */
+@keyframes vipGoldShine {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes vipShineSweep {
+  0% { transform: translateX(-100%) rotate(25deg); opacity: 0; }
+  30% { opacity: 0.6; }
+  100% { transform: translateX(200%) rotate(25deg); opacity: 0; }
+}
+
+@keyframes vipPulseAura {
+  0% { box-shadow: 0 0 0 0 rgba(161, 127, 34, 0.45); }
+  70% { box-shadow: 0 0 0 16px rgba(161, 127, 34, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(161, 127, 34, 0); }
+}
+
+@keyframes vipFloatSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes vipSpinAura {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Metallic Gold Text */
+.vip-gold-text,
+span.vip-gold-text,
+#stat-customers,
+#stat-years,
+#stat-fabrics,
+#stat-showrooms {
+  background: linear-gradient(270deg, #996515 0%, #d4af37 20%, #ffffff 40%, #fff7c2 55%, #ffd700 75%, #996515 100%) !important;
+  background-size: 300% 100% !important;
+  background-position: 100% 0 !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  display: inline-block !important;
+  filter: drop-shadow(0 2px 6px rgba(212, 175, 55, 0.45)) !important;
+  transition: transform 0.3s ease, filter 0.3s ease !important;
+}
+
+/* Trigger animation AFTER counter reaches fixed target number */
+.vip-sparkle-done {
+  animation: vipGoldRightToLeftAndBack 3.5s ease-in-out infinite alternate !important;
+}
+
+@keyframes vipGoldRightToLeftAndBack {
+  0% {
+    background-position: 100% 0;
+    filter: drop-shadow(0 2px 6px rgba(212, 175, 55, 0.4));
+  }
+  50% {
+    background-position: 0% 0;
+    filter: drop-shadow(0 0 16px rgba(255, 235, 130, 0.9)) drop-shadow(0 0 28px rgba(255, 215, 0, 0.7));
+  }
+  100% {
+    background-position: 100% 0;
+    filter: drop-shadow(0 2px 6px rgba(212, 175, 55, 0.4));
+  }
+}
+
+/* VIP Shimmer Badge */
+.vip-shimmer-badge {
+  position: relative;
+  overflow: hidden;
+}
+.vip-shimmer-badge::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.45) 50%,
+    transparent 70%
+  );
+  transform: rotate(30deg);
+  animation: vipShineSweep 3.5s ease-in-out infinite;
+}
+
+/* Card 3D & Shine Sweep */
+.vip-card-3d {
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, box-shadow;
+}
+.vip-card-3d::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(135deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0) 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 5;
+}
+.vip-card-3d:hover::before {
+  opacity: 1;
+}
+
+/* Golden Pulsing Ring for CTA & Video Playback */
+.vip-pulse-glow {
+  animation: vipPulseAura 2.5s infinite;
+}
+
+.vip-float {
+  animation: vipFloatSlow 4s ease-in-out infinite;
+}
+
+/* Spinning Aura Ring for Category Circles */
+.cat-circle-box {
+  position: relative;
+}
+.cat-circle-box::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  padding: 2px;
+  background: conic-gradient(from 0deg, #a17f22, #ffd700, #9d0208, #a17f22);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  animation: vipSpinAura 8s linear infinite;
+}
+.lhv-cat-item:hover .cat-circle-box::before {
+  opacity: 1;
+  animation-duration: 4s;
+}
+
+/* Touch Spring for Mobile & Active state */
+@media (max-width: 768px) {
+  .lh-product-card:active,
+  .lh-service-card:active,
+  .video-playlist-box:active,
+  .vip-btn-active:active {
+    transform: scale(0.97) !important;
+    transition: transform 0.15s cubic-bezier(0.22, 1, 0.36, 1) !important;
+  }
+}
+
+/* 2. Continuous Idle 3D Breathing & Floating Animation */
+@keyframes vip3DBreathe {
+  0%, 100% {
+    transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+    transform: translateY(-5px) rotateX(1.8deg) rotateY(-1.8deg);
+  }
+  50% {
+    transform: translateY(-8px) rotateX(-1.2deg) rotateY(1.8deg);
+  }
+  75% {
+    transform: translateY(-4px) rotateX(1.8deg) rotateY(1.2deg);
+  }
+}
+
+.vip-card-3d.lux-v,
+.lh-product-card.lux-v,
+.video-playlist-box.lux-v {
+  animation: vip3DBreathe 6s ease-in-out infinite;
+  animation-play-state: running;
+}
+
+.lux-grid > .lux-v:nth-child(1) { animation-delay: 0s; }
+.lux-grid > .lux-v:nth-child(2) { animation-delay: 1.2s; }
+.lux-grid > .lux-v:nth-child(3) { animation-delay: 2.4s; }
+.lux-grid > .lux-v:nth-child(4) { animation-delay: 3.6s; }
+.lux-grid > .lux-v:nth-child(5) { animation-delay: 0.8s; }
+.lux-grid > .lux-v:nth-child(6) { animation-delay: 2.0s; }
+
+.vip-card-3d:hover,
+.lh-product-card:hover,
+.video-playlist-box:hover {
+  animation-play-state: paused !important;
+}
+
+
+
+/* ══════════════════════════════════════════════════════════════
+   MASTER MOBILE TOUCH SCROLL OPTIMIZATION ENGINE (60fps Smooth Inertial Scroll)
+   ══════════════════════════════════════════════════════════════ */
+html, body {
+  -webkit-overflow-scrolling: touch !important;
+  scroll-behavior: smooth !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+@media (max-width: 768px) {
+  *, *::before, *::after {
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  body {
+    overflow-x: hidden;
+    touch-action: pan-y !important;
+    overscroll-behavior-y: bounce !important;
+  }
+
+  /* GPU Hardware Acceleration Layers & Smooth Pan-Y for Grids & Sub-Pages */
+  .vn-grid,
+  .suit-card-grid,
+  .product-grid,
+  .lux-grid,
+  #products-grid,
+  .process-grid,
+  .vn-filter-bar,
+  main,
+  section {
+    touch-action: pan-y !important;
+    will-change: auto !important;
+    -webkit-backface-visibility: hidden !important;
+    backface-visibility: hidden !important;
+  }
+
+  .vn-card,
+  .suit-card,
+  .lh-product-card,
+  .process-card,
+  .tab-panel,
+  .gallery-card-box {
+    touch-action: pan-y !important;
+    -webkit-user-select: none !important;
+    user-select: none !important;
+  }
+
+  /* Eliminate heavy scroll-stutter hover transitions on touch drag */
+  .vn-card:hover,
+  .suit-card:hover,
+  .process-card:hover,
+  .lh-product-card:hover {
+    transform: none !important;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   PRODUCT DETAIL PAGES FONT SYSTEM (Desktop & Mobile)
+   ══════════════════════════════════════════════════════════════ */
+.product-detail-body,
+body {
+  font-family: 'Be Vietnam Pro', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+#prod-name,
+.prod-title {
+  font-family: 'Be Vietnam Pro', 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em !important;
+}
+
+#prod-price {
+  font-family: 'Be Vietnam Pro', 'Montserrat', sans-serif !important;
+  font-weight: 800 !important;
+}
+
+/* Hide Breadcrumbs Nav and Category Subtitle Label on Product Detail Pages (Desktop & Mobile) */
+nav[aria-label="Breadcrumb"],
+nav.breadcrumb,
+#cat-label {
+  display: none !important;
+}
+
+/* Mobile Sticky Buy Bar for Product Detail Pages */
+.mobile-sticky-buy-bar {
+  display: none;
+}
+@media (max-width: 767px) {
+  .mobile-sticky-buy-bar {
+    display: flex !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 999 !important;
+    background: rgba(255, 255, 255, 0.96) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+    padding: 10px 16px !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1) !important;
+  }
+}
+
+/* MOBILE SCROLL SAFETY — PREVENT BLANK/INVISIBLE SECTIONS ON MOBILE SCROLL */
+@media (max-width: 768px) {
+  .lux-r {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+  }
+}
+
+/* MOBILE & DESKTOP SKU BADGE OPTIMIZATION */
+.vn-sku-row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  margin-bottom: 6px !important;
+  width: 100% !important;
+  min-height: 18px !important;
+}
+
+.vn-tag {
+  display: none !important;
+}
+
+.vn-sku-badge {
+  font-size: 9.5px !important;
+  font-weight: 800 !important;
+  color: #ffffff !important;
+  background: #9d0208 !important;
+  padding: 2px 6px !important;
+  border-radius: 4px !important;
+  letter-spacing: 0.05em !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  display: inline-block !important;
+  line-height: 1.2 !important;
+}
+
+@media (max-width: 767px) {
+  .vn-sku-row {
+    margin-bottom: 5px !important;
+  }
+  .vn-sku-badge {
+    font-size: 9px !important;
+    padding: 1.5px 5px !important;
+  }
+}
+
+
+
+
+
+/* Homepage featured products: four cards on one row at every viewport — STRICTLY SCOPED TO HOMEPAGE */
+@media (max-width: 768px) {
+  .home-page main .product-grid,
+  main .home-featured-grid,
+  main .product-grid:has(> .lh-product-card) {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 4px !important;
+    overflow: visible !important;
+    padding: 2px 0 8px !important;
+  }
+  .home-page main .product-grid > .lh-product-card,
+  main .home-featured-grid > .lh-product-card,
+  main .product-grid > .lh-product-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    flex: none !important;
+  }
+}
+/* Desktop homepage products: force all four cards onto one row — STRICTLY SCOPED TO HOMEPAGE */
+@media (min-width: 769px) {
+  .home-page main .product-grid,
+  main .home-featured-grid,
+  main .product-grid:has(> .lh-product-card) {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    overflow: visible !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   UNIFIED PAGE LOADER OVERLAY — mayLEHUONG
+═══════════════════════════════════════════════════════════ */
+#lux-curtain {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999;
+  background: rgba(18, 15, 12, 0.65) !important;
+  backdrop-filter: blur(14px) saturate(160%) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(160%) !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.35s cubic-bezier(0.22, 1, 0.36, 1), visibility 0.35s;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+#lux-curtain.lux-hidden {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+/* Compact Luxury Loading Card */
+.lux-loading-card {
+  background: rgba(255, 255, 255, 0.96) !important;
+  border: 1.5px solid rgba(161, 127, 34, 0.4) !important;
+  border-radius: 18px !important;
+  padding: 24px 28px !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28), 0 0 24px rgba(161, 127, 34, 0.12) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  text-align: center !important;
+  width: 250px !important;
+  max-width: 85vw !important;
+  box-sizing: border-box !important;
+  animation: lux-card-pop 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@keyframes lux-card-pop {
+  from { transform: scale(0.92); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.lux-loading-logo {
+  height: 42px !important;
+  width: auto !important;
+  max-width: 160px !important;
+  object-fit: contain !important;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.06)) !important;
+  border-radius: 4px !important;
+}
+
+.lux-loading-spinner {
+  width: 24px !important;
+  height: 24px !important;
+  border: 2.5px solid rgba(161, 127, 34, 0.2) !important;
+  border-top-color: #9d0208 !important;
+  border-right-color: #a17f22 !important;
+  border-radius: 50% !important;
+  animation: lux-spin 0.75s linear infinite !important;
+}
+@keyframes lux-spin {
+  to { transform: rotate(360deg); }
+}
+
+.lux-loading-text {
+  color: #1a1a1a !important;
+  font-size: 11.5px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  margin: 0 !important;
+}
+
+/* Timeout error state inside card */
+.lux-loading-error-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.lux-loading-error-text {
+  font-size: 12px;
+  font-weight: 600;
+  color: #9d0208;
+  line-height: 1.4;
+}
+.lux-loading-btn-group {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+  width: 100%;
+}
+.lux-loading-retry-btn {
+  flex: 1;
+  background: #9d0208;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.lux-loading-dismiss-btn {
+  flex: 1;
+  background: #f0ede8;
+  color: #333333;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   UNIFIED CONTACT CTA WIDGET — mayLEHUONG
+═══════════════════════════════════════════════════════════ */
+#cta-overlay.cta-overlay {
+  position: fixed !important;
+  inset: 0 !important;
+  background: rgba(0, 0, 0, 0) !important;
+  z-index: 9940 !important;
+  pointer-events: none !important;
+  transition: background 0.3s cubic-bezier(0.22, 1, 0.36, 1), backdrop-filter 0.3s !important;
+  backdrop-filter: blur(0px) !important;
+  -webkit-backdrop-filter: blur(0px) !important;
+}
+#cta-overlay.cta-overlay.is-active {
+  background: rgba(0, 0, 0, 0.58) !important;
+  pointer-events: auto !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+}
+
+#cta-widget.cta-container {
+  position: fixed !important;
+  bottom: 76px !important;
+  right: 20px !important;
+  z-index: 9960 !important;
+  display: flex !important;
+  flex-direction: column-reverse !important;
+  align-items: flex-end !important;
+  pointer-events: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.cta-toggle-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  pointer-events: auto !important;
+  background: transparent !important;
+}
+
+.cta-toggle {
+  width: 58px !important;
+  height: 58px !important;
+  min-width: 58px !important;
+  min-height: 58px !important;
+  border-radius: 50% !important;
+  aspect-ratio: 1 / 1 !important;
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border: 2.5px solid #a17f22 !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 4px !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.28) !important;
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.25s, border-color 0.25s, box-shadow 0.25s !important;
+  outline: none !important;
+}
+
+.cta-toggle:hover {
+  transform: scale(1.06) !important;
+  box-shadow: 0 6px 24px rgba(161, 127, 34, 0.35) !important;
+}
+
+.cta-toggle.is-open {
+  background: #9d0208 !important;
+  background-color: #9d0208 !important;
+  border-color: #a17f22 !important;
+  box-shadow: 0 6px 24px rgba(157, 2, 8, 0.4) !important;
+}
+
+.cta-toggle .cta-logo-img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  border-radius: 50% !important;
+  pointer-events: none !important;
+  display: block !important;
+  background: transparent !important;
+}
+
+.cta-toggle.is-open .cta-logo-img {
+  display: none !important;
+}
+
+.cta-toggle .cta-close-icon {
+  display: none !important;
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  line-height: 1 !important;
+  font-family: sans-serif !important;
+  pointer-events: none !important;
+}
+
+.cta-toggle.is-open .cta-close-icon {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Upward menu list */
+.cta-menu {
+  position: absolute !important;
+  bottom: 68px !important;
+  right: 0 !important;
+  top: auto !important;
+  display: flex !important;
+  flex-direction: column-reverse !important;
+  align-items: flex-end !important;
+  gap: 10px !important;
+  pointer-events: none !important;
+  padding-bottom: 6px !important;
+  width: max-content !important;
+}
+
+.cta-row {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  opacity: 0 !important;
+  transform: translateY(12px) scale(0.9) !important;
+  transition: opacity 0.22s cubic-bezier(0.22, 1, 0.36, 1), transform 0.22s cubic-bezier(0.22, 1, 0.36, 1) !important;
+  pointer-events: none !important;
+}
+
+.cta-row.is-visible {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+  pointer-events: auto !important;
+}
+
+.cta-label {
+  background: rgba(22, 19, 16, 0.94) !important;
+  color: #f0ece9 !important;
+  font-family: 'Be Vietnam Pro', 'Inter', sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  padding: 5px 13px !important;
+  border-radius: 999px !important;
+  white-space: nowrap !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  letter-spacing: 0.02em !important;
+  max-width: calc(100vw - 90px) !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.cta-btn {
+  width: 50px !important;
+  height: 50px !important;
+  min-width: 50px !important;
+  min-height: 50px !important;
+  border-radius: 50% !important;
+  aspect-ratio: 1 / 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+  transition: transform 0.15s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.15s !important;
+  flex-shrink: 0 !important;
+  text-decoration: none !important;
+}
+.cta-btn:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Soft pulse bounce animation on idle */
+@keyframes cta-bounce-gentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.cta-pulse {
+  animation: cta-bounce-gentle 2.4s ease-in-out infinite !important;
+}
+.cta-pulse:hover,
+.cta-pulse.is-open {
+  animation: none !important;
+}
+
+/* Mobile responsive constraints */
+@media (max-width: 767px) {
+  #cta-widget.cta-container {
+    bottom: 78px !important;
+    right: 16px !important;
+  }
+  .cta-toggle {
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+    min-height: 52px !important;
+  }
+  .cta-btn {
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
+  }
+  .cta-btn svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .cta-label {
+    font-size: 11px !important;
+    padding: 4px 10px !important;
+  }
+}
+
+/* Shared floating controls must not inherit page-wide button/card sizing. */
+#cta-widget #cta-toggle {
+  width: 60px !important; height: 60px !important;
+  min-width: 60px !important; min-height: 60px !important;
+  max-width: 60px !important; max-height: 60px !important;
+  border-radius: 50% !important; padding: 7px !important;
+  background: #fff !important; border: 2px solid #e6c364 !important;
+  display: flex !important; align-items: center !important; justify-content: center !important;
+  flex: 0 0 auto !important; overflow: hidden !important;
+}
+#cta-widget #cta-toggle.is-open { background: #9d0208 !important; }
+#cta-widget .cta-menu { max-height: calc(100dvh - 180px); overflow-y: auto; overflow-x: hidden; padding: 6px; }
+#cta-widget .cta-menu[inert] { visibility: hidden; }
+#cta-widget .cta-toggle-wrap { flex: 0 0 auto; }
+@media (max-width: 767px) {
+  #cta-widget #cta-toggle { width: 52px !important; height: 52px !important; min-width: 52px !important; min-height: 52px !important; max-width: 52px !important; max-height: 52px !important; }
+  #cta-widget.cta-container { bottom: calc(78px + env(safe-area-inset-bottom)) !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cta-pulse, .lux-loading-spinner { animation: none !important; }
+  .lux-r { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
+
+.process-card .process-number { color: rgba(161,127,34,.14) !important; top: 12px !important; left: auto !important; right: 12px !important; font-size: 48px !important; line-height: 1 !important; pointer-events: none; }
+.process-card .process-icon { margin-bottom: 16px !important; }
+.process-card .process-title { letter-spacing: .02em !important; }
+.booking-unavailable { background: #fffaf4; border: 1px solid #e6d7bc; border-radius: 14px; padding: 24px; color: #333; line-height: 1.65; }
+.booking-unavailable a { display: inline-block; background: #9d0208; color: #fff !important; border-radius: 8px; padding: 12px 18px; margin-top: 16px; font-weight: 700; }
+
+/* Fill the reserved product frame instead of inheriting natural image height. */
+.vn-card .vn-thumb img { width: 100% !important; height: 100% !important; object-fit: cover !important; }
+.vn-filter-bar .vn-filter-scroll { display: flex !important; flex-direction: row !important; gap: 8px; flex-wrap: wrap; min-width: 0; }
+@media (max-width: 767px) {
+ .vn-filter-bar > .flex { flex-wrap: wrap !important; gap: 10px !important; }
+ .vn-filter-bar .vn-filter-scroll { width: 100%; }
+ .vn-filter-scroll .vn-btn { width: auto !important; margin: 0 !important; }
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   13-INCH LAPTOP DESKTOP OPTIMIZATION (1024px–1440px & 614px–900px height)
+   - Zero page-wide overflow-x: hidden masking on desktop/laptop (>= 769px)
+   - Balanced top navigation bar from 1024×640 (125% scaling) to 1440×900
+   - Keyboard focus-within dropdown & visible focus ring support
+   - Compact above-the-fold catalog/service hero headers on laptop heights
+   ══════════════════════════════════════════════════════════════════════════ */
+@media (min-width: 769px) {
+  html, body {
+    overflow-x: visible !important;
+  }
+}
+
+#lhv-cart-drawer:not(.is-open),
+#lhv-mobile-drawer:not(.is-open) {
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+.lhv-nav-item:focus-within .lhv-dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transform: translateY(0) !important;
+}
+
+.lhv-nav-link:focus-visible,
+.lhv-dropdown-link:focus-visible,
+.lhv-action-btn:focus-visible,
+.lhv-cta-booking:focus-visible,
+.vn-btn:focus-visible {
+  outline: 2px solid #9d0208 !important;
+  outline-offset: 2px !important;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  #lhv-header {
+    height: 62px !important;
+    min-height: 62px !important;
+    max-height: 62px !important;
+    padding: 0 clamp(12px, 1.4vw, 22px) !important;
+  }
+  #lhv-header .lhv-logo-wrap {
+    flex-shrink: 0 !important;
+  }
+  #lhv-header .lhv-logo-img {
+    height: clamp(38px, 3.4vw, 48px) !important;
+    max-height: clamp(38px, 3.4vw, 48px) !important;
+  }
+  #lhv-header .lhv-desktop-menu {
+    gap: clamp(6px, 1vw, 16px) !important;
+    flex-shrink: 0 !important;
+  }
+  #lhv-header .lhv-nav-link {
+    font-size: clamp(10.5px, 0.9vw, 13px) !important;
+    letter-spacing: 0.015em !important;
+    padding: 18px 0 !important;
+    gap: 2px !important;
+  }
+  #lhv-header .lhv-chevron {
+    font-size: 13px !important;
+    margin-left: 1px !important;
+  }
+  #lhv-header .lhv-actions-wrap {
+    gap: clamp(4px, 0.5vw, 8px) !important;
+    flex-shrink: 0 !important;
+  }
+  #lhv-header .lhv-action-btn {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  #lhv-header .lhv-action-btn .material-symbols-outlined {
+    font-size: 18px !important;
+  }
+  #lhv-header .lhv-divider {
+    margin: 0 2px !important;
+    height: 18px !important;
+  }
+  #lhv-header .lhv-cta-booking {
+    font-size: clamp(10px, 0.82vw, 11.5px) !important;
+    letter-spacing: 0.02em !important;
+    padding: 7px clamp(8px, 0.9vw, 14px) !important;
+  }
+
+  /* Compact catalog & service headers so product cards appear immediately in 614–800px height */
+  .seo-intro {
+    padding: 20px 20px 16px !important;
+  }
+  .seo-intro h1 {
+    font-size: clamp(1.45rem, 2.1vw, 1.95rem) !important;
+    margin-bottom: 6px !important;
+  }
+  .seo-intro p {
+    font-size: 0.88rem !important;
+    line-height: 1.5 !important;
+  }
+  .vn-filter-bar {
+    top: 62px !important;
+  }
+  .vn-filter-bar > div {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+  .dv-hero-banner {
+    padding: 26px 20px !important;
+  }
+  .dv-hero-title {
+    font-size: clamp(26px, 2.4vw, 32px) !important;
+    margin-bottom: 6px !important;
+  }
+}
+

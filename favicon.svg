@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient: Deep Luxury Bordeaux to Obsidian -->
+    <linearGradient id="lhBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b0407"/>
+      <stop offset="50%" stop-color="#110204"/>
+      <stop offset="100%" stop-color="#080102"/>
+    </linearGradient>
+
+    <!-- Metallic Champagne Gold Gradient for Border -->
+    <linearGradient id="lhGoldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fae8b8"/>
+      <stop offset="30%" stop-color="#d4af37"/>
+      <stop offset="70%" stop-color="#8c6b2d"/>
+      <stop offset="100%" stop-color="#fae8b8"/>
+    </linearGradient>
+
+    <!-- Gold Luster for Sewing Machine -->
+    <linearGradient id="lhGoldMachine" x1="20%" y1="15%" x2="85%" y2="85%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="18%" stop-color="#fae8b8"/>
+      <stop offset="55%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#9a7428"/>
+    </linearGradient>
+
+    <!-- Radial Glow behind Machine -->
+    <radialGradient id="lhGlow" cx="50%" cy="50%" r="48%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 1. Luxury Squircle Background -->
+  <rect width="192" height="192" rx="42" fill="url(#lhBg)"/>
+
+  <!-- 2. Ambient Gold Glow -->
+  <rect width="192" height="192" rx="42" fill="url(#lhGlow)"/>
+
+  <!-- 3. Polished Gold Border -->
+  <rect x="5.5" y="5.5" width="181" height="181" rx="37" fill="none" stroke="url(#lhGoldBorder)" stroke-width="6.5"/>
+
+  <!-- 4. Signature Red Silk Thread & Tailor's Needle -->
+  <path d="M 22 42 C 48 24, 82 21, 110 23 C 138 25, 158 33, 172 39" 
+        fill="none" stroke="#e63946" stroke-width="4.5" stroke-linecap="round"/>
+
+  <!-- Silver Needle -->
+  <path d="M 26 41 L 118 25" 
+        fill="none" stroke="#ffffff" stroke-width="3.8" stroke-linecap="round"/>
+  <ellipse cx="42" cy="38.5" rx="4.5" ry="1.8" transform="rotate(-11 42 38.5)" fill="#1b0407"/>
+
+  <!-- 5. Vintage Tailoring Sewing Machine (Iconic mayLEHUONG Emblem) -->
+  <path d="M 132 126 
+           C 132 94, 120 72, 96 72 
+           C 74 72, 56 76, 56 90 
+           L 38 90 
+           L 38 54 
+           C 38 46, 46 44, 54 44 
+           L 136 44 
+           C 148 44, 154 52, 154 66 
+           L 154 126 
+           Z" 
+        fill="url(#lhGoldMachine)"/>
+
+  <!-- Red Thread Spool on Spindle Pin -->
+  <line x1="124" y1="28" x2="124" y2="44" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"/>
+  <rect x="118" y="30" width="12" height="11" rx="2" fill="#e63946"/>
+
+  <!-- Balance Wheel & Crank on Right -->
+  <rect x="156" y="62" width="8" height="38" rx="3.5" fill="#fae8b8"/>
+  <line x1="162" y1="80" x2="171" y2="96" stroke="#d4af37" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="171" cy="96" r="3" fill="#fae8b8"/>
+
+  <!-- Silver Needle Bar & Presser Foot -->
+  <line x1="47" y1="88" x2="47" y2="122" stroke="#ffffff" stroke-width="3.8" stroke-linecap="round"/>
+  <line x1="41" y1="122" x2="53" y2="122" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Center Medallion -->
+  <circle cx="104" cy="58" r="5" fill="#1b0407" stroke="#d4af37" stroke-width="2"/>
+
+  <!-- Machine Base Bed Plate -->
+  <rect x="28" y="126" width="136" height="13" rx="4" fill="url(#lhGoldMachine)"/>
+
+  <!-- Pedestal Feet -->
+  <rect x="24" y="139" width="28" height="6" rx="2" fill="url(#lhGoldMachine)"/>
+  <rect x="140" y="139" width="28" height="6" rx="2" fill="url(#lhGoldMachine)"/>
+
+  <!-- 6. Brand Typography -->
+  <text x="96" y="167" 
+        text-anchor="middle" 
+        font-family="'Playfair Display', 'Times New Roman', 'Noto Serif', serif" 
+        font-weight="bold" 
+        font-size="16" 
+        fill="#f8f4eb" 
+        letter-spacing="1.2">mayLEHUONG</text>
+
+  <!-- Script "May" -->
+  <text x="50" y="46" 
+        font-family="'Segoe Script', 'Brush Script MT', cursive" 
+        font-style="italic" 
+        font-weight="bold" 
+        font-size="13" 
+        fill="#ff4d5a">May</text>
+</svg>

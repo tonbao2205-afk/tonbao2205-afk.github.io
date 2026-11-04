@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta name="robots" content="noindex,nofollow" />
+  <script src="/preview-mode.js?v=1"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đang chuyển hướng sản phẩm | mayLEHUONG</title>
+  
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2026" />
+  <link rel="shortcut icon" href="/favicon.ico?v=2026" />
+  <script>
+    (function() {
+      var sp = new URLSearchParams(window.location.search || '');
+      var id = (sp.get('id') || sp.get('slug') || '').trim();
+      var retired = { vnam12: 1, vnam1: 1, vnam9: 1, vnam5: 1, vnam8: 1, vnam10: 1, vnam7: 1 };
+      if (id && retired[id.toLowerCase()]) {
+        window.location.replace('/vest-nam-tre.html');
+      } else if (id) {
+        window.location.replace('/san-pham/' + encodeURIComponent(id) + '.html');
+      } else {
+        window.location.replace('/products.html');
+      }
+    })();
+  </script>
+</head>
+<body style="font-family: sans-serif; text-align: center; padding: 60px 20px; background: #fcfbf9; color: #333;">
+  <p>Đang chuyển hướng đến trang chi tiết sản phẩm...</p>
+  <p><a href="/products.html" style="color: #9d0208; font-weight: bold;">Xem toàn bộ sản phẩm mayLEHUONG</a></p>
+</body>
+</html>
