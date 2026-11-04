@@ -149,7 +149,7 @@
     b.setAttribute('aria-hidden', 'true');
     b.textContent = BADGE[lang];
     b.style.cssText = 'position:fixed;left:6px;bottom:6px;z-index:99999;pointer-events:none;' +
-      'padding:3px 10px;border-radius:999px;background:rgba(21,17,14,.82);color:#fff;font:700 10px/1.4 system-ui,sans-serif;letter-spacing:.12em';
+      'padding:2px 7px;border-radius:999px;background:#15110e;color:#fff;opacity:.7;font:700 9px/1.4 system-ui,sans-serif;letter-spacing:.1em';
     document.body.appendChild(b);
   }
   if (document.body) badge(); else document.addEventListener('DOMContentLoaded', badge);
