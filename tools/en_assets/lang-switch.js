@@ -60,6 +60,28 @@
   ].join('');
   (document.head || document.documentElement).appendChild(css);
 
+
+  // Desktop menu size per language. nav-component.js writes inline !important sizes (and rewrites them on resize),
+  // so scale those values instead of overriding them in CSS: CJK glyphs look small, English capitals look large.
+  var SCALE = { zh: { nav: 1.16, cta: 1.12, drop: 1.07, track: '0.08em' }, en: { nav: 0.92, cta: 0.95, drop: 1, track: '' } }[cur.k];
+  function scaleEl(el, f, track) {
+    var cur0 = el.style.getPropertyValue('font-size');
+    if (!cur0 || el.getAttribute('data-mlh-fs') === cur0) return;
+    var px = Math.round(parseFloat(cur0) * f * 2) / 2 + 'px';
+    el.style.setProperty('font-size', px, 'important');
+    if (track) el.style.setProperty('letter-spacing', track, 'important');
+    el.setAttribute('data-mlh-fs', px);
+  }
+  function tune() {
+    if (!SCALE || window.innerWidth < 1024) return;
+    var h = document.getElementById('lhv-header');
+    if (!h) return;
+    var q = function (sel, f, t) { var l = h.querySelectorAll(sel); for (var i = 0; i < l.length; i++) scaleEl(l[i], f, t); };
+    q('.lhv-nav-link', SCALE.nav, SCALE.track);
+    q('.lhv-cta-booking', SCALE.cta, SCALE.track);
+    if (SCALE.drop !== 1) q('.lhv-dropdown-link', SCALE.drop, '');
+  }
+
   function link(l, cls) {
     var a = document.createElement('a');
     a.href = urlFor(l);
@@ -168,9 +190,10 @@
     var mo = new MutationObserver(function () {
       if (queued) return;
       queued = true;
-      requestAnimationFrame(function () { queued = false; if (place()) found = true; });
+      requestAnimationFrame(function () { queued = false; if (place()) found = true; tune(); });
     });
-    mo.observe(document.body, { childList: true, subtree: true });
+    mo.observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['style'] });
+    tune();
     setTimeout(function () {
       if (!found && !document.querySelector('.mlh-lang-pill')) document.body.appendChild(pill('mlh-lang-float'));
     }, 6000);
