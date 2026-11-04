@@ -50,3 +50,10 @@ Phạm vi: vẫn chỉ điện thoại.
   - không chạy khi máy bật giảm chuyển động (`prefers-reduced-motion`);
   - chỉ chạy ở ≤ 767px.
 - Không thêm thư viện. JS nhỏ trong `<script id="mlh-featured-autoplay">`. Không sửa JS/CSS dùng chung và không sửa `index.html`.
+
+## Bổ sung 2: chạy mượt liên tục (05/11/2026)
+Chủ shop: "Tôi cần tự động chạy mượt mà". Thay kiểu nhảy từng thẻ mỗi 3 giây bằng **trôi liên tục** (kiểu băng chuyền):
+- Hàng thẻ trôi đều sang trái khoảng 30px/giây, dùng `requestAnimationFrame`. Tắt scroll-snap khi đang tự chạy để không giật.
+- **Nối vòng liền mạch:** JS nhân đôi 12 thẻ (bản sao `aria-hidden="true"`, `tabindex="-1"`, không đổi HTML gốc). Trôi hết một vòng thì lùi đúng một độ dài vòng, mắt không thấy nhảy.
+- Khách vẫn vuốt tay được. Chạm hoặc vuốt thì dừng, nhả tay 2,5 giây sau chạy tiếp từ vị trí đang đứng.
+- Dừng khi khối ra khỏi màn hình hoặc tab bị ẩn. Không chạy khi máy bật giảm chuyển động. Chỉ chạy ở ≤ 767px.
