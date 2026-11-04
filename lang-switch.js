@@ -1,4 +1,4 @@
-/* mayLEHUONG language switcher & first-visit language selector modal (VI | EN | 中文). Shared by every language version. */
+/* mayLEHUONG language switcher & first-visit language selector modal (VI · EN · 中文 · 한국어 · 日本語 · हिन्दी). Shared by every language version. */
 (function () {
   'use strict';
   if (window.__MLH_LANG_SWITCH__) return;
@@ -7,7 +7,10 @@
   var ALL = [
     { k: 'vi', label: 'VI', name: 'Tiếng Việt', full: 'Tiếng Việt', hreflang: 'vi', pfx: '', recTag: 'Gợi ý' },
     { k: 'en', label: 'EN', name: 'English', full: 'English', hreflang: 'en', pfx: '/en', recTag: 'Suggested' },
-    { k: 'zh', label: '中文', name: '中文', full: '中文 (简体)', hreflang: 'zh-Hans', pfx: '/zh', recTag: '推荐' }
+    { k: 'zh', label: '中文', name: '中文', full: '中文 (简体)', hreflang: 'zh-Hans', pfx: '/zh', recTag: '推荐' },
+    { k: 'ko', label: 'KO', name: '한국어', full: '한국어', hreflang: 'ko', pfx: '/ko', recTag: '추천' },
+    { k: 'ja', label: 'JA', name: '日本語', full: '日本語', hreflang: 'ja', pfx: '/ja', recTag: 'おすすめ' },
+    { k: 'hi', label: 'HI', name: 'हिन्दी', full: 'हिन्दी', hreflang: 'hi', pfx: '/hi', recTag: 'सुझाव' }
   ];
   var only = window.MLH_LANGS; // optional list of published languages, e.g. ['vi','en']
   var LANGS = ALL.filter(function (l) { return !only || only.indexOf(l.k) !== -1; });
@@ -37,14 +40,18 @@
       ? navigator.languages
       : [navigator.language || navigator.userLanguage || ''];
     var first = String(list[0] || '').trim().toLowerCase();
-    var code = /^zh\b/.test(first) ? 'zh' : (/^vi\b/.test(first) ? 'vi' : 'en');
+    var m = first.match(/^(vi|zh|ko|ja|hi)\b/);
+    var code = m ? m[1] : 'en';
     for (var i = 0; i < LANGS.length; i++) {
       if (LANGS[i].k === code) return LANGS[i];
     }
     return cur || LANGS[0];
   }
 
-  var FONT_STACK = "'Be Vietnam Pro',system-ui,-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif";
+  var FONT_STACK = "'Be Vietnam Pro',system-ui,-apple-system,'Segoe UI','PingFang SC','Microsoft YaHei','Malgun Gothic'," +
+    "'Apple SD Gothic Neo','Hiragino Sans','Yu Gothic','Meiryo','Nirmala UI','Noto Sans Devanagari',sans-serif";
+  // With more than three languages the desktop pill becomes a dropdown like the mobile one, so the header keeps its width.
+  var COMPACT = LANGS.length > 3;
 
   var css = document.getElementById('mlh-lang-switch-css');
   if (!css) {
@@ -65,6 +72,11 @@
     '.lhv-mob-actions .mlh-lang-pill{height:24px;min-width:32px;padding:0;margin:0 2px 0 0;justify-content:center;font-size:10.5px}',
     '.lhv-mob-actions .mlh-lang-pill>a,.lhv-mob-actions .mlh-lang-pill>i{display:none}',
     '.lhv-mob-actions .mlh-lang-pill button{display:block;border:0;background:none;color:#9d0208;font:inherit;padding:0 7px;height:100%;cursor:pointer}',
+    '.mlh-lang-pill.mlh-compact{padding:0;gap:0}',
+    '.mlh-lang-pill.mlh-compact>a,.mlh-lang-pill.mlh-compact>i{display:none}',
+    '.mlh-lang-pill.mlh-compact button{display:inline-flex;align-items:center;gap:5px;border:0;background:none;color:#9d0208;font:inherit;padding:0 11px;height:100%;cursor:pointer}',
+    '.lhv-mob-actions .mlh-lang-pill.mlh-compact button{padding:0 7px;gap:3px;color:#9d0208}',
+    '.mlh-lang-pill.mlh-compact button:hover,.mlh-lang-pill.mlh-compact button[aria-expanded="true"]{color:#15110e}',
     '.mlh-lang-menu{display:none;position:fixed;z-index:100001;min-width:140px;padding:6px;',
     'background:#fffdf8;border:1px solid #a17f22;border-radius:10px;box-shadow:0 8px 24px rgba(21,17,14,.18);font:600 14px/1.2 ' + FONT_STACK + '}',
     '.mlh-lang-menu.open{display:block}',
@@ -99,7 +111,8 @@
     'line-height:1.45!important;letter-spacing:0!important;text-transform:none!important}',
     '#mlh-lang-popup .mlh-lp-tpart{white-space:nowrap!important;color:#15110e!important}',
     '#mlh-lang-popup .mlh-lp-tsep{color:#6e5417!important;font-weight:700!important}',
-    '#mlh-lang-popup .mlh-lp-list{display:flex!important;flex-direction:column!important;gap:10px!important;margin:0!important;padding:0!important}',
+    '#mlh-lang-popup .mlh-lp-card{max-height:calc(100vh - 32px)!important;max-height:calc(100dvh - 32px)!important;overflow-y:auto!important;overscroll-behavior:contain!important}',
+    '#mlh-lang-popup .mlh-lp-list{display:flex!important;flex-direction:column!important;gap:9px!important;margin:0!important;padding:0!important}',
     '#mlh-lang-popup a.mlh-lp-opt{display:flex!important;align-items:center!important;justify-content:space-between!important;',
     'gap:10px!important;width:100%!important;min-height:52px!important;padding:10px 14px!important;box-sizing:border-box!important;',
     'border:1.5px solid #c6ae74!important;border-radius:12px!important;background:#ffffff!important;color:#15110e!important;',
@@ -130,7 +143,13 @@
 
   // Desktop menu size per language. nav-component.js writes inline !important sizes (and rewrites them on resize),
   // so scale those values instead of overriding them in CSS: CJK glyphs look small, English capitals look large.
-  var SCALE = { zh: { nav: 1.16, cta: 1.12, drop: 1.07, track: '0.08em' }, en: { nav: 0.92, cta: 0.95, drop: 1, track: '' } }[cur.k];
+  var SCALE = {
+    zh: { nav: 1.16, cta: 1.12, drop: 1.07, track: '0.08em' },
+    ja: { nav: 1.14, cta: 1.1, drop: 1.07, track: '0.06em' },
+    ko: { nav: 1.1, cta: 1.06, drop: 1.05, track: '0.03em' },
+    hi: { nav: 1.08, cta: 1.04, drop: 1.05, track: '0.02em' },
+    en: { nav: 0.92, cta: 0.95, drop: 1, track: '' }
+  }[cur.k];
   function scaleEl(el, f, track) {
     var cur0 = el.style.getPropertyValue('font-size');
     if (!cur0 || el.getAttribute('data-mlh-fs') === cur0) return;
@@ -204,7 +223,7 @@
 
   function pill(cls) {
     var box = document.createElement('span');
-    box.className = 'mlh-lang-pill' + (cls ? ' ' + cls : '');
+    box.className = 'mlh-lang-pill' + (COMPACT ? ' mlh-compact' : '') + (cls ? ' ' + cls : '');
     box.setAttribute('data-no-tr', '');
     LANGS.forEach(function (l, i) {
       if (i) { var sep = document.createElement('i'); sep.setAttribute('aria-hidden', 'true'); box.appendChild(sep); }
@@ -212,7 +231,7 @@
     });
     var btn = document.createElement('button');
     btn.type = 'button';
-    btn.textContent = cur.label;
+    btn.textContent = COMPACT ? cur.label + ' \u25BE' : cur.label;
     btn.setAttribute('aria-haspopup', 'true');
     btn.setAttribute('aria-expanded', 'false');
     btn.setAttribute('aria-label', 'Language / Ngôn ngữ / 语言');
@@ -305,7 +324,7 @@
     var title = document.createElement('h2');
     title.id = 'mlh-lang-modal-title';
     title.className = 'mlh-lp-title';
-    ['Chọn ngôn ngữ', 'Choose your language', '选择语言'].forEach(function (part, idx) {
+    ['Chọn ngôn ngữ', 'Choose your language', '选择语言', '언어 선택', '言語を選択', 'भाषा चुनें'].forEach(function (part, idx) {
       if (idx) {
         var sep = document.createElement('span');
         sep.className = 'mlh-lp-tsep';
