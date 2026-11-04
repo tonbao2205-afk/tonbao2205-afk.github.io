@@ -267,6 +267,10 @@ class Builder:
                 return host + self.pfx + path
             en = self.en_page_url(path)
             return host + en if en else c
+        # CSS attribute selectors (a[href="/"]) are matched against links that code then rewrites with a
+        # separate bare-path literal; translating only the selector turned localized home links back to '/'.
+        if '<' not in c and re.search(r'\[\s*href', c):
+            return c
         # HTML-ish literals: rewrite href="/x.html" inside markup
         if '<' in c or 'href=' in c:
             return re.sub(r'(href\s*=\s*\\?["\'])(/[^"\'\\\s>]*)',
