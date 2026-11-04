@@ -1,0 +1,694 @@
+{
+  "project": "mayLEHUONG Homepage Hero Banners (No-Text Multi-Language Ready)",
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T16:56:52.361175+00:00",
+  "ai_illustration": true,
+  "note": "Toàn bộ 12 ảnh là minh họa AI (ai_illustration: true), không có bất kỳ chữ/số/logo/nhãn mác nào trong ảnh.",
+  "generator_tool": "Antigravity image-generator (Gemini Image Generation) + Pillow 12.3.0 Lanczos/WebP pipeline",
+  "scenes": [
+    {
+      "scene": "hang-san-vest-nam",
+      "code": "1A",
+      "group": "Hàng may sẵn",
+      "title_vi": "Vest nam may sẵn",
+      "ai_illustration": true,
+      "regenerations": {
+        "desktop": 1,
+        "mobile": 1,
+        "reason": "Làm lại bản dọc v2 để mở rộng vùng trống 35% phía trên; làm lại bản ngang v2 để đồng bộ 3 manocanh thân gỗ và tường kem liền mạch không có đường ghép."
+      },
+      "desktop": {
+        "prompt": "An elegant menswear showroom corner: three headless tailor mannequins wearing ready-to-wear two-button men's suits in navy, charcoal grey and sand beige, crisp white shirts and silk ties in burgundy and navy, a wooden valet rack with neatly hung jackets behind, polished light oak floor. Wide 16:9 composition, subject placed in the right 60% of the frame, the left 40% is clean softly lit ivory negative space for headline overlay. Photorealistic luxury commercial photography, soft warm studio light, ivory and cream palette with subtle antique-gold accents, high detail fabric texture, shallow depth of field. Absolutely no text, no letters, no numbers, no logos, no watermarks, no signage, no labels, no price tags anywhere in the image.",
+        "negative_space_zone": "left 40%",
+        "contrast": {
+          "sample_box_px": [
+            96,
+            202,
+            864,
+            1147
+          ],
+          "mean_bg_rgb": [
+            243,
+            230,
+            208
+          ],
+          "mean_bg_hex": "#f3e6d0",
+          "ink_15110e": 15.24,
+          "crimson_9d0208": 6.97
+        },
+        "files": {
+          "png_2400x1350": {
+            "file": "hang-san-vest-nam-desktop-2400x1350.png",
+            "width": 2400,
+            "height": 1350,
+            "bytes": 2562936,
+            "kb": 2502.87,
+            "sha256": "c9cd60c6a6092cdec78b186efd0baa1cc1d0040e18ddd6e7f2a109330bbc89ef",
+            "ai_illustration": true
+          },
+          "webp_1600": {
+            "file": "hang-san-vest-nam-desktop-1600.webp",
+            "width": 1600,
+            "height": 900,
+            "bytes": 38970,
+            "kb": 38.06,
+            "sha256": "0d08f58aea23a7d5bdbec1f0879966fa89a51b2ca9b8c2225c4db1045f4ce535",
+            "ai_illustration": true,
+            "webp_quality": 82
+          },
+          "webp_960": {
+            "file": "hang-san-vest-nam-desktop-960.webp",
+            "width": 960,
+            "height": 540,
+            "bytes": 18808,
+            "kb": 18.37,
+            "sha256": "fc4f92b209807f751df10536eba0d84b06ee5a78ff5487cb5ab54f2ae79a529c",
+            "ai_illustration": true,
+            "webp_quality": 82
+          }
+        }
+      },
+      "mobile": {
+        "prompt": "An elegant menswear showroom corner: three headless tailor mannequins wearing ready-to-wear two-button men's suits in navy, charcoal grey and sand beige, crisp white shirts and silk ties in burgundy and navy, a wooden valet rack with neatly hung jackets behind, polished light oak floor. Tall 9:16 portrait composition designed for mobile, subject in the lower two-thirds, the top 35% is clean softly lit ivory negative space for headline overlay, keep the bottom 60px uncluttered. Photorealistic luxury commercial photography, soft warm studio light, ivory and cream palette with subtle antique-gold accents, high detail fabric texture, shallow depth of field. Absolutely no text, no letters, no numbers, no logos, no watermarks, no signage, no labels, no price tags anywhere in the image.",
+        "negative_space_zone": "top 35% (bottom 60px uncluttered)",
+        "contrast": {
+          "sample_box_px": [
+            90,
+            80,
+            1035,
+            620
+          ],
+          "mean_bg_rgb": [
+            236,
+            219,
+            192
+          ],
+          "mean_bg_hex": "#ecdbc0",
+          "ink_15110e": 13.82,
+          "crimson_9d0208": 6.32
+        },
+        "files": {
+          "png_1126x2000": {
+            "file": "hang-san-vest-nam-mobile-1126x2000.png",
+            "width": 1126,
+            "height": 2000,
+            "bytes": 2188503,
+            "kb": 2137.21,
+            "sha256": "088f27f9bcf2e1149b44f5a6376de9c53a39d9148c5ab8a6c7a7b7d79a79ff3e",
+            "ai_illustration": true
+          },
+          "webp_563": {
+            "file": "hang-san-vest-nam-mobile-563.webp",
+            "width": 563,
+            "height": 1000,
+            "bytes": 32130,
+            "kb": 31.38,
+            "sha256": "4ce8f537dc473f9426cfaddea93c87cb71c0d2c1acc5908897bd245017218421",
+            "ai_illustration": true,
+            "webp_quality": 82
+          },
+          "webp_480": {
+            "file": "hang-san-vest-nam-mobile-480.webp",
+            "width": 480,
+            "height": 853,
+            "bytes": 25090,
+            "kb": 24.5,
+            "sha256": "3c7b360bc73d687355b34cde1265df11bc75a8b0d239e7a13e25cbb9e0e92115",
+            "ai_illustration": true,
+            "webp_quality": 82
+          }
+        }
+      }
+    },
+    {
+      "scene": "hang-san-vest-nu",
+      "code": "1B",
+      "group": "Hàng may sẵn",
+      "title_vi": "Vest nữ công sở may sẵn",
+      "ai_illustration": true,
+      "regenerations": {
+        "desktop": 1,
+        "mobile": 1,
+        "reason": "Làm lại cả 2 bản v2 để chuyển từ manocanh có đầu trắng sang manocanh không đầu (headless) đúng mẫu tham chiếu và bỏ đường nối nền tường."
+      },
+      "desktop": {
+        "prompt": "Refined womenswear boutique display: two or three headless female mannequins wearing modern fitted office blazers with pencil skirts and tailored trousers in black, pastel pink and light beige, a minimalist cream wall, a small marble side table with folded silk scarves. Wide 16:9 composition, subject placed in the right 60% of the frame, the left 40% is clean softly lit ivory negative space for headline overlay. Photorealistic luxury commercial photography, soft warm studio light, ivory and cream palette with subtle antique-gold accents, high detail fabric texture, shallow depth of field. Absolutely no text, no letters, no numbers, no logos, no watermarks, no signage, no labels, no price tags anywhere in the image.",
+        "negative_space_zone": "left 40%",
+        "contrast": {
+          "sample_box_px": [
+            96,
+            202,
+            864,
+            1147
+          ],
+          "mean_bg_rgb": [
+            233,
+            223,
+            207
+          ],
+          "mean_bg_hex": "#e9dfcf",
+          "ink_15110e": 14.24,
+          "crimson_9d0208": 6.51
+        },
+        "files": {
+          "png_2400x1350": {
+            "file": "hang-san-vest-nu-desktop-2400x1350.png",
+            "width": 2400,
+            "height": 1350,
+            "bytes": 2544761,
+            "kb": 2485.12,
+            "sha256": "4f54f5b23ee6541124fbfe8fa5028678941c5c47f0d87edb9dfe5926d5552a57",
+            "ai_illustration": true
+          },
+          "webp_1600": {
+            "file": "hang-san-vest-nu-desktop-1600.webp",
+            "width": 1600,
+            "height": 900,
+            "bytes": 37088,
+            "kb": 36.22,
+            "sha256": "7c09882eb63a152090685cc67561f92b08beda507f8d404c9b77ce9290fe97d6",
+            "ai_illustration": true,
+            "webp_quality": 82
+          },
+          "webp_960": {
+            "file": "hang-san-vest-nu-desktop-960.webp",
+            "width": 960,
+            "height": 540,
+            "bytes": 18416,
+            "kb": 17.98,
+            "sha256": "4942b7ab918cd27be648bff6d7999921131ac4aa5b86c4f8549a9201238ce937",
+            "ai_illustration": true,
+            "webp_quality": 82
+          }
+        }
+      },
+      "mobile": {
+        "prompt": "Refined womenswear boutique display: two or three headless female mannequins wearing modern fitted office blazers with pencil skirts and tailored trousers in black, pastel pink and light beige, a minimalist cream wall, a small marble side table with folded silk scarves. Tall 9:16 portrait composition designed for mobile, subject in the lower two-thirds, the top 35% is clean softly lit ivory negative space for headline overlay, keep the bottom 60px uncluttered. Photorealistic luxury commercial photography, soft warm studio light, ivory and cream palette with subtle antique-gold accents, high detail fabric texture, shallow depth of field. Absolutely no text, no letters, no numbers, no logos, no watermarks, no signage, no labels, no price tags anywhere in the image.",
+        "negative_space_zone": "top 35% (bottom 60px uncluttered)",
+        "contrast": {
+          "sample_box_px": [
+            90,
+            80,
+            1035,
+            620
+          ],
+          "mean_bg_rgb": [
+            220,
+            204,
+            181
+          ],
+          "mean_bg_hex": "#dcccb5",
+          "ink_15110e": 11.93,
+          "crimson_9d0208": 5.46
+        },
+        "files": {
+          "png_1126x2000": {
+            "file": "hang-san-vest-nu-mobile-1126x2000.png",
+            "width": 1126,
+            "height": 2000,
+            "bytes": 2030983,
+            "kb": 1983.38,
+            "sha256": "7b21d80afa5539af4f04770265cda60d08fcc16ea082a6a0c47d7b9daa3155ec",
+            "ai_illustration": true
+          },
+          "webp_563": {
+            "file": "hang-san-vest-nu-mobile-563.webp",
+            "width": 563,
+            "height": 1000,
+            "bytes": 20304,
+            "kb": 19.83,
+            "sha256": "8beabf7a9d25adfcdd37054ad6cfe5c9cd413f7a047e65f93d9fb3bcf0a6a859",
+            "ai_illustration": true,
+            "webp_quality": 82
+          },
+          "webp_480": {
+            "file": "hang-san-vest-nu-mobile-480.webp",
+            "width": 480,
+            "height": 853,
+            "bytes": 16078,
+            "kb": 15.7,
+            "sha256": "ce5c895e2c1fb7682e7125b92258a2d4f8f82def9025b3874766026f904b3e72",
+            "ai_illustration": true,
+            "webp_quality": 82
+          }
+        }
+      }
+    },
+    {
+      "scene": "hang-san-phu-kien",
+      "code": "1C",
+      "group": "Hàng may sẵn",
+      "title_vi": "Phụ kiện âu phục",
+      "ai_illustration": true,
+      "regenerations": {
+        "desktop": 0,
+        "mobile": 0,
+        "reason": "Đạt ngay lần đầu: đủ 5 nhóm phụ kiện (cà vạt lụa, sơ mi trắng, kẹp/ghim vàng đồng, giày oxford đen, nơ), cổ áo và lòng giày hoàn toàn trơn không nhãn mác."
+      },
+      "desktop": {
+        "prompt": "Luxury still-life flat lay on cream linen: rolled silk neckties in navy, burgundy and gold tones, a folded white dress shirt, gold-tone tie clips and lapel pins, a pair of polished black leather oxford shoes, a bow tie, arranged with generous spacing. Wide 16:9 composition, subject placed in the right 60% of the frame, the left 40% is clean softly lit ivory negative space for headline overlay. Photorealistic luxury commercial photography, soft warm studio light, ivory and cream palette with subtle antique-gold accents, high detail fabric texture, shallow depth of field. Absolutely no text, no letters, no numbers, no logos, no watermarks, no signage, no labels, no price tags anywhere in the image.",
+        "negative_space_zone": "left 40%",
+        "contrast": {
+          "sample_box_px": [
+            96,
+            202,
+            864,
+            1147
+          ],
+          "mean_bg_rgb": [
+            241,
+            232,
+            219
+          ],
+          "mean_bg_hex": "#f1e8db",
+          "ink_15110e": 15.47,
+          "crimson_9d0208": 7.08
+        },
+        "files": {
+          "png_2400x1350": {
+            "file": "hang-san-phu-kien-desktop-2400x1350.png",
+            "width": 2400,
+            "height": 1350,
+            "bytes": 3274353,
+            "kb": 3197.61,
+            "sha256": "066a9f166321ae7a157932717ba4be03ee719711fa21128ae7b863dd9093c52a",
+            "ai_illustration": true
+          },
+          "webp_1600": {
+            "file": "hang-san-phu-kien-desktop-1600.webp",
+            "width": 1600,
+            "height": 900,
+            "bytes": 59590,
+            "kb": 58.19,
+            "sha256": "85200e80a526a7bf4aaa8fb8b05f5779badcab2fc2bcee49e0d9ac38114e0806",
+            "ai_illustration": true,
+            "webp_quality": 82
+          },
+          "webp_960": {
+            "file": "hang-san-phu-kien-desktop-960.webp",
+            "width": 960,
+            "height": 540,
+            "bytes": 23262,
+            "kb": 22.72,
+            "sha256": "38b29eddf47568f5c0aaadf69c6c3e71943c037fab3da8f24d2a99b93126a6e2",
+            "ai_illustration": true,
+            "webp_quality": 82
+          }
+        }
+      },
+      "mobile": {
+        "prompt": "Luxury still-life flat lay on cream linen: rolled silk neckties in navy, burgundy and gold tones, a folded white dress shirt, gold-tone tie clips and lapel pins, a pair of polished black leather oxford shoes, a bow tie, arranged with generous spacing. Tall 9:16 portrait composition designed for mobile, subject in the lower two-thirds, the top 35% is clean softly lit ivory negative space for headline overlay, keep the bottom 60px uncluttered. Photorealistic luxury commercial photography, soft warm studio light, ivory and cream palette with subtle antique-gold accents, high detail fabric texture, shallow depth of field. Absolutely no text, no letters, no numbers, no logos, no watermarks, no signage, no labels, no price tags anywhere in the image.",
+        "negative_space_zone": "top 35% (bottom 60px uncluttered)",
+        "contrast": {
+          "sample_box_px": [
+            90,
+            80,
+            1035,
+            620
+          ],
+          "mean_bg_rgb": [
+            244,
+            235,
+            222
+          ],
+          "mean_bg_hex": "#f4ebde",
+          "ink_15110e": 15.9,
+          "crimson_9d0208": 7.27
+        },
+        "files": {
+          "png_1126x2000": {
+            "file": "hang-san-phu-kien-mobile-1126x2000.png",
+            "width": 1126,
+            "height": 2000,
+            "bytes": 2404080,
+            "kb": 2347.73,
+            "sha256": "fe70be2432951628a1c2f57241d5f5e71ecdf64214ce4dcc3fc3b596f6894f46",
+            "ai_illustration": true
+          },
+          "webp_563": {
+            "file": "hang-san-phu-kien-mobile-563.webp",
+            "width": 563,
+            "height": 1000,
+            "bytes": 24894,
+            "kb": 24.31,
+            "sha256": "0cfce48e857901ddcf7f1d98b2ecb98f6e50d32ef90a35d9e93bf9c6711c7506",
+            "ai_illustration": true,
+            "webp_quality": 82
+          },
+          "webp_480": {
+            "file": "hang-san-phu-kien-mobile-480.webp",
+            "width": 480,
+            "height": 853,
+            "bytes": 18310,
+            "kb": 17.88,
+            "sha256": "54b719700b8651466b3f6fe341e84f50b7882901fd9265aa8e5752ec28e80125",
+            "ai_illustration": true,
+            "webp_quality": 82
+          }
+        }
+      }
+    },
+    {
+      "scene": "may-do-nam",
+      "code": "2A",
+      "group": "May đo nam và nữ",
+      "title_vi": "May đo nam",
+      "ai_illustration": true,
+      "regenerations": {
+        "desktop": 0,
+        "mobile": 1,
+        "reason": "Làm lại bản dọc v2 để đồng bộ cùng thợ may (không đeo kính, áo ghi lê tối màu), cùng bộ vest xanh navy lược chỉ trắng có ve áo vải dựng kem, thước dây trơn không số và bỏ khung tranh tường."
+      },
+      "desktop": {
+        "prompt": "A master tailor measuring a Vietnamese gentleman's shoulders with a cloth tape measure in a bright bespoke atelier, the client wearing a half-finished basted navy suit jacket with visible white tacking stitches, fabric swatch books and tailor's chalk on a cutting table, warm and trustworthy mood. Wide 16:9 composition, subject placed in the right 60% of the frame, the left 40% is clean softly lit ivory negative space for headline overlay. Photorealistic luxury commercial photography, soft warm studio light, ivory and cream palette with subtle antique-gold accents, high detail fabric texture, shallow depth of field. Absolutely no text, no letters, no numbers, no logos, no watermarks, no signage, no labels, no price tags anywhere in the image.",
+        "negative_space_zone": "left 40%",
+        "contrast": {
+          "sample_box_px": [
+            96,
+            202,
+            864,
+            1147
+          ],
+          "mean_bg_rgb": [
+            234,
+            225,
+            207
+          ],
+          "mean_bg_hex": "#eae1cf",
+          "ink_15110e": 14.46,
+          "crimson_9d0208": 6.61
+        },
+        "files": {
+          "png_2400x1350": {
+            "file": "may-do-nam-desktop-2400x1350.png",
+            "width": 2400,
+            "height": 1350,
+            "bytes": 3167748,
+            "kb": 3093.5,
+            "sha256": "8e7ecec17b39744024fe7201b75bdb2c2ec385bc7ed1c0c5ae4031b9cd45839e",
+            "ai_illustration": true
+          },
+          "webp_1600": {
+            "file": "may-do-nam-desktop-1600.webp",
+            "width": 1600,
+            "height": 900,
+            "bytes": 72698,
+            "kb": 70.99,
+            "sha256": "c4976cccb511a506717c41b51fd98512ff9dfcd32efe7584b76146abc03d5ddd",
+            "ai_illustration": true,
+            "webp_quality": 82
+          },
+          "webp_960": {
+            "file": "may-do-nam-desktop-960.webp",
+            "width": 960,
+            "height": 540,
+            "bytes": 34914,
+            "kb": 34.1,
+            "sha256": "b3dfb2319c822215cbfdff598106328124e7ca4d32600aa062b65b4ab206d018",
+            "ai_illustration": true,
+            "webp_quality": 82
+          }
+        }
+      },
+      "mobile": {
+        "prompt": "A master tailor measuring a Vietnamese gentleman's shoulders with a cloth tape measure in a bright bespoke atelier, the client wearing a half-finished basted navy suit jacket with visible white tacking stitches, fabric swatch books and tailor's chalk on a cutting table, warm and trustworthy mood. Tall 9:16 portrait composition designed for mobile, subject in the lower two-thirds, the top 35% is clean softly lit ivory negative space for headline overlay, keep the bottom 60px uncluttered. Photorealistic luxury commercial photography, soft warm studio light, ivory and cream palette with subtle antique-gold accents, high detail fabric texture, shallow depth of field. Absolutely no text, no letters, no numbers, no logos, no watermarks, no signage, no labels, no price tags anywhere in the image.",
+        "negative_space_zone": "top 35% (bottom 60px uncluttered)",
+        "contrast": {
+          "sample_box_px": [
+            90,
+            80,
+            1035,
+            620
+          ],
+          "mean_bg_rgb": [
+            239,
+            232,
+            218
+          ],
+          "mean_bg_hex": "#efe8da",
+          "ink_15110e": 15.4,
+          "crimson_9d0208": 7.04
+        },
+        "files": {
+          "png_1126x2000": {
+            "file": "may-do-nam-mobile-1126x2000.png",
+            "width": 1126,
+            "height": 2000,
+            "bytes": 2291378,
+            "kb": 2237.67,
+            "sha256": "facadc792db492ebfe4879c8fc3ea84baad82c8f225e0228bfa24ddb4d4461b1",
+            "ai_illustration": true
+          },
+          "webp_563": {
+            "file": "may-do-nam-mobile-563.webp",
+            "width": 563,
+            "height": 1000,
+            "bytes": 44444,
+            "kb": 43.4,
+            "sha256": "37212ecf2ca03e40e84cb6c750fc016a3c6f262d7eef8ec8ef80f7dfa0eefb4d",
+            "ai_illustration": true,
+            "webp_quality": 82
+          },
+          "webp_480": {
+            "file": "may-do-nam-mobile-480.webp",
+            "width": 480,
+            "height": 853,
+            "bytes": 35248,
+            "kb": 34.42,
+            "sha256": "87a8693a6862a0b658b3444f4589a02c159dda7d00ac7e42435b34c69562b57f",
+            "ai_illustration": true,
+            "webp_quality": 82
+          }
+        }
+      }
+    },
+    {
+      "scene": "may-do-nu",
+      "code": "2B",
+      "group": "May đo nam và nữ",
+      "title_vi": "May đo nữ",
+      "ai_illustration": true,
+      "regenerations": {
+        "desktop": 0,
+        "mobile": 1,
+        "reason": "Làm lại bản dọc v2 để mở rộng vùng trống 35% phía trên và đồng bộ khuôn mặt/trang phục hai nhân vật."
+      },
+      "desktop": {
+        "prompt": "A female tailor fitting a Vietnamese businesswoman in a tailored cream blazer, adjusting the waist with pins, a full-length mirror and bolts of fine suiting fabric in the background, elegant and calm atmosphere. Wide 16:9 composition, subject placed in the right 60% of the frame, the left 40% is clean softly lit ivory negative space for headline overlay. Photorealistic luxury commercial photography, soft warm studio light, ivory and cream palette with subtle antique-gold accents, high detail fabric texture, shallow depth of field. Absolutely no text, no letters, no numbers, no logos, no watermarks, no signage, no labels, no price tags anywhere in the image.",
+        "negative_space_zone": "left 40%",
+        "contrast": {
+          "sample_box_px": [
+            96,
+            202,
+            864,
+            1147
+          ],
+          "mean_bg_rgb": [
+            244,
+            238,
+            221
+          ],
+          "mean_bg_hex": "#f4eedd",
+          "ink_15110e": 16.2,
+          "crimson_9d0208": 7.41
+        },
+        "files": {
+          "png_2400x1350": {
+            "file": "may-do-nu-desktop-2400x1350.png",
+            "width": 2400,
+            "height": 1350,
+            "bytes": 2300314,
+            "kb": 2246.4,
+            "sha256": "6842c673d3b74c0a297649882d674a41911ffe3f5e7979ddbeab7948753fdbcb",
+            "ai_illustration": true
+          },
+          "webp_1600": {
+            "file": "may-do-nu-desktop-1600.webp",
+            "width": 1600,
+            "height": 900,
+            "bytes": 37218,
+            "kb": 36.35,
+            "sha256": "5c9aa3020c2440984e2feafc574ff247ace885aad9cfdd06d51440d46f221bfc",
+            "ai_illustration": true,
+            "webp_quality": 82
+          },
+          "webp_960": {
+            "file": "may-do-nu-desktop-960.webp",
+            "width": 960,
+            "height": 540,
+            "bytes": 19616,
+            "kb": 19.16,
+            "sha256": "806bba71767f772d8197a2f0d91e3700aea74e706d260314ec3f82290da78212",
+            "ai_illustration": true,
+            "webp_quality": 82
+          }
+        }
+      },
+      "mobile": {
+        "prompt": "A female tailor fitting a Vietnamese businesswoman in a tailored cream blazer, adjusting the waist with pins, a full-length mirror and bolts of fine suiting fabric in the background, elegant and calm atmosphere. Tall 9:16 portrait composition designed for mobile, subject in the lower two-thirds, the top 35% is clean softly lit ivory negative space for headline overlay, keep the bottom 60px uncluttered. Photorealistic luxury commercial photography, soft warm studio light, ivory and cream palette with subtle antique-gold accents, high detail fabric texture, shallow depth of field. Absolutely no text, no letters, no numbers, no logos, no watermarks, no signage, no labels, no price tags anywhere in the image.",
+        "negative_space_zone": "top 35% (bottom 60px uncluttered)",
+        "contrast": {
+          "sample_box_px": [
+            90,
+            80,
+            1035,
+            620
+          ],
+          "mean_bg_rgb": [
+            231,
+            214,
+            189
+          ],
+          "mean_bg_hex": "#e7d6bd",
+          "ink_15110e": 13.19,
+          "crimson_9d0208": 6.03
+        },
+        "files": {
+          "png_1126x2000": {
+            "file": "may-do-nu-mobile-1126x2000.png",
+            "width": 1126,
+            "height": 2000,
+            "bytes": 2082981,
+            "kb": 2034.16,
+            "sha256": "f2371a48569ba4402010a2e52ff1eb71a9ed26c4d583fed6127592df99eb2e89",
+            "ai_illustration": true
+          },
+          "webp_563": {
+            "file": "may-do-nu-mobile-563.webp",
+            "width": 563,
+            "height": 1000,
+            "bytes": 25900,
+            "kb": 25.29,
+            "sha256": "0ec43acb207c0b54630e7f671d37f9bf78aef5d443c305cf86d9151cf71bdb02",
+            "ai_illustration": true,
+            "webp_quality": 82
+          },
+          "webp_480": {
+            "file": "may-do-nu-mobile-480.webp",
+            "width": 480,
+            "height": 853,
+            "bytes": 20916,
+            "kb": 20.43,
+            "sha256": "bc3da4eab2f62f815237582c71d3355f95e6b6dd84bd2c65ef8e436519364a1e",
+            "ai_illustration": true,
+            "webp_quality": 82
+          }
+        }
+      }
+    },
+    {
+      "scene": "dong-phuc-cong-ty",
+      "code": "3A",
+      "group": "Đồng phục công ty",
+      "title_vi": "Đồng phục doanh nghiệp",
+      "ai_illustration": true,
+      "regenerations": {
+        "desktop": 0,
+        "mobile": 0,
+        "reason": "Đạt ngay lần đầu: đồng bộ vest xanh navy, sơ mi trắng, cà vạt & khăn lụa đỏ đô, không có bảng tên/huy hiệu/logo công ty."
+      },
+      "desktop": {
+        "prompt": "A confident group of five Vietnamese office staff, men and women, wearing matching corporate uniforms: navy suits for men, navy blazers with skirts or trousers for women, white shirts, coordinated burgundy ties and scarves, standing in a bright modern office lobby with soft daylight, professional and friendly. Wide 16:9 composition, subject placed in the right 60% of the frame, the left 40% is clean softly lit ivory negative space for headline overlay. Photorealistic luxury commercial photography, soft warm studio light, ivory and cream palette with subtle antique-gold accents, high detail fabric texture, shallow depth of field. Absolutely no text, no letters, no numbers, no logos, no watermarks, no signage, no labels, no price tags anywhere in the image.",
+        "negative_space_zone": "left 40%",
+        "contrast": {
+          "sample_box_px": [
+            96,
+            202,
+            864,
+            1147
+          ],
+          "mean_bg_rgb": [
+            244,
+            237,
+            221
+          ],
+          "mean_bg_hex": "#f4eddd",
+          "ink_15110e": 16.1,
+          "crimson_9d0208": 7.36
+        },
+        "files": {
+          "png_2400x1350": {
+            "file": "dong-phuc-cong-ty-desktop-2400x1350.png",
+            "width": 2400,
+            "height": 1350,
+            "bytes": 2641091,
+            "kb": 2579.19,
+            "sha256": "69b37c8f1bb266988b4cba3ed9bbd5fb793ca2ae75207b5a4cc58d210e06c758",
+            "ai_illustration": true
+          },
+          "webp_1600": {
+            "file": "dong-phuc-cong-ty-desktop-1600.webp",
+            "width": 1600,
+            "height": 900,
+            "bytes": 65406,
+            "kb": 63.87,
+            "sha256": "f9ccbd47523906c5abbaf260b4fd2f6e0330895ef5e485a6fcf403fafe706a7c",
+            "ai_illustration": true,
+            "webp_quality": 82
+          },
+          "webp_960": {
+            "file": "dong-phuc-cong-ty-desktop-960.webp",
+            "width": 960,
+            "height": 540,
+            "bytes": 35294,
+            "kb": 34.47,
+            "sha256": "28ceb9e86621eff8a8b2c2b439c12b547b914699e1b5a86b1a91ff03ed0898db",
+            "ai_illustration": true,
+            "webp_quality": 82
+          }
+        }
+      },
+      "mobile": {
+        "prompt": "A confident group of five Vietnamese office staff, men and women, wearing matching corporate uniforms: navy suits for men, navy blazers with skirts or trousers for women, white shirts, coordinated burgundy ties and scarves, standing in a bright modern office lobby with soft daylight, professional and friendly. Tall 9:16 portrait composition designed for mobile, subject in the lower two-thirds, the top 35% is clean softly lit ivory negative space for headline overlay, keep the bottom 60px uncluttered. Photorealistic luxury commercial photography, soft warm studio light, ivory and cream palette with subtle antique-gold accents, high detail fabric texture, shallow depth of field. Absolutely no text, no letters, no numbers, no logos, no watermarks, no signage, no labels, no price tags anywhere in the image.",
+        "negative_space_zone": "top 35% (bottom 60px uncluttered)",
+        "contrast": {
+          "sample_box_px": [
+            90,
+            80,
+            1035,
+            620
+          ],
+          "mean_bg_rgb": [
+            244,
+            237,
+            218
+          ],
+          "mean_bg_hex": "#f4edda",
+          "ink_15110e": 16.07,
+          "crimson_9d0208": 7.35
+        },
+        "files": {
+          "png_1126x2000": {
+            "file": "dong-phuc-cong-ty-mobile-1126x2000.png",
+            "width": 1126,
+            "height": 2000,
+            "bytes": 1953165,
+            "kb": 1907.39,
+            "sha256": "d0db76b8d3d70a4b47dc6465c139e38aa9f40bf3ff27f50f79f3a028fbeee522",
+            "ai_illustration": true
+          },
+          "webp_563": {
+            "file": "dong-phuc-cong-ty-mobile-563.webp",
+            "width": 563,
+            "height": 1000,
+            "bytes": 36950,
+            "kb": 36.08,
+            "sha256": "e0f264233cf48eb537fcf4b1ba489b21f352d204720baf558fcf29bcfed554c4",
+            "ai_illustration": true,
+            "webp_quality": 82
+          },
+          "webp_480": {
+            "file": "dong-phuc-cong-ty-mobile-480.webp",
+            "width": 480,
+            "height": 853,
+            "bytes": 30124,
+            "kb": 29.42,
+            "sha256": "09a8d6921864e9636ee182c01452c58e2ae62a62ce6f1642558d88fcb90e05f1",
+            "ai_illustration": true,
+            "webp_quality": 82
+          }
+        }
+      }
+    }
+  ]
+}

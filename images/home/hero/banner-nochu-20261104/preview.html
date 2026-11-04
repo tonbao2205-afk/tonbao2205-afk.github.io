@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Xem trước 12 ảnh Banner Trang Chủ Không Chữ (Minh họa AI) — mayLEHUONG</title>
+  <style>
+    :root {
+      --bg-page: #f7f2e7;
+      --bg-card: #fffdf8;
+      --ink: #15110e;
+      --ink-muted: #544739;
+      --crimson: #9d0208;
+      --gold: #a17f22;
+      --gold-soft: rgba(161, 127, 34, 0.32);
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 24px 20px 64px;
+      background: var(--bg-page);
+      color: var(--ink);
+      font-family: 'Be Vietnam Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      line-height: 1.5;
+    }
+    .page-header {
+      max-width: 1420px;
+      margin: 0 auto 24px;
+      padding: 20px 24px;
+      background: var(--bg-card);
+      border: 1.5px solid var(--gold);
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(21, 17, 14, 0.07);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .page-header h1 {
+      margin: 0 0 6px;
+      font-size: clamp(1.25rem, 1rem + 1vw, 1.65rem);
+      color: var(--ink);
+    }
+    .page-header p {
+      margin: 0;
+      color: var(--ink-muted);
+      font-size: 0.94rem;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    .btn-toggle {
+      appearance: none;
+      border: 1.5px solid var(--gold);
+      background: #fdf6e8;
+      color: var(--ink);
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 10px 16px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+    .btn-toggle[aria-pressed="true"] {
+      background: var(--crimson);
+      border-color: var(--crimson);
+      color: #ffffff;
+    }
+    .scene-block {
+      max-width: 1420px;
+      margin: 0 auto 36px;
+      padding: 24px;
+      background: var(--bg-card);
+      border: 1px solid var(--gold-soft);
+      border-radius: 18px;
+      box-shadow: 0 12px 34px rgba(21, 17, 14, 0.06);
+    }
+    .scene-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(161, 127, 34, 0.22);
+    }
+    .scene-title {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--ink);
+    }
+    .scene-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      background: #f5ecda;
+      border: 1px solid var(--gold);
+      color: var(--ink);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+    .frames-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .frame-section h3 {
+      margin: 0 0 10px;
+      font-size: 0.96rem;
+      color: var(--ink);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .meta-links {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+    .meta-links a, .meta-pill {
+      padding: 3px 10px;
+      border-radius: 6px;
+      background: #f4ecdc;
+      border: 1px solid rgba(161, 127, 34, 0.4);
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .meta-links a:hover {
+      background: var(--crimson);
+      color: #ffffff;
+      border-color: var(--crimson);
+    }
+    /* Khung Desktop chuẩn 1366px, tỉ lệ 16:9, cao tối đa 640px, contain */
+    .desktop-stage-scroll {
+      width: 100%;
+      overflow-x: auto;
+      padding-bottom: 6px;
+    }
+    .desktop-stage {
+      position: relative;
+      width: 1366px;
+      aspect-ratio: 16 / 9;
+      max-height: 640px;
+      margin: 0 auto;
+      background: #f6efe2;
+      border: 2px solid var(--gold);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .desktop-stage img,
+    .mobile-stage img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    /* Vùng trống 40% bên trái cho bản ngang */
+    .overlay-zone-desktop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40%;
+      height: 100%;
+      border-right: 2px dashed var(--crimson);
+      background: rgba(255, 253, 248, 0.04);
+      padding: 40px 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 12px;
+      pointer-events: none;
+    }
+    .zone-tag {
+      display: inline-block;
+      align-self: flex-start;
+      padding: 4px 10px;
+      border-radius: 6px;
+      background: rgba(255, 253, 248, 0.92);
+      border: 1px solid var(--gold);
+      color: var(--ink);
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+    }
+    .sample-kicker {
+      color: var(--crimson);
+      font-size: 0.88rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .sample-headline {
+      color: var(--ink);
+      font-size: 2rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin: 0;
+    }
+    .sample-sub {
+      color: var(--ink);
+      font-size: 0.98rem;
+      font-weight: 600;
+      margin: 0;
+    }
+    .sample-cta {
+      align-self: flex-start;
+      margin-top: 6px;
+      padding: 10px 20px;
+      border-radius: 999px;
+      background: var(--crimson);
+      color: #ffffff;
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+    /* Khung Mobile chuẩn 390px, tỉ lệ 563/1000, contain */
+    .mobile-stage {
+      position: relative;
+      width: 390px;
+      aspect-ratio: 563 / 1000;
+      background: #f6efe2;
+      border: 2px solid var(--gold);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    /* Vùng trống 35% phía trên cho bản dọc */
+    .overlay-zone-mobile {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 35%;
+      border-bottom: 2px dashed var(--crimson);
+      background: rgba(255, 253, 248, 0.04);
+      padding: 20px 20px 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px;
+      pointer-events: none;
+    }
+    .overlay-zone-mobile .sample-headline {
+      font-size: 1.32rem;
+    }
+    .overlay-zone-mobile .sample-sub {
+      font-size: 0.84rem;
+    }
+    /* Đáy khung 60px cho chấm chuyển ảnh */
+    .overlay-dots-mobile {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 60px;
+      border-top: 1.5px dashed var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      pointer-events: none;
+      background: rgba(255, 253, 248, 0.08);
+    }
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: rgba(21, 17, 14, 0.35);
+    }
+    .dot.active {
+      width: 24px;
+      background: var(--crimson);
+    }
+    body.hide-guides .overlay-zone-desktop,
+    body.hide-guides .overlay-zone-mobile,
+    body.hide-guides .overlay-dots-mobile {
+      display: none !important;
+    }
+    body.hide-text-only .sample-kicker,
+    body.hide-text-only .sample-headline,
+    body.hide-text-only .sample-sub,
+    body.hide-text-only .sample-cta {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <div>
+      <h1>Bộ 12 Ảnh Banner Trang Chủ Không Chữ (6 Cảnh × Ngang/Dọc)</h1>
+      <p>Minh họa AI theo phong cách Light Luxury Bespoke của <strong>mayLEHUONG</strong> · Khung máy tính 16:9 (1366px, cao tối đa 640px) &amp; Khung điện thoại 563:1000 (390px)</p>
+    </div>
+    <div class="toolbar">
+      <button type="button" class="btn-toggle" id="btn-toggle-guides" aria-pressed="true">Đang hiện vùng trống &amp; chữ thử (#15110e / #9d0208)</button>
+      <button type="button" class="btn-toggle" id="btn-toggle-clean" aria-pressed="false">Chỉ xem ảnh gốc sạch (ẩn khung chữ)</button>
+    </div>
+  </header>
+
+  <main id="scenes-root"></main>
+
+  <script>
+    const SCENES = [
+      {
+        id: 'hang-san-vest-nam',
+        code: '1A',
+        group: 'Nhóm 1 · Hàng may sẵn',
+        title: 'Vest nam may sẵn (hang-san-vest-nam)',
+        kicker: 'ÂU PHỤC NAM MAY SẴN',
+        headline: 'Phom Chuẩn Lịch Lãm',
+        sub: 'Đủ size tại showroom · Chỉnh sửa vừa vặn nhanh chóng'
+      },
+      {
+        id: 'hang-san-vest-nu',
+        code: '1B',
+        group: 'Nhóm 1 · Hàng may sẵn',
+        title: 'Vest nữ công sở may sẵn (hang-san-vest-nu)',
+        kicker: 'VEST NỮ CÔNG SỞ',
+        headline: 'Thanh Lịch & Hiện Đại',
+        sub: 'Đường cắt tôn dáng · Chất vải mềm thoáng cả ngày'
+      },
+      {
+        id: 'hang-san-phu-kien',
+        code: '1C',
+        group: 'Nhóm 1 · Hàng may sẵn',
+        title: 'Phụ kiện âu phục (hang-san-phu-kien)',
+        kicker: 'PHỤ KIỆN QUÝ ÔNG',
+        headline: 'Điểm Nhấn Tinh Tế',
+        sub: 'Sơ mi, cà vạt lụa, nơ, kẹp cà vạt đồng bộ cùng bộ vest'
+      },
+      {
+        id: 'may-do-nam',
+        code: '2A',
+        group: 'Nhóm 2 · May đo nam và nữ',
+        title: 'May đo nam (may-do-nam)',
+        kicker: 'BESPOKE TAILORING NAM',
+        headline: 'May Đo Chuẩn 25 Số Đo',
+        sub: 'Thợ may hơn nửa thế kỷ kinh nghiệm · Bảo hành đường may trọn đời'
+      },
+      {
+        id: 'may-do-nu',
+        code: '2B',
+        group: 'Nhóm 2 · May đo nam và nữ',
+        title: 'May đo nữ (may-do-nu)',
+        kicker: 'BESPOKE TAILORING NỮ',
+        headline: 'Thiết Kế Riêng Theo Dáng',
+        sub: 'Căn chỉnh tỉ mỉ từng đường chiết eo và bờ vai'
+      },
+      {
+        id: 'dong-phuc-cong-ty',
+        code: '3A',
+        group: 'Nhóm 3 · Đồng phục công ty',
+        title: 'Đồng phục doanh nghiệp (dong-phuc-cong-ty)',
+        kicker: 'ĐỒNG PHỤC DOANH NGHIỆP',
+        headline: 'Hình Ảnh Chuyên Nghiệp',
+        sub: 'Đồng bộ phom dáng nam & nữ cho đội ngũ công ty'
+      }
+    ];
+
+    async function render() {
+      let manifest = null;
+      try {
+        const res = await fetch('./manifest.json', { cache: 'no-store' });
+        if (res.ok) manifest = await res.json();
+      } catch (_) {}
+
+      const root = document.getElementById('scenes-root');
+      root.innerHTML = SCENES.map((s, idx) => {
+        const mScene = manifest && manifest.scenes ? manifest.scenes.find(x => x.scene === s.id) : null;
+        const dContrast = mScene && mScene.desktop && mScene.desktop.contrast
+          ? `Tương phản #15110e: ${mScene.desktop.contrast.ink_15110e}:1 · #9d0208: ${mScene.desktop.contrast.crimson_9d0208}:1`
+          : '40% trái · Nền kem sáng';
+        const mContrast = mScene && mScene.mobile && mScene.mobile.contrast
+          ? `Tương phản #15110e: ${mScene.mobile.contrast.ink_15110e}:1 · #9d0208: ${mScene.mobile.contrast.crimson_9d0208}:1`
+          : '35% trên · Nền kem sáng';
+        const dSize1600 = mScene && mScene.desktop && mScene.desktop.files && mScene.desktop.files.webp_1600
+          ? `${(mScene.desktop.files.webp_1600.bytes / 1024).toFixed(1)} KB`
+          : '1600×900';
+        const mSize563 = mScene && mScene.mobile && mScene.mobile.files && mScene.mobile.files.webp_563
+          ? `${(mScene.mobile.files.webp_563.bytes / 1024).toFixed(1)} KB`
+          : '563×1000';
+        const prioAttr = idx === 0 ? 'fetchpriority="high"' : 'loading="lazy"';
+
+        return `
+          <section class="scene-block" id="scene-${s.id}">
+            <div class="scene-head">
+              <h2 class="scene-title">[${s.code}] ${s.title}</h2>
+              <span class="scene-badge">${s.group} · Minh họa AI (ai_illustration: true)</span>
+            </div>
+            <div class="frames-layout">
+              <div class="frame-section">
+                <h3>
+                  <span>Bản ngang Máy tính — Khung 1366px (16:9 · cao tối đa 640px · vùng trống 40% bên trái)</span>
+                  <span class="meta-links">
+                    <span class="meta-pill">${dContrast}</span>
+                    <a href="./${s.id}-desktop-2400x1350.png" target="_blank">Gốc PNG 2400×1350</a>
+                    <a href="./${s.id}-desktop-1600.webp" target="_blank">WebP 1600 (${dSize1600})</a>
+                    <a href="./${s.id}-desktop-960.webp" target="_blank">WebP 960</a>
+                  </span>
+                </h3>
+                <div class="desktop-stage-scroll">
+                  <div class="desktop-stage">
+                    <img
+                      src="./${s.id}-desktop-1600.webp"
+                      srcset="./${s.id}-desktop-960.webp 960w, ./${s.id}-desktop-1600.webp 1600w"
+                      sizes="1366px"
+                      width="1600"
+                      height="900"
+                      ${prioAttr}
+                      alt="${s.title} — Bản máy tính minh họa AI"
+                    >
+                    <div class="overlay-zone-desktop">
+                      <span class="zone-tag">Vùng trống 40% bên trái · ${dContrast}</span>
+                      <p class="sample-kicker">${s.kicker}</p>
+                      <p class="sample-headline">${s.headline}</p>
+                      <p class="sample-sub">${s.sub}</p>
+                      <span class="sample-cta">Khám phá ngay →</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="frame-section">
+                <h3>
+                  <span>Bản dọc Điện thoại — Khung 390px (563:1000 · vùng trống 35% phía trên + đáy 60px)</span>
+                  <span class="meta-links">
+                    <span class="meta-pill">${mContrast}</span>
+                    <a href="./${s.id}-mobile-1126x2000.png" target="_blank">Gốc PNG 1126×2000</a>
+                    <a href="./${s.id}-mobile-563.webp" target="_blank">WebP 563 (${mSize563})</a>
+                    <a href="./${s.id}-mobile-480.webp" target="_blank">WebP 480</a>
+                  </span>
+                </h3>
+                <div class="mobile-stage">
+                  <img
+                    src="./${s.id}-mobile-563.webp"
+                    srcset="./${s.id}-mobile-480.webp 480w, ./${s.id}-mobile-563.webp 563w"
+                    sizes="390px"
+                    width="563"
+                    height="1000"
+                    ${prioAttr}
+                    alt="${s.title} — Bản điện thoại minh họa AI"
+                  >
+                  <div class="overlay-zone-mobile">
+                    <span class="zone-tag">Vùng trống 35% trên · ${mContrast}</span>
+                    <p class="sample-kicker">${s.kicker}</p>
+                    <p class="sample-headline">${s.headline}</p>
+                    <p class="sample-sub">${s.sub}</p>
+                  </div>
+                  <div class="overlay-dots-mobile" title="Vùng 60px đáy khung dành cho chấm chuyển ảnh">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        `;
+      }).join('');
+    }
+
+    document.getElementById('btn-toggle-guides').addEventListener('click', () => {
+      document.body.classList.remove('hide-guides');
+      document.getElementById('btn-toggle-guides').setAttribute('aria-pressed', 'true');
+      document.getElementById('btn-toggle-clean').setAttribute('aria-pressed', 'false');
+    });
+    document.getElementById('btn-toggle-clean').addEventListener('click', () => {
+      document.body.classList.add('hide-guides');
+      document.getElementById('btn-toggle-guides').setAttribute('aria-pressed', 'false');
+      document.getElementById('btn-toggle-clean').setAttribute('aria-pressed', 'true');
+    });
+
+    render();
+  </script>
+</body>
+</html>
+
