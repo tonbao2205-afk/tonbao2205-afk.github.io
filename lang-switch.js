@@ -101,11 +101,8 @@
     'line-height:1!important;cursor:pointer!important;transition:background-color .15s ease,color .15s ease,border-color .15s ease!important}',
     '#mlh-lang-popup button.mlh-lp-close:hover,#mlh-lang-popup button.mlh-lp-close:focus-visible{',
     'background:#9d0208!important;color:#ffffff!important;border-color:#9d0208!important;outline:2px solid #9d0208!important;outline-offset:2px!important}',
-    '#mlh-lang-popup .mlh-lp-brand{display:inline-flex!important;align-items:baseline!important;justify-content:center!important;',
-    'gap:1px!important;margin:0 auto 12px!important;padding:4px 12px!important;border-radius:999px!important;',
-    'background:#f8f1e3!important;border:1px solid rgba(161,127,34,.45)!important;line-height:1.2!important}',
-    '#mlh-lang-popup .mlh-lp-brand-may{color:#9d0208!important;font-size:14px!important;font-weight:700!important;font-style:italic!important;letter-spacing:.02em!important}',
-    '#mlh-lang-popup .mlh-lp-brand-name{color:#15110e!important;font-size:14px!important;font-weight:800!important;letter-spacing:.1em!important}',
+    '#mlh-lang-popup .mlh-lp-brand{display:flex!important;justify-content:center!important;margin:0 auto 12px!important;padding:0!important;line-height:0!important}',
+    '#mlh-lang-popup .mlh-lp-brand img{display:block!important;height:56px!important;width:auto!important;max-width:60%!important;object-fit:contain!important;mix-blend-mode:multiply!important}',
     '#mlh-lang-popup .mlh-lp-title{margin:0 0 16px!important;padding:0 4px!important;color:#15110e!important;',
     'font-family:' + FONT_STACK + '!important;font-size:14.5px!important;font-weight:800!important;',
     'line-height:1.45!important;letter-spacing:0!important;text-transform:none!important}',
@@ -312,14 +309,12 @@
     var brand = document.createElement('div');
     brand.className = 'mlh-lp-brand';
     brand.setAttribute('aria-hidden', 'true');
-    var brandMay = document.createElement('span');
-    brandMay.className = 'mlh-lp-brand-may';
-    brandMay.textContent = 'may';
-    var brandName = document.createElement('span');
-    brandName.className = 'mlh-lp-brand-name';
-    brandName.textContent = 'LEHUONG';
-    brand.appendChild(brandMay);
-    brand.appendChild(brandName);
+    // The shop's own logo, same file as the site header.
+    var logo = document.createElement('img');
+    logo.src = '/images/Logo%20L%C3%AA%20H%C6%B0%C6%A1ng%20Web.png';
+    logo.alt = 'mayLEHUONG';
+    logo.decoding = 'async';
+    brand.appendChild(logo);
 
     var title = document.createElement('h2');
     title.id = 'mlh-lang-modal-title';
