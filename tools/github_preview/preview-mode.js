@@ -9,19 +9,23 @@
   window.ADMIN_API_BASE = ''; // always the static snapshot below, never a local/production API
 
   var path = location.pathname || '/';
-  var lang = /^\/zh(\/|$)/.test(path) ? 'zh' : (/^\/en(\/|$)/.test(path) ? 'en' : 'vi');
+  var lm = path.match(/^\/(en|zh|ko|ja|hi)(\/|$)/);
+  var lang = lm ? lm[1] : 'vi';
   var MSG = {
     vi: 'Bản thử nghiệm: không gửi dữ liệu. Vui lòng đặt hàng/tư vấn tại maylehuong.com hoặc gọi hotline.',
     en: 'Preview site: nothing is sent. Please order or book at maylehuong.com or call our hotline.',
-    zh: '预览版：不会发送任何数据。请前往 maylehuong.com 下单或预约，或拨打热线。'
+    zh: '预览版：不会发送任何数据。请前往 maylehuong.com 下单或预约，或拨打热线。',
+    ko: '미리보기 사이트입니다. 데이터가 전송되지 않습니다. maylehuong.com에서 주문·예약하시거나 핫라인으로 연락해 주세요.',
+    ja: 'プレビュー版のため、データは送信されません。ご注文・ご予約は maylehuong.com またはホットラインへお願いいたします。',
+    hi: 'यह प्रीव्यू साइट है: कोई डेटा नहीं भेजा जाता। ऑर्डर या बुकिंग के लिए maylehuong.com पर जाएँ या हॉटलाइन पर कॉल करें।'
   };
-  var BADGE = { vi: 'BẢN THỬ', en: 'PREVIEW', zh: '预览版' };
+  var BADGE = { vi: 'BẢN THỬ', en: 'PREVIEW', zh: '预览版', ko: '미리보기', ja: 'プレビュー', hi: 'प्रीव्यू' };
 
   // ---- mobile home page (nginx serves index-mobile.html at the same URL on the VPS)
   //      GitHub cannot do that, so pick by device type OR a phone-sized screen.
   var phone = /Mobile|Android|iPhone|iPod|Windows Phone/i.test(navigator.userAgent || '') ||
     (window.matchMedia && matchMedia('(max-width: 767px)').matches);
-  var mh = path.match(/^(\/(?:en\/|zh\/)?)(index\.html|index-mobile\.html)?$/);
+  var mh = path.match(/^(\/(?:(?:en|zh|ko|ja|hi)\/)?)(index\.html|index-mobile\.html)?$/);
   if (mh) {
     var onMobile = mh[2] === 'index-mobile.html';
     if (phone && !onMobile) { location.replace(mh[1] + 'index-mobile.html' + location.search + location.hash); return; }

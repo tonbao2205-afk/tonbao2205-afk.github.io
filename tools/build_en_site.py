@@ -30,6 +30,9 @@ SITE = 'https://maylehuong.com'
 LANGS = {
     'en': {'html': 'en', 'hreflang': 'en', 'og': 'en_US', 'js_locale': 'en-US', 'joiner': ' '},
     'zh': {'html': 'zh-CN', 'hreflang': 'zh-Hans', 'og': 'zh_CN', 'js_locale': 'zh-CN', 'joiner': ''},
+    'ko': {'html': 'ko', 'hreflang': 'ko', 'og': 'ko_KR', 'js_locale': 'ko-KR', 'joiner': ' '},
+    'ja': {'html': 'ja', 'hreflang': 'ja', 'og': 'ja_JP', 'js_locale': 'ja-JP', 'joiner': ''},
+    'hi': {'html': 'hi', 'hreflang': 'hi', 'og': 'hi_IN', 'js_locale': 'hi-IN', 'joiner': ' '},
 }
 SKIP_PAGES = {'product-detail-sg.html', 'product-detail-tre.html', 'product-detail-vn.html',
               'phu-kien-detail.html', 'blazer.html'}
@@ -691,7 +694,7 @@ def main():
     ap.add_argument('--web', required=True)
     ap.add_argument('--out', required=True)
     ap.add_argument('--products', required=True)
-    ap.add_argument('--langs', default='en', help='comma separated, e.g. en,zh')
+    ap.add_argument('--langs', default='en', help='comma separated, e.g. en,zh,ko,ja,hi')
     ap.add_argument('--i18n-root', default=str(HERE.parent / 'i18n'))
     ap.add_argument('--version', required=True)
     ap.add_argument('--report')

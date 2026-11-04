@@ -7,6 +7,9 @@ Nhánh này giữ công cụ và từ điển dịch. Bản thử đã dựng n�
 |---|---|---|
 | `en` | `/en/` | `i18n/en/units.json` (câu), `names.json` (tên sản phẩm), `GLOSSARY.md` |
 | `zh` | `/zh/` (tiếng Trung giản thể) | `i18n/zh/units.json`, `names.json`, `GLOSSARY.md` |
+| `ko` | `/ko/` (tiếng Hàn) | `i18n/ko/units.json`, `names.json`, `GLOSSARY.md` |
+| `ja` | `/ja/` (tiếng Nhật) | `i18n/ja/units.json`, `names.json`, `GLOSSARY.md` |
+| `hi` | `/hi/` (tiếng Hindi) | `i18n/hi/units.json`, `names.json`, `GLOSSARY.md` |
 
 `i18n/en/runtime-seen.json` là danh sách chữ do JS tạo ra, dùng chung cho mọi ngôn ngữ.
 
@@ -14,7 +17,7 @@ Nhánh này giữ công cụ và từ điển dịch. Bản thử đã dựng n�
 1. Lấy bản web hiện hành từ VPS (`/opt/maylehuong-docker/current/web`) và `/api/products` về máy. Chỉ đọc, không sửa VPS.
 2. Dựng bản dịch:
    ```
-   python -I tools/build_en_site.py --web <web> --out build --products products.json --langs en,zh --version <tag> --strict --report report.json
+   python -I tools/build_en_site.py --web <web> --out build --products products.json --langs en,zh,ko,ja,hi --version <tag> --strict --report report.json
    ```
    `--strict` báo lỗi nếu còn câu chưa dịch. Câu thiếu nằm trong `report.json` → thêm vào `units.json` / `names.json` của từng ngôn ngữ rồi dựng lại.
 3. Đóng gói bản thử cho GitHub Pages:

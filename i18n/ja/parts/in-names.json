@@ -1,0 +1,937 @@
+[
+[
+"Blazer Be Kem",
+"Beige Cream Blazer",
+"米奶色休闲西装"
+],
+[
+"Blazer Burgundy",
+"Burgundy Blazer",
+"酒红色休闲西装"
+],
+[
+"Blazer Camel",
+"Camel Blazer",
+"驼色休闲西装"
+],
+[
+"Blazer Ghi Sáng",
+"Light Grey Blazer",
+"浅灰休闲西装"
+],
+[
+"Blazer Navy Premium",
+"Premium Navy Blazer",
+"高级藏青色休闲西装"
+],
+[
+"Blazer Navy đậm",
+"Dark Navy Blazer",
+"深藏青色休闲西装"
+],
+[
+"Blazer Nâu Chocolate",
+"Chocolate Brown Blazer",
+"巧克力棕休闲西装"
+],
+[
+"Blazer Trắng",
+"White Blazer",
+"白色休闲西装"
+],
+[
+"Blazer Xanh dương sáng",
+"Bright Blue Blazer",
+"亮蓝色休闲西装"
+],
+[
+"Blazer Xanh pastel",
+"Pastel Blue Blazer",
+"粉彩蓝休闲西装"
+],
+[
+"Blazer Xám than",
+"Charcoal Grey Blazer",
+"炭灰色休闲西装"
+],
+[
+"Blazer Đen Trẻ Trung",
+"Youthful Black Blazer",
+"青春黑色休闲西装"
+],
+[
+"Blazer Đen sọc",
+"Black Pinstripe Blazer",
+"黑色条纹休闲西装"
+],
+[
+"Bộ vest nữ thiết kế 01 – BE ĐẬM",
+"Women's Designer Suit 01 – DARK BEIGE",
+"女士设计款西装01 – 深米色"
+],
+[
+"Bộ vest nữ thiết kế 02 – BE SÁNG",
+"Women's Designer Suit 02 – LIGHT BEIGE",
+"女士设计款西装02 – 浅米色"
+],
+[
+"Bộ vest nữ thiết kế 03 – BE 6K",
+"Women's Designer Suit 03 – BEIGE 6K",
+"女士设计款西装03 – 米色六粒扣"
+],
+[
+"Bộ vest nữ thiết kế 04 – BE 4K",
+"Women's Designer Suit 04 – BEIGE 4K",
+"女士设计款西装04 – 米色四粒扣"
+],
+[
+"Bộ vest nữ thiết kế 05 – BE HỌA TIẾT",
+"Women's Designer Suit 05 – PATTERNED BEIGE",
+"女士设计款西装05 – 米色花纹"
+],
+[
+"Bộ vest nữ thiết kế 06 – ZILE GHI",
+"Women's Designer Suit 06 – GREY WAISTCOAT",
+"女士设计款西装06 – 灰色马甲"
+],
+[
+"Bộ vest nữ thiết kế 07 – XANH BLUE",
+"Women's Designer Suit 07 – BLUE",
+"女士设计款西装07 – 蓝色"
+],
+[
+"Bộ vest nữ thiết kế 08 – TÍM NHẠT",
+"Women's Designer Suit 08 – LILAC",
+"女士设计款西装08 – 浅紫色"
+],
+[
+"Bộ vest nữ thiết kế 09 – XANH DA TRỜI NHẠT",
+"Women's Designer Suit 09 – LIGHT SKY BLUE",
+"女士设计款西装09 – 浅天蓝色"
+],
+[
+"Bộ vest nữ thiết kế 13 – BE 4K",
+"Women's Designer Suit 13 – BEIGE 4K",
+"女士设计款西装13 – 米色四粒扣"
+],
+[
+"Bộ vest nữ thiết kế 14 – TÍM NHẠT",
+"Women's Designer Suit 14 – LILAC",
+"女士设计款西装14 – 浅紫色"
+],
+[
+"Bộ vest nữ thiết kế 15 – XANH LÁ",
+"Women's Designer Suit 15 – GREEN",
+"女士设计款西装15 – 绿色"
+],
+[
+"Bộ vest nữ thiết kế 16 – GHI",
+"Women's Designer Suit 16 – GREY",
+"女士设计款西装16 – 灰色"
+],
+[
+"Bộ vest nữ thiết kế 17 – BE 4K",
+"Women's Designer Suit 17 – BEIGE 4K",
+"女士设计款西装17 – 米色四粒扣"
+],
+[
+"Bộ vest nữ thiết kế 18 – CAM",
+"Women's Designer Suit 18 – ORANGE",
+"女士设计款西装18 – 橙色"
+],
+[
+"Bộ vest nữ thiết kế 19 – VÀNG CÁT",
+"Women's Designer Suit 19 – SAND GOLD",
+"女士设计款西装19 – 沙金色"
+],
+[
+"Bộ vest nữ thiết kế 20 – XANH NAVY",
+"Women's Designer Suit 20 – NAVY",
+"女士设计款西装20 – 藏青色"
+],
+[
+"Bộ vest nữ thiết kế 21 – ĐEN HỌA TIẾT",
+"Women's Designer Suit 21 – PATTERNED BLACK",
+"女士设计款西装21 – 黑色花纹"
+],
+[
+"Bộ vest nữ thiết kế 22 – ĐỎ DÔ",
+"Women's Designer Suit 22 – BURGUNDY",
+"女士设计款西装22 – 酒红色"
+],
+[
+"Bộ vest nữ thiết kế 23 – HỒNG",
+"Women's Designer Suit 23 – PINK",
+"女士设计款西装23 – 粉色"
+],
+[
+"Bộ vest nữ thiết kế 24 – THỔ CẨM",
+"Women's Designer Suit 24 – BROCADE",
+"女士设计款西装24 – 织锦"
+],
+[
+"Bộ vest nữ thiết kế 25 – BE 2K",
+"Women's Designer Suit 25 – BEIGE 2K",
+"女士设计款西装25 – 米色两粒扣"
+],
+[
+"Bộ vest nữ thiết kế 26 – NÂU NHẠT",
+"Women's Designer Suit 26 – LIGHT BROWN",
+"女士设计款西装26 – 浅棕色"
+],
+[
+"Bộ vest nữ thiết kế 27 – NAVY HỌA TIẾT",
+"Women's Designer Suit 27 – PATTERNED NAVY",
+"女士设计款西装27 – 藏青色花纹"
+],
+[
+"Bộ vest nữ thiết kế 28 – VÀNG NGHỆ",
+"Women's Designer Suit 28 – TURMERIC YELLOW",
+"女士设计款西装28 – 姜黄色"
+],
+[
+"Bộ vest nữ thiết kế 29 – SỌC NÂU",
+"Women's Designer Suit 29 – BROWN PINSTRIPE",
+"女士设计款西装29 – 棕色条纹"
+],
+[
+"Bộ vest nữ thiết kế 30 – THỔ CẨM",
+"Women's Designer Suit 30 – BROCADE",
+"女士设计款西装30 – 织锦"
+],
+[
+"Bộ vest nữ thiết kế 31 – GHI HỌA TIẾT",
+"Women's Designer Suit 31 – PATTERNED GREY",
+"女士设计款西装31 – 灰色花纹"
+],
+[
+"Bộ vest nữ thiết kế 33 – XANH NGỌC",
+"Women's Designer Suit 33 – TEAL",
+"女士设计款西装33 – 青绿色"
+],
+[
+"Bộ vest nữ thiết kế 34 – XANH DA TRỜI",
+"Women's Designer Suit 34 – SKY BLUE",
+"女士设计款西装34 – 天蓝色"
+],
+[
+"Bộ vest nữ thiết kế 35 – BE SỌC",
+"Women's Designer Suit 35 – BEIGE PINSTRIPE",
+"女士设计款西装35 – 米色条纹"
+],
+[
+"Bộ vest nữ thiết kế 36 – XANH TAY XẺ",
+"Women's Designer Suit 36 – BLUE SLIT SLEEVE",
+"女士设计款西装36 – 蓝色开衩袖"
+],
+[
+"Bộ vest nữ thiết kế 37 – GHI SỌC",
+"Women's Designer Suit 37 – GREY PINSTRIPE",
+"女士设计款西装37 – 灰色条纹"
+],
+[
+"Bộ vest nữ thiết kế 39 – XANH NGỌC",
+"Women's Designer Suit 39 – TEAL",
+"女士设计款西装39 – 青绿色"
+],
+[
+"Bộ vest nữ thiết kế 40 – XANH NHẠT",
+"Women's Designer Suit 40 – LIGHT BLUE",
+"女士设计款西装40 – 浅蓝色"
+],
+[
+"Bộ vest nữ thiết kế 41 – XANH CHUỐI",
+"Women's Designer Suit 41 – BANANA GREEN",
+"女士设计款西装41 – 蕉绿色"
+],
+[
+"Bộ vest nữ thiết kế 42 – ZILE GHI NHẠT",
+"Women's Designer Suit 42 – LIGHT GREY WAISTCOAT",
+"女士设计款西装42 – 浅灰色马甲"
+],
+[
+"Bộ vest nữ thiết kế TK10 – GHI SÁNG",
+"Women's Designer Suit TK10 – LIGHT GREY",
+"女士设计款西装TK10 – 浅灰色"
+],
+[
+"Bộ vest nữ thiết kế TK11 – TRẮNG",
+"Women's Designer Suit TK11 – WHITE",
+"女士设计款西装TK11 – 白色"
+],
+[
+"Bộ vest nữ thiết kế TK12 – VÀNG NGHỆ",
+"Women's Designer Suit TK12 – TURMERIC YELLOW",
+"女士设计款西装TK12 – 姜黄色"
+],
+[
+"Bộ vest nữ thiết kế TK32 – ZILE HỒNG",
+"Women's Designer Suit TK32 – PINK WAISTCOAT",
+"女士设计款西装TK32 – 粉色马甲"
+],
+[
+"Bộ vest nữ thiết kế TK38 – ZILE XANH",
+"Women's Designer Suit TK38 – BLUE WAISTCOAT",
+"女士设计款西装TK38 – 蓝色马甲"
+],
+[
+"Bộ vest nữ đen chân váy dài",
+"Women's Black Suit with Long Skirt",
+"女士黑色西装配长半身裙"
+],
+[
+"Cà vạt Màu Be 1",
+"Beige Tie 1",
+"米色领带1"
+],
+[
+"Cà vạt Màu Bạc",
+"Silver Tie",
+"银色领带"
+],
+[
+"Cà vạt Màu Bạc Sọc",
+"Silver Striped Tie",
+"银色条纹领带"
+],
+[
+"Cà vạt Màu Chấm Bi",
+"Polka Dot Tie",
+"波点领带"
+],
+[
+"Cà vạt Màu Ghi Chì Caro",
+"Charcoal Grey Check Tie",
+"炭灰色格纹领带"
+],
+[
+"Cà vạt Màu Navy",
+"Navy Tie",
+"藏青色领带"
+],
+[
+"Cà vạt Màu Navy Sọc",
+"Navy Striped Tie",
+"藏青色条纹领带"
+],
+[
+"Cà vạt Màu Nâu",
+"Brown Tie",
+"棕色领带"
+],
+[
+"Cà vạt Màu Rêu",
+"Olive Green Tie",
+"橄榄绿领带"
+],
+[
+"Cà vạt Màu Rêu Họa Tiết",
+"Olive Green Patterned Tie",
+"橄榄绿花纹领带"
+],
+[
+"Cà vạt Màu Sọc Đồng",
+"Copper Striped Tie",
+"铜色条纹领带"
+],
+[
+"Cà vạt Màu Than Chì",
+"Graphite Tie",
+"石墨色领带"
+],
+[
+"Cà vạt Màu Tím Caro",
+"Purple Check Tie",
+"紫色格纹领带"
+],
+[
+"Cà vạt Màu Xanh",
+"Blue Tie",
+"蓝色领带"
+],
+[
+"Cà vạt Màu Xanh Họa Tiết",
+"Blue Patterned Tie",
+"蓝色花纹领带"
+],
+[
+"Cà vạt Màu Đen",
+"Black Tie",
+"黑色领带"
+],
+[
+"Cà vạt Màu Đen Họa Tiết",
+"Black Patterned Tie",
+"黑色花纹领带"
+],
+[
+"Cà vạt Màu Đỏ",
+"Red Tie",
+"红色领带"
+],
+[
+"Cà vạt Mẫu 01 - Kẻ Sọc Vàng Xanh Trắng",
+"Tie Design 01 - Yellow, Blue and White Stripes",
+"领带款式01 - 黄蓝白条纹"
+],
+[
+"Cà vạt Mẫu 02 - Ô Vuông Nhỏ Đỏ Đô Bạc Đen",
+"Tie Design 02 - Small Squares in Burgundy, Silver and Black",
+"领带款式02 - 酒红银黑小方格"
+],
+[
+"Cà vạt Mẫu 03 - Hoa Văn Lượn Sóng Đen Bạc",
+"Tie Design 03 - Black and Silver Wave Pattern",
+"领带款式03 - 黑银波浪纹"
+],
+[
+"Cà vạt Mẫu 04 - Lưới Xanh Navy Chấm Xanh Ngọc",
+"Tie Design 04 - Navy Grid with Teal Dots",
+"领带款式04 - 藏青网格配青绿圆点"
+],
+[
+"Cà vạt Mẫu 06 - Xanh Navy Điểm Hình Thoi Trắng",
+"Tie Design 06 - Navy with White Diamonds",
+"领带款式06 - 藏青底白色菱形点缀"
+],
+[
+"Cà vạt Mẫu 07 - Caro Bản Lớn Xanh Dương Xám Đồng",
+"Tie Design 07 - Large Blue, Grey and Copper Check",
+"领带款式07 - 蓝灰铜色大格纹"
+],
+[
+"Cà vạt Mẫu 08 - Xanh Ngọc Bích Paisley Trắng Bạc",
+"Tie Design 08 - Jade Green Paisley in White and Silver",
+"领带款式08 - 翡翠绿白银佩斯利"
+],
+[
+"Cà vạt Mẫu 09 - Đan Dệt Hạt Lựu Nâu Đồng Cam Đất",
+"Tie Design 09 - Copper Brown and Terracotta Pomegranate Weave",
+"领带款式09 - 铜棕赤陶石榴纹编织"
+],
+[
+"Cà vạt Mẫu 10 - Caro Bản Lớn Xanh Navy Nâu Xám",
+"Tie Design 10 - Large Navy, Brown and Grey Check",
+"领带款式10 - 藏青棕灰大格纹"
+],
+[
+"Cà vạt Mẫu 12 - Nâu Cà Phê Phối Sọc Xanh Đỏ Trắng",
+"Tie Design 12 - Coffee Brown with Blue, Red and White Stripes",
+"领带款式12 - 咖啡棕配蓝红白条纹"
+],
+[
+"Cà vạt Mẫu 13 - Lưới Nâu Đồng Chấm Bi Trắng",
+"Tie Design 13 - Copper Brown Grid with White Polka Dots",
+"领带款式13 - 铜棕网格白色波点"
+],
+[
+"Cà vạt Mẫu 14 - Kẻ Sọc Bản To Xanh Navy Xanh Sáng",
+"Tie Design 14 - Wide Navy and Bright Blue Stripes",
+"领带款式14 - 藏青亮蓝宽条纹"
+],
+[
+"Cà vạt Mẫu 15 - Kẻ Sọc Xanh Navy Trắng Xanh Nhạt",
+"Tie Design 15 - Navy, White and Light Blue Stripes",
+"领带款式15 - 藏青白浅蓝条纹"
+],
+[
+"Cà vạt Mẫu 16 - Họa Tiết Monogram Đen Xám Trắng",
+"Tie Design 16 - Black, Grey and White Monogram Pattern",
+"领带款式16 - 黑灰白字母组合花纹"
+],
+[
+"Cà vạt Đỏ Họa Tiết",
+"Red Patterned Tie",
+"红色花纹领带"
+],
+[
+"Cài Cà Vạt Dạng Kẹp Đính Đá Mẫu 05",
+"Rhinestone Bar Tie Clip Design 05",
+"镶钻夹式领带夹款式05"
+],
+[
+"Cài Cà Vạt Hoàng Gia Mẫu 08",
+"Royal Tie Clip Design 08",
+"皇家领带夹款式08"
+],
+[
+"Cài Cà Vạt Kim Loại Mạ Bạc Đẳng Cấp Mẫu 02",
+"Premium Silver-Plated Metal Tie Clip Design 02",
+"高级镀银金属领带夹款式02"
+],
+[
+"Cài Cà Vạt Kim Loại Mạ Vàng Cổ Điển Mẫu 01",
+"Classic Gold-Plated Metal Tie Clip Design 01",
+"经典镀金金属领带夹款式01"
+],
+[
+"Cài Cà Vạt Kim Loại Đen Nhám Mẫu 04",
+"Matte Black Metal Tie Clip Design 04",
+"哑光黑金属领带夹款式04"
+],
+[
+"Cài Cà Vạt Mạ Vàng 18K Mẫu 09",
+"18K Gold-Plated Tie Clip Design 09",
+"18K镀金领带夹款式09"
+],
+[
+"Cài Cà Vạt Nam Họa Tiết Phay Xước Mẫu 03",
+"Men's Brushed Pattern Tie Clip Design 03",
+"男士拉丝纹领带夹款式03"
+],
+[
+"Cài Cà Vạt Thiết Kế Độc Bản Mẫu 10",
+"One-of-a-Kind Designer Tie Clip Design 10",
+"独一无二设计款领带夹款式10"
+],
+[
+"Cài Cà Vạt Thép Không Gỉ Mẫu 07",
+"Stainless Steel Tie Clip Design 07",
+"不锈钢领带夹款式07"
+],
+[
+"Cài Cà Vạt Vàng Hồng Thanh Lịch Mẫu 06",
+"Elegant Rose Gold Tie Clip Design 06",
+"优雅玫瑰金领带夹款式06"
+],
+[
+"Giày Tây Nam Brogues Wingtip Da Bò Màu Nâu Đen",
+"Men's Dark Brown Cowhide Brogue Wingtip Dress Shoes",
+"男士深棕牛皮布洛克翼尖皮鞋"
+],
+[
+"Giày Tây Nam Brogues Wingtip Oxford Màu Đen",
+"Men's Black Brogue Wingtip Oxford Dress Shoes",
+"男士黑色布洛克翼尖牛津皮鞋"
+],
+[
+"Giày Tây Nam Derby Plain Toe Da Bò Màu Nâu Đen",
+"Men's Dark Brown Cowhide Derby Plain Toe Dress Shoes",
+"男士深棕牛皮德比素头皮鞋"
+],
+[
+"Giày Tây Nam Double Monk Strap Da Bò Màu Nâu Vàng",
+"Men's Golden Brown Cowhide Double Monk Strap Dress Shoes",
+"男士金棕牛皮双扣孟克皮鞋"
+],
+[
+"Giày Tây Nam Double Monk Strap Da Bò Màu Đen",
+"Men's Black Cowhide Double Monk Strap Dress Shoes",
+"男士黑色牛皮双扣孟克皮鞋"
+],
+[
+"Giày Tây Nam Oxford Cap Toe Da Bò Màu Đen",
+"Men's Black Cowhide Oxford Cap Toe Dress Shoes",
+"男士黑色牛皮牛津横饰皮鞋"
+],
+[
+"Giày Tây Nam Penny Loafer Da Bò Màu Nâu Vàng",
+"Men's Golden Brown Cowhide Penny Loafer Dress Shoes",
+"男士金棕牛皮便士乐福鞋"
+],
+[
+"Giày Tây Nam Penny Loafer Da Bò Màu Đen",
+"Men's Black Cowhide Penny Loafer Dress Shoes",
+"男士黑色牛皮便士乐福鞋"
+],
+[
+"Giày Tây Nam Tassel Loafer Chuông Da Bò Màu Đen",
+"Men's Black Cowhide Bell Tassel Loafer Dress Shoes",
+"男士黑色牛皮流苏乐福鞋"
+],
+[
+"Giày Tây Nam Wholecut Oxford Da Bò Nguyên Tấm",
+"Men's Wholecut Oxford Dress Shoes in One-Piece Cowhide",
+"男士整片牛皮一片式牛津皮鞋"
+],
+[
+"Khăn Lụa Nữ Cao Cấp - Màu Be Họa Tiết Xích Nâu",
+"Women's Premium Silk Scarf - Beige with Brown Chain Print",
+"女士高级丝巾 - 米色褐色链纹"
+],
+[
+"Khăn Lụa Nữ Cao Cấp - Màu Hồng Pastel Họa Tiết Răng Cưa",
+"Women's Premium Silk Scarf - Pastel Pink Zigzag Print",
+"女士高级丝巾 - 粉彩粉色锯齿纹"
+],
+[
+"Khăn Lụa Nữ Cao Cấp - Màu Trắng Chấm Bi",
+"Women's Premium Silk Scarf - White Polka Dot",
+"女士高级丝巾 - 白色波点"
+],
+[
+"Khăn Lụa Nữ Cao Cấp - Màu Xanh Da Trời Nhạt",
+"Women's Premium Silk Scarf - Light Sky Blue",
+"女士高级丝巾 - 浅天蓝色"
+],
+[
+"Khăn Lụa Nữ Cao Cấp - Màu Xanh Navy Kẻ Viền",
+"Women's Premium Silk Scarf - Navy with Border Stripe",
+"女士高级丝巾 - 藏青色镶边"
+],
+[
+"Khăn Lụa Nữ Cao Cấp - Màu Xanh Ngọc Họa Tiết H",
+"Women's Premium Silk Scarf - Teal H Print",
+"女士高级丝巾 - 青绿色H纹"
+],
+[
+"Khăn Lụa Nữ Cao Cấp - Màu Xám Ghi Thanh Lịch",
+"Women's Premium Silk Scarf - Elegant Grey",
+"女士高级丝巾 - 优雅灰色"
+],
+[
+"Khăn Lụa Nữ Cao Cấp - Màu Đen Họa Tiết Xích Vàng",
+"Women's Premium Silk Scarf - Black with Gold Chain Print",
+"女士高级丝巾 - 黑色金链纹"
+],
+[
+"Khăn Lụa Nữ Cao Cấp - Màu Đỏ Rượu Burgundy Họa Tiết H",
+"Women's Premium Silk Scarf - Burgundy H Print",
+"女士高级丝巾 - 酒红色H纹"
+],
+[
+"Khăn Lụa Nữ Cao Cấp - Màu Đỏ Đô Kẻ Sọc",
+"Women's Premium Silk Scarf - Burgundy Striped",
+"女士高级丝巾 - 酒红色条纹"
+],
+[
+"Nơ Nam Họa Tiết Chấm Bi Tinh Tế",
+"Refined Polka Dot Men's Bow Tie",
+"精致波点男士领结"
+],
+[
+"Nơ Nam Lụa Cao Cấp - Màu Be Trẻ Trung",
+"Men's Premium Silk Bow Tie - Youthful Beige",
+"男士高级真丝领结 - 青春米色"
+],
+[
+"Nơ Nam Lụa Cao Cấp - Màu Hồng Pastel",
+"Men's Premium Silk Bow Tie - Pastel Pink",
+"男士高级真丝领结 - 粉彩粉色"
+],
+[
+"Nơ Nam Lụa Cao Cấp - Màu Navy Sang Trọng",
+"Men's Premium Silk Bow Tie - Luxurious Navy",
+"男士高级真丝领结 - 优雅藏青色"
+],
+[
+"Nơ Nam Lụa Cao Cấp - Màu Rêu Đĩnh Đạc",
+"Men's Premium Silk Bow Tie - Distinguished Olive Green",
+"男士高级真丝领结 - 沉稳橄榄绿"
+],
+[
+"Nơ Nam Lụa Cao Cấp - Màu Trắng Chú Rể",
+"Men's Premium Silk Bow Tie - Groom White",
+"男士高级真丝领结 - 新郎白"
+],
+[
+"Nơ Nam Lụa Cao Cấp - Màu Tím Lavender",
+"Men's Premium Silk Bow Tie - Lavender Purple",
+"男士高级真丝领结 - 薰衣草紫"
+],
+[
+"Nơ Nam Lụa Cao Cấp - Màu Xanh Dương",
+"Men's Premium Silk Bow Tie - Blue",
+"男士高级真丝领结 - 蓝色"
+],
+[
+"Nơ Nam Lụa Cao Cấp - Màu Đen Cổ Điển",
+"Men's Premium Silk Bow Tie - Classic Black",
+"男士高级真丝领结 - 经典黑"
+],
+[
+"Nơ Nam Lụa Cao Cấp - Màu Đỏ Rượu Burgundy",
+"Men's Premium Silk Bow Tie - Burgundy",
+"男士高级真丝领结 - 酒红色"
+],
+[
+"Suit Ghi Chì – 1/2 Khuy",
+"Charcoal Grey Suit – 1/2-Button",
+"炭灰色西装 – 1/2粒扣"
+],
+[
+"Suit Ghi Sáng – 1/2 Khuy",
+"Light Grey Suit – 1/2-Button",
+"浅灰色西装 – 1/2粒扣"
+],
+[
+"Suit Nam Đen – 1/2 Khuy",
+"Men's Black Suit – 1/2-Button",
+"男士黑色西装 – 1/2粒扣"
+],
+[
+"Suit Nam Đen – 6 Khuy",
+"Men's Black Suit – 6-Button",
+"男士黑色西装 – 六粒扣"
+],
+[
+"Suit Navy – 2 Khuy",
+"Navy Suit – 2-Button",
+"藏青色西装 – 两粒扣"
+],
+[
+"Suit Rêu 6 Khuy",
+"Olive Green 6-Button Suit",
+"橄榄绿六粒扣西装"
+],
+[
+"Suit Rêu Slim Fit",
+"Olive Green Slim Fit Suit",
+"橄榄绿修身西装"
+],
+[
+"Sơ mi nam sọc trắng",
+"Men's Striped White Shirt",
+"男士白色条纹衬衫"
+],
+[
+"Sơ mi nam trắng",
+"Men's White Shirt",
+"男士白色衬衫"
+],
+[
+"Sơ mi nam xanh đen",
+"Men's Navy Shirt",
+"男士藏青色衬衫"
+],
+[
+"Vest Nam Vải Lạnh Đen",
+"Men's Black Cool-Touch Fabric Suit",
+"男士黑色凉感面料西装"
+],
+[
+"Vest Nữ Be Vàng – 2 Hàng Nút",
+"Women's Golden Beige Suit – Double-Breasted",
+"女士金米色西装 – 双排扣"
+],
+[
+"Vest Nữ Be – Blazer Fitted",
+"Women's Beige Suit – Fitted Blazer",
+"女士米色西装 – 修身款"
+],
+[
+"Vest Nữ Cao Cấp Đen",
+"Women's Premium Black Suit",
+"女士高级黑色西装"
+],
+[
+"Vest Nữ Ghi Đậm – Blazer Công Sở",
+"Women's Dark Grey Suit – Office Blazer",
+"女士深灰色西装 – 职业款"
+],
+[
+"Vest Nữ Ghi – Blazer Công Sở",
+"Women's Grey Suit – Office Blazer",
+"女士灰色西装 – 职业款"
+],
+[
+"Vest Nữ Nâu Cafe – Kẻ Caro",
+"Women's Coffee Brown Suit – Check",
+"女士咖啡色西装 – 格纹"
+],
+[
+"Vest Nữ Nâu Đất – Dáng Suông",
+"Women's Earth Brown Suit – Straight Fit",
+"女士土棕色西装 – 直筒版型"
+],
+[
+"Vest Nữ Tím Lavender – Cổ V",
+"Women's Lavender Suit – V-Neck",
+"女士薰衣草紫西装 – V领"
+],
+[
+"Vest Nữ Vàng Chanh – Tay Cape",
+"Women's Lemon Yellow Suit – Cape Sleeve",
+"女士柠檬黄西装 – 披肩袖"
+],
+[
+"Vest Nữ Vàng Mù Tạt – Cổ Ve Nhọn",
+"Women's Mustard Yellow Suit – Peak Lapel",
+"女士芥末黄西装 – 戗驳领"
+],
+[
+"Vest Nữ Vàng Neon – Cổ Trụ",
+"Women's Neon Yellow Suit – Mandarin Collar",
+"女士荧光黄西装 – 立领"
+],
+[
+"Vest Nữ Xanh Navy – Cổ Lá Sen",
+"Women's Navy Suit – Lotus Collar",
+"女士藏青色西装 – 荷叶领"
+],
+[
+"Vest Nữ Xanh Ngọc – Chân Váy",
+"Women's Teal Suit – Skirt",
+"女士青绿色西装 – 配半身裙"
+],
+[
+"Vest Nữ Xanh Rêu – Cổ Khăn Navy",
+"Women's Olive Green Suit – Navy Scarf Collar",
+"女士橄榄绿西装 – 藏青围巾领"
+],
+[
+"Vest Nữ Xám Caro – Cổ V",
+"Women's Grey Check Suit – V-Neck",
+"女士灰色格纹西装 – V领"
+],
+[
+"Vest Nữ Đen Tuyền – Cổ Ve Nhỏ",
+"Women's Solid Black Suit – Small Lapel",
+"女士纯黑西装 – 小翻领"
+],
+[
+"Vest Nữ Đen – Blazer Công Sở",
+"Women's Black Suit – Office Blazer",
+"女士黑色西装 – 职业款"
+],
+[
+"Vest Nữ Đen – Gilet",
+"Women's Black Suit – Waistcoat",
+"女士黑色西装 – 马甲"
+],
+[
+"Vest Nữ Đỏ Tươi – Gilet Dáng Dài",
+"Women's Bright Red Suit – Long Waistcoat",
+"女士鲜红色西装 – 长款马甲"
+],
+[
+"Vest Sui Gia Caro Sang Trọng",
+"Luxurious Check Mature Men's Suit",
+"奢华格纹中年男士西装"
+],
+[
+"Vest Sui Gia Caro Xanh",
+"Blue Check Mature Men's Suit",
+"蓝色格纹中年男士西装"
+],
+[
+"Vest Sui Gia Ghi Chì Lịch Lãm",
+"Elegant Charcoal Grey Mature Men's Suit",
+"优雅炭灰色中年男士西装"
+],
+[
+"Vest Sui Gia Ghi Sáng Quý Ông",
+"Light Grey Mature Men's Suit for Gentlemen",
+"浅灰色绅士款中年男士西装"
+],
+[
+"Vest Sui Gia Ghi Sọc Đẳng Cấp",
+"Premium Grey Pinstripe Mature Men's Suit",
+"高级灰色条纹中年男士西装"
+],
+[
+"Vest Sui Gia Kem Châu Âu",
+"European Cream Mature Men's Suit",
+"欧式奶油色中年男士西装"
+],
+[
+"Vest Sui Gia Navy Phong Cách",
+"Stylish Navy Mature Men's Suit",
+"时尚藏青色中年男士西装"
+],
+[
+"Vest Sui Gia Navy Sọc Uy Quyền",
+"Commanding Navy Pinstripe Mature Men's Suit",
+"威严藏青色条纹中年男士西装"
+],
+[
+"Vest Sui Gia Nâu Ấm Áp",
+"Warm Brown Mature Men's Suit",
+"暖棕色中年男士西装"
+],
+[
+"Vest Sui Gia Đen Truyền Thống",
+"Traditional Black Mature Men's Suit",
+"传统黑色中年男士西装"
+],
+[
+"Vest Vincen Vàng Cát",
+"Vincen Suit Sand Gold",
+"Vincen沙金色西装"
+],
+[
+"Vest nam thiết kế Be cát",
+"Men's Designer Suit Sand Beige",
+"男士设计款西装 沙米色"
+],
+[
+"Vest nam thiết kế Ghi sọc",
+"Men's Designer Suit Grey Pinstripe",
+"男士设计款西装 灰色条纹"
+],
+[
+"Vest nam thiết kế Kem ngà",
+"Men's Designer Suit Ivory",
+"男士设计款西装 象牙白"
+],
+[
+"Vest nam thiết kế Nâu cà phê",
+"Men's Designer Suit Coffee Brown",
+"男士设计款西装 咖啡色"
+],
+[
+"Vest nam thiết kế Nâu vàng",
+"Men's Designer Suit Golden Brown",
+"男士设计款西装 金棕色"
+],
+[
+"Vest nam thiết kế Xanh đen sọc",
+"Men's Designer Suit Navy Pinstripe",
+"男士设计款西装 藏青色条纹"
+],
+[
+"Vest nam thiết kế Đen than sọc",
+"Men's Designer Suit Charcoal Black Pinstripe",
+"男士设计款西装 炭黑色条纹"
+],
+[
+"Áo Sơmi Nam Cao Cấp - Màu Be Nhã Nhặn",
+"Men's Premium Shirt - Graceful Beige",
+"男士高级衬衫 - 优雅米色"
+],
+[
+"Áo Sơmi Nam Cao Cấp - Màu Hồng Pastel",
+"Men's Premium Shirt - Pastel Pink",
+"男士高级衬衫 - 粉彩粉色"
+],
+[
+"Áo Sơmi Nam Cao Cấp - Màu Navy Lịch Lãm",
+"Men's Premium Shirt - Elegant Navy",
+"男士高级衬衫 - 儒雅藏青色"
+],
+[
+"Áo Sơmi Nam Cao Cấp - Màu Rêu Hiện Đại",
+"Men's Premium Shirt - Modern Olive Green",
+"男士高级衬衫 - 现代橄榄绿"
+],
+[
+"Áo Sơmi Nam Cao Cấp - Màu Trắng Tinh Khôi",
+"Men's Premium Shirt - Pure White",
+"男士高级衬衫 - 纯净白色"
+],
+[
+"Áo Sơmi Nam Cao Cấp - Màu Xám Ghi Thanh Lịch",
+"Men's Premium Shirt - Elegant Grey",
+"男士高级衬衫 - 优雅灰色"
+],
+[
+"Áo Sơmi Nam Cao Cấp - Màu Đen Quyến Rũ",
+"Men's Premium Shirt - Alluring Black",
+"男士高级衬衫 - 迷人黑色"
+],
+[
+"Áo Sơmi Nam Cao Cấp - Xanh Da Trời Trẻ Trung",
+"Men's Premium Shirt - Youthful Sky Blue",
+"男士高级衬衫 - 青春天蓝色"
+],
+[
+"Áo Sơmi Nam Cao Cấp - Xanh Ngọc Tươi Sáng",
+"Men's Premium Shirt - Fresh Teal",
+"男士高级衬衫 - 清新青绿色"
+],
+[
+"Áo Sơmi Nam Cao Cấp - Xanh Olive Độc Đáo",
+"Men's Premium Shirt - Distinctive Olive",
+"男士高级衬衫 - 独特橄榄色"
+]
+]
