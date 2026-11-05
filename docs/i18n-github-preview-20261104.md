@@ -235,3 +235,8 @@ Kiểm tra:
 - Antigravity giao 9 PNG `images/may-do-so-sanh-v2-20261105/` (1600×1000, manifest no_text_verified). Đã xem từng ảnh: trái lỗi/phải chuẩn, không chữ.
 - Chạy lại `tools/maydo_compare_v2_20261105.py`: 9 ảnh thật, 0 khung chờ; WebP 1600/800 ở `assets/may-do-so-sanh-v2-20261105/`.
 - Build strict 6 ngôn ngữ (version 20261105-i18n-p21) 0 thiếu; QA 320/390/1366 VI/EN/HI 9/9 ảnh tải, 0 tràn, 1 H1. VPS không đổi.
+
+## p22 (05/11/2026)
+- Lỗi: bấm/rê 1 nút thì cả khung chứa nút hiện nền và bóng. Nguyên nhân: `initButtons()` chọn `[class*="cta"]` khớp luôn khung cha được gắn `lux-h-cta`, rồi gắn `lux-btn` cho khung đó. Cùng lỗi ở trang chủ (khung banner), Dịch Vụ, Giới Thiệu, Tư Vấn.
+- Sửa: bỏ qua phần tử chứa `a`/`button`. Áp dụng `luxury-animations.js` (bản `$V` và bản ở thư mục gốc) và 2 gói JS trang chủ mới hậu tố `-20261105-luxbtn.js` (file cũ giữ nguyên). Prompt `PROMPT-ANTI-NUT-NOI-CA-HANG-20261105.md`.
+- QA 390/1366, 7 trang: 0 khung bị gắn `lux-btn`, 0 tràn ngang; bấm chuột thật trên trang May Đo không còn nền/bóng ở khung. VPS không đổi.
