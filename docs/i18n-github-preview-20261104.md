@@ -230,3 +230,8 @@ Kiểm tra:
 - 75 câu dịch × 5 ngôn ngữ, gồm cả alt của ảnh tương lai. Dựng chặt: 0 câu thiếu.
 - Kiểm tra: ở 320/390/1366, bản VI/EN/HI có đủ 9 thẻ, bảng 8 dòng, 1 H1 và biểu mẫu 6 ô; không tràn ngang. Phần mới không có lỗi tương phản.
 - VPS không đổi.
+
+## p21 (05/11/2026)
+- Antigravity giao 9 PNG `images/may-do-so-sanh-v2-20261105/` (1600×1000, manifest no_text_verified). Đã xem từng ảnh: trái lỗi/phải chuẩn, không chữ.
+- Chạy lại `tools/maydo_compare_v2_20261105.py`: 9 ảnh thật, 0 khung chờ; WebP 1600/800 ở `assets/may-do-so-sanh-v2-20261105/`.
+- Build strict 6 ngôn ngữ (version 20261105-i18n-p21) 0 thiếu; QA 320/390/1366 VI/EN/HI 9/9 ảnh tải, 0 tràn, 1 H1. VPS không đổi.
