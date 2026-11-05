@@ -559,7 +559,7 @@
     document.querySelectorAll(
       'a[class*="bg-"],button[class*="bg-"],[class*="btn-primary"],[class*="cta"]'
     ).forEach(function (btn) {
-      if (btn.closest('nav') || btn.closest('#cta-widget') || btn.id === 'cta-toggle' || btn.classList.contains('cta-nhun-nhay')) return;
+      if (btn.closest('nav') || btn.closest('#cta-widget') || btn.id === 'cta-toggle' || btn.classList.contains('cta-nhun-nhay') || btn.querySelector('a,button')) return;
       btn.classList.add('lux-btn');
     });
   }
