@@ -879,6 +879,56 @@ span.vn-old-price{color:#78716c!important;-webkit-text-fill-color:#78716c!import
 }
 </style>
 <style id="mlh-maydo-illus">.md2-cases{display:grid;gap:18px}.md2-case{display:grid;gap:0;padding:0!important;overflow:hidden}.md2-case-fig{position:relative;margin:0;background:#f6efe2}.md2-case-fig img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}.md2-case-body{padding:18px 20px 20px}.md2-case-fig .md2-tag{position:absolute;top:8px;display:inline-block;padding:3px 8px;border-radius:999px;font-size:11px!important;font-weight:800;line-height:1.2;letter-spacing:.02em;text-transform:none!important;box-shadow:0 2px 8px rgba(0,0,0,.18)}.md2-tag-bad{left:8px;background:#9d0208;color:#fff!important;-webkit-text-fill-color:#fff}.md2-tag-good{left:calc(50% + 8px);background:#15110e;color:#fff!important;-webkit-text-fill-color:#fff}.md2-figcap{position:absolute;right:8px;bottom:8px;padding:3px 8px;border-radius:999px;background:rgba(255,255,255,.92);color:#3d3226!important;-webkit-text-fill-color:#3d3226;font-size:11px!important;font-weight:600;line-height:1.2}.md2-scene-fig{position:relative;margin:-20px -20px 16px;background:#f6efe2}.md2-scene-fig img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}.md2-solution .md2-card{overflow:hidden}@media (min-width:768px){.md2-case{grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);align-items:center}.md2-case-body{padding:24px 28px}.md2-case-fig .md2-tag{top:14px;padding:5px 11px;font-size:13px!important}.md2-tag-bad{left:14px}.md2-tag-good{left:calc(50% + 14px)}}</style>
+<style id="mlh-maydo-fabric-catalog">
+.md2-fx-cards{display:grid;gap:12px}
+.md2-fx-card{display:grid;grid-template-columns:40% 1fr;background:#fff;border:1px solid rgba(161,127,34,.25);border-radius:16px;overflow:hidden;box-shadow:0 6px 18px rgba(45,26,15,.06)}
+.md2-fx-media{position:relative;display:block;padding:0;border:0;background:#f6efe2;cursor:pointer;min-height:150px}
+.md2-fx-card .md2-fx-media img{position:absolute!important;top:0;left:0;display:block;width:100%!important;height:100%!important;max-height:none!important;object-fit:cover!important}
+.md2-fx-body{padding:12px 14px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.md2-fx .md2-fx-body .md2-h3{font-size:16px;margin:0!important;overflow-wrap:anywhere}
+.md2-fx-pricewrap,.md2-fx-headprice{margin:0;display:flex;flex-direction:column}
+.md2-fx .md2-fx-pricelabel{font-size:11px!important;color:#5c5147!important;font-weight:600;letter-spacing:.02em}
+.md2-fx .md2-fx-price{font-family:'Noto Serif',Georgia,serif;font-size:19px!important;color:#9d0208!important;-webkit-text-fill-color:#9d0208;line-height:1.25}
+.md2-fx .md2-fx-spec{margin:0;font-size:12.5px!important;line-height:1.45;color:#3a322b!important}
+.md2-fx .md2-fx-count{font-size:12.5px!important;color:#3a322b!important}
+.md2-fx .md2-fx-count b{color:#15110e}
+.md2-fx-btn{align-self:flex-start;margin-top:4px;min-height:36px;padding:0 14px;border-radius:10px;border:1.5px solid #9d0208;background:#fff;color:#9d0208;font-weight:800;font-size:13px;cursor:pointer}
+.md2-fx-btn:hover,.md2-fx-btn:focus-visible{background:#9d0208;color:#fff}
+.md2-fx-modal{position:fixed;inset:0;z-index:100000;background:rgba(21,17,14,.62);display:flex;align-items:flex-end;justify-content:center}
+.md2-fx-modal[hidden]{display:none}
+.md2-fx-box{position:relative;background:#fdfaf4;width:100%;max-width:1080px;max-height:92vh;max-height:92dvh;overflow:auto;border-radius:20px 20px 0 0;padding:18px 14px 22px;color:#15110e;overscroll-behavior:contain}
+.md2-fx-modal .md2-fx-close{position:sticky;top:0;float:right;z-index:2;width:40px!important;height:40px!important;min-width:0!important;min-height:0!important;padding:0!important;border-radius:50%!important;border:0;background:#15110e;color:#fff;font-size:26px!important;line-height:1!important;cursor:pointer}
+.md2-fx-head{padding-right:48px;margin-bottom:12px}
+.md2-fx-modal .md2-h3{color:#15110e!important;-webkit-text-fill-color:#15110e!important;font-family:'Noto Serif',Georgia,serif;font-size:20px;margin:0 0 4px}
+.md2-fx-modal .md2-fx-pricelabel{font-size:11px!important;color:#5c5147!important;font-weight:600}
+.md2-fx-modal .md2-fx-price{font-family:'Noto Serif',Georgia,serif;font-size:20px!important;color:#9d0208!important;-webkit-text-fill-color:#9d0208}
+.md2-fx-modal .md2-fx-spec{margin:4px 0 0;font-size:13px!important;color:#3a322b!important}
+.md2-fx-grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.md2-fx-sw{display:flex;flex-direction:column;width:100%;padding:0;border:1px solid rgba(20,18,16,.1);border-radius:12px;overflow:hidden;background:#fff;cursor:pointer;text-align:left}
+.md2-fx-sw img{display:block;width:100%;height:auto;aspect-ratio:330/210;object-fit:cover}
+.md2-fx-modal .md2-fx-code{display:block;padding:6px 8px 0;font-size:12.5px!important;font-weight:800;color:#15110e!important}
+.md2-fx-modal .md2-fx-lab{display:block;padding:2px 8px 8px;font-size:11px!important;line-height:1.35;color:#4a4038!important}
+.md2-fx-cover{display:block;width:100%;height:auto;border-radius:14px}
+.md2-fx-modal .md2-fx-empty{margin:12px 0 0;font-size:14px!important;color:#3a322b!important}
+.md2-fx-back{min-height:38px;padding:0 14px;border-radius:10px;border:1.5px solid #15110e;background:#fff;color:#15110e;font-weight:700;font-size:13px;cursor:pointer;margin-bottom:10px}
+.md2-fx-zoomimg{position:relative;display:flex;justify-content:center}
+.md2-fx-zoomimg img{display:block;max-width:100%;width:auto;height:auto;max-height:68vh;max-height:68dvh;border-radius:12px;background:#fff}
+.md2-fx-modal .md2-fx-nav{position:absolute;top:50%;transform:translateY(-50%);width:42px!important;height:42px!important;min-width:0!important;min-height:0!important;padding:0!important;border-radius:50%!important;border:0;background:rgba(21,17,14,.82);color:#fff;font-size:28px!important;line-height:1!important;cursor:pointer}
+.md2-fx-prev{left:4px}.md2-fx-next{right:4px}
+.md2-fx-modal .md2-fx-zoomcap{text-align:center;margin:10px 0 0;font-size:14px!important;color:#15110e!important}
+@media (min-width:640px){
+.md2-fx-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.md2-fx-card{grid-template-columns:1fr}
+.md2-fx-media{min-height:0}.md2-fx-card .md2-fx-media img{position:static!important;height:auto!important;aspect-ratio:16/10}
+.md2-fx-body{padding:16px 18px 18px}
+.md2-fx .md2-fx-body .md2-h3{font-size:19px}
+.md2-fx .md2-fx-price{font-size:22px!important}
+.md2-fx-modal{align-items:center;padding:24px}
+.md2-fx-box{border-radius:20px;padding:24px}
+.md2-fx-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media (min-width:1024px){.md2-fx-cards{grid-template-columns:repeat(3,minmax(0,1fr))}.md2-fx-grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
+</style>
   <link rel="stylesheet" href="/mobile-fit.css?v=ec00a08fcf" />
 </head>
 
@@ -963,931 +1013,28 @@ span.vn-old-price{color:#78716c!important;-webkit-text-fill-color:#78716c!import
 
 
 
-<!-- GALLERY SECTION: TUYỆT TÁC MAY ĐO THỦ CÔNG (OPTIMIZED FOR MOBILE & DESKTOP) -->
-
-<section id="tuyet-tac-may-do" class="py-14 sm:py-20 md:py-32 px-4 sm:px-8 md:px-16 lg:px-24 bg-[#f5f0eb] relative">
-
-  <div class="max-w-7xl mx-auto">
-
-    <!-- Header -->
-
-    <div class="text-center mb-10 sm:mb-14 md:mb-20">
-
-      <span class="text-[#a17f22] font-semibold tracking-[0.2em] sm:tracking-[0.25em] text-[11px] sm:text-xs md:text-sm uppercase mb-2 sm:mb-3 block">Bộ Sưu Tập Bespoke 10 Mẫu Độc Bản</span>
-
-      <h2 class="font-noto-serif text-2xl sm:text-4xl md:text-5xl font-bold italic text-black mb-3 sm:mb-4" style="color: #000000 !important;">Tuyệt Tác May Đo Thủ Công</h2>
-
-      <div class="w-20 sm:w-24 h-0.5 bg-gradient-to-r from-transparent via-secondary to-transparent mx-auto mb-3 sm:mb-4"></div>
-
-      <p class="text-[#444444] italic font-light text-xs sm:text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-
-        Mỗi thiết kế là một kiệt tác 3 món (Áo Vest, Quần Tây &amp; Áo Gile) được cắt may tỉ mỉ, tôn vinh vị thế và vóc dáng riêng của từng quý ông.
-
-      </p>
-
-    </div>
-
-
-
-    <!-- 10 Models Grid (Mobile 2 cols, Tablet 2 cols, Desktop 3 cols) -->
-
-    <div class="suit-card-grid grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 sm:gap-6 lg:gap-10">
-
-
-
-      <!-- Model 1: GC-003 -->
-
-      <div class="suit-card bg-white border border-black/10 rounded-2xl overflow-hidden p-2.5 sm:p-4 flex flex-col justify-between shadow-lg group">
-
-        <div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-white cursor-pointer touch-manipulation" onclick="openSuitCardModal('gc003', 'Suit Bespoke GC-003', 'https://maylehuong.com/images/Ảnh May Đo/gc003/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/gc003/vest.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/gc003/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/gc003/zile.jpeg')">
-
-          <img id="img-gc003" src="https://maylehuong.com/images/Ảnh May Đo/gc003/Ảnh Bìa.jpeg" alt="Suit May Đo GC-003" class="w-full h-full object-cover transition-opacity duration-300 group-hover:scale-105" loading="lazy" decoding="async" />
-
-          <div class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#a17f22] text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-black/10 uppercase tracking-wider">
-
-            GC-003
-
-          </div>
-
-          <div id="tag-gc003" class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-[#9d0208] text-white text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full shadow">
-
-            Ảnh Bìa
-
-          </div>
-
-        </div>
-
-        <div class="bg-[#f5f0eb] text-[#a17f22] text-[10px] sm:text-xs py-1 px-2 text-center font-medium flex items-center justify-center gap-1 my-2 rounded-lg cursor-pointer" onclick="openSuitCardModal('gc003', 'Suit Bespoke GC-003', 'https://maylehuong.com/images/Ảnh May Đo/gc003/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/gc003/vest.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/gc003/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/gc003/zile.jpeg')">
-
-          <span class="material-symbols-outlined text-xs sm:text-sm">zoom_in</span> Chạm để phóng to
-
-        </div>
-
-        <div class="flex flex-col flex-grow justify-between bg-white">
-
-          <div class="mb-1.5">
-
-            <h3 class="font-noto-serif text-xs sm:text-lg font-bold text-black mb-0.5" style="color: #000000 !important;">Mẫu Suit GC-003</h3>
-
-            <p class="text-[10px] sm:text-xs text-[#555555] italic">Xem chi tiết 3 món:</p>
-
-          </div>
-
-          <div class="flex flex-col gap-1.5 suit-btn-group">
-
-            <button onclick="changeSuitView('gc003', 'https://maylehuong.com/images/Ảnh May Đo/gc003/Ảnh Bìa.jpeg', 'Ảnh Bìa', this)" class="suit-btn suit-btn-gc003 active">Bìa</button>
-
-            <button onclick="changeSuitView('gc003', 'https://maylehuong.com/images/Ảnh May Đo/gc003/vest.jpeg', 'Áo Vest', this)" class="suit-btn suit-btn-gc003">Vest</button>
-
-            <button onclick="changeSuitView('gc003', 'https://maylehuong.com/images/Ảnh May Đo/gc003/quần.jpeg', 'Quần Tây', this)" class="suit-btn suit-btn-gc003">Quần</button>
-
-            <button onclick="changeSuitView('gc003', 'https://maylehuong.com/images/Ảnh May Đo/gc003/zile.jpeg', 'Áo Gile', this)" class="suit-btn suit-btn-gc003">Gile</button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- Model 2: GC-008 -->
-
-      <div class="suit-card bg-white border border-black/10 rounded-2xl overflow-hidden p-2.5 sm:p-4 flex flex-col justify-between shadow-lg group">
-
-        <div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-white cursor-pointer touch-manipulation" onclick="openSuitCardModal('gc008', 'Suit Bespoke GC-008', 'https://maylehuong.com/images/Ảnh May Đo/gc008/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/gc008/áo.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/gc008/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/gc008/zile.jpeg')">
-
-          <img id="img-gc008" src="https://maylehuong.com/images/Ảnh May Đo/gc008/Ảnh Bìa.jpeg" alt="Suit May Đo GC-008" class="w-full h-full object-cover transition-opacity duration-300 group-hover:scale-105" loading="lazy" decoding="async" />
-
-          <div class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#a17f22] text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-black/10 uppercase tracking-wider">
-
-            GC-008
-
-          </div>
-
-          <div id="tag-gc008" class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-[#9d0208] text-white text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full shadow">
-
-            Ảnh Bìa
-
-          </div>
-
-        </div>
-
-        <div class="bg-[#f5f0eb] text-[#a17f22] text-[10px] sm:text-xs py-1 px-2 text-center font-medium flex items-center justify-center gap-1 my-2 rounded-lg cursor-pointer" onclick="openSuitCardModal('gc008', 'Suit Bespoke GC-008', 'https://maylehuong.com/images/Ảnh May Đo/gc008/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/gc008/áo.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/gc008/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/gc008/zile.jpeg')">
-
-          <span class="material-symbols-outlined text-xs sm:text-sm">zoom_in</span> Chạm để phóng to
-
-        </div>
-
-        <div class="flex flex-col flex-grow justify-between bg-white">
-
-          <div class="mb-1.5">
-
-            <h3 class="font-noto-serif text-xs sm:text-lg font-bold text-black mb-0.5" style="color: #000000 !important;">Mẫu Suit GC-008</h3>
-
-            <p class="text-[10px] sm:text-xs text-[#555555] italic">Xem chi tiết 3 món:</p>
-
-          </div>
-
-          <div class="flex flex-col gap-1.5 suit-btn-group">
-
-            <button onclick="changeSuitView('gc008', 'https://maylehuong.com/images/Ảnh May Đo/gc008/Ảnh Bìa.jpeg', 'Ảnh Bìa', this)" class="suit-btn suit-btn-gc008 active">Bìa</button>
-
-            <button onclick="changeSuitView('gc008', 'https://maylehuong.com/images/Ảnh May Đo/gc008/áo.jpeg', 'Áo Vest', this)" class="suit-btn suit-btn-gc008">Vest</button>
-
-            <button onclick="changeSuitView('gc008', 'https://maylehuong.com/images/Ảnh May Đo/gc008/quần.jpeg', 'Quần Tây', this)" class="suit-btn suit-btn-gc008">Quần</button>
-
-            <button onclick="changeSuitView('gc008', 'https://maylehuong.com/images/Ảnh May Đo/gc008/zile.jpeg', 'Áo Gile', this)" class="suit-btn suit-btn-gc008">Gile</button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- Model 3: LW-001 -->
-
-      <div class="suit-card bg-white border border-black/10 rounded-2xl overflow-hidden p-2.5 sm:p-4 flex flex-col justify-between shadow-lg group">
-
-        <div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-white cursor-pointer touch-manipulation" onclick="openSuitCardModal('lw001', 'Suit Bespoke LW-001', 'https://maylehuong.com/images/Ảnh May Đo/lw001/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/lw001/áo.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/lw001/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/lw001/zile.jpeg')">
-
-          <img id="img-lw001" src="https://maylehuong.com/images/Ảnh May Đo/lw001/Ảnh Bìa.jpeg" alt="Suit May Đo LW-001" class="w-full h-full object-cover transition-opacity duration-300 group-hover:scale-105" loading="lazy" decoding="async" />
-
-          <div class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#a17f22] text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-black/10 uppercase tracking-wider">
-
-            LW-001
-
-          </div>
-
-          <div id="tag-lw001" class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-[#9d0208] text-white text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full shadow">
-
-            Ảnh Bìa
-
-          </div>
-
-        </div>
-
-        <div class="bg-[#f5f0eb] text-[#a17f22] text-[10px] sm:text-xs py-1 px-2 text-center font-medium flex items-center justify-center gap-1 my-2 rounded-lg cursor-pointer" onclick="openSuitCardModal('lw001', 'Suit Bespoke LW-001', 'https://maylehuong.com/images/Ảnh May Đo/lw001/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/lw001/áo.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/lw001/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/lw001/zile.jpeg')">
-
-          <span class="material-symbols-outlined text-xs sm:text-sm">zoom_in</span> Chạm để phóng to
-
-        </div>
-
-        <div class="flex flex-col flex-grow justify-between bg-white">
-
-          <div class="mb-1.5">
-
-            <h3 class="font-noto-serif text-xs sm:text-lg font-bold text-black mb-0.5" style="color: #000000 !important;">Mẫu Suit LW-001</h3>
-
-            <p class="text-[10px] sm:text-xs text-[#555555] italic">Xem chi tiết 3 món:</p>
-
-          </div>
-
-          <div class="flex flex-col gap-1.5 suit-btn-group">
-
-            <button onclick="changeSuitView('lw001', 'https://maylehuong.com/images/Ảnh May Đo/lw001/Ảnh Bìa.jpeg', 'Ảnh Bìa', this)" class="suit-btn suit-btn-lw001 active">Bìa</button>
-
-            <button onclick="changeSuitView('lw001', 'https://maylehuong.com/images/Ảnh May Đo/lw001/áo.jpeg', 'Áo Vest', this)" class="suit-btn suit-btn-lw001">Vest</button>
-
-            <button onclick="changeSuitView('lw001', 'https://maylehuong.com/images/Ảnh May Đo/lw001/quần.jpeg', 'Quần Tây', this)" class="suit-btn suit-btn-lw001">Quần</button>
-
-            <button onclick="changeSuitView('lw001', 'https://maylehuong.com/images/Ảnh May Đo/lw001/zile.jpeg', 'Áo Gile', this)" class="suit-btn suit-btn-lw001">Gile</button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- Model 4: LW-002 -->
-
-      <div class="suit-card bg-white border border-black/10 rounded-2xl overflow-hidden p-2.5 sm:p-4 flex flex-col justify-between shadow-lg group">
-
-        <div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-white cursor-pointer touch-manipulation" onclick="openSuitCardModal('lw002', 'Suit Bespoke LW-002', 'https://maylehuong.com/images/Ảnh May Đo/lw 002/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/lw 002/áo.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/lw 002/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/lw 002/zile.jpeg')">
-
-          <img id="img-lw002" src="https://maylehuong.com/images/Ảnh May Đo/lw 002/Ảnh Bìa.jpeg" alt="Suit May Đo LW-002" class="w-full h-full object-cover transition-opacity duration-300 group-hover:scale-105" loading="lazy" decoding="async" />
-
-          <div class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#a17f22] text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-black/10 uppercase tracking-wider">
-
-            LW-002
-
-          </div>
-
-          <div id="tag-lw002" class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-[#9d0208] text-white text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full shadow">
-
-            Ảnh Bìa
-
-          </div>
-
-        </div>
-
-        <div class="bg-[#f5f0eb] text-[#a17f22] text-[10px] sm:text-xs py-1 px-2 text-center font-medium flex items-center justify-center gap-1 my-2 rounded-lg cursor-pointer" onclick="openSuitCardModal('lw002', 'Suit Bespoke LW-002', 'https://maylehuong.com/images/Ảnh May Đo/lw 002/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/lw 002/áo.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/lw 002/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/lw 002/zile.jpeg')">
-
-          <span class="material-symbols-outlined text-xs sm:text-sm">zoom_in</span> Chạm để phóng to
-
-        </div>
-
-        <div class="flex flex-col flex-grow justify-between bg-white">
-
-          <div class="mb-1.5">
-
-            <h3 class="font-noto-serif text-xs sm:text-lg font-bold text-black mb-0.5" style="color: #000000 !important;">Mẫu Suit LW-002</h3>
-
-            <p class="text-[10px] sm:text-xs text-[#555555] italic">Xem chi tiết 3 món:</p>
-
-          </div>
-
-          <div class="flex flex-col gap-1.5 suit-btn-group">
-
-            <button onclick="changeSuitView('lw002', 'https://maylehuong.com/images/Ảnh May Đo/lw 002/Ảnh Bìa.jpeg', 'Ảnh Bìa', this)" class="suit-btn suit-btn-lw002 active">Bìa</button>
-
-            <button onclick="changeSuitView('lw002', 'https://maylehuong.com/images/Ảnh May Đo/lw 002/áo.jpeg', 'Áo Vest', this)" class="suit-btn suit-btn-lw002">Vest</button>
-
-            <button onclick="changeSuitView('lw002', 'https://maylehuong.com/images/Ảnh May Đo/lw 002/quần.jpeg', 'Quần Tây', this)" class="suit-btn suit-btn-lw002">Quần</button>
-
-            <button onclick="changeSuitView('lw002', 'https://maylehuong.com/images/Ảnh May Đo/lw 002/zile.jpeg', 'Áo Gile', this)" class="suit-btn suit-btn-lw002">Gile</button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- Model 5: TW-001 -->
-
-      <div class="suit-card bg-white border border-black/10 rounded-2xl overflow-hidden p-2.5 sm:p-4 flex flex-col justify-between shadow-lg group">
-
-        <div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-white cursor-pointer touch-manipulation" onclick="openSuitCardModal('tw001', 'Suit Bespoke TW-001', 'https://maylehuong.com/images/Ảnh May Đo/tw001/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw001/áo.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw001/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw001/zile.jpeg')">
-
-          <img id="img-tw001" src="https://maylehuong.com/images/Ảnh May Đo/tw001/Ảnh Bìa.jpeg" alt="Suit May Đo TW-001" class="w-full h-full object-cover transition-opacity duration-300 group-hover:scale-105" loading="lazy" decoding="async" />
-
-          <div class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#a17f22] text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-black/10 uppercase tracking-wider">
-
-            TW-001
-
-          </div>
-
-          <div id="tag-tw001" class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-[#9d0208] text-white text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full shadow">
-
-            Ảnh Bìa
-
-          </div>
-
-        </div>
-
-        <div class="bg-[#f5f0eb] text-[#a17f22] text-[10px] sm:text-xs py-1 px-2 text-center font-medium flex items-center justify-center gap-1 my-2 rounded-lg cursor-pointer" onclick="openSuitCardModal('tw001', 'Suit Bespoke TW-001', 'https://maylehuong.com/images/Ảnh May Đo/tw001/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw001/áo.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw001/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw001/zile.jpeg')">
-
-          <span class="material-symbols-outlined text-xs sm:text-sm">zoom_in</span> Chạm để phóng to
-
-        </div>
-
-        <div class="flex flex-col flex-grow justify-between bg-white">
-
-          <div class="mb-1.5">
-
-            <h3 class="font-noto-serif text-xs sm:text-lg font-bold text-black mb-0.5" style="color: #000000 !important;">Mẫu Suit TW-001</h3>
-
-            <p class="text-[10px] sm:text-xs text-[#555555] italic">Xem chi tiết 3 món:</p>
-
-          </div>
-
-          <div class="flex flex-col gap-1.5 suit-btn-group">
-
-            <button onclick="changeSuitView('tw001', 'https://maylehuong.com/images/Ảnh May Đo/tw001/Ảnh Bìa.jpeg', 'Ảnh Bìa', this)" class="suit-btn suit-btn-tw001 active">Bìa</button>
-
-            <button onclick="changeSuitView('tw001', 'https://maylehuong.com/images/Ảnh May Đo/tw001/áo.jpeg', 'Áo Vest', this)" class="suit-btn suit-btn-tw001">Vest</button>
-
-            <button onclick="changeSuitView('tw001', 'https://maylehuong.com/images/Ảnh May Đo/tw001/quần.jpeg', 'Quần Tây', this)" class="suit-btn suit-btn-tw001">Quần</button>
-
-            <button onclick="changeSuitView('tw001', 'https://maylehuong.com/images/Ảnh May Đo/tw001/zile.jpeg', 'Áo Gile', this)" class="suit-btn suit-btn-tw001">Gile</button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- Model 6: TW-003 -->
-
-      <div class="suit-card bg-white border border-black/10 rounded-2xl overflow-hidden p-2.5 sm:p-4 flex flex-col justify-between shadow-lg group">
-
-        <div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-white cursor-pointer touch-manipulation" onclick="openSuitCardModal('tw003', 'Suit Bespoke TW-003', 'https://maylehuong.com/images/Ảnh May Đo/tw003/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw003/áo.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw003/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw003/zile.jpeg')">
-
-          <img id="img-tw003" src="https://maylehuong.com/images/Ảnh May Đo/tw003/Ảnh Bìa.jpeg" alt="Suit May Đo TW-003" class="w-full h-full object-cover transition-opacity duration-300 group-hover:scale-105" loading="lazy" decoding="async" />
-
-          <div class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#a17f22] text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-black/10 uppercase tracking-wider">
-
-            TW-003
-
-          </div>
-
-          <div id="tag-tw003" class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-[#9d0208] text-white text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full shadow">
-
-            Ảnh Bìa
-
-          </div>
-
-        </div>
-
-        <div class="bg-[#f5f0eb] text-[#a17f22] text-[10px] sm:text-xs py-1 px-2 text-center font-medium flex items-center justify-center gap-1 my-2 rounded-lg cursor-pointer" onclick="openSuitCardModal('tw003', 'Suit Bespoke TW-003', 'https://maylehuong.com/images/Ảnh May Đo/tw003/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw003/áo.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw003/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw003/zile.jpeg')">
-
-          <span class="material-symbols-outlined text-xs sm:text-sm">zoom_in</span> Chạm để phóng to
-
-        </div>
-
-        <div class="flex flex-col flex-grow justify-between bg-white">
-
-          <div class="mb-1.5">
-
-            <h3 class="font-noto-serif text-xs sm:text-lg font-bold text-black mb-0.5" style="color: #000000 !important;">Mẫu Suit TW-003</h3>
-
-            <p class="text-[10px] sm:text-xs text-[#555555] italic">Xem chi tiết 3 món:</p>
-
-          </div>
-
-          <div class="flex flex-col gap-1.5 suit-btn-group">
-
-            <button onclick="changeSuitView('tw003', 'https://maylehuong.com/images/Ảnh May Đo/tw003/Ảnh Bìa.jpeg', 'Ảnh Bìa', this)" class="suit-btn suit-btn-tw003 active">Bìa</button>
-
-            <button onclick="changeSuitView('tw003', 'https://maylehuong.com/images/Ảnh May Đo/tw003/áo.jpeg', 'Áo Vest', this)" class="suit-btn suit-btn-tw003">Vest</button>
-
-            <button onclick="changeSuitView('tw003', 'https://maylehuong.com/images/Ảnh May Đo/tw003/quần.jpeg', 'Quần Tây', this)" class="suit-btn suit-btn-tw003">Quần</button>
-
-            <button onclick="changeSuitView('tw003', 'https://maylehuong.com/images/Ảnh May Đo/tw003/zile.jpeg', 'Áo Gile', this)" class="suit-btn suit-btn-tw003">Gile</button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- Model 7: TW-007 -->
-
-      <div class="suit-card bg-white border border-black/10 rounded-2xl overflow-hidden p-2.5 sm:p-4 flex flex-col justify-between shadow-lg group">
-
-        <div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-white cursor-pointer touch-manipulation" onclick="openSuitCardModal('tw007', 'Suit Bespoke TW-007', 'https://maylehuong.com/images/Ảnh May Đo/tw007/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw007/áo.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw007/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw007/zile.jpeg')">
-
-          <img id="img-tw007" src="https://maylehuong.com/images/Ảnh May Đo/tw007/Ảnh Bìa.jpeg" alt="Suit May Đo TW-007" class="w-full h-full object-cover transition-opacity duration-300 group-hover:scale-105" loading="lazy" decoding="async" />
-
-          <div class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#a17f22] text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-black/10 uppercase tracking-wider">
-
-            TW-007
-
-          </div>
-
-          <div id="tag-tw007" class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-[#9d0208] text-white text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full shadow">
-
-            Ảnh Bìa
-
-          </div>
-
-        </div>
-
-        <div class="bg-[#f5f0eb] text-[#a17f22] text-[10px] sm:text-xs py-1 px-2 text-center font-medium flex items-center justify-center gap-1 my-2 rounded-lg cursor-pointer" onclick="openSuitCardModal('tw007', 'Suit Bespoke TW-007', 'https://maylehuong.com/images/Ảnh May Đo/tw007/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw007/áo.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw007/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw007/zile.jpeg')">
-
-          <span class="material-symbols-outlined text-xs sm:text-sm">zoom_in</span> Chạm để phóng to
-
-        </div>
-
-        <div class="flex flex-col flex-grow justify-between bg-white">
-
-          <div class="mb-1.5">
-
-            <h3 class="font-noto-serif text-xs sm:text-lg font-bold text-black mb-0.5" style="color: #000000 !important;">Mẫu Suit TW-007</h3>
-
-            <p class="text-[10px] sm:text-xs text-[#555555] italic">Xem chi tiết 3 món:</p>
-
-          </div>
-
-          <div class="flex flex-col gap-1.5 suit-btn-group">
-
-            <button onclick="changeSuitView('tw007', 'https://maylehuong.com/images/Ảnh May Đo/tw007/Ảnh Bìa.jpeg', 'Ảnh Bìa', this)" class="suit-btn suit-btn-tw007 active">Bìa</button>
-
-            <button onclick="changeSuitView('tw007', 'https://maylehuong.com/images/Ảnh May Đo/tw007/áo.jpeg', 'Áo Vest', this)" class="suit-btn suit-btn-tw007">Vest</button>
-
-            <button onclick="changeSuitView('tw007', 'https://maylehuong.com/images/Ảnh May Đo/tw007/quần.jpeg', 'Quần Tây', this)" class="suit-btn suit-btn-tw007">Quần</button>
-
-            <button onclick="changeSuitView('tw007', 'https://maylehuong.com/images/Ảnh May Đo/tw007/zile.jpeg', 'Áo Gile', this)" class="suit-btn suit-btn-tw007">Gile</button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- Model 8: TW-008 -->
-
-      <div class="suit-card bg-white border border-black/10 rounded-2xl overflow-hidden p-2.5 sm:p-4 flex flex-col justify-between shadow-lg group">
-
-        <div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-white cursor-pointer touch-manipulation" onclick="openSuitCardModal('tw008', 'Suit Bespoke TW-008', 'https://maylehuong.com/images/Ảnh May Đo/tw008/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw008/áo.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw008/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw008/zile.jpeg')">
-
-          <img id="img-tw008" src="https://maylehuong.com/images/Ảnh May Đo/tw008/Ảnh Bìa.jpeg" alt="Suit May Đo TW-008" class="w-full h-full object-cover transition-opacity duration-300 group-hover:scale-105" loading="lazy" decoding="async" />
-
-          <div class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#a17f22] text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-black/10 uppercase tracking-wider">
-
-            TW-008
-
-          </div>
-
-          <div id="tag-tw008" class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-[#9d0208] text-white text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full shadow">
-
-            Ảnh Bìa
-
-          </div>
-
-        </div>
-
-        <div class="bg-[#f5f0eb] text-[#a17f22] text-[10px] sm:text-xs py-1 px-2 text-center font-medium flex items-center justify-center gap-1 my-2 rounded-lg cursor-pointer" onclick="openSuitCardModal('tw008', 'Suit Bespoke TW-008', 'https://maylehuong.com/images/Ảnh May Đo/tw008/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw008/áo.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw008/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw008/zile.jpeg')">
-
-          <span class="material-symbols-outlined text-xs sm:text-sm">zoom_in</span> Chạm để phóng to
-
-        </div>
-
-        <div class="flex flex-col flex-grow justify-between bg-white">
-
-          <div class="mb-1.5">
-
-            <h3 class="font-noto-serif text-xs sm:text-lg font-bold text-black mb-0.5" style="color: #000000 !important;">Mẫu Suit TW-008</h3>
-
-            <p class="text-[10px] sm:text-xs text-[#555555] italic">Xem chi tiết 3 món:</p>
-
-          </div>
-
-          <div class="flex flex-col gap-1.5 suit-btn-group">
-
-            <button onclick="changeSuitView('tw008', 'https://maylehuong.com/images/Ảnh May Đo/tw008/Ảnh Bìa.jpeg', 'Ảnh Bìa', this)" class="suit-btn suit-btn-tw008 active">Bìa</button>
-
-            <button onclick="changeSuitView('tw008', 'https://maylehuong.com/images/Ảnh May Đo/tw008/áo.jpeg', 'Áo Vest', this)" class="suit-btn suit-btn-tw008">Vest</button>
-
-            <button onclick="changeSuitView('tw008', 'https://maylehuong.com/images/Ảnh May Đo/tw008/quần.jpeg', 'Quần Tây', this)" class="suit-btn suit-btn-tw008">Quần</button>
-
-            <button onclick="changeSuitView('tw008', 'https://maylehuong.com/images/Ảnh May Đo/tw008/zile.jpeg', 'Áo Gile', this)" class="suit-btn suit-btn-tw008">Gile</button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- Model 9: TW-020 -->
-
-      <div class="suit-card bg-white border border-black/10 rounded-2xl overflow-hidden p-2.5 sm:p-4 flex flex-col justify-between shadow-lg group">
-
-        <div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-white cursor-pointer touch-manipulation" onclick="openSuitCardModal('tw020', 'Suit Bespoke TW-020', 'https://maylehuong.com/images/Ảnh May Đo/tw020/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw020/áo.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw020/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw020/zile.jpeg')">
-
-          <img id="img-tw020" src="https://maylehuong.com/images/Ảnh May Đo/tw020/Ảnh Bìa.jpeg" alt="Suit May Đo TW-020" class="w-full h-full object-cover transition-opacity duration-300 group-hover:scale-105" loading="lazy" decoding="async" />
-
-          <div class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#a17f22] text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-black/10 uppercase tracking-wider">
-
-            TW-020
-
-          </div>
-
-          <div id="tag-tw020" class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-[#9d0208] text-white text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full shadow">
-
-            Ảnh Bìa
-
-          </div>
-
-        </div>
-
-        <div class="bg-[#f5f0eb] text-[#a17f22] text-[10px] sm:text-xs py-1 px-2 text-center font-medium flex items-center justify-center gap-1 my-2 rounded-lg cursor-pointer" onclick="openSuitCardModal('tw020', 'Suit Bespoke TW-020', 'https://maylehuong.com/images/Ảnh May Đo/tw020/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw020/áo.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw020/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/tw020/zile.jpeg')">
-
-          <span class="material-symbols-outlined text-xs sm:text-sm">zoom_in</span> Chạm để phóng to
-
-        </div>
-
-        <div class="flex flex-col flex-grow justify-between bg-white">
-
-          <div class="mb-1.5">
-
-            <h3 class="font-noto-serif text-xs sm:text-lg font-bold text-black mb-0.5" style="color: #000000 !important;">Mẫu Suit TW-020</h3>
-
-            <p class="text-[10px] sm:text-xs text-[#555555] italic">Xem chi tiết 3 món:</p>
-
-          </div>
-
-          <div class="flex flex-col gap-1.5 suit-btn-group">
-
-            <button onclick="changeSuitView('tw020', 'https://maylehuong.com/images/Ảnh May Đo/tw020/Ảnh Bìa.jpeg', 'Ảnh Bìa', this)" class="suit-btn suit-btn-tw020 active">Bìa</button>
-
-            <button onclick="changeSuitView('tw020', 'https://maylehuong.com/images/Ảnh May Đo/tw020/áo.jpeg', 'Áo Vest', this)" class="suit-btn suit-btn-tw020">Vest</button>
-
-            <button onclick="changeSuitView('tw020', 'https://maylehuong.com/images/Ảnh May Đo/tw020/quần.jpeg', 'Quần Tây', this)" class="suit-btn suit-btn-tw020">Quần</button>
-
-            <button onclick="changeSuitView('tw020', 'https://maylehuong.com/images/Ảnh May Đo/tw020/zile.jpeg', 'Áo Gile', this)" class="suit-btn suit-btn-tw020">Gile</button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <!-- Model 10: WP-002 -->
-
-      <div class="suit-card bg-white border border-black/10 rounded-2xl overflow-hidden p-2.5 sm:p-4 flex flex-col justify-between shadow-lg group">
-
-        <div class="relative aspect-[3/4] overflow-hidden rounded-xl bg-white cursor-pointer touch-manipulation" onclick="openSuitCardModal('wp002', 'Suit Bespoke WP-002', 'https://maylehuong.com/images/Ảnh May Đo/wp002/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/wp002/vest.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/wp002/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/wp002/zile.jpeg')">
-
-          <img id="img-wp002" src="https://maylehuong.com/images/Ảnh May Đo/wp002/Ảnh Bìa.jpeg" alt="Suit May Đo WP-002" class="w-full h-full object-cover transition-opacity duration-300 group-hover:scale-105" loading="lazy" decoding="async" />
-
-          <div class="absolute top-2 left-2 sm:top-3 sm:left-3 bg-[#a17f22] text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-0.5 sm:py-1 rounded-full border border-black/10 uppercase tracking-wider">
-
-            WP-002
-
-          </div>
-
-          <div id="tag-wp002" class="absolute top-2 right-2 sm:top-3 sm:right-3 bg-[#9d0208] text-white text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full shadow">
-
-            Ảnh Bìa
-
-          </div>
-
-        </div>
-
-        <div class="bg-[#f5f0eb] text-[#a17f22] text-[10px] sm:text-xs py-1 px-2 text-center font-medium flex items-center justify-center gap-1 my-2 rounded-lg cursor-pointer" onclick="openSuitCardModal('wp002', 'Suit Bespoke WP-002', 'https://maylehuong.com/images/Ảnh May Đo/wp002/Ảnh Bìa.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/wp002/vest.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/wp002/quần.jpeg', 'https://maylehuong.com/images/Ảnh May Đo/wp002/zile.jpeg')">
-
-          <span class="material-symbols-outlined text-xs sm:text-sm">zoom_in</span> Chạm để phóng to
-
-        </div>
-
-        <div class="flex flex-col flex-grow justify-between bg-white">
-
-          <div class="mb-1.5">
-
-            <h3 class="font-noto-serif text-xs sm:text-lg font-bold text-black mb-0.5" style="color: #000000 !important;">Mẫu Suit WP-002</h3>
-
-            <p class="text-[10px] sm:text-xs text-[#555555] italic">Xem chi tiết 3 món:</p>
-
-          </div>
-
-          <div class="flex flex-col gap-1.5 suit-btn-group">
-
-            <button onclick="changeSuitView('wp002', 'https://maylehuong.com/images/Ảnh May Đo/wp002/Ảnh Bìa.jpeg', 'Ảnh Bìa', this)" class="suit-btn suit-btn-wp002 active">Bìa</button>
-
-            <button onclick="changeSuitView('wp002', 'https://maylehuong.com/images/Ảnh May Đo/wp002/vest.jpeg', 'Áo Vest', this)" class="suit-btn suit-btn-wp002">Vest</button>
-
-            <button onclick="changeSuitView('wp002', 'https://maylehuong.com/images/Ảnh May Đo/wp002/quần.jpeg', 'Quần Tây', this)" class="suit-btn suit-btn-wp002">Quần</button>
-
-            <button onclick="changeSuitView('wp002', 'https://maylehuong.com/images/Ảnh May Đo/wp002/zile.jpeg', 'Áo Gile', this)" class="suit-btn suit-btn-wp002">Gile</button>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-    </div>
-
-  </div>
-
+<section class="md2 md2-fx" id="bang-gia-vai" aria-labelledby="md2-fx-title">
+<div class="md2-wrap">
+<p class="md2-kicker">Bảng giá vải</p>
+<h2 id="md2-fx-title" class="md2-h2">Bảng giá vải may đo</h2>
+<p class="md2-intro">14 quyển vải đang có tại mayLEHUONG, 239 mẫu màu có ảnh. Bấm vào ảnh để xem các màu và thông số in trên nhãn từng mẫu.</p>
+<div class="md2-fx-cards"><article class="md2-fx-card"><button type="button" class="md2-fx-media" data-fx-open="roger-la-viale" aria-label="Roger La Viale"><img src="/assets/may-do-bang-vai-20261105/cover/roger-la-viale.webp" width="800" height="500" loading="lazy" decoding="async" alt="Roger La Viale"></button><div class="md2-fx-body"><p class="md2-fx-pricewrap"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">18.000.000đ</strong></p><h3 class="md2-h3">Roger La Viale</h3><p class="md2-fx-spec">Theo nhãn: 70% Wool, 30% Poly, khổ vải 58/60&quot;</p><span class="md2-fx-count"><span>Xem quyển mẫu tại showroom</span></span><button type="button" class="md2-fx-btn" data-fx-open="roger-la-viale">Xem màu vải</button></div></article><article class="md2-fx-card"><button type="button" class="md2-fx-media" data-fx-open="louis" aria-label="LOUIS-12L England"><img src="/assets/may-do-bang-vai-20261105/cover/louis.webp" width="800" height="500" loading="lazy" decoding="async" alt="LOUIS-12L England"></button><div class="md2-fx-body"><p class="md2-fx-pricewrap"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">12.000.000đ</strong></p><h3 class="md2-h3">LOUIS-12L England</h3><p class="md2-fx-spec">Theo nhãn: Made in England</p><span class="md2-fx-count"><b>16</b> <span>mẫu màu</span></span><button type="button" class="md2-fx-btn" data-fx-open="louis">Xem màu vải</button></div></article><article class="md2-fx-card"><button type="button" class="md2-fx-media" data-fx-open="donatella-10500" aria-label="Donatella 10500"><img src="/assets/may-do-bang-vai-20261105/cover/donatella-10500.webp" width="800" height="500" loading="lazy" decoding="async" alt="Donatella 10500"></button><div class="md2-fx-body"><p class="md2-fx-pricewrap"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">10.500.000đ</strong></p><h3 class="md2-h3">Donatella 10500</h3><p class="md2-fx-spec">Theo nhãn: 180&#x27;s Wool &amp; Lycra, Made in Italy</p><span class="md2-fx-count"><b>16</b> <span>mẫu màu</span></span><button type="button" class="md2-fx-btn" data-fx-open="donatella-10500">Xem màu vải</button></div></article><article class="md2-fx-card"><button type="button" class="md2-fx-media" data-fx-open="ns10500" aria-label="NS10500 · New Sample"><img src="/assets/may-do-bang-vai-20261105/cover/ns10500.webp" width="800" height="500" loading="lazy" decoding="async" alt="NS10500 · New Sample"></button><div class="md2-fx-body"><p class="md2-fx-pricewrap"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">10.500.000đ</strong></p><h3 class="md2-h3">NS10500 · New Sample</h3><p class="md2-fx-spec">Theo nhãn: Luxury Suiting Fabric</p><span class="md2-fx-count"><b>13</b> <span>mẫu màu</span></span><button type="button" class="md2-fx-btn" data-fx-open="ns10500">Xem màu vải</button></div></article><article class="md2-fx-card"><button type="button" class="md2-fx-media" data-fx-open="donatella-9300" aria-label="Donatella 9300"><img src="/assets/may-do-bang-vai-20261105/cover/donatella-9300.webp" width="800" height="500" loading="lazy" decoding="async" alt="Donatella 9300"></button><div class="md2-fx-body"><p class="md2-fx-pricewrap"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">9.300.000đ</strong></p><h3 class="md2-h3">Donatella 9300</h3><p class="md2-fx-spec">Theo nhãn: Premium Suiting</p><span class="md2-fx-count"><b>20</b> <span>mẫu màu</span></span><button type="button" class="md2-fx-btn" data-fx-open="donatella-9300">Xem màu vải</button></div></article><article class="md2-fx-card"><button type="button" class="md2-fx-media" data-fx-open="gazzarini" aria-label="Gazzarini Uomo"><img src="/assets/may-do-bang-vai-20261105/cover/gazzarini.webp" width="800" height="500" loading="lazy" decoding="async" alt="Gazzarini Uomo"></button><div class="md2-fx-body"><p class="md2-fx-pricewrap"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">9.000.000đ</strong></p><h3 class="md2-h3">Gazzarini Uomo</h3><p class="md2-fx-spec">Theo nhãn: Made in Italy</p><span class="md2-fx-count"><b>14</b> <span>mẫu màu</span></span><button type="button" class="md2-fx-btn" data-fx-open="gazzarini">Xem màu vải</button></div></article><article class="md2-fx-card"><button type="button" class="md2-fx-media" data-fx-open="lc9000" aria-label="LC9000"><img src="/assets/may-do-bang-vai-20261105/cover/lc9000.webp" width="800" height="500" loading="lazy" decoding="async" alt="LC9000"></button><div class="md2-fx-body"><p class="md2-fx-pricewrap"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">9.000.000đ</strong></p><h3 class="md2-h3">LC9000</h3><p class="md2-fx-spec">Theo nhãn: Lanificio Di Calvino, Made in Italy</p><span class="md2-fx-count"><b>13</b> <span>mẫu màu</span></span><button type="button" class="md2-fx-btn" data-fx-open="lc9000">Xem màu vải</button></div></article><article class="md2-fx-card"><button type="button" class="md2-fx-media" data-fx-open="cezaro" aria-label="Cezaro"><img src="/assets/may-do-bang-vai-20261105/cover/cezaro.webp" width="800" height="500" loading="lazy" decoding="async" alt="Cezaro"></button><div class="md2-fx-body"><p class="md2-fx-pricewrap"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">7.000.000đ</strong></p><h3 class="md2-h3">Cezaro</h3><p class="md2-fx-spec">Theo nhãn: vải pha, 250–400 g/m, thành phần ghi trên từng mẫu</p><span class="md2-fx-count"><b>39</b> <span>mẫu màu</span></span><button type="button" class="md2-fx-btn" data-fx-open="cezaro">Xem màu vải</button></div></article><article class="md2-fx-card"><button type="button" class="md2-fx-media" data-fx-open="ichn-02" aria-label="ICHN 02"><img src="/assets/may-do-bang-vai-20261105/cover/ichn-02.webp" width="800" height="500" loading="lazy" decoding="async" alt="ICHN 02"></button><div class="md2-fx-body"><p class="md2-fx-pricewrap"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">5.500.000đ</strong></p><h3 class="md2-h3">ICHN 02</h3><p class="md2-fx-spec">Theo nhãn: Superfine Wool &amp; Cashmere Blend</p><span class="md2-fx-count"><b>15</b> <span>mẫu màu</span></span><button type="button" class="md2-fx-btn" data-fx-open="ichn-02">Xem màu vải</button></div></article><article class="md2-fx-card"><button type="button" class="md2-fx-media" data-fx-open="ichn-04" aria-label="ICHN 04"><img src="/assets/may-do-bang-vai-20261105/cover/ichn-04.webp" width="800" height="500" loading="lazy" decoding="async" alt="ICHN 04"></button><div class="md2-fx-body"><p class="md2-fx-pricewrap"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">5.500.000đ</strong></p><h3 class="md2-h3">ICHN 04</h3><p class="md2-fx-spec">Theo nhãn: Wool Finish 210&#x27;s Ferrari</p><span class="md2-fx-count"><b>14</b> <span>mẫu màu</span></span><button type="button" class="md2-fx-btn" data-fx-open="ichn-04">Xem màu vải</button></div></article><article class="md2-fx-card"><button type="button" class="md2-fx-media" data-fx-open="ichn-07" aria-label="ICHN 07"><img src="/assets/may-do-bang-vai-20261105/cover/ichn-07.webp" width="800" height="500" loading="lazy" decoding="async" alt="ICHN 07"></button><div class="md2-fx-body"><p class="md2-fx-pricewrap"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">5.500.000đ</strong></p><h3 class="md2-h3">ICHN 07</h3><p class="md2-fx-spec">Theo nhãn: Superfine Australian Wool Blend</p><span class="md2-fx-count"><b>12</b> <span>mẫu màu</span></span><button type="button" class="md2-fx-btn" data-fx-open="ichn-07">Xem màu vải</button></div></article><article class="md2-fx-card"><button type="button" class="md2-fx-media" data-fx-open="trs6500-01" aria-label="TRS6500-01"><img src="/assets/may-do-bang-vai-20261105/cover/trs6500-01.webp" width="800" height="500" loading="lazy" decoding="async" alt="TRS6500-01"></button><div class="md2-fx-body"><p class="md2-fx-pricewrap"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">5.500.000đ</strong></p><h3 class="md2-h3">TRS6500-01</h3><p class="md2-fx-spec">Theo nhãn: pha Rayon và Polyester, một số mẫu có Spandex</p><span class="md2-fx-count"><b>31</b> <span>mẫu màu</span></span><button type="button" class="md2-fx-btn" data-fx-open="trs6500-01">Xem màu vải</button></div></article><article class="md2-fx-card"><button type="button" class="md2-fx-media" data-fx-open="trs6500-02" aria-label="TRS6500-02"><img src="/assets/may-do-bang-vai-20261105/cover/trs6500-02.webp" width="800" height="500" loading="lazy" decoding="async" alt="TRS6500-02"></button><div class="md2-fx-body"><p class="md2-fx-pricewrap"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">5.500.000đ</strong></p><h3 class="md2-h3">TRS6500-02</h3><p class="md2-fx-spec">Theo nhãn: 10% Wool, 10% Tencel, 3% Spandex</p><span class="md2-fx-count"><b>14</b> <span>mẫu màu</span></span><button type="button" class="md2-fx-btn" data-fx-open="trs6500-02">Xem màu vải</button></div></article><article class="md2-fx-card"><button type="button" class="md2-fx-media" data-fx-open="trs6500-03" aria-label="TRS6500-03"><img src="/assets/may-do-bang-vai-20261105/cover/trs6500-03.webp" width="800" height="500" loading="lazy" decoding="async" alt="TRS6500-03"></button><div class="md2-fx-body"><p class="md2-fx-pricewrap"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">5.500.000đ</strong></p><h3 class="md2-h3">TRS6500-03</h3><p class="md2-fx-spec">Theo nhãn: pha Rayon và Polyester, một số mẫu có Spandex</p><span class="md2-fx-count"><b>22</b> <span>mẫu màu</span></span><button type="button" class="md2-fx-btn" data-fx-open="trs6500-03">Xem màu vải</button></div></article></div>
+<p class="md2-note">Giá niêm yết tại cửa hàng, nhân viên xác nhận lại khi tư vấn. Màu trên màn hình có thể khác vải thật; nên xem quyển mẫu tại showroom.</p>
+</div>
 </section>
-
-
-
-<!-- LIGHTBOX MODAL (TỐI ƯU CẢM ỨNG & VUỐT CHẠM MOBILE) -->
-
-<div id="suitLightboxModal" class="fixed inset-0 bg-black/95 backdrop-blur-2xl z-[9999] hidden flex-col items-center justify-between p-4 sm:p-6" onclick="closeSuitModal()">
-
-  <!-- Modal Header & Close button -->
-
-  <div class="w-full max-w-4xl flex items-center justify-between z-10 pt-1 pb-2" onclick="event.stopPropagation()">
-
-    <div>
-
-      <h3 id="modalSuitTitle" class="font-noto-serif text-lg sm:text-2xl text-[#a17f22] font-bold"></h3>
-
-      <span id="modalSuitTag" class="text-xs text-black/70 font-medium block mt-0.5"></span>
-
-    </div>
-
-    <button onclick="closeSuitModal()" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 active:scale-95 text-white flex items-center justify-center text-2xl font-light transition touch-manipulation shadow-lg" aria-label="Close modal">&times;</button>
-
-  </div>
-
-
-
-  <!-- Main Image with Swipe Support & Touch Arrows -->
-
-  <div class="relative w-full max-w-3xl flex-1 flex items-center justify-center my-auto min-h-0 py-2" onclick="event.stopPropagation()" ontouchstart="handleModalTouchStart(event)" ontouchend="handleModalTouchEnd(event)">
-
-    <!-- Prev Arrow -->
-
-    <button onclick="prevModalPhoto()" class="absolute left-1 sm:left-3 z-20 w-10 h-10 rounded-full bg-black/70 hover:bg-[#a17f22] hover:text-background text-white border border-black/15 flex items-center justify-center transition active:scale-95 touch-manipulation shadow-xl" aria-label="Previous photo">
-
-      <span class="material-symbols-outlined text-xl">chevron_left</span>
-
-    </button>
-
-    
-
-    <!-- Image -->
-
-    <img id="modalSuitImg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" hidden alt="Full view" class="max-h-[62vh] sm:max-h-[72vh] w-auto max-w-full object-contain rounded-xl shadow-2xl transition-opacity duration-150" />
-
-    
-
-    <!-- Next Arrow -->
-
-    <button onclick="nextModalPhoto()" class="absolute right-1 sm:right-3 z-20 w-10 h-10 rounded-full bg-black/70 hover:bg-[#a17f22] hover:text-background text-white border border-black/15 flex items-center justify-center transition active:scale-95 touch-manipulation shadow-xl" aria-label="Next photo">
-
-      <span class="material-symbols-outlined text-xl">chevron_right</span>
-
-    </button>
-
-  </div>
-
-
-
-  <!-- Modal Bottom Thumbnails / Controls -->
-
-  <div class="w-full max-w-md pb-2 pt-2 z-10" onclick="event.stopPropagation()">
-
-    <div class="flex items-center justify-center gap-2">
-
-      <button onclick="selectModalThumb(0)" class="modal-thumb-btn px-3.5 py-1.5 text-xs font-bold rounded-full bg-[#9d0208] text-white shadow transition touch-manipulation active:scale-95">Bìa</button>
-
-      <button onclick="selectModalThumb(1)" class="modal-thumb-btn px-3.5 py-1.5 text-xs font-medium rounded-full bg-white/10 text-white/80 hover:bg-white/20 transition touch-manipulation active:scale-95">Vest</button>
-
-      <button onclick="selectModalThumb(2)" class="modal-thumb-btn px-3.5 py-1.5 text-xs font-medium rounded-full bg-white/10 text-white/80 hover:bg-white/20 transition touch-manipulation active:scale-95">Quần</button>
-
-      <button onclick="selectModalThumb(3)" class="modal-thumb-btn px-3.5 py-1.5 text-xs font-medium rounded-full bg-white/10 text-white/80 hover:bg-white/20 transition touch-manipulation active:scale-95">Gile</button>
-
-    </div>
-
-    <p class="text-[11px] text-white/40 text-center mt-2">💡 Mẹo: Vuốt màn hình trái/phải trên điện thoại để chuyển ảnh</p>
-
-  </div>
-
+<div class="md2-fx-modal" id="md2-fx-modal" role="dialog" aria-modal="true" aria-labelledby="md2-fx-title" hidden>
+<div class="md2-fx-box">
+<button type="button" class="md2-fx-close" data-fx-close aria-label="Đóng">×</button>
+<div class="md2-fx-panel" data-fx-book="roger-la-viale" hidden><div class="md2-fx-head"><h3 class="md2-h3">Roger La Viale</h3><p class="md2-fx-headprice"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">18.000.000đ</strong></p><p class="md2-fx-spec">Theo nhãn: 70% Wool, 30% Poly, khổ vải 58/60&quot;</p></div><img class="md2-fx-cover" src="/assets/may-do-bang-vai-20261105/cover/roger-la-viale.webp" width="800" height="500" loading="lazy" decoding="async" alt="Roger La Viale"><p class="md2-fx-empty">Chưa có ảnh từng màu trên web. Mời bạn xem quyển mẫu thật tại showroom.</p></div><div class="md2-fx-panel" data-fx-book="louis" hidden><div class="md2-fx-head"><h3 class="md2-h3">LOUIS-12L England</h3><p class="md2-fx-headprice"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">12.000.000đ</strong></p><p class="md2-fx-spec">Theo nhãn: Made in England</p></div><ul class="md2-fx-grid"><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/louis-12l-england/27613-1.webp" data-fx-code="27613 - 1" data-fx-lab="LOUIS - Made in England"><img src="/assets/may-do-bang-vai-20261105/thumb/louis-12l-england/27613-1.webp" width="330" height="210" loading="lazy" decoding="async" alt="LOUIS-12L England 27613 - 1"><span class="md2-fx-code">27613 - 1</span><span class="md2-fx-lab">LOUIS - Made in England</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/louis-12l-england/27613-10.webp" data-fx-code="27613 - 10" data-fx-lab="LOUIS - Made in England"><img src="/assets/may-do-bang-vai-20261105/thumb/louis-12l-england/27613-10.webp" width="330" height="210" loading="lazy" decoding="async" alt="LOUIS-12L England 27613 - 10"><span class="md2-fx-code">27613 - 10</span><span class="md2-fx-lab">LOUIS - Made in England</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/louis-12l-england/27613-11.webp" data-fx-code="27613 - 11" data-fx-lab="LOUIS - Made in England"><img src="/assets/may-do-bang-vai-20261105/thumb/louis-12l-england/27613-11.webp" width="330" height="210" loading="lazy" decoding="async" alt="LOUIS-12L England 27613 - 11"><span class="md2-fx-code">27613 - 11</span><span class="md2-fx-lab">LOUIS - Made in England</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/louis-12l-england/27613-12.webp" data-fx-code="27613 - 12" data-fx-lab="LOUIS - Made in England"><img src="/assets/may-do-bang-vai-20261105/thumb/louis-12l-england/27613-12.webp" width="330" height="210" loading="lazy" decoding="async" alt="LOUIS-12L England 27613 - 12"><span class="md2-fx-code">27613 - 12</span><span class="md2-fx-lab">LOUIS - Made in England</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/louis-12l-england/27613-13.webp" data-fx-code="27613 - 13" data-fx-lab="LOUIS - Made in England"><img src="/assets/may-do-bang-vai-20261105/thumb/louis-12l-england/27613-13.webp" width="330" height="210" loading="lazy" decoding="async" alt="LOUIS-12L England 27613 - 13"><span class="md2-fx-code">27613 - 13</span><span class="md2-fx-lab">LOUIS - Made in England</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/louis-12l-england/27613-14.webp" data-fx-code="27613 - 14" data-fx-lab="LOUIS - Made in England"><img src="/assets/may-do-bang-vai-20261105/thumb/louis-12l-england/27613-14.webp" width="330" height="210" loading="lazy" decoding="async" alt="LOUIS-12L England 27613 - 14"><span class="md2-fx-code">27613 - 14</span><span class="md2-fx-lab">LOUIS - Made in England</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/louis-12l-england/27613-15.webp" data-fx-code="27613 - 15" data-fx-lab="LOUIS - Made in England"><img src="/assets/may-do-bang-vai-20261105/thumb/louis-12l-england/27613-15.webp" width="330" height="210" loading="lazy" decoding="async" alt="LOUIS-12L England 27613 - 15"><span class="md2-fx-code">27613 - 15</span><span class="md2-fx-lab">LOUIS - Made in England</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/louis-12l-england/27613-16.webp" data-fx-code="27613 - 16" data-fx-lab="LOUIS - Made in England"><img src="/assets/may-do-bang-vai-20261105/thumb/louis-12l-england/27613-16.webp" width="330" height="210" loading="lazy" decoding="async" alt="LOUIS-12L England 27613 - 16"><span class="md2-fx-code">27613 - 16</span><span class="md2-fx-lab">LOUIS - Made in England</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/louis-12l-england/27613-2.webp" data-fx-code="27613 - 2" data-fx-lab="LOUIS - Made in England"><img src="/assets/may-do-bang-vai-20261105/thumb/louis-12l-england/27613-2.webp" width="330" height="210" loading="lazy" decoding="async" alt="LOUIS-12L England 27613 - 2"><span class="md2-fx-code">27613 - 2</span><span class="md2-fx-lab">LOUIS - Made in England</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/louis-12l-england/27613-3.webp" data-fx-code="27613 - 3" data-fx-lab="LOUIS - Made in England"><img src="/assets/may-do-bang-vai-20261105/thumb/louis-12l-england/27613-3.webp" width="330" height="210" loading="lazy" decoding="async" alt="LOUIS-12L England 27613 - 3"><span class="md2-fx-code">27613 - 3</span><span class="md2-fx-lab">LOUIS - Made in England</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/louis-12l-england/27613-4.webp" data-fx-code="27613 - 4" data-fx-lab="LOUIS - Made in England"><img src="/assets/may-do-bang-vai-20261105/thumb/louis-12l-england/27613-4.webp" width="330" height="210" loading="lazy" decoding="async" alt="LOUIS-12L England 27613 - 4"><span class="md2-fx-code">27613 - 4</span><span class="md2-fx-lab">LOUIS - Made in England</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/louis-12l-england/27613-5.webp" data-fx-code="27613 - 5" data-fx-lab="LOUIS - Made in England"><img src="/assets/may-do-bang-vai-20261105/thumb/louis-12l-england/27613-5.webp" width="330" height="210" loading="lazy" decoding="async" alt="LOUIS-12L England 27613 - 5"><span class="md2-fx-code">27613 - 5</span><span class="md2-fx-lab">LOUIS - Made in England</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/louis-12l-england/27613-6.webp" data-fx-code="27613 - 6" data-fx-lab="LOUIS - Made in England"><img src="/assets/may-do-bang-vai-20261105/thumb/louis-12l-england/27613-6.webp" width="330" height="210" loading="lazy" decoding="async" alt="LOUIS-12L England 27613 - 6"><span class="md2-fx-code">27613 - 6</span><span class="md2-fx-lab">LOUIS - Made in England</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/louis-12l-england/27613-7.webp" data-fx-code="27613 - 7" data-fx-lab="LOUIS - Made in England"><img src="/assets/may-do-bang-vai-20261105/thumb/louis-12l-england/27613-7.webp" width="330" height="210" loading="lazy" decoding="async" alt="LOUIS-12L England 27613 - 7"><span class="md2-fx-code">27613 - 7</span><span class="md2-fx-lab">LOUIS - Made in England</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/louis-12l-england/27613-8.webp" data-fx-code="27613 - 8" data-fx-lab="LOUIS - Made in England"><img src="/assets/may-do-bang-vai-20261105/thumb/louis-12l-england/27613-8.webp" width="330" height="210" loading="lazy" decoding="async" alt="LOUIS-12L England 27613 - 8"><span class="md2-fx-code">27613 - 8</span><span class="md2-fx-lab">LOUIS - Made in England</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/louis-12l-england/27613-9.webp" data-fx-code="27613 - 9" data-fx-lab="LOUIS - Made in England"><img src="/assets/may-do-bang-vai-20261105/thumb/louis-12l-england/27613-9.webp" width="330" height="210" loading="lazy" decoding="async" alt="LOUIS-12L England 27613 - 9"><span class="md2-fx-code">27613 - 9</span><span class="md2-fx-lab">LOUIS - Made in England</span></button></li></ul></div><div class="md2-fx-panel" data-fx-book="donatella-10500" hidden><div class="md2-fx-head"><h3 class="md2-h3">Donatella 10500</h3><p class="md2-fx-headprice"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">10.500.000đ</strong></p><p class="md2-fx-spec">Theo nhãn: 180&#x27;s Wool &amp; Lycra, Made in Italy</p></div><ul class="md2-fx-grid"><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-10500/art-23670-1.webp" data-fx-code="ART 23670 - 1" data-fx-lab="180&#x27;s Wool &amp; Lycra - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-10500/art-23670-1.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 10500 ART 23670 - 1"><span class="md2-fx-code">ART 23670 - 1</span><span class="md2-fx-lab">180&#x27;s Wool &amp; Lycra - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-10500/art-23670-10.webp" data-fx-code="ART 23670 - 10" data-fx-lab="180&#x27;s Wool &amp; Lycra - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-10500/art-23670-10.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 10500 ART 23670 - 10"><span class="md2-fx-code">ART 23670 - 10</span><span class="md2-fx-lab">180&#x27;s Wool &amp; Lycra - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-10500/art-23670-11.webp" data-fx-code="ART 23670 - 11" data-fx-lab="180&#x27;s Wool &amp; Lycra - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-10500/art-23670-11.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 10500 ART 23670 - 11"><span class="md2-fx-code">ART 23670 - 11</span><span class="md2-fx-lab">180&#x27;s Wool &amp; Lycra - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-10500/art-23670-12.webp" data-fx-code="ART 23670 - 12" data-fx-lab="180&#x27;s Wool &amp; Lycra - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-10500/art-23670-12.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 10500 ART 23670 - 12"><span class="md2-fx-code">ART 23670 - 12</span><span class="md2-fx-lab">180&#x27;s Wool &amp; Lycra - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-10500/art-23670-13.webp" data-fx-code="ART 23670 - 13" data-fx-lab="180&#x27;s Wool &amp; Lycra - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-10500/art-23670-13.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 10500 ART 23670 - 13"><span class="md2-fx-code">ART 23670 - 13</span><span class="md2-fx-lab">180&#x27;s Wool &amp; Lycra - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-10500/art-23670-15.webp" data-fx-code="ART 23670 - 15" data-fx-lab="180&#x27;s Wool &amp; Lycra - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-10500/art-23670-15.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 10500 ART 23670 - 15"><span class="md2-fx-code">ART 23670 - 15</span><span class="md2-fx-lab">180&#x27;s Wool &amp; Lycra - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-10500/art-23670-16.webp" data-fx-code="ART 23670 - 16" data-fx-lab="180&#x27;s Wool &amp; Lycra - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-10500/art-23670-16.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 10500 ART 23670 - 16"><span class="md2-fx-code">ART 23670 - 16</span><span class="md2-fx-lab">180&#x27;s Wool &amp; Lycra - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-10500/art-23670-17.webp" data-fx-code="ART 23670 - 17" data-fx-lab="180&#x27;s Wool &amp; Lycra - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-10500/art-23670-17.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 10500 ART 23670 - 17"><span class="md2-fx-code">ART 23670 - 17</span><span class="md2-fx-lab">180&#x27;s Wool &amp; Lycra - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-10500/art-23670-18.webp" data-fx-code="ART 23670 - 18" data-fx-lab="180&#x27;s Wool &amp; Lycra - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-10500/art-23670-18.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 10500 ART 23670 - 18"><span class="md2-fx-code">ART 23670 - 18</span><span class="md2-fx-lab">180&#x27;s Wool &amp; Lycra - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-10500/art-23670-2.webp" data-fx-code="ART 23670 - 2" data-fx-lab="180&#x27;s Wool &amp; Lycra - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-10500/art-23670-2.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 10500 ART 23670 - 2"><span class="md2-fx-code">ART 23670 - 2</span><span class="md2-fx-lab">180&#x27;s Wool &amp; Lycra - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-10500/art-23670-3.webp" data-fx-code="ART 23670 - 3" data-fx-lab="180&#x27;s Wool &amp; Lycra - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-10500/art-23670-3.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 10500 ART 23670 - 3"><span class="md2-fx-code">ART 23670 - 3</span><span class="md2-fx-lab">180&#x27;s Wool &amp; Lycra - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-10500/art-23670-4.webp" data-fx-code="ART 23670 - 4" data-fx-lab="180&#x27;s Wool &amp; Lycra - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-10500/art-23670-4.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 10500 ART 23670 - 4"><span class="md2-fx-code">ART 23670 - 4</span><span class="md2-fx-lab">180&#x27;s Wool &amp; Lycra - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-10500/art-23670-5.webp" data-fx-code="ART 23670 - 5" data-fx-lab="180&#x27;s Wool &amp; Lycra - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-10500/art-23670-5.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 10500 ART 23670 - 5"><span class="md2-fx-code">ART 23670 - 5</span><span class="md2-fx-lab">180&#x27;s Wool &amp; Lycra - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-10500/art-23670-6.webp" data-fx-code="ART 23670 - 6" data-fx-lab="180&#x27;s Wool &amp; Lycra - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-10500/art-23670-6.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 10500 ART 23670 - 6"><span class="md2-fx-code">ART 23670 - 6</span><span class="md2-fx-lab">180&#x27;s Wool &amp; Lycra - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-10500/art-23670-8.webp" data-fx-code="ART 23670 - 8" data-fx-lab="180&#x27;s Wool &amp; Lycra - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-10500/art-23670-8.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 10500 ART 23670 - 8"><span class="md2-fx-code">ART 23670 - 8</span><span class="md2-fx-lab">180&#x27;s Wool &amp; Lycra - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-10500/art-23670-9.webp" data-fx-code="ART 23670 - 9" data-fx-lab="180&#x27;s Wool &amp; Lycra - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-10500/art-23670-9.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 10500 ART 23670 - 9"><span class="md2-fx-code">ART 23670 - 9</span><span class="md2-fx-lab">180&#x27;s Wool &amp; Lycra - Made in Italy</span></button></li></ul></div><div class="md2-fx-panel" data-fx-book="ns10500" hidden><div class="md2-fx-head"><h3 class="md2-h3">NS10500 · New Sample</h3><p class="md2-fx-headprice"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">10.500.000đ</strong></p><p class="md2-fx-spec">Theo nhãn: Luxury Suiting Fabric</p></div><ul class="md2-fx-grid"><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ns10500/889l4-1.webp" data-fx-code="889L4 - 1" data-fx-lab="NS10500 - Luxury Suiting Fabric"><img src="/assets/may-do-bang-vai-20261105/thumb/ns10500/889l4-1.webp" width="330" height="210" loading="lazy" decoding="async" alt="NS10500 · New Sample 889L4 - 1"><span class="md2-fx-code">889L4 - 1</span><span class="md2-fx-lab">NS10500 - Luxury Suiting Fabric</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ns10500/889l4-11.webp" data-fx-code="889L4 - 11" data-fx-lab="NS10500 - Luxury Suiting Fabric"><img src="/assets/may-do-bang-vai-20261105/thumb/ns10500/889l4-11.webp" width="330" height="210" loading="lazy" decoding="async" alt="NS10500 · New Sample 889L4 - 11"><span class="md2-fx-code">889L4 - 11</span><span class="md2-fx-lab">NS10500 - Luxury Suiting Fabric</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ns10500/889l4-15.webp" data-fx-code="889L4 - 15" data-fx-lab="NS10500 - Luxury Suiting Fabric"><img src="/assets/may-do-bang-vai-20261105/thumb/ns10500/889l4-15.webp" width="330" height="210" loading="lazy" decoding="async" alt="NS10500 · New Sample 889L4 - 15"><span class="md2-fx-code">889L4 - 15</span><span class="md2-fx-lab">NS10500 - Luxury Suiting Fabric</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ns10500/889l4-16.webp" data-fx-code="889L4 - 16" data-fx-lab="NS10500 - Luxury Suiting Fabric"><img src="/assets/may-do-bang-vai-20261105/thumb/ns10500/889l4-16.webp" width="330" height="210" loading="lazy" decoding="async" alt="NS10500 · New Sample 889L4 - 16"><span class="md2-fx-code">889L4 - 16</span><span class="md2-fx-lab">NS10500 - Luxury Suiting Fabric</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ns10500/889l4-2.webp" data-fx-code="889L4 - 2" data-fx-lab="NS10500 - Luxury Suiting Fabric"><img src="/assets/may-do-bang-vai-20261105/thumb/ns10500/889l4-2.webp" width="330" height="210" loading="lazy" decoding="async" alt="NS10500 · New Sample 889L4 - 2"><span class="md2-fx-code">889L4 - 2</span><span class="md2-fx-lab">NS10500 - Luxury Suiting Fabric</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ns10500/889l4-3.webp" data-fx-code="889L4 - 3" data-fx-lab="NS10500 - Luxury Suiting Fabric"><img src="/assets/may-do-bang-vai-20261105/thumb/ns10500/889l4-3.webp" width="330" height="210" loading="lazy" decoding="async" alt="NS10500 · New Sample 889L4 - 3"><span class="md2-fx-code">889L4 - 3</span><span class="md2-fx-lab">NS10500 - Luxury Suiting Fabric</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ns10500/889l4-34.webp" data-fx-code="889L4 - 34" data-fx-lab="NS10500 - Luxury Suiting Fabric"><img src="/assets/may-do-bang-vai-20261105/thumb/ns10500/889l4-34.webp" width="330" height="210" loading="lazy" decoding="async" alt="NS10500 · New Sample 889L4 - 34"><span class="md2-fx-code">889L4 - 34</span><span class="md2-fx-lab">NS10500 - Luxury Suiting Fabric</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ns10500/889l4-35.webp" data-fx-code="889L4 - 35" data-fx-lab="NS10500 - Luxury Suiting Fabric"><img src="/assets/may-do-bang-vai-20261105/thumb/ns10500/889l4-35.webp" width="330" height="210" loading="lazy" decoding="async" alt="NS10500 · New Sample 889L4 - 35"><span class="md2-fx-code">889L4 - 35</span><span class="md2-fx-lab">NS10500 - Luxury Suiting Fabric</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ns10500/889l4-36.webp" data-fx-code="889L4 - 36" data-fx-lab="NS10500 - Luxury Suiting Fabric"><img src="/assets/may-do-bang-vai-20261105/thumb/ns10500/889l4-36.webp" width="330" height="210" loading="lazy" decoding="async" alt="NS10500 · New Sample 889L4 - 36"><span class="md2-fx-code">889L4 - 36</span><span class="md2-fx-lab">NS10500 - Luxury Suiting Fabric</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ns10500/889l4-37.webp" data-fx-code="889L4 - 37" data-fx-lab="NS10500 - Luxury Suiting Fabric"><img src="/assets/may-do-bang-vai-20261105/thumb/ns10500/889l4-37.webp" width="330" height="210" loading="lazy" decoding="async" alt="NS10500 · New Sample 889L4 - 37"><span class="md2-fx-code">889L4 - 37</span><span class="md2-fx-lab">NS10500 - Luxury Suiting Fabric</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ns10500/889l4-4.webp" data-fx-code="889L4 - 4" data-fx-lab="NS10500 - Luxury Suiting Fabric"><img src="/assets/may-do-bang-vai-20261105/thumb/ns10500/889l4-4.webp" width="330" height="210" loading="lazy" decoding="async" alt="NS10500 · New Sample 889L4 - 4"><span class="md2-fx-code">889L4 - 4</span><span class="md2-fx-lab">NS10500 - Luxury Suiting Fabric</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ns10500/889l4-5.webp" data-fx-code="889L4 - 5" data-fx-lab="NS10500 - Luxury Suiting Fabric"><img src="/assets/may-do-bang-vai-20261105/thumb/ns10500/889l4-5.webp" width="330" height="210" loading="lazy" decoding="async" alt="NS10500 · New Sample 889L4 - 5"><span class="md2-fx-code">889L4 - 5</span><span class="md2-fx-lab">NS10500 - Luxury Suiting Fabric</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ns10500/889l4-6.webp" data-fx-code="889L4 - 6" data-fx-lab="NS10500 - Luxury Suiting Fabric"><img src="/assets/may-do-bang-vai-20261105/thumb/ns10500/889l4-6.webp" width="330" height="210" loading="lazy" decoding="async" alt="NS10500 · New Sample 889L4 - 6"><span class="md2-fx-code">889L4 - 6</span><span class="md2-fx-lab">NS10500 - Luxury Suiting Fabric</span></button></li></ul></div><div class="md2-fx-panel" data-fx-book="donatella-9300" hidden><div class="md2-fx-head"><h3 class="md2-h3">Donatella 9300</h3><p class="md2-fx-headprice"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">9.300.000đ</strong></p><p class="md2-fx-spec">Theo nhãn: Premium Suiting</p></div><ul class="md2-fx-grid"><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-1.webp" data-fx-code="27601 - 1" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-1.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 1"><span class="md2-fx-code">27601 - 1</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-10.webp" data-fx-code="27601 - 10" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-10.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 10"><span class="md2-fx-code">27601 - 10</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-11.webp" data-fx-code="27601 - 11" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-11.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 11"><span class="md2-fx-code">27601 - 11</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-12.webp" data-fx-code="27601 - 12" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-12.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 12"><span class="md2-fx-code">27601 - 12</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-13.webp" data-fx-code="27601 - 13" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-13.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 13"><span class="md2-fx-code">27601 - 13</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-14.webp" data-fx-code="27601 - 14" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-14.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 14"><span class="md2-fx-code">27601 - 14</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-1a.webp" data-fx-code="27601 - 1A" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-1a.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 1A"><span class="md2-fx-code">27601 - 1A</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-2.webp" data-fx-code="27601 - 2" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-2.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 2"><span class="md2-fx-code">27601 - 2</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-2a.webp" data-fx-code="27601 - 2A" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-2a.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 2A"><span class="md2-fx-code">27601 - 2A</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-3.webp" data-fx-code="27601 - 3" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-3.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 3"><span class="md2-fx-code">27601 - 3</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-3a.webp" data-fx-code="27601 - 3A" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-3a.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 3A"><span class="md2-fx-code">27601 - 3A</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-4.webp" data-fx-code="27601 - 4" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-4.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 4"><span class="md2-fx-code">27601 - 4</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-4a.webp" data-fx-code="27601 - 4A" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-4a.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 4A"><span class="md2-fx-code">27601 - 4A</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-5a.webp" data-fx-code="27601 - 5A" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-5a.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 5A"><span class="md2-fx-code">27601 - 5A</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-6.webp" data-fx-code="27601 - 6" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-6.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 6"><span class="md2-fx-code">27601 - 6</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-6a.webp" data-fx-code="27601 - 6A" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-6a.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 6A"><span class="md2-fx-code">27601 - 6A</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-7.webp" data-fx-code="27601 - 7" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-7.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 7"><span class="md2-fx-code">27601 - 7</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-7a.webp" data-fx-code="27601 - 7A" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-7a.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 7A"><span class="md2-fx-code">27601 - 7A</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-8.webp" data-fx-code="27601 - 8" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-8.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 8"><span class="md2-fx-code">27601 - 8</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/donatella-9300/27601-9.webp" data-fx-code="27601 - 9" data-fx-lab="Donatella 9300 - Premium Suiting"><img src="/assets/may-do-bang-vai-20261105/thumb/donatella-9300/27601-9.webp" width="330" height="210" loading="lazy" decoding="async" alt="Donatella 9300 27601 - 9"><span class="md2-fx-code">27601 - 9</span><span class="md2-fx-lab">Donatella 9300 - Premium Suiting</span></button></li></ul></div><div class="md2-fx-panel" data-fx-book="gazzarini" hidden><div class="md2-fx-head"><h3 class="md2-h3">Gazzarini Uomo</h3><p class="md2-fx-headprice"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">9.000.000đ</strong></p><p class="md2-fx-spec">Theo nhãn: Made in Italy</p></div><ul class="md2-fx-grid"><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/gazzarini-uomo-9000/art-19650-1.webp" data-fx-code="ART 19650 - 1" data-fx-lab="Gazzarini Uomo - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/gazzarini-uomo-9000/art-19650-1.webp" width="330" height="210" loading="lazy" decoding="async" alt="Gazzarini Uomo ART 19650 - 1"><span class="md2-fx-code">ART 19650 - 1</span><span class="md2-fx-lab">Gazzarini Uomo - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/gazzarini-uomo-9000/art-19650-10.webp" data-fx-code="ART 19650 - 10" data-fx-lab="Gazzarini Uomo - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/gazzarini-uomo-9000/art-19650-10.webp" width="330" height="210" loading="lazy" decoding="async" alt="Gazzarini Uomo ART 19650 - 10"><span class="md2-fx-code">ART 19650 - 10</span><span class="md2-fx-lab">Gazzarini Uomo - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/gazzarini-uomo-9000/art-19650-11.webp" data-fx-code="ART 19650 - 11" data-fx-lab="Gazzarini Uomo - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/gazzarini-uomo-9000/art-19650-11.webp" width="330" height="210" loading="lazy" decoding="async" alt="Gazzarini Uomo ART 19650 - 11"><span class="md2-fx-code">ART 19650 - 11</span><span class="md2-fx-lab">Gazzarini Uomo - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/gazzarini-uomo-9000/art-19650-12.webp" data-fx-code="ART 19650 - 12" data-fx-lab="Gazzarini Uomo - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/gazzarini-uomo-9000/art-19650-12.webp" width="330" height="210" loading="lazy" decoding="async" alt="Gazzarini Uomo ART 19650 - 12"><span class="md2-fx-code">ART 19650 - 12</span><span class="md2-fx-lab">Gazzarini Uomo - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/gazzarini-uomo-9000/art-19650-13.webp" data-fx-code="ART 19650 - 13" data-fx-lab="Gazzarini Uomo - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/gazzarini-uomo-9000/art-19650-13.webp" width="330" height="210" loading="lazy" decoding="async" alt="Gazzarini Uomo ART 19650 - 13"><span class="md2-fx-code">ART 19650 - 13</span><span class="md2-fx-lab">Gazzarini Uomo - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/gazzarini-uomo-9000/art-19650-15.webp" data-fx-code="ART 19650 - 15" data-fx-lab="Gazzarini Uomo - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/gazzarini-uomo-9000/art-19650-15.webp" width="330" height="210" loading="lazy" decoding="async" alt="Gazzarini Uomo ART 19650 - 15"><span class="md2-fx-code">ART 19650 - 15</span><span class="md2-fx-lab">Gazzarini Uomo - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/gazzarini-uomo-9000/art-19650-2.webp" data-fx-code="ART 19650 - 2" data-fx-lab="Gazzarini Uomo - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/gazzarini-uomo-9000/art-19650-2.webp" width="330" height="210" loading="lazy" decoding="async" alt="Gazzarini Uomo ART 19650 - 2"><span class="md2-fx-code">ART 19650 - 2</span><span class="md2-fx-lab">Gazzarini Uomo - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/gazzarini-uomo-9000/art-19650-3.webp" data-fx-code="ART 19650 - 3" data-fx-lab="Gazzarini Uomo - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/gazzarini-uomo-9000/art-19650-3.webp" width="330" height="210" loading="lazy" decoding="async" alt="Gazzarini Uomo ART 19650 - 3"><span class="md2-fx-code">ART 19650 - 3</span><span class="md2-fx-lab">Gazzarini Uomo - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/gazzarini-uomo-9000/art-19650-4.webp" data-fx-code="ART 19650 - 4" data-fx-lab="Gazzarini Uomo - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/gazzarini-uomo-9000/art-19650-4.webp" width="330" height="210" loading="lazy" decoding="async" alt="Gazzarini Uomo ART 19650 - 4"><span class="md2-fx-code">ART 19650 - 4</span><span class="md2-fx-lab">Gazzarini Uomo - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/gazzarini-uomo-9000/art-19650-5.webp" data-fx-code="ART 19650 - 5" data-fx-lab="Gazzarini Uomo - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/gazzarini-uomo-9000/art-19650-5.webp" width="330" height="210" loading="lazy" decoding="async" alt="Gazzarini Uomo ART 19650 - 5"><span class="md2-fx-code">ART 19650 - 5</span><span class="md2-fx-lab">Gazzarini Uomo - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/gazzarini-uomo-9000/art-19650-6.webp" data-fx-code="ART 19650 - 6" data-fx-lab="Gazzarini Uomo - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/gazzarini-uomo-9000/art-19650-6.webp" width="330" height="210" loading="lazy" decoding="async" alt="Gazzarini Uomo ART 19650 - 6"><span class="md2-fx-code">ART 19650 - 6</span><span class="md2-fx-lab">Gazzarini Uomo - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/gazzarini-uomo-9000/art-19650-7.webp" data-fx-code="ART 19650 - 7" data-fx-lab="Gazzarini Uomo - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/gazzarini-uomo-9000/art-19650-7.webp" width="330" height="210" loading="lazy" decoding="async" alt="Gazzarini Uomo ART 19650 - 7"><span class="md2-fx-code">ART 19650 - 7</span><span class="md2-fx-lab">Gazzarini Uomo - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/gazzarini-uomo-9000/art-19650-8.webp" data-fx-code="ART 19650 - 8" data-fx-lab="Gazzarini Uomo - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/gazzarini-uomo-9000/art-19650-8.webp" width="330" height="210" loading="lazy" decoding="async" alt="Gazzarini Uomo ART 19650 - 8"><span class="md2-fx-code">ART 19650 - 8</span><span class="md2-fx-lab">Gazzarini Uomo - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/gazzarini-uomo-9000/art-19650-9.webp" data-fx-code="ART 19650 - 9" data-fx-lab="Gazzarini Uomo - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/gazzarini-uomo-9000/art-19650-9.webp" width="330" height="210" loading="lazy" decoding="async" alt="Gazzarini Uomo ART 19650 - 9"><span class="md2-fx-code">ART 19650 - 9</span><span class="md2-fx-lab">Gazzarini Uomo - Made in Italy</span></button></li></ul></div><div class="md2-fx-panel" data-fx-book="lc9000" hidden><div class="md2-fx-head"><h3 class="md2-h3">LC9000</h3><p class="md2-fx-headprice"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">9.000.000đ</strong></p><p class="md2-fx-spec">Theo nhãn: Lanificio Di Calvino, Made in Italy</p></div><ul class="md2-fx-grid"><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/lc9000/fancy-dg1-col-1.webp" data-fx-code="FANCY-DG1 COL 1" data-fx-lab="Lanificio Di Calvino - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/lc9000/fancy-dg1-col-1.webp" width="330" height="210" loading="lazy" decoding="async" alt="LC9000 FANCY-DG1 COL 1"><span class="md2-fx-code">FANCY-DG1 COL 1</span><span class="md2-fx-lab">Lanificio Di Calvino - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/lc9000/fancy-dg1-col-10.webp" data-fx-code="FANCY-DG1 COL 10" data-fx-lab="Lanificio Di Calvino - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/lc9000/fancy-dg1-col-10.webp" width="330" height="210" loading="lazy" decoding="async" alt="LC9000 FANCY-DG1 COL 10"><span class="md2-fx-code">FANCY-DG1 COL 10</span><span class="md2-fx-lab">Lanificio Di Calvino - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/lc9000/fancy-dg1-col-11.webp" data-fx-code="FANCY-DG1 COL 11" data-fx-lab="Lanificio Di Calvino - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/lc9000/fancy-dg1-col-11.webp" width="330" height="210" loading="lazy" decoding="async" alt="LC9000 FANCY-DG1 COL 11"><span class="md2-fx-code">FANCY-DG1 COL 11</span><span class="md2-fx-lab">Lanificio Di Calvino - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/lc9000/fancy-dg1-col-12.webp" data-fx-code="FANCY-DG1 COL 12" data-fx-lab="Lanificio Di Calvino - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/lc9000/fancy-dg1-col-12.webp" width="330" height="210" loading="lazy" decoding="async" alt="LC9000 FANCY-DG1 COL 12"><span class="md2-fx-code">FANCY-DG1 COL 12</span><span class="md2-fx-lab">Lanificio Di Calvino - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/lc9000/fancy-dg1-col-13.webp" data-fx-code="FANCY-DG1 COL 13" data-fx-lab="Lanificio Di Calvino - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/lc9000/fancy-dg1-col-13.webp" width="330" height="210" loading="lazy" decoding="async" alt="LC9000 FANCY-DG1 COL 13"><span class="md2-fx-code">FANCY-DG1 COL 13</span><span class="md2-fx-lab">Lanificio Di Calvino - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/lc9000/fancy-dg1-col-2.webp" data-fx-code="FANCY-DG1 COL 2" data-fx-lab="Lanificio Di Calvino - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/lc9000/fancy-dg1-col-2.webp" width="330" height="210" loading="lazy" decoding="async" alt="LC9000 FANCY-DG1 COL 2"><span class="md2-fx-code">FANCY-DG1 COL 2</span><span class="md2-fx-lab">Lanificio Di Calvino - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/lc9000/fancy-dg1-col-3.webp" data-fx-code="FANCY-DG1 COL 3" data-fx-lab="Lanificio Di Calvino - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/lc9000/fancy-dg1-col-3.webp" width="330" height="210" loading="lazy" decoding="async" alt="LC9000 FANCY-DG1 COL 3"><span class="md2-fx-code">FANCY-DG1 COL 3</span><span class="md2-fx-lab">Lanificio Di Calvino - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/lc9000/fancy-dg1-col-4.webp" data-fx-code="FANCY-DG1 COL 4" data-fx-lab="Lanificio Di Calvino - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/lc9000/fancy-dg1-col-4.webp" width="330" height="210" loading="lazy" decoding="async" alt="LC9000 FANCY-DG1 COL 4"><span class="md2-fx-code">FANCY-DG1 COL 4</span><span class="md2-fx-lab">Lanificio Di Calvino - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/lc9000/fancy-dg1-col-5.webp" data-fx-code="FANCY-DG1 COL 5" data-fx-lab="Lanificio Di Calvino - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/lc9000/fancy-dg1-col-5.webp" width="330" height="210" loading="lazy" decoding="async" alt="LC9000 FANCY-DG1 COL 5"><span class="md2-fx-code">FANCY-DG1 COL 5</span><span class="md2-fx-lab">Lanificio Di Calvino - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/lc9000/fancy-dg1-col-6.webp" data-fx-code="FANCY-DG1 COL 6" data-fx-lab="Lanificio Di Calvino - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/lc9000/fancy-dg1-col-6.webp" width="330" height="210" loading="lazy" decoding="async" alt="LC9000 FANCY-DG1 COL 6"><span class="md2-fx-code">FANCY-DG1 COL 6</span><span class="md2-fx-lab">Lanificio Di Calvino - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/lc9000/fancy-dg1-col-7.webp" data-fx-code="FANCY-DG1 COL 7" data-fx-lab="Lanificio Di Calvino - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/lc9000/fancy-dg1-col-7.webp" width="330" height="210" loading="lazy" decoding="async" alt="LC9000 FANCY-DG1 COL 7"><span class="md2-fx-code">FANCY-DG1 COL 7</span><span class="md2-fx-lab">Lanificio Di Calvino - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/lc9000/fancy-dg1-col-8.webp" data-fx-code="FANCY-DG1 COL 8" data-fx-lab="Lanificio Di Calvino - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/lc9000/fancy-dg1-col-8.webp" width="330" height="210" loading="lazy" decoding="async" alt="LC9000 FANCY-DG1 COL 8"><span class="md2-fx-code">FANCY-DG1 COL 8</span><span class="md2-fx-lab">Lanificio Di Calvino - Made in Italy</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/lc9000/fancy-dg1-col-9.webp" data-fx-code="FANCY-DG1 COL 9" data-fx-lab="Lanificio Di Calvino - Made in Italy"><img src="/assets/may-do-bang-vai-20261105/thumb/lc9000/fancy-dg1-col-9.webp" width="330" height="210" loading="lazy" decoding="async" alt="LC9000 FANCY-DG1 COL 9"><span class="md2-fx-code">FANCY-DG1 COL 9</span><span class="md2-fx-lab">Lanificio Di Calvino - Made in Italy</span></button></li></ul></div><div class="md2-fx-panel" data-fx-book="cezaro" hidden><div class="md2-fx-head"><h3 class="md2-h3">Cezaro</h3><p class="md2-fx-headprice"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">7.000.000đ</strong></p><p class="md2-fx-spec">Theo nhãn: vải pha, 250–400 g/m, thành phần ghi trên từng mẫu</p></div><ul class="md2-fx-grid"><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/fltr001.webp" data-fx-code="FLTR001" data-fx-lab="P62% P33% LY5% - 400 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/fltr001.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro FLTR001"><span class="md2-fx-code">FLTR001</span><span class="md2-fx-lab">P62% P33% LY5% - 400 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/fltr002.webp" data-fx-code="FLTR002" data-fx-lab="P62% P33% LY5% - 300 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/fltr002.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro FLTR002"><span class="md2-fx-code">FLTR002</span><span class="md2-fx-lab">P62% P33% LY5% - 300 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/fltr004.webp" data-fx-code="FLTR004" data-fx-lab="P62% P33% LY5% - 400 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/fltr004.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro FLTR004"><span class="md2-fx-code">FLTR004</span><span class="md2-fx-lab">P62% P33% LY5% - 400 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/fltr005.webp" data-fx-code="FLTR005" data-fx-lab="P62% P33% LY5% - 400 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/fltr005.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro FLTR005"><span class="md2-fx-code">FLTR005</span><span class="md2-fx-lab">P62% P33% LY5% - 400 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/pl302.webp" data-fx-code="PL302" data-fx-lab="P62% P33% LY5% - 300 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/pl302.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro PL302"><span class="md2-fx-code">PL302</span><span class="md2-fx-lab">P62% P33% LY5% - 300 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/pl303.webp" data-fx-code="PL303" data-fx-lab="P62% P33% LY5% - 300 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/pl303.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro PL303"><span class="md2-fx-code">PL303</span><span class="md2-fx-lab">P62% P33% LY5% - 300 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tc116.webp" data-fx-code="TC116" data-fx-lab="C85% P12% LY3% - 250 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tc116.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TC116"><span class="md2-fx-code">TC116</span><span class="md2-fx-lab">C85% P12% LY3% - 250 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tc118.webp" data-fx-code="TC118" data-fx-lab="C62% P33% LY5% - 270 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tc118.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TC118"><span class="md2-fx-code">TC118</span><span class="md2-fx-lab">C62% P33% LY5% - 270 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tc121.webp" data-fx-code="TC121" data-fx-lab="C85% P12% LY3% - 280 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tc121.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TC121"><span class="md2-fx-code">TC121</span><span class="md2-fx-lab">C85% P12% LY3% - 280 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tc122.webp" data-fx-code="TC122" data-fx-lab="C85% P12% LY3% - 280 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tc122.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TC122"><span class="md2-fx-code">TC122</span><span class="md2-fx-lab">C85% P12% LY3% - 280 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tc604.webp" data-fx-code="TC604" data-fx-lab="C65% P35% - 400 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tc604.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TC604"><span class="md2-fx-code">TC604</span><span class="md2-fx-lab">C65% P35% - 400 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tc607.webp" data-fx-code="TC607" data-fx-lab="C62% P33% LY5% - 400 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tc607.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TC607"><span class="md2-fx-code">TC607</span><span class="md2-fx-lab">C62% P33% LY5% - 400 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tr115.webp" data-fx-code="TR115" data-fx-lab="P62% P33% LY5% - 300 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tr115.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TR115"><span class="md2-fx-code">TR115</span><span class="md2-fx-lab">P62% P33% LY5% - 300 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tr117.webp" data-fx-code="TR117" data-fx-lab="P62% P33% LY5% - 300 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tr117.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TR117"><span class="md2-fx-code">TR117</span><span class="md2-fx-lab">P62% P33% LY5% - 300 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tr119.webp" data-fx-code="TR119" data-fx-lab="P62% P33% LY5% - 270 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tr119.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TR119"><span class="md2-fx-code">TR119</span><span class="md2-fx-lab">P62% P33% LY5% - 270 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tr123.webp" data-fx-code="TR123" data-fx-lab="P62% P33% LY5% - 300 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tr123.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TR123"><span class="md2-fx-code">TR123</span><span class="md2-fx-lab">P62% P33% LY5% - 300 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tr124.webp" data-fx-code="TR124" data-fx-lab="P62% P33% LY5% - 300 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tr124.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TR124"><span class="md2-fx-code">TR124</span><span class="md2-fx-lab">P62% P33% LY5% - 300 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tr125.webp" data-fx-code="TR125" data-fx-lab="P62% P33% LY5% - 300 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tr125.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TR125"><span class="md2-fx-code">TR125</span><span class="md2-fx-lab">P62% P33% LY5% - 300 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tr130.webp" data-fx-code="TR130" data-fx-lab="P62% P33% LY5% - 385 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tr130.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TR130"><span class="md2-fx-code">TR130</span><span class="md2-fx-lab">P62% P33% LY5% - 385 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tr301.webp" data-fx-code="TR301" data-fx-lab="P62% P33% LY5% - 300 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tr301.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TR301"><span class="md2-fx-code">TR301</span><span class="md2-fx-lab">P62% P33% LY5% - 300 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tr302.webp" data-fx-code="TR302" data-fx-lab="P62% P33% LY5% - 300 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tr302.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TR302"><span class="md2-fx-code">TR302</span><span class="md2-fx-lab">P62% P33% LY5% - 300 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tr500.webp" data-fx-code="TR500" data-fx-lab="P62% P33% LY5% - 300 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tr500.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TR500"><span class="md2-fx-code">TR500</span><span class="md2-fx-lab">P62% P33% LY5% - 300 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tr580.webp" data-fx-code="TR580" data-fx-lab="P62% V33% LY5% - 300 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tr580.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TR580"><span class="md2-fx-code">TR580</span><span class="md2-fx-lab">P62% V33% LY5% - 300 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tr581.webp" data-fx-code="TR581" data-fx-lab="P62% V33% LY5% - 300 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tr581.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TR581"><span class="md2-fx-code">TR581</span><span class="md2-fx-lab">P62% V33% LY5% - 300 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tr601.webp" data-fx-code="TR601" data-fx-lab="P62% P33% LY5% - 270 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tr601.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TR601"><span class="md2-fx-code">TR601</span><span class="md2-fx-lab">P62% P33% LY5% - 270 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tr801.webp" data-fx-code="TR801" data-fx-lab="P62% P33% LY5% - 300 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tr801.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TR801"><span class="md2-fx-code">TR801</span><span class="md2-fx-lab">P62% P33% LY5% - 300 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/tr805.webp" data-fx-code="TR805" data-fx-lab="P62% P33% LY5% - 300 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/tr805.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TR805"><span class="md2-fx-code">TR805</span><span class="md2-fx-lab">P62% P33% LY5% - 300 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/trbe001.webp" data-fx-code="TRBE001" data-fx-lab="P62% V33% LY5% - 350 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/trbe001.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TRBE001"><span class="md2-fx-code">TRBE001</span><span class="md2-fx-lab">P62% V33% LY5% - 350 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/trch002.webp" data-fx-code="TRCH002" data-fx-lab="P62% P33% LY5% - 320 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/trch002.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TRCH002"><span class="md2-fx-code">TRCH002</span><span class="md2-fx-lab">P62% P33% LY5% - 320 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/trch003.webp" data-fx-code="TRCH003" data-fx-lab="P62% V33% LY5% - 310 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/trch003.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TRCH003"><span class="md2-fx-code">TRCH003</span><span class="md2-fx-lab">P62% V33% LY5% - 310 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/trch004.webp" data-fx-code="TRCH004" data-fx-lab="P65% V35% - 270 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/trch004.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TRCH004"><span class="md2-fx-code">TRCH004</span><span class="md2-fx-lab">P65% V35% - 270 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/trch005.webp" data-fx-code="TRCH005" data-fx-lab="P65% V35% - 300 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/trch005.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TRCH005"><span class="md2-fx-code">TRCH005</span><span class="md2-fx-lab">P65% V35% - 300 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/trch007.webp" data-fx-code="TRCH007" data-fx-lab="P62% P33% LY5% - 270 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/trch007.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TRCH007"><span class="md2-fx-code">TRCH007</span><span class="md2-fx-lab">P62% P33% LY5% - 270 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/trch008.webp" data-fx-code="TRCH008" data-fx-lab="P65% V35% - 350 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/trch008.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TRCH008"><span class="md2-fx-code">TRCH008</span><span class="md2-fx-lab">P65% V35% - 350 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/trch009.webp" data-fx-code="TRCH009" data-fx-lab="P65% V35% - 270 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/trch009.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TRCH009"><span class="md2-fx-code">TRCH009</span><span class="md2-fx-lab">P65% V35% - 270 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/trch010.webp" data-fx-code="TRCH010" data-fx-lab="P65% V35% - 290 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/trch010.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TRCH010"><span class="md2-fx-code">TRCH010</span><span class="md2-fx-lab">P65% V35% - 290 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/trch011.webp" data-fx-code="TRCH011" data-fx-lab="P65% V35% - 290 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/trch011.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TRCH011"><span class="md2-fx-code">TRCH011</span><span class="md2-fx-lab">P65% V35% - 290 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/trch012.webp" data-fx-code="TRCH012" data-fx-lab="P65% V35% - 270 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/trch012.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TRCH012"><span class="md2-fx-code">TRCH012</span><span class="md2-fx-lab">P65% V35% - 270 gr/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/cezaro7000/trst001.webp" data-fx-code="TRST001" data-fx-lab="P65% V35% - 270 gr/m"><img src="/assets/may-do-bang-vai-20261105/thumb/cezaro7000/trst001.webp" width="330" height="210" loading="lazy" decoding="async" alt="Cezaro TRST001"><span class="md2-fx-code">TRST001</span><span class="md2-fx-lab">P65% V35% - 270 gr/m</span></button></li></ul></div><div class="md2-fx-panel" data-fx-book="ichn-02" hidden><div class="md2-fx-head"><h3 class="md2-h3">ICHN 02</h3><p class="md2-fx-headprice"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">5.500.000đ</strong></p><p class="md2-fx-spec">Theo nhãn: Superfine Wool &amp; Cashmere Blend</p></div><ul class="md2-fx-grid"><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-02/135-lo-13.webp" data-fx-code="135 Lô - 13" data-fx-lab="Superfine Wool &amp; Cashmere Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-02/135-lo-13.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 02 135 Lô - 13"><span class="md2-fx-code">135 Lô - 13</span><span class="md2-fx-lab">Superfine Wool &amp; Cashmere Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-02/135-lo-15-10.webp" data-fx-code="135 Lô 15 - 10" data-fx-lab="Superfine Wool &amp; Cashmere Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-02/135-lo-15-10.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 02 135 Lô 15 - 10"><span class="md2-fx-code">135 Lô 15 - 10</span><span class="md2-fx-lab">Superfine Wool &amp; Cashmere Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-02/135-lo-15-15.webp" data-fx-code="135 Lô 15 - 15" data-fx-lab="Superfine Wool &amp; Cashmere Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-02/135-lo-15-15.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 02 135 Lô 15 - 15"><span class="md2-fx-code">135 Lô 15 - 15</span><span class="md2-fx-lab">Superfine Wool &amp; Cashmere Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-02/135-lo-15-2.webp" data-fx-code="135 Lô 15 - 2" data-fx-lab="Superfine Wool &amp; Cashmere Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-02/135-lo-15-2.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 02 135 Lô 15 - 2"><span class="md2-fx-code">135 Lô 15 - 2</span><span class="md2-fx-lab">Superfine Wool &amp; Cashmere Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-02/135-lo-15-3.webp" data-fx-code="135 Lô 15 - 3" data-fx-lab="Superfine Wool &amp; Cashmere Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-02/135-lo-15-3.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 02 135 Lô 15 - 3"><span class="md2-fx-code">135 Lô 15 - 3</span><span class="md2-fx-lab">Superfine Wool &amp; Cashmere Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-02/135-lo-15-5.webp" data-fx-code="135 Lô 15 - 5" data-fx-lab="Superfine Wool &amp; Cashmere Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-02/135-lo-15-5.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 02 135 Lô 15 - 5"><span class="md2-fx-code">135 Lô 15 - 5</span><span class="md2-fx-lab">Superfine Wool &amp; Cashmere Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-02/135-lo-15-6.webp" data-fx-code="135 Lô 15 - 6" data-fx-lab="Superfine Wool &amp; Cashmere Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-02/135-lo-15-6.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 02 135 Lô 15 - 6"><span class="md2-fx-code">135 Lô 15 - 6</span><span class="md2-fx-lab">Superfine Wool &amp; Cashmere Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-02/135-lo-15-7.webp" data-fx-code="135 Lô 15 - 7" data-fx-lab="Superfine Wool &amp; Cashmere Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-02/135-lo-15-7.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 02 135 Lô 15 - 7"><span class="md2-fx-code">135 Lô 15 - 7</span><span class="md2-fx-lab">Superfine Wool &amp; Cashmere Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-02/135-lo-15-8.webp" data-fx-code="135 Lô 15 - 8" data-fx-lab="Superfine Wool &amp; Cashmere Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-02/135-lo-15-8.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 02 135 Lô 15 - 8"><span class="md2-fx-code">135 Lô 15 - 8</span><span class="md2-fx-lab">Superfine Wool &amp; Cashmere Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-02/135-lo-15-9.webp" data-fx-code="135 Lô 15 - 9" data-fx-lab="Superfine Wool &amp; Cashmere Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-02/135-lo-15-9.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 02 135 Lô 15 - 9"><span class="md2-fx-code">135 Lô 15 - 9</span><span class="md2-fx-lab">Superfine Wool &amp; Cashmere Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-02/135-lo-2-6.webp" data-fx-code="135 Lô 2 - 6" data-fx-lab="Superfine Wool &amp; Cashmere Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-02/135-lo-2-6.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 02 135 Lô 2 - 6"><span class="md2-fx-code">135 Lô 2 - 6</span><span class="md2-fx-lab">Superfine Wool &amp; Cashmere Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-02/135-lo-3-1.webp" data-fx-code="135 Lô 3 - 1" data-fx-lab="Superfine Wool &amp; Cashmere Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-02/135-lo-3-1.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 02 135 Lô 3 - 1"><span class="md2-fx-code">135 Lô 3 - 1</span><span class="md2-fx-lab">Superfine Wool &amp; Cashmere Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-02/135-lo-3-14.webp" data-fx-code="135 Lô 3 - 14" data-fx-lab="Superfine Wool &amp; Cashmere Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-02/135-lo-3-14.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 02 135 Lô 3 - 14"><span class="md2-fx-code">135 Lô 3 - 14</span><span class="md2-fx-lab">Superfine Wool &amp; Cashmere Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-02/135-lo-7-3.webp" data-fx-code="135 Lô 7 - 3" data-fx-lab="Superfine Wool &amp; Cashmere Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-02/135-lo-7-3.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 02 135 Lô 7 - 3"><span class="md2-fx-code">135 Lô 7 - 3</span><span class="md2-fx-lab">Superfine Wool &amp; Cashmere Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-02/kb-6944-3.webp" data-fx-code="KB 6944 - 3" data-fx-lab="Superfine Wool &amp; Cashmere Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-02/kb-6944-3.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 02 KB 6944 - 3"><span class="md2-fx-code">KB 6944 - 3</span><span class="md2-fx-lab">Superfine Wool &amp; Cashmere Blend</span></button></li></ul></div><div class="md2-fx-panel" data-fx-book="ichn-04" hidden><div class="md2-fx-head"><h3 class="md2-h3">ICHN 04</h3><p class="md2-fx-headprice"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">5.500.000đ</strong></p><p class="md2-fx-spec">Theo nhãn: Wool Finish 210&#x27;s Ferrari</p></div><ul class="md2-fx-grid"><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-04/sx-20516.webp" data-fx-code="SX-20516" data-fx-lab="Wool Finish 210&#x27;s Ferrari"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-04/sx-20516.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 04 SX-20516"><span class="md2-fx-code">SX-20516</span><span class="md2-fx-lab">Wool Finish 210&#x27;s Ferrari</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-04/sx-7070-1.webp" data-fx-code="SX-7070-1" data-fx-lab="Wool Finish 210&#x27;s Ferrari"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-04/sx-7070-1.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 04 SX-7070-1"><span class="md2-fx-code">SX-7070-1</span><span class="md2-fx-lab">Wool Finish 210&#x27;s Ferrari</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-04/sx-7070-2.webp" data-fx-code="SX-7070-2" data-fx-lab="Wool Finish 210&#x27;s Ferrari"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-04/sx-7070-2.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 04 SX-7070-2"><span class="md2-fx-code">SX-7070-2</span><span class="md2-fx-lab">Wool Finish 210&#x27;s Ferrari</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-04/sx-7070-3.webp" data-fx-code="SX-7070-3" data-fx-lab="Wool Finish 210&#x27;s Ferrari"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-04/sx-7070-3.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 04 SX-7070-3"><span class="md2-fx-code">SX-7070-3</span><span class="md2-fx-lab">Wool Finish 210&#x27;s Ferrari</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-04/sx-7070-4.webp" data-fx-code="SX-7070-4" data-fx-lab="Wool Finish 210&#x27;s Ferrari"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-04/sx-7070-4.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 04 SX-7070-4"><span class="md2-fx-code">SX-7070-4</span><span class="md2-fx-lab">Wool Finish 210&#x27;s Ferrari</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-04/sx-7072-1.webp" data-fx-code="SX-7072-1" data-fx-lab="Wool Finish 210&#x27;s Ferrari"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-04/sx-7072-1.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 04 SX-7072-1"><span class="md2-fx-code">SX-7072-1</span><span class="md2-fx-lab">Wool Finish 210&#x27;s Ferrari</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-04/sx-7072-2.webp" data-fx-code="SX-7072-2" data-fx-lab="Wool Finish 210&#x27;s Ferrari"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-04/sx-7072-2.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 04 SX-7072-2"><span class="md2-fx-code">SX-7072-2</span><span class="md2-fx-lab">Wool Finish 210&#x27;s Ferrari</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-04/sx-7072-3.webp" data-fx-code="SX-7072-3" data-fx-lab="Wool Finish 210&#x27;s Ferrari"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-04/sx-7072-3.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 04 SX-7072-3"><span class="md2-fx-code">SX-7072-3</span><span class="md2-fx-lab">Wool Finish 210&#x27;s Ferrari</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-04/sx-7075-1.webp" data-fx-code="SX-7075-1" data-fx-lab="Wool Finish 210&#x27;s Ferrari"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-04/sx-7075-1.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 04 SX-7075-1"><span class="md2-fx-code">SX-7075-1</span><span class="md2-fx-lab">Wool Finish 210&#x27;s Ferrari</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-04/sx-7075-2.webp" data-fx-code="SX-7075-2" data-fx-lab="Wool Finish 210&#x27;s Ferrari"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-04/sx-7075-2.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 04 SX-7075-2"><span class="md2-fx-code">SX-7075-2</span><span class="md2-fx-lab">Wool Finish 210&#x27;s Ferrari</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-04/sx-7075-3.webp" data-fx-code="SX-7075-3" data-fx-lab="Wool Finish 210&#x27;s Ferrari"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-04/sx-7075-3.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 04 SX-7075-3"><span class="md2-fx-code">SX-7075-3</span><span class="md2-fx-lab">Wool Finish 210&#x27;s Ferrari</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-04/sx-7075-4.webp" data-fx-code="SX-7075-4" data-fx-lab="Wool Finish 210&#x27;s Ferrari"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-04/sx-7075-4.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 04 SX-7075-4"><span class="md2-fx-code">SX-7075-4</span><span class="md2-fx-lab">Wool Finish 210&#x27;s Ferrari</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-04/sx-7075-5.webp" data-fx-code="SX-7075-5" data-fx-lab="Wool Finish 210&#x27;s Ferrari"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-04/sx-7075-5.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 04 SX-7075-5"><span class="md2-fx-code">SX-7075-5</span><span class="md2-fx-lab">Wool Finish 210&#x27;s Ferrari</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-04/sx-7075-6.webp" data-fx-code="SX-7075-6" data-fx-lab="Wool Finish 210&#x27;s Ferrari"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-04/sx-7075-6.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 04 SX-7075-6"><span class="md2-fx-code">SX-7075-6</span><span class="md2-fx-lab">Wool Finish 210&#x27;s Ferrari</span></button></li></ul></div><div class="md2-fx-panel" data-fx-book="ichn-07" hidden><div class="md2-fx-head"><h3 class="md2-h3">ICHN 07</h3><p class="md2-fx-headprice"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">5.500.000đ</strong></p><p class="md2-fx-spec">Theo nhãn: Superfine Australian Wool Blend</p></div><ul class="md2-fx-grid"><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-07/008-lo-10-1.webp" data-fx-code="008 Lô 10 - 1" data-fx-lab="Superfine Australian Wool Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-07/008-lo-10-1.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 07 008 Lô 10 - 1"><span class="md2-fx-code">008 Lô 10 - 1</span><span class="md2-fx-lab">Superfine Australian Wool Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-07/008-lo-10-10.webp" data-fx-code="008 Lô 10 - 10" data-fx-lab="Superfine Australian Wool Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-07/008-lo-10-10.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 07 008 Lô 10 - 10"><span class="md2-fx-code">008 Lô 10 - 10</span><span class="md2-fx-lab">Superfine Australian Wool Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-07/008-lo-10-2.webp" data-fx-code="008 Lô 10 - 2" data-fx-lab="Superfine Australian Wool Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-07/008-lo-10-2.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 07 008 Lô 10 - 2"><span class="md2-fx-code">008 Lô 10 - 2</span><span class="md2-fx-lab">Superfine Australian Wool Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-07/008-lo-10-3.webp" data-fx-code="008 Lô 10 - 3" data-fx-lab="Superfine Australian Wool Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-07/008-lo-10-3.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 07 008 Lô 10 - 3"><span class="md2-fx-code">008 Lô 10 - 3</span><span class="md2-fx-lab">Superfine Australian Wool Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-07/008-lo-10-4.webp" data-fx-code="008 Lô 10 - 4" data-fx-lab="Superfine Australian Wool Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-07/008-lo-10-4.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 07 008 Lô 10 - 4"><span class="md2-fx-code">008 Lô 10 - 4</span><span class="md2-fx-lab">Superfine Australian Wool Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-07/008-lo-10-5.webp" data-fx-code="008 Lô 10 - 5" data-fx-lab="Superfine Australian Wool Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-07/008-lo-10-5.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 07 008 Lô 10 - 5"><span class="md2-fx-code">008 Lô 10 - 5</span><span class="md2-fx-lab">Superfine Australian Wool Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-07/008-lo-10-6.webp" data-fx-code="008 Lô 10 - 6" data-fx-lab="Superfine Australian Wool Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-07/008-lo-10-6.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 07 008 Lô 10 - 6"><span class="md2-fx-code">008 Lô 10 - 6</span><span class="md2-fx-lab">Superfine Australian Wool Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-07/008-lo-10-7.webp" data-fx-code="008 Lô 10 - 7" data-fx-lab="Superfine Australian Wool Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-07/008-lo-10-7.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 07 008 Lô 10 - 7"><span class="md2-fx-code">008 Lô 10 - 7</span><span class="md2-fx-lab">Superfine Australian Wool Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-07/008-lo-10-8.webp" data-fx-code="008 Lô 10 - 8" data-fx-lab="Superfine Australian Wool Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-07/008-lo-10-8.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 07 008 Lô 10 - 8"><span class="md2-fx-code">008 Lô 10 - 8</span><span class="md2-fx-lab">Superfine Australian Wool Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-07/008-lo-10-9.webp" data-fx-code="008 Lô 10 - 9" data-fx-lab="Superfine Australian Wool Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-07/008-lo-10-9.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 07 008 Lô 10 - 9"><span class="md2-fx-code">008 Lô 10 - 9</span><span class="md2-fx-lab">Superfine Australian Wool Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-07/20516-black.webp" data-fx-code="20516 - Black" data-fx-lab="Superfine Australian Wool Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-07/20516-black.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 07 20516 - Black"><span class="md2-fx-code">20516 - Black</span><span class="md2-fx-lab">Superfine Australian Wool Blend</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/ichn-07/703-black-1680.webp" data-fx-code="703 - Black (1680)" data-fx-lab="Superfine Australian Wool Blend"><img src="/assets/may-do-bang-vai-20261105/thumb/ichn-07/703-black-1680.webp" width="330" height="210" loading="lazy" decoding="async" alt="ICHN 07 703 - Black (1680)"><span class="md2-fx-code">703 - Black (1680)</span><span class="md2-fx-lab">Superfine Australian Wool Blend</span></button></li></ul></div><div class="md2-fx-panel" data-fx-book="trs6500-01" hidden><div class="md2-fx-head"><h3 class="md2-h3">TRS6500-01</h3><p class="md2-fx-headprice"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">5.500.000đ</strong></p><p class="md2-fx-spec">Theo nhãn: pha Rayon và Polyester, một số mẫu có Spandex</p></div><ul class="md2-fx-grid"><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr-110-co-gian-14.webp" data-fx-code="NTR 110 Co Giãn - 14" data-fx-lab="18% Rayon, 80% Poly, 2% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr-110-co-gian-14.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR 110 Co Giãn - 14"><span class="md2-fx-code">NTR 110 Co Giãn - 14</span><span class="md2-fx-lab">18% Rayon, 80% Poly, 2% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr-110-co-gian-17.webp" data-fx-code="NTR 110 Co Giãn - 17" data-fx-lab="18% Rayon, 80% Poly, 2% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr-110-co-gian-17.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR 110 Co Giãn - 17"><span class="md2-fx-code">NTR 110 Co Giãn - 17</span><span class="md2-fx-lab">18% Rayon, 80% Poly, 2% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr-110-co-gian-36.webp" data-fx-code="NTR 110 Co Giãn - 36" data-fx-lab="18% Rayon, 80% Poly, 2% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr-110-co-gian-36.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR 110 Co Giãn - 36"><span class="md2-fx-code">NTR 110 Co Giãn - 36</span><span class="md2-fx-lab">18% Rayon, 80% Poly, 2% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr-110-co-gian-524.webp" data-fx-code="NTR 110 Co Giãn - 524" data-fx-lab="18% Rayon, 80% Poly, 2% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr-110-co-gian-524.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR 110 Co Giãn - 524"><span class="md2-fx-code">NTR 110 Co Giãn - 524</span><span class="md2-fx-lab">18% Rayon, 80% Poly, 2% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr-110-co-gian-g2.webp" data-fx-code="NTR 110 Co Giãn - G2" data-fx-lab="18% Rayon, 80% Poly, 2% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr-110-co-gian-g2.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR 110 Co Giãn - G2"><span class="md2-fx-code">NTR 110 Co Giãn - G2</span><span class="md2-fx-lab">18% Rayon, 80% Poly, 2% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr-110-co-gian-g7.webp" data-fx-code="NTR 110 Co Giãn - G7" data-fx-lab="18% Rayon, 80% Poly, 2% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr-110-co-gian-g7.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR 110 Co Giãn - G7"><span class="md2-fx-code">NTR 110 Co Giãn - G7</span><span class="md2-fx-lab">18% Rayon, 80% Poly, 2% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr-110-co-gian-en.webp" data-fx-code="NTR 110 Co Giãn - ĐEN" data-fx-lab="18% Rayon, 80% Poly, 2% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr-110-co-gian-en.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR 110 Co Giãn - ĐEN"><span class="md2-fx-code">NTR 110 Co Giãn - ĐEN</span><span class="md2-fx-lab">18% Rayon, 80% Poly, 2% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-10.webp" data-fx-code="NTR90 - 10" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-10.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 10"><span class="md2-fx-code">NTR90 - 10</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-13.webp" data-fx-code="NTR90 - 13" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-13.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 13"><span class="md2-fx-code">NTR90 - 13</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-14.webp" data-fx-code="NTR90 - 14" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-14.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 14"><span class="md2-fx-code">NTR90 - 14</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-15.webp" data-fx-code="NTR90 - 15" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-15.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 15"><span class="md2-fx-code">NTR90 - 15</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-16.webp" data-fx-code="NTR90 - 16" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-16.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 16"><span class="md2-fx-code">NTR90 - 16</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-18.webp" data-fx-code="NTR90 - 18" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-18.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 18"><span class="md2-fx-code">NTR90 - 18</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-2.webp" data-fx-code="NTR90 - 2" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-2.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 2"><span class="md2-fx-code">NTR90 - 2</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-20a.webp" data-fx-code="NTR90 - 20A" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-20a.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 20A"><span class="md2-fx-code">NTR90 - 20A</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-21a.webp" data-fx-code="NTR90 - 21A" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-21a.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 21A"><span class="md2-fx-code">NTR90 - 21A</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-3.webp" data-fx-code="NTR90 - 3" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-3.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 3"><span class="md2-fx-code">NTR90 - 3</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-30.webp" data-fx-code="NTR90 - 30" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-30.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 30"><span class="md2-fx-code">NTR90 - 30</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-33.webp" data-fx-code="NTR90 - 33" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-33.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 33"><span class="md2-fx-code">NTR90 - 33</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-5.webp" data-fx-code="NTR90 - 5" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-5.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 5"><span class="md2-fx-code">NTR90 - 5</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-60.webp" data-fx-code="NTR90 - 60" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-60.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 60"><span class="md2-fx-code">NTR90 - 60</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-7.webp" data-fx-code="NTR90 - 7" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-7.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 7"><span class="md2-fx-code">NTR90 - 7</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-70.webp" data-fx-code="NTR90 - 70" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-70.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 70"><span class="md2-fx-code">NTR90 - 70</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-71.webp" data-fx-code="NTR90 - 71" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-71.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 71"><span class="md2-fx-code">NTR90 - 71</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-75.webp" data-fx-code="NTR90 - 75" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-75.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 75"><span class="md2-fx-code">NTR90 - 75</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-76.webp" data-fx-code="NTR90 - 76" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-76.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - 76"><span class="md2-fx-code">NTR90 - 76</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/ntr90-en.webp" data-fx-code="NTR90 - Đen" data-fx-lab="20% Rayon, 80% Polyester - 320 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/ntr90-en.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 NTR90 - Đen"><span class="md2-fx-code">NTR90 - Đen</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 320 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/trs-100-1.webp" data-fx-code="TRS 100-1" data-fx-lab="10% Rayon, 87% Poly, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/trs-100-1.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 TRS 100-1"><span class="md2-fx-code">TRS 100-1</span><span class="md2-fx-lab">10% Rayon, 87% Poly, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/trs-100-4.webp" data-fx-code="TRS 100-4" data-fx-lab="10% Rayon, 87% Poly, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/trs-100-4.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 TRS 100-4"><span class="md2-fx-code">TRS 100-4</span><span class="md2-fx-lab">10% Rayon, 87% Poly, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/trs-100-7.webp" data-fx-code="TRS 100-7" data-fx-lab="10% Rayon, 87% Poly, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/trs-100-7.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 TRS 100-7"><span class="md2-fx-code">TRS 100-7</span><span class="md2-fx-lab">10% Rayon, 87% Poly, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-01/trs-100-en.webp" data-fx-code="TRS 100-Đen" data-fx-lab="10% Rayon, 87% Poly, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-01/trs-100-en.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-01 TRS 100-Đen"><span class="md2-fx-code">TRS 100-Đen</span><span class="md2-fx-lab">10% Rayon, 87% Poly, 3% Spandex</span></button></li></ul></div><div class="md2-fx-panel" data-fx-book="trs6500-02" hidden><div class="md2-fx-head"><h3 class="md2-h3">TRS6500-02</h3><p class="md2-fx-headprice"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">5.500.000đ</strong></p><p class="md2-fx-spec">Theo nhãn: 10% Wool, 10% Tencel, 3% Spandex</p></div><ul class="md2-fx-grid"><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-02/woolten160-1.webp" data-fx-code="WoolTen160-1" data-fx-lab="10% Wool, 10% Tencel, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-02/woolten160-1.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-02 WoolTen160-1"><span class="md2-fx-code">WoolTen160-1</span><span class="md2-fx-lab">10% Wool, 10% Tencel, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-02/woolten160-10.webp" data-fx-code="WoolTen160-10" data-fx-lab="10% Wool, 10% Tencel, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-02/woolten160-10.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-02 WoolTen160-10"><span class="md2-fx-code">WoolTen160-10</span><span class="md2-fx-lab">10% Wool, 10% Tencel, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-02/woolten160-11.webp" data-fx-code="WoolTen160-11" data-fx-lab="10% Wool, 10% Tencel, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-02/woolten160-11.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-02 WoolTen160-11"><span class="md2-fx-code">WoolTen160-11</span><span class="md2-fx-lab">10% Wool, 10% Tencel, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-02/woolten160-12.webp" data-fx-code="WoolTen160-12" data-fx-lab="10% Wool, 10% Tencel, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-02/woolten160-12.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-02 WoolTen160-12"><span class="md2-fx-code">WoolTen160-12</span><span class="md2-fx-lab">10% Wool, 10% Tencel, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-02/woolten160-13.webp" data-fx-code="WoolTen160-13" data-fx-lab="10% Wool, 10% Tencel, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-02/woolten160-13.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-02 WoolTen160-13"><span class="md2-fx-code">WoolTen160-13</span><span class="md2-fx-lab">10% Wool, 10% Tencel, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-02/woolten160-14.webp" data-fx-code="WoolTen160-14" data-fx-lab="10% Wool, 10% Tencel, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-02/woolten160-14.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-02 WoolTen160-14"><span class="md2-fx-code">WoolTen160-14</span><span class="md2-fx-lab">10% Wool, 10% Tencel, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-02/woolten160-15.webp" data-fx-code="WoolTen160-15" data-fx-lab="10% Wool, 10% Tencel, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-02/woolten160-15.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-02 WoolTen160-15"><span class="md2-fx-code">WoolTen160-15</span><span class="md2-fx-lab">10% Wool, 10% Tencel, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-02/woolten160-2.webp" data-fx-code="WoolTen160-2" data-fx-lab="10% Wool, 10% Tencel, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-02/woolten160-2.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-02 WoolTen160-2"><span class="md2-fx-code">WoolTen160-2</span><span class="md2-fx-lab">10% Wool, 10% Tencel, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-02/woolten160-3.webp" data-fx-code="WoolTen160-3" data-fx-lab="10% Wool, 10% Tencel, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-02/woolten160-3.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-02 WoolTen160-3"><span class="md2-fx-code">WoolTen160-3</span><span class="md2-fx-lab">10% Wool, 10% Tencel, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-02/woolten160-4.webp" data-fx-code="WoolTen160-4" data-fx-lab="10% Wool, 10% Tencel, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-02/woolten160-4.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-02 WoolTen160-4"><span class="md2-fx-code">WoolTen160-4</span><span class="md2-fx-lab">10% Wool, 10% Tencel, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-02/woolten160-5.webp" data-fx-code="WoolTen160-5" data-fx-lab="10% Wool, 10% Tencel, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-02/woolten160-5.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-02 WoolTen160-5"><span class="md2-fx-code">WoolTen160-5</span><span class="md2-fx-lab">10% Wool, 10% Tencel, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-02/woolten160-6.webp" data-fx-code="WoolTen160-6" data-fx-lab="10% Wool, 10% Tencel, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-02/woolten160-6.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-02 WoolTen160-6"><span class="md2-fx-code">WoolTen160-6</span><span class="md2-fx-lab">10% Wool, 10% Tencel, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-02/woolten160-7.webp" data-fx-code="WoolTen160-7" data-fx-lab="10% Wool, 10% Tencel, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-02/woolten160-7.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-02 WoolTen160-7"><span class="md2-fx-code">WoolTen160-7</span><span class="md2-fx-lab">10% Wool, 10% Tencel, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-02/woolten160-9.webp" data-fx-code="WoolTen160-9" data-fx-lab="10% Wool, 10% Tencel, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-02/woolten160-9.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-02 WoolTen160-9"><span class="md2-fx-code">WoolTen160-9</span><span class="md2-fx-lab">10% Wool, 10% Tencel, 3% Spandex</span></button></li></ul></div><div class="md2-fx-panel" data-fx-book="trs6500-03" hidden><div class="md2-fx-head"><h3 class="md2-h3">TRS6500-03</h3><p class="md2-fx-headprice"><span class="md2-fx-pricelabel">Giá may đo bộ vest</span><strong class="md2-fx-price">5.500.000đ</strong></p><p class="md2-fx-spec">Theo nhãn: pha Rayon và Polyester, một số mẫu có Spandex</p></div><ul class="md2-fx-grid"><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/tr085-10.webp" data-fx-code="TR085 - 10" data-fx-lab="20% Rayon, 80% Polyester - 410 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/tr085-10.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TR085 - 10"><span class="md2-fx-code">TR085 - 10</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 410 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/tr085-11.webp" data-fx-code="TR085 - 11" data-fx-lab="20% Rayon, 80% Polyester - 410 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/tr085-11.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TR085 - 11"><span class="md2-fx-code">TR085 - 11</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 410 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/tr085-2.webp" data-fx-code="TR085 - 2" data-fx-lab="20% Rayon, 80% Polyester - 410 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/tr085-2.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TR085 - 2"><span class="md2-fx-code">TR085 - 2</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 410 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/tr085-6.webp" data-fx-code="TR085 - 6" data-fx-lab="20% Rayon, 80% Polyester - 410 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/tr085-6.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TR085 - 6"><span class="md2-fx-code">TR085 - 6</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 410 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/tr085-7.webp" data-fx-code="TR085 - 7" data-fx-lab="20% Rayon, 80% Polyester - 410 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/tr085-7.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TR085 - 7"><span class="md2-fx-code">TR085 - 7</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 410 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/tr085-8.webp" data-fx-code="TR085 - 8" data-fx-lab="20% Rayon, 80% Polyester - 410 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/tr085-8.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TR085 - 8"><span class="md2-fx-code">TR085 - 8</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 410 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/tr085-8a.webp" data-fx-code="TR085 - 8A" data-fx-lab="20% Rayon, 80% Polyester - 410 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/tr085-8a.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TR085 - 8A"><span class="md2-fx-code">TR085 - 8A</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 410 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/tr085-9.webp" data-fx-code="TR085 - 9" data-fx-lab="20% Rayon, 80% Polyester - 410 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/tr085-9.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TR085 - 9"><span class="md2-fx-code">TR085 - 9</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 410 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/tr085-xq.webp" data-fx-code="TR085 - XQ" data-fx-lab="20% Rayon, 80% Polyester - 410 g/m"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/tr085-xq.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TR085 - XQ"><span class="md2-fx-code">TR085 - XQ</span><span class="md2-fx-lab">20% Rayon, 80% Polyester - 410 g/m</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/trs-105-1.webp" data-fx-code="TRS 105 - 1" data-fx-lab="27% Rayon, 70% Poly, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/trs-105-1.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TRS 105 - 1"><span class="md2-fx-code">TRS 105 - 1</span><span class="md2-fx-lab">27% Rayon, 70% Poly, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/trs-105-10.webp" data-fx-code="TRS 105 - 10" data-fx-lab="27% Rayon, 70% Poly, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/trs-105-10.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TRS 105 - 10"><span class="md2-fx-code">TRS 105 - 10</span><span class="md2-fx-lab">27% Rayon, 70% Poly, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/trs-105-11.webp" data-fx-code="TRS 105 - 11" data-fx-lab="27% Rayon, 70% Poly, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/trs-105-11.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TRS 105 - 11"><span class="md2-fx-code">TRS 105 - 11</span><span class="md2-fx-lab">27% Rayon, 70% Poly, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/trs-105-12.webp" data-fx-code="TRS 105 - 12" data-fx-lab="27% Rayon, 70% Poly, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/trs-105-12.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TRS 105 - 12"><span class="md2-fx-code">TRS 105 - 12</span><span class="md2-fx-lab">27% Rayon, 70% Poly, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/trs-105-15.webp" data-fx-code="TRS 105 - 15" data-fx-lab="27% Rayon, 70% Poly, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/trs-105-15.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TRS 105 - 15"><span class="md2-fx-code">TRS 105 - 15</span><span class="md2-fx-lab">27% Rayon, 70% Poly, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/trs-105-2.webp" data-fx-code="TRS 105 - 2" data-fx-lab="27% Rayon, 70% Poly, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/trs-105-2.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TRS 105 - 2"><span class="md2-fx-code">TRS 105 - 2</span><span class="md2-fx-lab">27% Rayon, 70% Poly, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/trs-105-2a.webp" data-fx-code="TRS 105 - 2A" data-fx-lab="27% Rayon, 70% Poly, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/trs-105-2a.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TRS 105 - 2A"><span class="md2-fx-code">TRS 105 - 2A</span><span class="md2-fx-lab">27% Rayon, 70% Poly, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/trs-105-3.webp" data-fx-code="TRS 105 - 3" data-fx-lab="27% Rayon, 70% Poly, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/trs-105-3.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TRS 105 - 3"><span class="md2-fx-code">TRS 105 - 3</span><span class="md2-fx-lab">27% Rayon, 70% Poly, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/trs-105-4.webp" data-fx-code="TRS 105 - 4" data-fx-lab="27% Rayon, 70% Poly, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/trs-105-4.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TRS 105 - 4"><span class="md2-fx-code">TRS 105 - 4</span><span class="md2-fx-lab">27% Rayon, 70% Poly, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/trs-105-5a.webp" data-fx-code="TRS 105 - 5A" data-fx-lab="27% Rayon, 70% Poly, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/trs-105-5a.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TRS 105 - 5A"><span class="md2-fx-code">TRS 105 - 5A</span><span class="md2-fx-lab">27% Rayon, 70% Poly, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/trs-105-6.webp" data-fx-code="TRS 105 - 6" data-fx-lab="27% Rayon, 70% Poly, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/trs-105-6.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TRS 105 - 6"><span class="md2-fx-code">TRS 105 - 6</span><span class="md2-fx-lab">27% Rayon, 70% Poly, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/trs-105-9.webp" data-fx-code="TRS 105 - 9" data-fx-lab="27% Rayon, 70% Poly, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/trs-105-9.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TRS 105 - 9"><span class="md2-fx-code">TRS 105 - 9</span><span class="md2-fx-lab">27% Rayon, 70% Poly, 3% Spandex</span></button></li><li><button type="button" class="md2-fx-sw" data-fx-full="/assets/may-do-bang-vai-20261105/full/trs6500-03/trs-105-dm.webp" data-fx-code="TRS 105 - DM" data-fx-lab="27% Rayon, 70% Poly, 3% Spandex"><img src="/assets/may-do-bang-vai-20261105/thumb/trs6500-03/trs-105-dm.webp" width="330" height="210" loading="lazy" decoding="async" alt="TRS6500-03 TRS 105 - DM"><span class="md2-fx-code">TRS 105 - DM</span><span class="md2-fx-lab">27% Rayon, 70% Poly, 3% Spandex</span></button></li></ul></div>
+<div class="md2-fx-zoom" hidden>
+<button type="button" class="md2-fx-back" data-fx-back>Quay lại</button>
+<div class="md2-fx-zoomimg"><button type="button" class="md2-fx-nav md2-fx-prev" data-fx-step="-1" aria-label="Mẫu trước">‹</button>
+<img alt="" width="600" height="773"><button type="button" class="md2-fx-nav md2-fx-next" data-fx-step="1" aria-label="Mẫu sau">›</button></div>
+<p class="md2-fx-zoomcap"><b></b> <span></span></p>
+</div>
+</div>
 </div>
 
-
-
-<script>
-
-  const activeSuitViews = {};
-
-  let currentModalPhotos = [];
-
-  let currentModalIndex = 0;
-
-  let touchStartX = 0;
-
-  let touchEndX = 0;
-
-
-
-  function changeSuitView(cardId, imgSrc, tagText, btnElement) {
-
-    if (typeof activeSuitViews !== 'undefined') {
-
-      activeSuitViews[cardId] = tagText;
-
-    }
-
-    var img = document.getElementById('img-' + cardId);
-
-    var tag = document.getElementById('tag-' + cardId);
-
-    if (img && imgSrc) {
-
-      img.style.opacity = '0.4';
-
-      setTimeout(function() {
-
-        img.src = imgSrc;
-
-        img.style.opacity = '1';
-
-      }, 100);
-
-    }
-
-    if (tag && tagText) {
-
-      tag.innerText = tagText;
-
-    }
-
-    var buttons = document.querySelectorAll('.suit-btn-' + cardId);
-
-    buttons.forEach(function(btn) {
-
-      btn.classList.remove('active');
-
-    });
-
-    if (btnElement) {
-
-      btnElement.classList.add('active');
-
-    }
-
-  }
-
-
-
-  function openSuitCardModal(cardId, title, bia, vest, quan, zile) {
-
-    const currentTag = activeSuitViews[cardId] || 'Ảnh Bìa';
-
-    currentModalPhotos = [
-
-      { type: 'Ảnh Bìa', src: bia },
-
-      { type: 'Áo Vest', src: vest },
-
-      { type: 'Quần Tây', src: quan },
-
-      { type: 'Áo Gile', src: zile }
-
-    ];
-
-    currentModalIndex = currentModalPhotos.findIndex(p => p.type === currentTag);
-
-    if (currentModalIndex === -1) currentModalIndex = 0;
-
-
-
-    const modal = document.getElementById('suitLightboxModal');
-
-    const modalTitle = document.getElementById('modalSuitTitle');
-
-    if (modal && modalTitle) {
-
-      modalTitle.innerText = title;
-
-      updateModalPhoto();
-
-      modal.classList.remove('hidden');
-
-      modal.classList.add('flex');
-
-      document.body.style.overflow = 'hidden';
-
-    }
-
-  }
-
-
-
-  function updateModalPhoto() {
-
-    const photo = currentModalPhotos[currentModalIndex];
-
-    const modalImg = document.getElementById('modalSuitImg');
-
-    const modalTag = document.getElementById('modalSuitTag');
-
-    if (modalImg && photo) {
-
-      modalImg.hidden = false;
-
-      modalImg.removeAttribute('hidden');
-
-      modalImg.src = photo.src;
-
-      modalImg.style.opacity = '0.2';
-
-      setTimeout(() => {
-
-        modalImg.src = photo.src;
-
-        modalImg.style.opacity = '1';
-
-      }, 100);
-
-    }
-
-    if (modalTag && photo) {
-
-      modalTag.innerText = 'Đang xem: ' + photo.type;
-
-    }
-
-    const thumbBtns = document.querySelectorAll('.modal-thumb-btn');
-
-    thumbBtns.forEach((btn, idx) => {
-
-      if (idx === currentModalIndex) {
-
-        btn.className = 'modal-thumb-btn px-3.5 py-1.5 text-xs font-bold rounded-full bg-[#9d0208] text-white shadow transition touch-manipulation active:scale-95';
-
-      } else {
-
-        btn.className = 'modal-thumb-btn px-3.5 py-1.5 text-xs font-medium rounded-full bg-white/10 text-white/80 hover:bg-white/20 transition touch-manipulation active:scale-95';
-
-      }
-
-    });
-
-  }
-
-
-
-  function selectModalThumb(index) {
-
-    currentModalIndex = index;
-
-    updateModalPhoto();
-
-  }
-
-
-
-  function prevModalPhoto() {
-
-    currentModalIndex = (currentModalIndex - 1 + currentModalPhotos.length) % currentModalPhotos.length;
-
-    updateModalPhoto();
-
-  }
-
-
-
-  function nextModalPhoto() {
-
-    currentModalIndex = (currentModalIndex + 1) % currentModalPhotos.length;
-
-    updateModalPhoto();
-
-  }
-
-
-
-  function handleModalTouchStart(e) {
-
-    if (e.changedTouches && e.changedTouches.length > 0) {
-
-      touchStartX = e.changedTouches[0].screenX;
-
-    }
-
-  }
-
-
-
-  function handleModalTouchEnd(e) {
-
-    if (e.changedTouches && e.changedTouches.length > 0) {
-
-      touchEndX = e.changedTouches[0].screenX;
-
-      if (touchStartX - touchEndX > 40) {
-
-        nextModalPhoto(); // Swipe Left
-
-      } else if (touchEndX - touchStartX > 40) {
-
-        prevModalPhoto(); // Swipe Right
-
-      }
-
-    }
-
-  }
-
-
-
-  function closeSuitModal() {
-
-    const modal = document.getElementById('suitLightboxModal');
-
-    const modalImg = document.getElementById('modalSuitImg');
-
-    if (modalImg) modalImg.hidden = true;
-
-    if (modal) {
-
-      modal.classList.add('hidden');
-
-      modal.classList.remove('flex');
-
-      document.body.style.overflow = '';
-
-    }
-
-  }
-
-</script>
 
 
 
@@ -2425,7 +1572,40 @@ span.vn-old-price{color:#78716c!important;-webkit-text-fill-color:#78716c!import
 
 </main>
 
-<script src="/lang-switch.js?v=20261105-i18n-p18" defer></script>
+<script id="mlh-maydo-fabric-js">
+(function(){
+  var modal=document.getElementById('md2-fx-modal'); if(!modal) return;
+  var zoom=modal.querySelector('.md2-fx-zoom'), zimg=zoom.querySelector('img');
+  var cur=null, list=[], idx=0, lastFocus=null;
+  function show(i){ idx=(i+list.length)%list.length; var b=list[idx];
+    zimg.src=b.getAttribute('data-fx-full'); zimg.alt=b.querySelector('img').alt;
+    zoom.querySelector('.md2-fx-zoomcap b').textContent=b.getAttribute('data-fx-code');
+    zoom.querySelector('.md2-fx-zoomcap span').textContent=b.getAttribute('data-fx-lab'); }
+  function open(book,from){ lastFocus=from||null;
+    Array.prototype.forEach.call(modal.querySelectorAll('.md2-fx-panel'),function(p){ p.hidden=p.getAttribute('data-fx-book')!==book; });
+    cur=modal.querySelector('.md2-fx-panel[data-fx-book="'+book+'"]'); if(!cur) return;
+    list=Array.prototype.slice.call(cur.querySelectorAll('.md2-fx-sw')); zoom.hidden=true;
+    modal.hidden=false; document.documentElement.style.overflow='hidden'; document.body.style.overflow='hidden';
+    modal.querySelector('.md2-fx-box').scrollTop=0; modal.querySelector('.md2-fx-close').focus(); }
+  function close(){ modal.hidden=true; zoom.hidden=true; if(cur) cur.hidden=true;
+    document.documentElement.style.overflow=''; document.body.style.overflow='';
+    if(lastFocus&&lastFocus.focus) lastFocus.focus(); }
+  function unzoom(){ zoom.hidden=true; if(cur) cur.hidden=false; }
+  document.addEventListener('click',function(e){
+    var t=e.target.closest?e.target.closest('[data-fx-open]'):null;
+    if(t){ e.preventDefault(); open(t.getAttribute('data-fx-open'),t); }});
+  modal.addEventListener('click',function(e){
+    if(e.target===modal||e.target.closest('[data-fx-close]')){ close(); return; }
+    if(e.target.closest('[data-fx-back]')){ unzoom(); return; }
+    var s=e.target.closest('[data-fx-step]'); if(s){ show(idx+parseInt(s.getAttribute('data-fx-step'),10)); return; }
+    var w=e.target.closest('.md2-fx-sw'); if(w){ show(list.indexOf(w)); cur.hidden=true; zoom.hidden=false; modal.querySelector('.md2-fx-box').scrollTop=0; }});
+  document.addEventListener('keydown',function(e){ if(modal.hidden) return;
+    if(e.key==='Escape'){ if(!zoom.hidden) unzoom(); else close(); }
+    else if(!zoom.hidden&&e.key==='ArrowLeft') show(idx-1);
+    else if(!zoom.hidden&&e.key==='ArrowRight') show(idx+1); });
+})();
+</script>
+<script src="/lang-switch.js?v=20261105-i18n-p19" defer></script>
 </body></html>
 
 
