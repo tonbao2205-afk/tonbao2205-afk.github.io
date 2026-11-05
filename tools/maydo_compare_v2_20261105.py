@@ -8,7 +8,7 @@ Usage: python -I tools/maydo_compare_v2_20261105.py <web_root> [--dry-run]
   9 PNGs arrive in images/may-do-so-sanh-v2-20261105/ (repo checkout).
 - Each image: PNG present -> WebP 1600/800 in <web_root>/assets/may-do-so-sanh-v2-20261105/ and <img>;
   missing -> neutral placeholder "Ảnh minh họa đang được cập nhật" (no reuse of old images).
-- Labels "Hàng may sẵn" / "May đo mayLEHUONG" are HTML over the image (translatable).
+- Labels "Hàng may sẵn" / "May đo mayLEHUONG" are HTML BELOW the image, one per half (translatable); no text over the photo.
 """
 import argparse
 import re
@@ -90,11 +90,13 @@ CSS = (
     'background:linear-gradient(90deg,#efe5d6 0,#efe5d6 calc(50% - 2px),#fdfaf4 calc(50% - 2px),#fdfaf4 calc(50% + 2px),#e7dcc9 calc(50% + 2px))}'
     '.md2-cv-ph span{background:#fff;color:#3d3226!important;-webkit-text-fill-color:#3d3226;font-size:13px;font-weight:600;'
     'padding:6px 12px;border-radius:999px;border:1px dashed rgba(161,127,34,.6);text-align:center}'
-    '.md2-cv-fig .md2-tag{position:absolute;top:8px;max-width:calc(50% - 16px);display:inline-block;padding:3px 8px;'
-    'border-radius:999px;font-size:11px!important;font-weight:800;line-height:1.25;text-transform:none!important;'
-    'letter-spacing:.02em;box-shadow:0 2px 8px rgba(0,0,0,.18)}'
-    '.md2-cv-fig .md2-tag-bad{left:8px;background:#9d0208;color:#fff!important;-webkit-text-fill-color:#fff}'
-    '.md2-cv-fig .md2-tag-good{left:calc(50% + 8px);background:#15110e;color:#fff!important;-webkit-text-fill-color:#fff}'
+    '.md2-cv-under{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid rgba(20,18,16,.08);background:#fffdf8}'
+    '.md2-cv-under>span{display:block;padding:8px 10px;text-align:center;font-size:12.5px!important;font-weight:800;line-height:1.3;'
+    'letter-spacing:.02em;text-transform:none!important}'
+    '.md2-cv-under>.is-bad{color:#9d0208!important;-webkit-text-fill-color:#9d0208;border-right:1px solid rgba(20,18,16,.08)}'
+    '.md2-cv-under>.is-good{color:#15110e!important;-webkit-text-fill-color:#15110e}'
+    '.md2-cv-card .md2-figcap{position:static;display:block;margin:0;padding:6px 12px 0;background:none;border-radius:0;text-align:right;'
+    'color:#4a3d2f!important;-webkit-text-fill-color:#4a3d2f;font-size:11.5px!important;font-weight:600}'
     '.md2-cv-body{padding:16px 16px 18px}'
     '.md2-cv-num{display:inline-block;font-family:\'Noto Serif\',Georgia,serif;font-size:14px;font-weight:700;'
     'color:#6e5410!important;margin-bottom:4px}'
@@ -128,8 +130,7 @@ CSS = (
     '}'
     '@media (min-width:420px){.md2-cv-cols{grid-template-columns:1fr 1fr}}'
     '@media (min-width:900px){.md2-cv-grid{grid-template-columns:1fr 1fr;gap:24px}'
-    '.md2-cv-fig .md2-tag{top:12px;padding:4px 10px;font-size:12.5px!important}'
-    '.md2-cv-fig .md2-tag-bad{left:12px}.md2-cv-fig .md2-tag-good{left:calc(50% + 12px)}'
+    '.md2-cv-under>span{font-size:13.5px!important;padding:9px 12px}'
     '.md2-cv-body{padding:20px 22px 22px}}'
     '</style>'
 )
@@ -139,12 +140,14 @@ def figure(slug, alt, have):
     if have:
         media = (f'<img src="/{OUT_REL}/{slug}-1600.webp" srcset="/{OUT_REL}/{slug}-800.webp 800w, '
                  f'/{OUT_REL}/{slug}-1600.webp 1600w" sizes="(max-width:899px) 100vw, 580px" width="1600" '
-                 f'height="1000" loading="lazy" decoding="async" alt="{alt}">'
-                 f'<figcaption class="md2-figcap">{CAPTION}</figcaption>')
+                 f'height="1000" loading="lazy" decoding="async" alt="{alt}">')
+        cap = f'<figcaption class="md2-figcap">{CAPTION}</figcaption>'
     else:
         media = f'<div class="md2-cv-ph"><span>{PLACEHOLDER}</span></div>'
-    return (f'<figure class="md2-cv-fig">{media}<span class="md2-tag md2-tag-bad">{BAD}</span>'
-            f'<span class="md2-tag md2-tag-good">{GOOD}</span></figure>')
+        cap = ''
+    # Labels sit BELOW the image (owner 06/11: no text over the photo), one per half.
+    return (f'<figure class="md2-cv-fig">{media}<div class="md2-cv-under">'
+            f'<span class="is-bad">{BAD}</span><span class="is-good">{GOOD}</span></div>{cap}</figure>')
 
 
 def card(i, item, have):

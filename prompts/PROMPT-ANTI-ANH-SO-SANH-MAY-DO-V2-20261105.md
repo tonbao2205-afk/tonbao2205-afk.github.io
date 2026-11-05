@@ -95,3 +95,7 @@ Thêm vào cuối **mọi** prompt câu sau: `Split-screen, two equal halves wit
   - đưa lên bản thử GitHub.
 
 *File này là tài liệu bàn giao. Tạo file không có nghĩa là đã gửi cho Antigravity.*
+
+## Cập nhật 06/11/2026 (chủ shop)
+- Không phủ chữ lên ảnh nữa. Nhãn "Hàng may sẵn" / "May đo mayLEHUONG" và dòng "Ảnh minh họa" nằm **dưới ảnh**, mỗi nhãn canh giữa nửa ảnh tương ứng, áp dụng cho cả điện thoại và máy tính.
+- Ảnh vẫn không được có chữ (quy tắc trên giữ nguyên).

@@ -240,3 +240,8 @@ Kiểm tra:
 - Lỗi: bấm/rê 1 nút thì cả khung chứa nút hiện nền và bóng. Nguyên nhân: `initButtons()` chọn `[class*="cta"]` khớp luôn khung cha được gắn `lux-h-cta`, rồi gắn `lux-btn` cho khung đó. Cùng lỗi ở trang chủ (khung banner), Dịch Vụ, Giới Thiệu, Tư Vấn.
 - Sửa: bỏ qua phần tử chứa `a`/`button`. Áp dụng `luxury-animations.js` (bản `$V` và bản ở thư mục gốc) và 2 gói JS trang chủ mới hậu tố `-20261105-luxbtn.js` (file cũ giữ nguyên). Prompt `PROMPT-ANTI-NUT-NOI-CA-HANG-20261105.md`.
 - QA 390/1366, 7 trang: 0 khung bị gắn `lux-btn`, 0 tràn ngang; bấm chuột thật trên trang May Đo không còn nền/bóng ở khung. VPS không đổi.
+
+## p23 (06/11/2026): nhãn so sánh xuống dưới ảnh
+- Chủ shop yêu cầu bỏ chữ đè lên ảnh. Nhãn "Hàng may sẵn" / "May đo mayLEHUONG" của 9 thẻ so sánh trang May Đo chuyển xuống một dải ngay dưới ảnh, mỗi nhãn canh giữa nửa ảnh tương ứng; "Ảnh minh họa" cũng nằm dưới ảnh. Áp dụng cho cả điện thoại và máy tính, cả 6 ngôn ngữ.
+- Công cụ `tools/maydo_compare_v2_20261105.py` (CSS dùng `.md2-cv-under>span` để không tách tên thương hiệu thành nhiều dòng).
+- QA 320/1366 × 6 ngôn ngữ: 9/9 thẻ có dải nhãn ngay dưới ảnh, 0 nhãn đè, không tràn ngang; build strict 0 chuỗi thiếu. VPS không đổi.
