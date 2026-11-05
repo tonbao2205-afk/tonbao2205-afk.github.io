@@ -245,3 +245,7 @@ Kiểm tra:
 - Chủ shop yêu cầu bỏ chữ đè lên ảnh. Nhãn "Hàng may sẵn" / "May đo mayLEHUONG" của 9 thẻ so sánh trang May Đo chuyển xuống một dải ngay dưới ảnh, mỗi nhãn canh giữa nửa ảnh tương ứng; "Ảnh minh họa" cũng nằm dưới ảnh. Áp dụng cho cả điện thoại và máy tính, cả 6 ngôn ngữ.
 - Công cụ `tools/maydo_compare_v2_20261105.py` (CSS dùng `.md2-cv-under>span` để không tách tên thương hiệu thành nhiều dòng).
 - QA 320/1366 × 6 ngôn ngữ: 9/9 thẻ có dải nhãn ngay dưới ảnh, 0 nhãn đè, không tràn ngang; build strict 0 chuỗi thiếu. VPS không đổi.
+
+## p24 (06/11/2026): nhãn dưới ảnh cùng cỡ chữ
+- Lỗi: tên thương hiệu "mayLEHUONG" bị quy tắc chung ép cỡ 14px, nên nhãn "May đo mayLEHUONG" to hơn "Hàng may sẵn" (12,5px); dòng "Ảnh minh họa" nằm trên dải màu kem khác dải nhãn.
+- Sửa: `.brand-maylehuong` nằm trong nhãn thì kế thừa cỡ/độ đậm/phông của nhãn; "Ảnh minh họa" cùng nền với dải nhãn. QA 390/1366 VI/EN cỡ chữ khớp, không tràn ngang; build strict 0 chuỗi thiếu. VPS không đổi.
