@@ -249,3 +249,24 @@ Kiểm tra:
 ## p24 (06/11/2026): nhãn dưới ảnh cùng cỡ chữ
 - Lỗi: tên thương hiệu "mayLEHUONG" bị quy tắc chung ép cỡ 14px, nên nhãn "May đo mayLEHUONG" to hơn "Hàng may sẵn" (12,5px); dòng "Ảnh minh họa" nằm trên dải màu kem khác dải nhãn.
 - Sửa: `.brand-maylehuong` nằm trong nhãn thì kế thừa cỡ/độ đậm/phông của nhãn; "Ảnh minh họa" cùng nền với dải nhãn. QA 390/1366 VI/EN cỡ chữ khớp, không tràn ngang; build strict 0 chuỗi thiếu. VPS không đổi.
+
+## p25 (06/11/2026): làm lại trang Dịch Vụ theo hướng cao cấp
+- Chủ shop chốt:
+  - 4 nhóm: Sửa & tinh chỉnh phom, Chăm sóc & giặt hấp, Thuê vest cao cấp, Gói trọn gói;
+  - giá ghi "từ …" theo từng bậc, chủ shop gửi giá;
+  - "miễn phí" chuyển thành đặc quyền cho khách đã may/mua vest;
+  - làm cho cả điện thoại và máy tính.
+- Công cụ `tools/dichvu_v2_20261106.py` thay toàn bộ nội dung trong `<main>` (giữ breadcrumb). Trang mới gồm:
+  - phần đầu trang và thanh chuyển nhanh 4 nhóm;
+  - 4 nhóm, mỗi nhóm có ảnh (3 ảnh so sánh, nhãn đặt dưới ảnh) và 11 thẻ bậc dịch vụ;
+  - đặc quyền, quy trình 3 bước, câu hỏi thường gặp (5 câu, FAQPage JSON-LD), showroom Biên Hòa/Hà Nội (giữ id `seo-dich-vu-bien-hoa`).
+- Đã cập nhật title, description, og, WebPage, Breadcrumb, Service.
+- Ảnh: 7 PNG của Antigravity trong `images/dich-vu-cao-cap-20261106/`, chuyển thành WebP ở `assets/dich-vu-cao-cap-20261106/` (888KB).
+- **Giá:** biến `PRICE` trong công cụ đang để trống, nên trang hiện "Báo giá khi tư vấn". Khi chủ shop gửi giá thì điền vào rồi chạy lại công cụ (chế độ refresh).
+- Dịch 132 chuỗi × 5 ngôn ngữ; build strict 0 chuỗi thiếu.
+- QA ở khổ 320 và 1366 × 6 ngôn ngữ:
+  - H1 = 1, 11 bậc, 4 ảnh, không tràn ngang;
+  - quét tương phản 0 lỗi;
+  - nút bấm không nổi cả hàng.
+- Thanh chuyển nhanh: trên điện thoại xếp lưới 2×2, đứng yên; trên máy tính bám đầu trang.
+- VPS không đổi.
