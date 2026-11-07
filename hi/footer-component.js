@@ -41,7 +41,7 @@
       '.lhv-footer-col h4 { font-size: 14px !important; font-weight: 700 !important; color: #e6c364 !important; text-transform: uppercase !important; letter-spacing: 0.1em !important; margin-bottom: 16px !important; }',
       '.lhv-footer-col p, .lhv-footer-col a { font-size: 13px !important; color: #ffffff !important; text-decoration: none !important; display: block !important; margin-bottom: 10px !important; transition: color .2s !important; }',
       '.lhv-footer-col a:hover { color: #e6c364 !important; }',
-      '.lhv-footer-bottom { border-top: 1px solid rgba(255,255,255,0.1) !important; padding: 18px 16px !important; text-align: center !important; font-size: 12.5px !important; color: #d1d5db !important; }'
+      '.lhv-footer-bottom { border-top: 1px solid rgba(255,255,255,0.1) !important; padding: 18px 16px !important; text-align: center !important; font-size: 12.5px !important; color: #d1d5db !important; } .lhv-rr { white-space: nowrap !important; } .lhv-cr { display: block !important; margin-top: 8px !important; font-size: 11px !important; letter-spacing: 0.04em !important; color: #9ca3af !important; line-height: 1.7 !important; } .lhv-cr span { display: inline-block !important; white-space: nowrap !important; color: #9ca3af !important; } .lhv-cr i { font-style: normal !important; margin: 0 10px !important; color: #e6c364 !important; } @media (max-width: 767px) { .lhv-footer-bottom { padding: 18px 72px 78px !important; line-height: 1.6 !important; } .lhv-cr { margin-top: 10px !important; } .lhv-cr span { display: block !important; } .lhv-cr i { display: none !important; } }'
     ].join('\n');
     document.head.appendChild(style);
 
@@ -101,7 +101,7 @@
       '  </div>',
       '</div>',
       '<div class="lhv-footer-bottom" style="color: #d1d5db !important;">',
-      '  © Công Ty TNHH Thời Trang Lê Hương. All Rights Reserved. - Design by HarryDuong · Planning by Haris Nguyen · Coding by Sophie Tran',
+      '  © Công Ty TNHH Thời Trang Lê Hương. <span class=lhv-rr>All Rights Reserved.</span><span class=lhv-cr><span>Design by HarryDuong</span><i>·</i><span>Planning by Haris Nguyen</span><i>·</i><span>Coding by Sophie Tran</span></span>',
       '</div>'
     ].join('\n');
     
