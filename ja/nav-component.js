@@ -26,7 +26,7 @@
   /* ══════════════════════════════════════════════
      1. CONFIG & NAVIGATION DATA
   ══════════════════════════════════════════════ */
-  var LOGO_SRC   = '/images/Logo Lê Hương Web.png';
+  var LOGO_SRC   = '/images/Logo Lê Hương Web.webp';
   var LOGO_ALT   = 'mayLEHUONG Suit & Uniform';
   var NAV_HEIGHT = 68; // px
 
@@ -860,7 +860,7 @@
     function safeCartImgUrl(raw) {
       var s = String(raw || '').trim();
       if (!s || /^(?:javascript|vbscript|data:text)/i.test(s)) {
-        return '/images/Phụ Kiện/Cài cà vạt/2.png';
+        return '/images/Phụ Kiện/Cài cà vạt/2.webp';
       }
       if (s.indexOf('images/') === 0) return '/' + s;
       return s;
@@ -926,12 +926,12 @@
           var qty = Math.max(1, Math.min(99, parseInt(item.quantity || item.qty || 1, 10) || 1));
           var priceNum = parseInt(String(item.price || '0').replace(/[^0-9]/g, ''), 10) || 0;
           var itemTotal = (priceNum * qty).toLocaleString('ja-JP') + '₫';
-          var imgSrc = esc(safeCartImgUrl(item.img || item.image || '/images/Phụ Kiện/Cài cà vạt/2.png'));
+          var imgSrc = esc(safeCartImgUrl(item.img || item.image || '/images/Phụ Kiện/Cài cà vạt/2.webp'));
           var safeName = esc(item.name || 'Sản phẩm');
           var safeSize = item.size ? esc(item.size) : '';
           
           bodyHTML += '<div class="lhv-cart-item">' +
-              '<img src="' + imgSrc + '" alt="' + safeName + '" class="lhv-cart-item-img" onerror="this.src=\'/images/Phụ Kiện/Cài cà vạt/2.png\'">' +
+              '<img src="' + imgSrc + '" alt="' + safeName + '" class="lhv-cart-item-img" onerror="this.src=\'/images/Phụ Kiện/Cài cà vạt/2.webp\'">' +
               '<div class="lhv-cart-item-info">' +
                 '<div>' +
                   '<div class="lhv-cart-item-title">' + safeName + '</div>' +
@@ -1015,7 +1015,7 @@
 
       var currentSelectedSize = null;
       var safeName = escHtml(name || 'Sản phẩm');
-      var imgUrl = safeUrl(img, '/images/Phụ Kiện/Sơmi/Màu Trắng/Ảnh Bìa.png');
+      var imgUrl = safeUrl(img, '/images/Phụ Kiện/Sơmi/Màu Trắng/Ảnh Bìa.webp');
       var imgSrc = escHtml(imgUrl);
 
       var isGiay = (sizes && sizes.indexOf('38') !== -1) || (name && name.toLowerCase().indexOf('giày') !== -1);
@@ -1030,7 +1030,7 @@
       var modalHTML = '' +
         '<div id="lhv-quicksize-modal">' +
           '<div class="lhv-qs-header">' +
-            '<img src="' + imgSrc + '" alt="' + safeName + '" class="lhv-qs-img" onerror="this.src=\'/images/Phụ Kiện/Sơmi/Màu Trắng/Ảnh Bìa.png\'">' +
+            '<img src="' + imgSrc + '" alt="' + safeName + '" class="lhv-qs-img" onerror="this.src=\'/images/Phụ Kiện/Sơmi/Màu Trắng/Ảnh Bìa.webp\'">' +
             '<div>' +
               '<div class="lhv-qs-title">' + safeName + '</div>' +
               '<div class="lhv-qs-price">' + escHtml(price) + '</div>' +
@@ -1481,85 +1481,85 @@
   ══════════════════════════════════════════════ */
   var SEARCH_CATALOG = [
     // ── CÀ VẠT LỤA (CV-01 đến CV-19) ──
-    { code: 'CV-01', name: 'Cà vạt nam lụa cao cấp - Màu Đen', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Đen/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-mau-den.html' },
-    { code: 'CV-02', name: 'Cà vạt nam lụa cao cấp - Màu Đen Họa Tiết', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Đen Họa Tiết/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-mau-den-hoa-tiet.html' },
-    { code: 'CV-03', name: 'Cà vạt nam lụa cao cấp - Màu Đỏ Quyền Lực', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Đỏ/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-mau-do.html' },
-    { code: 'CV-04', name: 'Cà vạt nam lụa cao cấp - Màu Đỏ Họa Tiết', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Đỏ Họa Tiết/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-do-hoa-tiet.html' },
-    { code: 'CV-05', name: 'Cà vạt nam lụa cao cấp - Màu Navy Đĩnh Đạc', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Navy/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-mau-navy.html' },
-    { code: 'CV-06', name: 'Cà vạt nam lụa cao cấp - Màu Navy Sọc', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Navy Sọc/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-mau-navy-soc.html' },
-    { code: 'CV-07', name: 'Cà vạt nam lụa cao cấp - Màu Be Thanh Lịch', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Be 1/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-mau-be-1.html' },
-    { code: 'CV-08', name: 'Cà vạt nam lụa cao cấp - Màu Bạc Sang Trọng', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Bạc/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-mau-bac.html' },
-    { code: 'CV-09', name: 'Cà vạt nam lụa cao cấp - Màu Bạc Sọc', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Bạc Sọc/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-mau-bac-soc.html' },
-    { code: 'CV-10', name: 'Cà vạt nam lụa cao cấp - Màu Chấm Bi Cổ Điển', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Chấm Bi/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-mau-cham-bi.html' },
-    { code: 'CV-11', name: 'Cà vạt nam lụa cao cấp - Màu Ghi Chì Caro', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Ghi Chì Caro/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-mau-ghi-chi-caro.html' },
-    { code: 'CV-12', name: 'Cà vạt nam lụa cao cấp - Màu Nâu Ấm Áp', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Nâu/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-mau-nau.html' },
-    { code: 'CV-13', name: 'Cà vạt nam lụa cao cấp - Màu Rêu Độc Đáo', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Rêu/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-mau-reu.html' },
-    { code: 'CV-14', name: 'Cà vạt nam lụa cao cấp - Màu Rêu Họa Tiết', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Rêu Họa Tiết/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-mau-reu-hoa-tiet.html' },
-    { code: 'CV-15', name: 'Cà vạt nam lụa cao cấp - Màu Sọc Đồng', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Sọc Đồng/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-mau-soc-dong.html' },
-    { code: 'CV-16', name: 'Cà vạt nam lụa cao cấp - Màu Than Chì', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Than Chì/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-mau-than-chi.html' },
-    { code: 'CV-17', name: 'Cà vạt nam lụa cao cấp - Màu Tím Caro', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Tím Caro/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-mau-tim-caro.html' },
-    { code: 'CV-18', name: 'Cà vạt nam lụa cao cấp - Màu Xanh Thanh Lịch', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Xanh/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-mau-xanh.html' },
-    { code: 'CV-19', name: 'Cà vạt nam lụa cao cấp - Màu Xanh Họa Tiết', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Xanh Họa Tiết/Ảnh Bìa.png', link: '/ja/san-pham/cv-color-mau-xanh-hoa-tiet.html' },
+    { code: 'CV-01', name: 'Cà vạt nam lụa cao cấp - Màu Đen', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Đen/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-mau-den.html' },
+    { code: 'CV-02', name: 'Cà vạt nam lụa cao cấp - Màu Đen Họa Tiết', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Đen Họa Tiết/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-mau-den-hoa-tiet.html' },
+    { code: 'CV-03', name: 'Cà vạt nam lụa cao cấp - Màu Đỏ Quyền Lực', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Đỏ/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-mau-do.html' },
+    { code: 'CV-04', name: 'Cà vạt nam lụa cao cấp - Màu Đỏ Họa Tiết', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Đỏ Họa Tiết/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-do-hoa-tiet.html' },
+    { code: 'CV-05', name: 'Cà vạt nam lụa cao cấp - Màu Navy Đĩnh Đạc', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Navy/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-mau-navy.html' },
+    { code: 'CV-06', name: 'Cà vạt nam lụa cao cấp - Màu Navy Sọc', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Navy Sọc/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-mau-navy-soc.html' },
+    { code: 'CV-07', name: 'Cà vạt nam lụa cao cấp - Màu Be Thanh Lịch', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Be 1/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-mau-be-1.html' },
+    { code: 'CV-08', name: 'Cà vạt nam lụa cao cấp - Màu Bạc Sang Trọng', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Bạc/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-mau-bac.html' },
+    { code: 'CV-09', name: 'Cà vạt nam lụa cao cấp - Màu Bạc Sọc', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Bạc Sọc/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-mau-bac-soc.html' },
+    { code: 'CV-10', name: 'Cà vạt nam lụa cao cấp - Màu Chấm Bi Cổ Điển', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Chấm Bi/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-mau-cham-bi.html' },
+    { code: 'CV-11', name: 'Cà vạt nam lụa cao cấp - Màu Ghi Chì Caro', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Ghi Chì Caro/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-mau-ghi-chi-caro.html' },
+    { code: 'CV-12', name: 'Cà vạt nam lụa cao cấp - Màu Nâu Ấm Áp', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Nâu/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-mau-nau.html' },
+    { code: 'CV-13', name: 'Cà vạt nam lụa cao cấp - Màu Rêu Độc Đáo', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Rêu/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-mau-reu.html' },
+    { code: 'CV-14', name: 'Cà vạt nam lụa cao cấp - Màu Rêu Họa Tiết', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Rêu Họa Tiết/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-mau-reu-hoa-tiet.html' },
+    { code: 'CV-15', name: 'Cà vạt nam lụa cao cấp - Màu Sọc Đồng', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Sọc Đồng/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-mau-soc-dong.html' },
+    { code: 'CV-16', name: 'Cà vạt nam lụa cao cấp - Màu Than Chì', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Than Chì/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-mau-than-chi.html' },
+    { code: 'CV-17', name: 'Cà vạt nam lụa cao cấp - Màu Tím Caro', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Tím Caro/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-mau-tim-caro.html' },
+    { code: 'CV-18', name: 'Cà vạt nam lụa cao cấp - Màu Xanh Thanh Lịch', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Xanh/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-mau-xanh.html' },
+    { code: 'CV-19', name: 'Cà vạt nam lụa cao cấp - Màu Xanh Họa Tiết', price: '250.000₫', tag: 'Cà Vạt', img: '/images/Phụ Kiện/Cà Vạt/Màu Xanh Họa Tiết/Ảnh Bìa.webp', link: '/ja/san-pham/cv-color-mau-xanh-hoa-tiet.html' },
 
     // ── GIÀY TÂY (GT-01 đến GT-10) ──
-    { code: 'GT-01', name: 'Giày Tây Nam Oxford Cap Toe Da Bò Màu Đen', price: '1.250.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p1/1.jpg', link: '/ja/san-pham/gt1.html' },
-    { code: 'GT-02', name: 'Giày Tây Nam Derby Plain Toe Da Bò Màu Nâu Đen', price: '1.250.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p2/1.jpg', link: '/ja/san-pham/gt2.html' },
-    { code: 'GT-03', name: 'Giày Tây Nam Double Monk Strap Da Bò Màu Nâu Vàng', price: '1.350.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p3/1.jpg', link: '/ja/san-pham/gt3.html' },
-    { code: 'GT-04', name: 'Giày Tây Nam Penny Loafer Da Bò Màu Đen', price: '1.150.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p4/1.jpg', link: '/ja/san-pham/gt4.html' },
-    { code: 'GT-05', name: 'Giày Tây Nam Brogues Wingtip Da Bò Màu Nâu Đen', price: '1.350.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p5/1.jpg', link: '/ja/san-pham/gt5.html' },
-    { code: 'GT-06', name: 'Giày Tây Nam Brogues Wingtip Oxford Màu Đen', price: '1.350.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p6/1.jpg', link: '/ja/san-pham/gt6.html' },
-    { code: 'GT-07', name: 'Giày Tây Nam Wholecut Oxford Da Bò Nguyên Tấm', price: '1.450.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p7/1.jpg', link: '/ja/san-pham/gt7.html' },
-    { code: 'GT-08', name: 'Giày Tây Nam Double Monk Strap Da Bò Màu Đen', price: '1.350.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p8/1.jpg', link: '/ja/san-pham/gt8.html' },
-    { code: 'GT-09', name: 'Giày Tây Nam Penny Loafer Da Bò Màu Nâu Vàng', price: '1.150.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p9/1.jpg', link: '/ja/san-pham/gt9.html' },
-    { code: 'GT-10', name: 'Giày Tây Nam Tassel Loafer Chuông Da Bò Màu Đen', price: '1.250.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p10/1.jpg', link: '/ja/san-pham/gt10.html' },
+    { code: 'GT-01', name: 'Giày Tây Nam Oxford Cap Toe Da Bò Màu Đen', price: '1.250.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p1/1.webp', link: '/ja/san-pham/gt1.html' },
+    { code: 'GT-02', name: 'Giày Tây Nam Derby Plain Toe Da Bò Màu Nâu Đen', price: '1.250.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p2/1.webp', link: '/ja/san-pham/gt2.html' },
+    { code: 'GT-03', name: 'Giày Tây Nam Double Monk Strap Da Bò Màu Nâu Vàng', price: '1.350.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p3/1.webp', link: '/ja/san-pham/gt3.html' },
+    { code: 'GT-04', name: 'Giày Tây Nam Penny Loafer Da Bò Màu Đen', price: '1.150.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p4/1.webp', link: '/ja/san-pham/gt4.html' },
+    { code: 'GT-05', name: 'Giày Tây Nam Brogues Wingtip Da Bò Màu Nâu Đen', price: '1.350.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p5/1.webp', link: '/ja/san-pham/gt5.html' },
+    { code: 'GT-06', name: 'Giày Tây Nam Brogues Wingtip Oxford Màu Đen', price: '1.350.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p6/1.webp', link: '/ja/san-pham/gt6.html' },
+    { code: 'GT-07', name: 'Giày Tây Nam Wholecut Oxford Da Bò Nguyên Tấm', price: '1.450.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p7/1.webp', link: '/ja/san-pham/gt7.html' },
+    { code: 'GT-08', name: 'Giày Tây Nam Double Monk Strap Da Bò Màu Đen', price: '1.350.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p8/1.webp', link: '/ja/san-pham/gt8.html' },
+    { code: 'GT-09', name: 'Giày Tây Nam Penny Loafer Da Bò Màu Nâu Vàng', price: '1.150.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p9/1.webp', link: '/ja/san-pham/gt9.html' },
+    { code: 'GT-10', name: 'Giày Tây Nam Tassel Loafer Chuông Da Bò Màu Đen', price: '1.250.000₫', tag: 'Giày Tây', img: '/images/products/phu-kien/giaytay/p10/1.webp', link: '/ja/san-pham/gt10.html' },
 
     // ── ÁO SƠ MI (SM-01 đến SM-10) ──
-    { code: 'SM-01', name: 'Áo Sơmi Nam Cao Cấp - Màu Be Nhã Nhặn', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Màu Be/Ảnh Bìa.png', link: '/ja/san-pham/sm1.html' },
-    { code: 'SM-02', name: 'Áo Sơmi Nam Cao Cấp - Màu Hồng Pastel', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Màu Hồng/Ảnh Bìa.png', link: '/ja/san-pham/sm2.html' },
-    { code: 'SM-03', name: 'Áo Sơmi Nam Cao Cấp - Màu Trắng Tinh Khôi', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Màu Trắng/Ảnh Bìa.png', link: '/ja/san-pham/sm3.html' },
-    { code: 'SM-04', name: 'Áo Sơmi Nam Cao Cấp - Màu Navy Lịch Lãm', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Màu Navy/Ảnh Bìa.png', link: '/ja/san-pham/sm4.html' },
-    { code: 'SM-05', name: 'Áo Sơmi Nam Cao Cấp - Màu Rêu Hiện Đại', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Màu Rêu/Ảnh Bìa.png', link: '/ja/san-pham/sm5.html' },
-    { code: 'SM-06', name: 'Áo Sơmi Nam Cao Cấp - Màu Xám Ghi Thanh Lịch', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Màu Xám/Ảnh Bìa.png', link: '/ja/san-pham/sm6.html' },
-    { code: 'SM-07', name: 'Áo Sơmi Nam Cao Cấp - Màu Đen Quyến Rũ', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Màu Đen/Ảnh Bìa.png', link: '/ja/san-pham/sm7.html' },
-    { code: 'SM-08', name: 'Áo Sơmi Nam Cao Cấp - Xanh Da Trời Trẻ Trung', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Xanh Da Trời/Ảnh Bìa.png', link: '/ja/san-pham/sm8.html' },
-    { code: 'SM-09', name: 'Áo Sơmi Nam Cao Cấp - Xanh Ngọc Tươi Sáng', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Xanh Ngọc/Ảnh Bìa.png', link: '/ja/san-pham/sm9.html' },
-    { code: 'SM-10', name: 'Áo Sơmi Nam Cao Cấp - Xanh Olive Độc Đáo', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Xanh Olive/Ảnh Bìa.png', link: '/ja/san-pham/sm10.html' },
+    { code: 'SM-01', name: 'Áo Sơmi Nam Cao Cấp - Màu Be Nhã Nhặn', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Màu Be/Ảnh Bìa.webp', link: '/ja/san-pham/sm1.html' },
+    { code: 'SM-02', name: 'Áo Sơmi Nam Cao Cấp - Màu Hồng Pastel', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Màu Hồng/Ảnh Bìa.webp', link: '/ja/san-pham/sm2.html' },
+    { code: 'SM-03', name: 'Áo Sơmi Nam Cao Cấp - Màu Trắng Tinh Khôi', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Màu Trắng/Ảnh Bìa.webp', link: '/ja/san-pham/sm3.html' },
+    { code: 'SM-04', name: 'Áo Sơmi Nam Cao Cấp - Màu Navy Lịch Lãm', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Màu Navy/Ảnh Bìa.webp', link: '/ja/san-pham/sm4.html' },
+    { code: 'SM-05', name: 'Áo Sơmi Nam Cao Cấp - Màu Rêu Hiện Đại', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Màu Rêu/Ảnh Bìa.webp', link: '/ja/san-pham/sm5.html' },
+    { code: 'SM-06', name: 'Áo Sơmi Nam Cao Cấp - Màu Xám Ghi Thanh Lịch', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Màu Xám/Ảnh Bìa.webp', link: '/ja/san-pham/sm6.html' },
+    { code: 'SM-07', name: 'Áo Sơmi Nam Cao Cấp - Màu Đen Quyến Rũ', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Màu Đen/Ảnh Bìa.webp', link: '/ja/san-pham/sm7.html' },
+    { code: 'SM-08', name: 'Áo Sơmi Nam Cao Cấp - Xanh Da Trời Trẻ Trung', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Xanh Da Trời/Ảnh Bìa.webp', link: '/ja/san-pham/sm8.html' },
+    { code: 'SM-09', name: 'Áo Sơmi Nam Cao Cấp - Xanh Ngọc Tươi Sáng', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Xanh Ngọc/Ảnh Bìa.webp', link: '/ja/san-pham/sm9.html' },
+    { code: 'SM-10', name: 'Áo Sơmi Nam Cao Cấp - Xanh Olive Độc Đáo', price: '350.000₫', tag: 'Sơ Mi', img: '/images/Phụ Kiện/Sơmi/Xanh Olive/Ảnh Bìa.webp', link: '/ja/san-pham/sm10.html' },
 
     // ── KHĂN LỤA (KL-01 đến KL-10) ──
-    { code: 'KL-01', name: 'Khăn Lụa Nữ Cao Cấp - Màu Trắng Chấm Bi', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p1/1.jpg', link: '/ja/san-pham/kl1.html' },
-    { code: 'KL-02', name: 'Khăn Lụa Nữ Cao Cấp - Màu Be Họa Tiết Xích Nâu', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p2/1.jpg', link: '/ja/san-pham/kl2.html' },
-    { code: 'KL-03', name: 'Khăn Lụa Nữ Cao Cấp - Màu Xanh Navy Kẻ Viền', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p3/1.jpg', link: '/ja/san-pham/kl3.html' },
-    { code: 'KL-04', name: 'Khăn Lụa Nữ Cao Cấp - Màu Hồng Pastel Họa Tiết Răng Cưa', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p4/1.jpg', link: '/ja/san-pham/kl4.html' },
-    { code: 'KL-05', name: 'Khăn Lụa Nữ Cao Cấp - Màu Đỏ Đô Kẻ Sọc', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p5/1.jpg', link: '/ja/san-pham/kl5.html' },
-    { code: 'KL-06', name: 'Khăn Lụa Nữ Cao Cấp - Màu Đen Họa Tiết Xích Vàng', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p6/1.jpg', link: '/ja/san-pham/kl6.html' },
-    { code: 'KL-07', name: 'Khăn Lụa Nữ Cao Cấp - Màu Xanh Da Trời Nhạt', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p7/1.jpg', link: '/ja/san-pham/kl7.html' },
-    { code: 'KL-08', name: 'Khăn Lụa Nữ Cao Cấp - Màu Xanh Ngọc Họa Tiết H', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p8/1.jpg', link: '/ja/san-pham/kl8.html' },
-    { code: 'KL-09', name: 'Khăn Lụa Nữ Cao Cấp - Màu Xám Ghi Thanh Lịch', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p9/1.jpg', link: '/ja/san-pham/kl9.html' },
-    { code: 'KL-10', name: 'Khăn Lụa Nữ Cao Cấp - Màu Đỏ Rượu Burgundy Họa Tiết H', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p10/1.jpg', link: '/ja/san-pham/kl10.html' },
+    { code: 'KL-01', name: 'Khăn Lụa Nữ Cao Cấp - Màu Trắng Chấm Bi', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p1/1.webp', link: '/ja/san-pham/kl1.html' },
+    { code: 'KL-02', name: 'Khăn Lụa Nữ Cao Cấp - Màu Be Họa Tiết Xích Nâu', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p2/1.webp', link: '/ja/san-pham/kl2.html' },
+    { code: 'KL-03', name: 'Khăn Lụa Nữ Cao Cấp - Màu Xanh Navy Kẻ Viền', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p3/1.webp', link: '/ja/san-pham/kl3.html' },
+    { code: 'KL-04', name: 'Khăn Lụa Nữ Cao Cấp - Màu Hồng Pastel Họa Tiết Răng Cưa', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p4/1.webp', link: '/ja/san-pham/kl4.html' },
+    { code: 'KL-05', name: 'Khăn Lụa Nữ Cao Cấp - Màu Đỏ Đô Kẻ Sọc', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p5/1.webp', link: '/ja/san-pham/kl5.html' },
+    { code: 'KL-06', name: 'Khăn Lụa Nữ Cao Cấp - Màu Đen Họa Tiết Xích Vàng', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p6/1.webp', link: '/ja/san-pham/kl6.html' },
+    { code: 'KL-07', name: 'Khăn Lụa Nữ Cao Cấp - Màu Xanh Da Trời Nhạt', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p7/1.webp', link: '/ja/san-pham/kl7.html' },
+    { code: 'KL-08', name: 'Khăn Lụa Nữ Cao Cấp - Màu Xanh Ngọc Họa Tiết H', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p8/1.webp', link: '/ja/san-pham/kl8.html' },
+    { code: 'KL-09', name: 'Khăn Lụa Nữ Cao Cấp - Màu Xám Ghi Thanh Lịch', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p9/1.webp', link: '/ja/san-pham/kl9.html' },
+    { code: 'KL-10', name: 'Khăn Lụa Nữ Cao Cấp - Màu Đỏ Rượu Burgundy Họa Tiết H', price: '100.000₫', tag: 'Khăn Lụa', img: '/images/products/phu-kien/khanlua/p10/1.webp', link: '/ja/san-pham/kl10.html' },
 
     // ── NƠ ĐEO CỔ (NO-01 đến NO-10) ──
-    { code: 'NO-01', name: 'Nơ Nam Lụa Cao Cấp - Màu Đen Cổ Điển', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu Đen/Ảnh Bìa.png', link: '/ja/san-pham/no1.html' },
-    { code: 'NO-02', name: 'Nơ Nam Lụa Cao Cấp - Màu Đỏ Rượu Burgundy', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu Đỏ/Ảnh Bìa.png', link: '/ja/san-pham/no2.html' },
-    { code: 'NO-03', name: 'Nơ Nam Lụa Cao Cấp - Màu Trắng Chú Rể', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu Trắng/Ảnh Bìa.png', link: '/ja/san-pham/no3.html' },
-    { code: 'NO-04', name: 'Nơ Nam Lụa Cao Cấp - Màu Navy Sang Trọng', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu Navy/Ảnh Bìa.png', link: '/ja/san-pham/no4.html' },
-    { code: 'NO-05', name: 'Nơ Nam Lụa Cao Cấp - Màu Rêu Đĩnh Đạc', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu Rêu/Ảnh Bìa.png', link: '/ja/san-pham/no5.html' },
-    { code: 'NO-06', name: 'Nơ Nam Lụa Cao Cấp - Màu Hồng Pastel', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu Hồng/Ảnh Bìa.png', link: '/ja/san-pham/no6.html' },
-    { code: 'NO-07', name: 'Nơ Nam Lụa Cao Cấp - Màu Tím Lavender', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu Tím/Ảnh Bìa.png', link: '/ja/san-pham/no7.html' },
-    { code: 'NO-08', name: 'Nơ Nam Lụa Cao Cấp - Màu Xanh Dương', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu Xanh/Ảnh Bìa.png', link: '/ja/san-pham/no8.html' },
-    { code: 'NO-09', name: 'Nơ Nam Lụa Cao Cấp - Màu Be Trẻ Trung', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu be/Ảnh Bìa.png', link: '/ja/san-pham/no9.html' },
-    { code: 'NO-10', name: 'Nơ Nam Họa Tiết Chấm Bi Tinh Tế', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu chấm bi/Ảnh Bìa.png', link: '/ja/san-pham/no10.html' },
+    { code: 'NO-01', name: 'Nơ Nam Lụa Cao Cấp - Màu Đen Cổ Điển', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu Đen/Ảnh Bìa.webp', link: '/ja/san-pham/no1.html' },
+    { code: 'NO-02', name: 'Nơ Nam Lụa Cao Cấp - Màu Đỏ Rượu Burgundy', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu Đỏ/Ảnh Bìa.webp', link: '/ja/san-pham/no2.html' },
+    { code: 'NO-03', name: 'Nơ Nam Lụa Cao Cấp - Màu Trắng Chú Rể', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu Trắng/Ảnh Bìa.webp', link: '/ja/san-pham/no3.html' },
+    { code: 'NO-04', name: 'Nơ Nam Lụa Cao Cấp - Màu Navy Sang Trọng', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu Navy/Ảnh Bìa.webp', link: '/ja/san-pham/no4.html' },
+    { code: 'NO-05', name: 'Nơ Nam Lụa Cao Cấp - Màu Rêu Đĩnh Đạc', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu Rêu/Ảnh Bìa.webp', link: '/ja/san-pham/no5.html' },
+    { code: 'NO-06', name: 'Nơ Nam Lụa Cao Cấp - Màu Hồng Pastel', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu Hồng/Ảnh Bìa.webp', link: '/ja/san-pham/no6.html' },
+    { code: 'NO-07', name: 'Nơ Nam Lụa Cao Cấp - Màu Tím Lavender', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu Tím/Ảnh Bìa.webp', link: '/ja/san-pham/no7.html' },
+    { code: 'NO-08', name: 'Nơ Nam Lụa Cao Cấp - Màu Xanh Dương', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu Xanh/Ảnh Bìa.webp', link: '/ja/san-pham/no8.html' },
+    { code: 'NO-09', name: 'Nơ Nam Lụa Cao Cấp - Màu Be Trẻ Trung', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu be/Ảnh Bìa.webp', link: '/ja/san-pham/no9.html' },
+    { code: 'NO-10', name: 'Nơ Nam Họa Tiết Chấm Bi Tinh Tế', price: '180.000₫', tag: 'Nơ Đeo Cổ', img: '/images/Phụ Kiện/Nơ/Màu chấm bi/Ảnh Bìa.webp', link: '/ja/san-pham/no10.html' },
 
     // ── CÀI CÀ VẠT (CCV-01 đến CCV-10) ──
-    { code: 'CCV-01', name: 'Cài Cà Vạt Kim Loại Mạ Vàng Cổ Điển Mẫu 01', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/2.png', link: '/ja/san-pham/ccv1.html' },
-    { code: 'CCV-02', name: 'Cài Cà Vạt Kim Loại Mạ Bạc Đẳng Cấp Mẫu 02', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/3.png', link: '/ja/san-pham/ccv2.html' },
-    { code: 'CCV-03', name: 'Cài Cà Vạt Nam Họa Tiết Phay Xước Mẫu 03', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/4.png', link: '/ja/san-pham/ccv3.html' },
-    { code: 'CCV-04', name: 'Cài Cà Vạt Kim Loại Đen Nhám Mẫu 04', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/5.png', link: '/ja/san-pham/ccv4.html' },
-    { code: 'CCV-05', name: 'Cài Cà Vạt Dạng Kẹp Đính Đá Mẫu 05', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/6.png', link: '/ja/san-pham/ccv5.html' },
-    { code: 'CCV-06', name: 'Cài Cà Vạt Vàng Hồng Thanh Lịch Mẫu 06', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/7.png', link: '/ja/san-pham/ccv6.html' },
-    { code: 'CCV-07', name: 'Cài Cà Vạt Thép Không Gỉ Mẫu 07', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/8.png', link: '/ja/san-pham/ccv7.html' },
-    { code: 'CCV-08', name: 'Cài Cà Vạt Hoàng Gia Mẫu 08', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/9.png', link: '/ja/san-pham/ccv8.html' },
-    { code: 'CCV-09', name: 'Cài Cà Vạt Mạ Vàng 18K Mẫu 09', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/10.png', link: '/ja/san-pham/ccv9.html' },
-    { code: 'CCV-10', name: 'Cài Cà Vạt Thiết Kế Độc Bản Mẫu 10', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/11.png', link: '/ja/san-pham/ccv10.html' },
+    { code: 'CCV-01', name: 'Cài Cà Vạt Kim Loại Mạ Vàng Cổ Điển Mẫu 01', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/2.webp', link: '/ja/san-pham/ccv1.html' },
+    { code: 'CCV-02', name: 'Cài Cà Vạt Kim Loại Mạ Bạc Đẳng Cấp Mẫu 02', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/3.webp', link: '/ja/san-pham/ccv2.html' },
+    { code: 'CCV-03', name: 'Cài Cà Vạt Nam Họa Tiết Phay Xước Mẫu 03', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/4.webp', link: '/ja/san-pham/ccv3.html' },
+    { code: 'CCV-04', name: 'Cài Cà Vạt Kim Loại Đen Nhám Mẫu 04', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/5.webp', link: '/ja/san-pham/ccv4.html' },
+    { code: 'CCV-05', name: 'Cài Cà Vạt Dạng Kẹp Đính Đá Mẫu 05', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/6.webp', link: '/ja/san-pham/ccv5.html' },
+    { code: 'CCV-06', name: 'Cài Cà Vạt Vàng Hồng Thanh Lịch Mẫu 06', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/7.webp', link: '/ja/san-pham/ccv6.html' },
+    { code: 'CCV-07', name: 'Cài Cà Vạt Thép Không Gỉ Mẫu 07', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/8.webp', link: '/ja/san-pham/ccv7.html' },
+    { code: 'CCV-08', name: 'Cài Cà Vạt Hoàng Gia Mẫu 08', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/9.webp', link: '/ja/san-pham/ccv8.html' },
+    { code: 'CCV-09', name: 'Cài Cà Vạt Mạ Vàng 18K Mẫu 09', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/10.webp', link: '/ja/san-pham/ccv9.html' },
+    { code: 'CCV-10', name: 'Cài Cà Vạt Thiết Kế Độc Bản Mẫu 10', price: '150.000₫', tag: 'Cài Cà Vạt', img: '/images/Phụ Kiện/Cài cà vạt/11.webp', link: '/ja/san-pham/ccv10.html' },
 
     // ── VEST NAM THIẾT KẾ & TRẺ ──
     { code: 'MLH-NA-TK-01', name: 'Bộ Vest Nam Thiết Kế Xanh Đen Sọc', price: '3.800.000₫ / bộ', tag: 'Vest Nam Thiết Kế', img: '/images/nam-thiet-ke-20261026/01-xanh-den-soc-05_manocanh_mac-2f5597d723f9.webp', link: '/ja/san-pham/nam-tk-01.html' },
@@ -1569,10 +1569,10 @@
     { code: 'MLH-NA-TK-05', name: 'Bộ Vest Nam Thiết Kế Ghi Sọc', price: '3.800.000₫ / bộ', tag: 'Vest Nam Thiết Kế', img: '/images/nam-thiet-ke-20261026/05-ghi-soc-05_manocanh_mac-2514e9e6a205.webp', link: '/ja/san-pham/nam-tk-05.html' },
     { code: 'MLH-NA-TK-06', name: 'Bộ Vest Nam Thiết Kế Nâu Cà Phê', price: '3.800.000₫ / bộ', tag: 'Vest Nam Thiết Kế', img: '/images/nam-thiet-ke-20261026/06-nau-ca-phe-05_manocanh_mac-a143ec56ff45.webp', link: '/ja/san-pham/nam-tk-06.html' },
     { code: 'MLH-NA-TK-07', name: 'Bộ Vest Nam Thiết Kế Nâu Vàng', price: '3.800.000₫ / bộ', tag: 'Vest Nam Thiết Kế', img: '/images/nam-thiet-ke-20261026/07-nau-vang-05_manocanh_mac-5e9f3e32bf68.webp', link: '/ja/san-pham/nam-tk-07.html' },
-    { code: 'VN-02', name: 'Suit Đen Slim Fit', price: '2.850.000₫ / bộ', tag: 'Suit Nam Trẻ', img: '/images/products/vest-nam-tre/n02/1.png', link: '/ja/san-pham/vnam2.html' },
-    { code: 'VN-03', name: 'Suit Đen 6 Khuy', price: '2.850.000₫ / bộ', tag: 'Suit Nam Trẻ', img: '/images/products/vest-nam-tre/n03/1.png', link: '/ja/san-pham/vnam3.html' },
-    { code: 'VN-04', name: 'Suit Ghi Chì Slim Fit', price: '2.850.000₫ / bộ', tag: 'Suit Nam Trẻ', img: '/images/products/vest-nam-tre/n04/1.png', link: '/ja/san-pham/vnam4.html' },
-    { code: 'VN-06', name: 'Suit Ghi Sáng Slim Fit', price: '2.850.000₫ / bộ', tag: 'Suit Nam Trẻ', img: '/images/products/vest-nam-tre/n06/1.png', link: '/ja/san-pham/vnam6.html' }
+    { code: 'VN-02', name: 'Suit Đen Slim Fit', price: '2.850.000₫ / bộ', tag: 'Suit Nam Trẻ', img: '/images/products/vest-nam-tre/n02/1.webp', link: '/ja/san-pham/vnam2.html' },
+    { code: 'VN-03', name: 'Suit Đen 6 Khuy', price: '2.850.000₫ / bộ', tag: 'Suit Nam Trẻ', img: '/images/products/vest-nam-tre/n03/1.webp', link: '/ja/san-pham/vnam3.html' },
+    { code: 'VN-04', name: 'Suit Ghi Chì Slim Fit', price: '2.850.000₫ / bộ', tag: 'Suit Nam Trẻ', img: '/images/products/vest-nam-tre/n04/1.webp', link: '/ja/san-pham/vnam4.html' },
+    { code: 'VN-06', name: 'Suit Ghi Sáng Slim Fit', price: '2.850.000₫ / bộ', tag: 'Suit Nam Trẻ', img: '/images/products/vest-nam-tre/n06/1.webp', link: '/ja/san-pham/vnam6.html' }
   ];
 
   var _searchCatalogHydrated = false;
@@ -1587,7 +1587,7 @@
         if (!p || !p.id) return;
         var link = '/ja/san-pham/' + encodeURIComponent(p.id) + '.html';
         byLink.add(link);
-        var primaryImg = p.img || (p.images && p.images[0]) || '/images/logo.png';
+        var primaryImg = p.img || (p.images && p.images[0]) || '/images/logo.webp';
         merged.push({
           code: p.sku || p.id.toUpperCase(),
           name: p.name || p.id,

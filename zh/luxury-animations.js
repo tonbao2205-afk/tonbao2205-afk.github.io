@@ -192,7 +192,7 @@
       curtain.setAttribute('aria-live', 'polite');
       curtain.innerHTML = [
         '<div class="lux-loading-card">',
-        '  <img src="/images/Logo Lê Hương Web.png" alt="mayLEHUONG" class="lux-loading-logo" onerror="this.onerror=null;this.src=\'/images/logo.png\';" />',
+        '  <img src="/images/Logo Lê Hương Web.webp" alt="mayLEHUONG" class="lux-loading-logo" onerror="this.onerror=null;this.src=\'/images/logo.webp\';" />',
         '  <div class="lux-loading-spinner" aria-hidden="true"></div>',
         '  <div class="lux-loading-text">Đang tải...</div>',
         '  <div id="lux-loading-error" class="lux-loading-error-box" style="display:none;">',

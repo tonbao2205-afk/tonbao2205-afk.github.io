@@ -3,8 +3,8 @@
 <head>
   <meta name="robots" content="noindex,nofollow" />
   <script src="/preview-mode.js?v=ec00a08fcf"></script>
-  <script src="/ko/ko-dict.js?v=20261107-i18n-p28"></script>
-  <script src="/ko/ko-runtime.js?v=20261107-i18n-p28"></script>
+  <script src="/ko/ko-dict.js?v=20261108-i18n-p29"></script>
+  <script src="/ko/ko-runtime.js?v=20261108-i18n-p29"></script>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2026" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2026" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2026" />
@@ -152,7 +152,7 @@
     }
   }
 </style>
-<script src="luxury-animations.js?v=20261104-lux-reveal-r1"></script>
+<script src="luxury-animations.js?v=20261108-webp"></script>
 <style id="mlh-label-style-a">
 /* Nhan dau muc kieu A (03/11/2026): bo nen bo tron, chu hoa do + gach vang manh */
 .vip-shimmer-badge.rounded-full,.seo-tag,.home-about-badge,#seo-vest-nu-bien-hoa .seo-bh-badge,#seo-dich-vu-bien-hoa .seo-dv-badge,.dv-visual-badge{background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding-left:0!important;padding-right:0!important;overflow:visible!important;display:inline-flex!important;align-items:center!important;gap:12px!important;color:#9d0208!important;-webkit-text-fill-color:#9d0208!important;text-transform:uppercase!important;letter-spacing:.18em!important;font-weight:700!important;font-size:15px!important}
@@ -367,9 +367,9 @@ span.vn-old-price{color:#78716c!important;-webkit-text-fill-color:#78716c!import
 
 <script src="site-data.js?v=20261102-seo-r2" defer></script>
 
-<script src="nav-component.js?v=20261103-hardening-r2"></script>
+<script src="nav-component.js?v=20261108-webp"></script>
 <script src="back-to-top.js?v=20261102-seo-r2"></script>
-<script src="cta-widget.js?v=20261102-seo-r2"></script>
+<script src="cta-widget.js?v=20261108-webp"></script>
 <script src="footer-component.js?v=20261107-credit2"></script>
 
 <script>
@@ -385,7 +385,7 @@ function esc(val) {
 function safeImageUrl(raw) {
   var s = String(raw || '').trim();
   if (!s || /^(?:javascript|vbscript|data:text)/i.test(s)) {
-    return 'https://maylehuong.com/images/Phụ Kiện/Cà Vạt/Màu Đen/Ảnh Bìa.png';
+    return 'https://maylehuong.com/images/Phụ Kiện/Cà Vạt/Màu Đen/Ảnh Bìa.webp';
   }
   return s;
 }
@@ -556,7 +556,7 @@ function renderCart() {
     totalPrice += subtotal;
     if (priceNum <= 0) hasUnpriced = true;
 
-    var imgUrl = safeImageUrl(item.img || item.image || 'https://maylehuong.com/images/Phụ Kiện/Cà Vạt/Màu Đen/Ảnh Bìa.png');
+    var imgUrl = safeImageUrl(item.img || item.image || 'https://maylehuong.com/images/Phụ Kiện/Cà Vạt/Màu Đen/Ảnh Bìa.webp');
     var sizeDisplay = (item.size && item.size !== 'undefined' && item.size !== 'UNDEFINED') ? item.size : 'Tiêu Chuẩn';
     var safeImg = esc(imgUrl);
     var safeName = esc(item.name || 'Sản Phẩm');
@@ -780,6 +780,6 @@ document.addEventListener('DOMContentLoaded', function() {
   reconcileCartWithServerCatalog();
 });
 </script>
-<script src="/lang-switch.js?v=20261107-i18n-p28" defer></script>
+<script src="/lang-switch.js?v=20261108-i18n-p29" defer></script>
 </body>
 </html>

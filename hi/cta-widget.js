@@ -101,7 +101,7 @@
     toggle.setAttribute('aria-haspopup', 'true');
 
     var logoImg = document.createElement('img');
-    logoImg.src = '/images/Logo Lê Hương Web.png';
+    logoImg.src = '/images/Logo Lê Hương Web.webp';
     logoImg.alt = 'Logo mayLEHUONG';
     logoImg.className = 'cta-logo-img';
 

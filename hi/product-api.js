@@ -26,9 +26,9 @@
     if (url && typeof url === 'object' && typeof url.url === 'string') {
       url = url.url;
     }
-    if (!url || typeof url !== 'string') return '/images/logo.png';
+    if (!url || typeof url !== 'string') return '/images/logo.webp';
     const trimmed = url.trim();
-    if (!trimmed) return '/images/logo.png';
+    if (!trimmed) return '/images/logo.webp';
 
     if (trimmed.startsWith('http://') || trimmed.startsWith('https://') || trimmed.startsWith('data:')) {
       return trimmed;
@@ -1212,7 +1212,7 @@
       <div class="vn-card group cursor-pointer" onclick="location.href='${detailUrl}'">
         <div class="vn-thumb" style="position: relative;">
           ${badgeText ? `<span class="vn-badge">${escapeHtml(badgeText)}</span>` : ''}
-          <img src="${escapeHtml(imgSrc)}" alt="${escapeHtml(p.name)}" decoding="async" loading="lazy" onerror="this.onerror=null; this.src='/images/logo.png';">
+          <img src="${escapeHtml(imgSrc)}" alt="${escapeHtml(p.name)}" decoding="async" loading="lazy" onerror="this.onerror=null; this.src='/images/logo.webp';">
           ${galleryCount > 1 ? `<span style="position:absolute; bottom:8px; right:8px; background:rgba(0,0,0,0.6); color:#fff; font-size:10px; font-weight:700; padding:2px 6px; border-radius:4px; z-index:5;">📷 ${galleryCount}</span>` : ''}
         </div>
         <div class="vn-info">
