@@ -288,3 +288,12 @@ Kiểm tra:
   - không bọc popup bảng màu vải.
 - QA 390/1366: may-do 91 khối, dich-vu 104 khối; lướt nhanh hoặc nhảy giữa trang thì 0 khối kẹt ẩn; không tràn ngang; popup bảng vải phủ đúng toàn màn hình.
 - VPS không đổi.
+
+## p27 (07/11/2026): thêm người thực hiện ở chân trang
+- Chủ shop yêu cầu thêm 2 người vào dòng chân trang. Dòng mới: "© Công Ty TNHH Thời Trang Lê Hương. All Rights Reserved. - Design by HarryDuong · Planning by Haris Nguyen · Coding by Sophie Tran". Chủ shop viết "Planining", đã sửa thành "Planning".
+- Công cụ `tools/footer_credit_20261107.py`:
+  - sửa `footer-component.js`;
+  - sửa 2 gói JS trang chủ: vì gói là bất biến nên tạo file tên mới có hậu tố `-20261107-credit.js`, rồi trỏ `index.html`/`index-mobile.html` sang file mới;
+  - đổi `?v=20261107-credit` cho footer trên 207 trang.
+- Build strict 0 chuỗi thiếu. Kiểm tra trang chủ, May Đo, EN/JA/ZH ở khổ 390/1366: dòng mới hiện đủ, không tràn ngang.
+- VPS không đổi.
