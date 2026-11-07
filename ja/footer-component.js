@@ -101,7 +101,7 @@
       '  </div>',
       '</div>',
       '<div class="lhv-footer-bottom" style="color: #d1d5db !important;">',
-      '  © Công Ty TNHH Thời Trang Lê Hương. All Rights Reserved. - Design by HarryDuong',
+      '  © Công Ty TNHH Thời Trang Lê Hương. All Rights Reserved. - Design by HarryDuong · Planning by Haris Nguyen · Coding by Sophie Tran',
       '</div>'
     ].join('\n');
     
