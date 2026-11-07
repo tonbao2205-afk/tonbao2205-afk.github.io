@@ -297,3 +297,8 @@ Kiểm tra:
   - đổi `?v=20261107-credit` cho footer trên 207 trang.
 - Build strict 0 chuỗi thiếu. Kiểm tra trang chủ, May Đo, EN/JA/ZH ở khổ 390/1366: dòng mới hiện đủ, không tràn ngang.
 - VPS không đổi.
+
+## p28 — 07/11/2026: làm gọn chân trang (chủ shop: "nhìn rối quá, làm lại")
+- `tools/footer_credit_v2_20261107.py` (chạy sau footer_credit_20261107.py): dòng 1 bản quyền ("All Rights Reserved." không ngắt giữa cụm), dòng 2 ba tên chữ nhỏ xám, chấm vàng ngăn cách; điện thoại (<768px) ba tên xếp 3 dòng, lề hai bên 72px + đáy 78px để nút logo tròn và nút lên đầu trang không đè chữ. Gói home mới hậu tố `-20261107-credit2.js`, `footer-component.js?v=20261107-credit2` 207 trang.
+- JA: thêm "。" cuối tên công ty (i18n/ja/units.json) vì trước đó dính liền "...Lê Hương)All Rights Reserved.".
+- Kiểm tra VI/EN/JA/KO 390, ZH 1366: 0 thiếu bản dịch, không chữ bị che. Chỉ GitHub, VPS không đổi.
