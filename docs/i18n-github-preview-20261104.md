@@ -270,3 +270,21 @@ Kiểm tra:
   - nút bấm không nổi cả hàng.
 - Thanh chuyển nhanh: trên điện thoại xếp lưới 2×2, đứng yên; trên máy tính bám đầu trang.
 - VPS không đổi.
+
+## p26 (07/11/2026): hiệu ứng chuyển động cho trang May Đo và Dịch Vụ
+- Chủ shop báo: "các animation hiện đang không hoạt động bản github là trang may đo và trang dịch vụ".
+- Nguyên nhân:
+  - Khi làm lại 2 trang (p16, p25), các lớp hiệu ứng cũ (`dv-anim`, `dv-stagger`, thẻ có hiệu ứng nổi) bị bỏ.
+  - Tệp chung `luxury-animations.js` tắt hẳn hiệu ứng hiện dần ở khổ ≤768px và không nhận tên thẻ mới `md2-*`/`dv2-*`.
+- Sửa: công cụ `tools/page_motion_20261107.py` thêm 3 khối có id riêng vào 2 trang: `mlh-page-motion` (CSS), `mlh-page-motion-head`, `mlh-page-motion-js`. Hiệu ứng chạy trên cả điện thoại và máy tính:
+  - phần đầu trang: các dòng chữ trồi lên lần lượt, ảnh thu nhẹ về đúng cỡ;
+  - lướt tới đâu hiện tới đó: từng khối mờ dần rồi trồi lên, thẻ trong lưới hiện lần lượt, ảnh/hình hiện từ hơi phóng to, số thứ tự nảy nhẹ, gạch vàng trước nhãn tự kéo dài;
+  - máy tính rê chuột: thẻ nổi lên, ảnh trong thẻ phóng nhẹ, nút chính nổi và có vệt sáng lướt qua.
+- Cách làm không đè tệp chung: dùng các thuộc tính `translate`, `scale`, `filter:opacity()`. Trong khối `md2`/`dv2`, hiệu ứng hiện dần chung được tắt để không hiện 2 lần.
+- An toàn:
+  - không có JS thì không ẩn gì;
+  - máy bật "giảm chuyển động" thì không có hiệu ứng;
+  - khối đã lướt qua (lướt nhanh, bấm link nhảy trang) vẫn được hiện, không bị kẹt ẩn;
+  - không bọc popup bảng màu vải.
+- QA 390/1366: may-do 91 khối, dich-vu 104 khối; lướt nhanh hoặc nhảy giữa trang thì 0 khối kẹt ẩn; không tràn ngang; popup bảng vải phủ đúng toàn màn hình.
+- VPS không đổi.
