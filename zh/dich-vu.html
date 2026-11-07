@@ -3,8 +3,8 @@
 <head>
   <meta name="robots" content="noindex,nofollow" />
   <script src="/preview-mode.js?v=ec00a08fcf"></script>
-  <script src="/zh/zh-dict.js?v=20261106-i18n-p25"></script>
-  <script src="/zh/zh-runtime.js?v=20261106-i18n-p25"></script>
+  <script src="/zh/zh-dict.js?v=20261107-i18n-p26"></script>
+  <script src="/zh/zh-runtime.js?v=20261107-i18n-p26"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2026" />
@@ -1591,6 +1591,52 @@ span.vn-old-price{color:#78716c!important;-webkit-text-fill-color:#78716c!import
 @media (min-width:1024px){.dv2-tiers-3{grid-template-columns:repeat(3,1fr)}}
 </style>
 <script type="application/ld+json" id="dv2-faq-ld">{"@context": "https://schema.org", "@type": "FAQPage", "@id": "https://maylehuong.com/zh/dich-vu.html#faq", "mainEntity": [{"@type": "Question", "name": "在别处买的西装可以拿来修改吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以。师傅会先检查西装结构和余布，并在收件前告知可修改的项目。"}}, {"@type": "Question", "name": "服务价格如何计算？", "acceptedAnswer": {"@type": "Answer", "text": "价格取决于服务等级、面料和西装状况。工作人员当面检查后给出具体报价。"}}, {"@type": "Question", "name": "在 mayLEHUONG 定制过的客户有什么礼遇？", "acceptedAnswer": {"@type": "Answer", "text": "在 mayLEHUONG 定制或购买西装的客户可享免费修改和免费熨烫；定制西装享终身缝线保修。"}}, {"@type": "Question", "name": "婚礼可以整组租西装吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以。婚礼套餐让新郎、父母和伴郎穿着协调统一，并在展厅统一安排试衣。"}}, {"@type": "Question", "name": "需要提前预约吗？", "acceptedAnswer": {"@type": "Answer", "text": "建议提前预约，方便师傅准备，您也无需等待，尤其是需要在指定日期取衣时。"}}]}</script>
+<style id="mlh-page-motion">
+:root{--mlh-e:cubic-bezier(.22,1,.36,1)}
+/* shared luxury reveal off inside md2/dv2: this page layer handles reveal on every width */
+html body section.md2.lux-r,html body section.dv2.lux-r,html body .md2 .lux-r,html body .dv2 .lux-r{opacity:1!important;transform:none!important}
+@keyframes mlh-rise{from{filter:opacity(0);translate:0 22px}to{filter:none;translate:none}}
+@keyframes mlh-settle{from{scale:1.08}to{scale:1}}
+@keyframes mlh-pop{0%{scale:.55;filter:opacity(0)}70%{scale:1.12}100%{scale:1;filter:none}}
+/* hero */
+html.mlh-motion .md2-hero-text>*,html.mlh-motion .dv2-hero-text>*{animation:mlh-rise .9s var(--mlh-e) both}
+html.mlh-motion .md2-hero-text>:nth-child(2),html.mlh-motion .dv2-hero-text>:nth-child(2){animation-delay:.12s}
+html.mlh-motion .md2-hero-text>:nth-child(3),html.mlh-motion .dv2-hero-text>:nth-child(3){animation-delay:.24s}
+html.mlh-motion .md2-hero-text>:nth-child(4),html.mlh-motion .dv2-hero-text>:nth-child(4){animation-delay:.36s}
+html.mlh-motion .md2-hero-text>:nth-child(n+5),html.mlh-motion .dv2-hero-text>:nth-child(n+5){animation-delay:.48s}
+html.mlh-motion .md2-hero-img,html.mlh-motion .dv2-hero-img{overflow:hidden}
+html.mlh-motion .md2-hero-img img,html.mlh-motion .dv2-hero-img img{animation:mlh-settle 1.6s var(--mlh-e) both}
+/* scroll reveal */
+html.mlh-motion body [data-rv]{transition:filter .85s var(--mlh-e),translate .85s var(--mlh-e),scale .85s var(--mlh-e);transition-delay:var(--rv-d,0s)}
+html.mlh-motion body [data-rv]:not(.is-in){filter:opacity(0);translate:0 30px}
+html.mlh-motion body [data-rv="zoom"]:not(.is-in){translate:0 18px;scale:.965}
+html.mlh-motion body [data-rv].is-in{filter:none;translate:none;scale:none}
+html.mlh-motion body [data-rv].rv-done{transition:translate .4s var(--mlh-e),box-shadow .4s var(--mlh-e)}
+html.mlh-motion .md2-kicker:before,html.mlh-motion .dv2-kicker:before{transform-origin:left center;transition:transform .9s var(--mlh-e) .2s}
+html.mlh-motion [data-rv]:not(.is-in) .md2-kicker:before,html.mlh-motion [data-rv]:not(.is-in) .dv2-kicker:before,
+html.mlh-motion .md2-kicker[data-rv]:not(.is-in):before,html.mlh-motion .dv2-kicker[data-rv]:not(.is-in):before{transform:scaleX(0)}
+html.mlh-motion [data-rv].is-in .md2-num,html.mlh-motion [data-rv].is-in .md2-cv-num,html.mlh-motion [data-rv].is-in .dv2-num{animation:mlh-pop .6s var(--mlh-e) .25s both}
+/* desktop hover */
+@media (hover:hover) and (pointer:fine){
+html.mlh-motion .md2-cv-card,html.mlh-motion .md2-board,html.mlh-motion .md2-card,html.mlh-motion .md2-fx-card,html.mlh-motion .md2-steps>li,
+html.mlh-motion .dv2-tier,html.mlh-motion .dv2-steps>li,html.mlh-motion .dv2-perk-list>li{transition:translate .4s var(--mlh-e),box-shadow .4s var(--mlh-e)}
+html.mlh-motion body .md2-cv-card:hover,html.mlh-motion body .md2-board:hover,html.mlh-motion body .md2-card:hover,html.mlh-motion body .md2-fx-card:hover,html.mlh-motion body .md2-steps>li:hover,
+html.mlh-motion body .dv2-tier:hover,html.mlh-motion body .dv2-steps>li:hover,html.mlh-motion body .dv2-perk-list>li:hover{translate:0 -6px;box-shadow:0 18px 40px rgba(45,26,15,.14),0 0 0 1px rgba(161,127,34,.28)}
+html.mlh-motion .md2-board-media img,html.mlh-motion .md2-fx-media img,html.mlh-motion .md2-card img{transition:scale .9s var(--mlh-e)}
+html.mlh-motion .md2-board:hover .md2-board-media img,html.mlh-motion .md2-fx-card:hover .md2-fx-media img,html.mlh-motion .md2-card:hover img{scale:1.05}
+html.mlh-motion .md2-btn,html.mlh-motion .dv2-btn{position:relative;overflow:hidden;transition:translate .3s var(--mlh-e),box-shadow .3s var(--mlh-e)}
+html.mlh-motion .md2-btn:after,html.mlh-motion .dv2-btn:after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:45%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.38),transparent);transform:skewX(-18deg);pointer-events:none;transition:left .7s var(--mlh-e)}
+html.mlh-motion .md2-btn:hover,html.mlh-motion .dv2-btn:hover{translate:0 -2px;box-shadow:0 10px 24px rgba(157,2,8,.22)}
+html.mlh-motion .md2-btn:hover:after,html.mlh-motion .dv2-btn:hover:after{left:120%}
+html.mlh-motion .md2-fx-btn{transition:translate .3s var(--mlh-e),background-color .25s,color .25s}
+html.mlh-motion .md2-fx-btn:hover{translate:0 -2px}
+}
+@media (prefers-reduced-motion:reduce){
+html.mlh-motion *,html.mlh-motion *:before,html.mlh-motion *:after{animation:none!important;transition:none!important}
+html.mlh-motion body [data-rv]{filter:none!important;translate:none!important;scale:none!important}
+}
+</style>
+<script id="mlh-page-motion-head">try{if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('mlh-motion')}catch(e){}</script>
   <link rel="stylesheet" href="/mobile-fit.css?v=ec00a08fcf" />
 </head>
 <body class="bg-[#f5f0eb] text-[#15110e]">
@@ -1766,6 +1812,60 @@ span.vn-old-price{color:#78716c!important;-webkit-text-fill-color:#78716c!import
 })();
 </script>
 
-<script src="/lang-switch.js?v=20261106-i18n-p25" defer></script>
+<script id="mlh-page-motion-js">
+(function(){
+  var root=document.documentElement;
+  if(!root.classList.contains('mlh-motion')) return;
+  var P='dv2';
+  var DIALOG='[role="dialog"],[id$="-modal"]';
+  var targets=[];
+  function hasDialog(el){ return el.matches(DIALOG)||!!el.querySelector(DIALOG); }
+  function isGroup(el){
+    if(el.children.length<2||el.children.length>40) return false;
+    if(/^(P|H[1-6]|A|BUTTON|SUMMARY|FIGURE|PICTURE)$/.test(el.tagName)) return false;
+    var d=getComputedStyle(el).display; return d==='grid'||d==='flex'||d==='inline-grid'||el.tagName==='UL'||el.tagName==='OL';
+  }
+  function mark(el,depth){
+    if(el.hidden||el.offsetHeight<8) return;
+    if(el.matches(DIALOG)) return;
+    if(hasDialog(el)){ if(depth<3) Array.prototype.forEach.call(el.children,function(c){mark(c,depth+1);}); return; }
+    if(depth<2&&isGroup(el)){ Array.prototype.forEach.call(el.children,function(c){mark(c,depth+1);}); return; }
+    el.setAttribute('data-rv',/^(FIGURE|PICTURE)$/.test(el.tagName)?'zoom':'');
+    targets.push(el);
+  }
+  var secs=document.querySelectorAll('section.'+P+':not(.'+P+'-hero)');
+  Array.prototype.forEach.call(secs,function(sec){
+    var wrap=sec.querySelector(':scope>.'+P+'-wrap')||sec;
+    Array.prototype.forEach.call(wrap.children,function(c){mark(c,0);});
+  });
+  function show(list){
+    list.sort(function(a,b){return a.compareDocumentPosition(b)&4?-1:1;});
+    list.forEach(function(el,i){
+      var d=Math.min(i,5)*0.09;
+      if(d) el.style.setProperty('--rv-d',d+'s');
+      el.classList.add('is-in');
+      setTimeout(function(){ el.style.removeProperty('--rv-d'); el.classList.add('rv-done'); },(d+0.95)*1000);
+    });
+  }
+  /* a block is shown once its top passes 92% of the screen height; blocks already scrolled past
+     (fast flick, anchor jump) are shown too, so nothing can stay hidden */
+  var pending=targets.slice(), ticking=false;
+  function sweep(){
+    ticking=false;
+    if(!pending.length) return;
+    var vh=window.innerHeight||root.clientHeight, batch=[];
+    pending=pending.filter(function(el){ if(el.getBoundingClientRect().top<vh*0.92){ batch.push(el); return false; } return true; });
+    if(batch.length) show(batch);
+    if(!pending.length){ removeEventListener('scroll',onScroll); removeEventListener('resize',onScroll); }
+  }
+  function onScroll(){ if(!ticking){ ticking=true; requestAnimationFrame(sweep); } }
+  addEventListener('scroll',onScroll,{passive:true});
+  addEventListener('resize',onScroll,{passive:true});
+  addEventListener('load',onScroll);
+  sweep();
+  addEventListener('pageshow',function(ev){ if(ev.persisted){ pending=[]; targets.forEach(function(el){ el.classList.add('is-in','rv-done'); }); } });
+})();
+</script>
+<script src="/lang-switch.js?v=20261107-i18n-p26" defer></script>
 </body>
 </html>
