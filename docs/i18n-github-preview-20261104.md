@@ -302,3 +302,10 @@ Kiểm tra:
 - `tools/footer_credit_v2_20261107.py` (chạy sau footer_credit_20261107.py): dòng 1 bản quyền ("All Rights Reserved." không ngắt giữa cụm), dòng 2 ba tên chữ nhỏ xám, chấm vàng ngăn cách; điện thoại (<768px) ba tên xếp 3 dòng, lề hai bên 72px + đáy 78px để nút logo tròn và nút lên đầu trang không đè chữ. Gói home mới hậu tố `-20261107-credit2.js`, `footer-component.js?v=20261107-credit2` 207 trang.
 - JA: thêm "。" cuối tên công ty (i18n/ja/units.json) vì trước đó dính liền "...Lê Hương)All Rights Reserved.".
 - Kiểm tra VI/EN/JA/KO 390, ZH 1366: 0 thiếu bản dịch, không chữ bị che. Chỉ GitHub, VPS không đổi.
+
+## p29 — 08/11/2026: trang gọi ảnh WebP thay PNG/JPG (chủ shop: "làm trên bản github trước")
+- Máy chủ đã có sẵn bản `.webp` cùng tên cho 630/630 ảnh PNG/JPG mà trang gọi (HEAD + đọc đầu file WebP; so 110 mẫu trên 12 nhóm thư mục, sai khác ≤0,7/255, cùng tỉ lệ). Không tạo ảnh mới, chỉ đổi đuôi đường dẫn có trong `tools/webp_allowlist_20261108.json`.
+- `tools/webp_refs_20261108.py` trên web VI (`.codex-local/vi-facts-20261104/web`): 3.273 chỗ trong HTML/JS/CSS (trừ admin, sitemap, og:image/JSON-LD tuyệt đối), 2 gói home mới hậu tố `-20261108-webp.js`, `?v=20261108-webp` cho nav-component/luxury-animations/cta-widget/product-api trên 207 trang; dữ liệu sản phẩm → `.codex-local/en-site-20261104/api-products-webp.json`.
+- units.json 5 ngôn ngữ: thêm 85 câu đường dẫn `.webp` (bản dịch giữ nguyên đường dẫn); lang-switch.js logo `.webp`.
+- Đo điện thoại (mạng chậm, máy chủ local, ảnh từ maylehuong.com), ảnh tải: trang chủ 7,0→0,8 MB; Vest Nữ 15,5→0,5 MB (load 87→17 s); Sản phẩm 12,6→3,4 MB; Cà vạt 4,0→4,1 MB (vốn đã WebP ~250KB/ảnh, cần ảnh thu nhỏ). 0 ảnh lỗi.
+- Còn PNG/JPG: 1 ảnh DHL tên có "(1)" (156KB). Chưa làm: font icon 1,1 MB, ảnh thu nhỏ cà vạt. Chỉ GitHub, VPS không đổi; khi đăng VPS phải chạy cùng công cụ trên web current + đổi runtime products.json.
