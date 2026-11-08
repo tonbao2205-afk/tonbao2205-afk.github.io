@@ -29,7 +29,7 @@ E = html.escape
 PRICE = {
     'sua-tinh-chinh': None, 'sua-chinh-phom': None, 'sua-tai-cau-truc': None,
     'cs-hap': None, 'cs-giat-kho': None, 'cs-tron-goi': None,
-    'thue-tieu-chuan': None, 'thue-cao-cap': None, 'thue-thiet-ke': None,
+    'thue-tieu-chuan': '500.000đ', 'thue-cao-cap': None, 'thue-thiet-ke': None,
     'goi-cuoi': None, 'goi-doanh-nhan': None,
 }
 NO_PRICE = 'Báo giá khi tư vấn'
