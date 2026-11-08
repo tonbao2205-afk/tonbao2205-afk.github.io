@@ -52,7 +52,7 @@ FAMILY_LABEL = {
     'lc9000': 'Lanificio Di Calvino - Made in Italy',
     'louis-12l-england': 'LOUIS - Made in England',
     'ns10500': 'NS10500 - Luxury Suiting Fabric',
-    'trs6500-02': '10% Wool, 10% Tencel, 3% Spandex',
+    'trs6500-02': '10% Wool, 10% Tencel, 77% Poly, 3% Spandex',
 }
 RANGE_LABEL = {  # family: [(count, label), ...] in catalog order
     'trs6500-01': [(7, '18% Rayon, 80% Poly, 2% Spandex'), (20, '20% Rayon, 80% Polyester - 320 g/m'),
@@ -81,7 +81,7 @@ BOOKS = [
     ('ichn-07', 'ICHN 07', 5500000, 'Theo nhãn: Superfine Australian Wool Blend', None, 'ichn-07'),
     ('trs6500-01', 'TRS6500-01', 5500000, 'Theo nhãn: pha Rayon và Polyester, một số mẫu có Spandex',
      None, 'trs6500-01'),
-    ('trs6500-02', 'TRS6500-02', 5500000, 'Theo nhãn: 10% Wool, 10% Tencel, 3% Spandex', None, 'trs6500-02'),
+    ('trs6500-02', 'TRS6500-02', 5500000, 'Theo nhãn: 10% Wool, 10% Tencel, 77% Poly, 3% Spandex', None, 'trs6500-02'),
     ('trs6500-03', 'TRS6500-03', 5500000, 'Theo nhãn: pha Rayon và Polyester, một số mẫu có Spandex',
      None, 'trs6500-03'),
 ]

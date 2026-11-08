@@ -40,7 +40,7 @@ BOARDS = [
      'Vest mặc thường xuyên, cần bền và đứng dáng trong nhiều năm.'),
     ('donatella', 'Bảng Vải 10.500.000/DONATELLA/DONATELLA.jpeg', 'donatella-10500', [1, 4, 12, 13],
      'Donatella', '10.500.000đ',
-     'Theo nhãn mẫu: Micro Fiber, Made in Italy.',
+     "Theo nhãn mẫu: 180's Wool & Lycra, Made in Italy.",
      ['Sợi rất mảnh dệt dày, bề mặt bóng nhẹ, mềm khi chạm da.',
       'Ít nhăn, có nhiều màu nổi như vàng, xanh cổ vịt, đỏ rượu.'],
      'Vest cưới, lễ phục và sự kiện cần nổi bật dưới ánh đèn.'),
@@ -144,7 +144,7 @@ def build_sections(cat):
 <h2 id="md2-fabrics-title" class="md2-h2">Chọn bảng vải theo ngân sách và cách mặc</h2>
 <p class="md2-intro">Giá bộ vest may đo phụ thuộc chủ yếu vào bảng vải. Dưới đây là các bảng vải phân khúc cao; tại showroom bạn được xem và sờ quyển mẫu thật.</p>
 <div class="md2-boards">{boards}</div>
-<p class="md2-note">Ngoài ra có bảng vải CERAZO (7.000.000đ) cho nhu cầu cơ bản. Thông tin chất liệu ghi theo nhãn quyển mẫu của nhà cung cấp; màu trên màn hình có thể khác màu vải thật.</p>
+<p class="md2-note">Ngoài ra có bảng vải Cezaro (7.000.000đ) cho nhu cầu cơ bản. Thông tin chất liệu ghi theo nhãn quyển mẫu của nhà cung cấp; màu trên màn hình có thể khác màu vải thật.</p>
 </div>
 </section>
 

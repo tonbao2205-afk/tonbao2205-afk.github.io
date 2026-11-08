@@ -354,3 +354,11 @@ Kiểm tra:
 ## p37 (08/11/2026): bỏ mục Thông tin doanh nghiệp khỏi trang Chính sách
 
 Chủ shop: trang Giới thiệu đã có. `tools/policy_page_20261108.py` bỏ `COMPANY`, CSS `cs-info`, câu mở đầu không còn nhắc "doanh nghiệp" (dịch lại 5 ngôn ngữ). Còn 7 mục 01–07, mục "Điều kiện giao dịch" mở sẵn. Đã đối chiếu: tên công ty, MST, ngày thành lập, người đại diện, trụ sở, showroom Hà Nội, 2 hotline có ở `gioi-thieu.html`; email có ở chân trang. QA 6 ngôn ngữ × 320/390/768/1366 đạt 24/24. VPS chưa đổi.
+
+## p38 (08/11/2026): thông số vải theo ảnh chụp
+
+Chủ shop chốt: thông số vải có gì ghi nấy, không có thì thôi; Donatella 10500 tùy ý; tên hãng lấy theo ảnh chụp. `tools/fabric_labels_20261108.py` chạy trên web current, chỉ đổi `may-do.html`.
+- CERAZO → Cezaro: bìa quyển và nhãn từng mẫu in CEZARO. Thư mục ảnh và tên trên KiotViet không đổi.
+- Donatella 10500: bỏ "Micro Fiber", thẻ giới thiệu ghi 180's Wool & Lycra, Made in Italy, đúng dòng in trên nhãn 16 mẫu và khớp danh mục. Ảnh bìa thật của quyển vẫn in chữ MICRO FIBER.
+- TRS6500-02: thêm 77% Poly, đã đọc nhãn cả 14 mẫu (10% Wool, 10% Tencel, 77% Poly, 3% Spandex). Dòng in chú thích dưới ảnh mẫu của nhà cung cấp thiếu số này.
+- 3 câu dịch × 5 ngôn ngữ. QA 6 ngôn ngữ × 320/390/1366 đạt 18/18. VPS chưa đổi; khi đăng chạy thêm công cụ này sau nhóm policy.
