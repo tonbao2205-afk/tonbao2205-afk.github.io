@@ -805,6 +805,7 @@
       {href:'/hi/dong-phuc.html', label:'Đồng Phục'},
       {href:'/hi/tu-van.html', label:'Tư Vấn Đặt Lịch'},
       {href:'/hi/gioi-thieu.html', label:'Giới Thiệu'},
+      {href:'/hi/chinh-sach.html', label:'Chính Sách'},
     ];
     var curPage = window.location.pathname.split('/').pop() || 'index.html';
     pages.forEach(function(p) {

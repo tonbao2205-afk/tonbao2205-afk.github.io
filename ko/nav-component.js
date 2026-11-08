@@ -58,7 +58,8 @@
     { label: 'Dịch Vụ', href: '/ko/dich-vu.html' },
     { label: 'Đồng Phục', href: '/ko/dong-phuc.html' },
     { label: 'Tư Vấn', href: '/ko/tu-van.html' },
-    { label: 'Giới Thiệu', href: '/ko/gioi-thieu.html' }
+    { label: 'Giới Thiệu', href: '/ko/gioi-thieu.html' },
+    { label: 'Chính Sách', href: '/ko/chinh-sach.html' }
   ];
 
   /* Detect active page filename */
