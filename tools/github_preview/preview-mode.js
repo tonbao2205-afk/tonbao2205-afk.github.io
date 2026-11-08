@@ -57,7 +57,7 @@
   var origFetch = window.fetch.bind(window);
   var snap = null;
   function load() {
-    if (!snap) snap = origFetch('/api-snapshot/products.json', { cache: 'no-store' }).then(function (r) { return r.json(); });
+    if (!snap) snap = origFetch('/api-snapshot/products.json', { cache: 'no-cache' }).then(function (r) { return r.json(); });
     return snap;
   }
   function fold(s) {

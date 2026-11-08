@@ -311,7 +311,7 @@
     brand.setAttribute('aria-hidden', 'true');
     // The shop's own logo, same file as the site header.
     var logo = document.createElement('img');
-    logo.src = '/images/Logo%20L%C3%AA%20H%C6%B0%C6%A1ng%20Web.webp';
+    logo.src = '/assets/brand-20261108/logo-nav.webp';
     logo.alt = 'mayLEHUONG';
     logo.decoding = 'async';
     brand.appendChild(logo);
