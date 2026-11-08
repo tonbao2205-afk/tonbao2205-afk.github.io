@@ -25,7 +25,7 @@ URL = 'https://maylehuong.com/' + PAGE
 TITLE = 'Chính Sách & Điều Khoản Mua Hàng – mayLEHUONG'
 DESC = ('Chính sách giao hàng, đổi trả 30 ngày, bảo hành đường may trọn đời, thanh toán, bảo mật thông tin '
         'và giải quyết khiếu nại của Công ty TNHH Thời Trang Lê Hương (mayLEHUONG).')
-FOOTER_VER = '20261108-policy'
+FOOTER_VER = '20261108-policy2'
 UPDATED = '08/11/2026'
 
 COMPANY = [
@@ -38,6 +38,7 @@ COMPANY = [
     ('Showroom Hà Nội', 'Số 7 Chính Vân, Chuyên Mỹ, Thành Phố Hà Nội'),
     ('Hotline Đồng Nai', '0948.954.848 (8:00 – 22:00)'),
     ('Hotline Hà Nội', '0786.291.468'),
+    ('Email', 'xuongvestcuoibh9999@gmail.com'),
 ]
 
 # (anchor, icon, heading, [blocks]); block = ('p', text) | ('ul', [items])
@@ -56,8 +57,8 @@ SECTIONS = [
     ('giao-hang', 'local_shipping', 'Chính sách giao hàng', [
         ('ul', [
             'Miễn phí giao hàng cho đơn từ 500.000đ.',
-            'Đơn dưới 500.000đ: phí giao hàng được thông báo khi xác nhận đơn, trước khi gửi hàng.',
-            'Thời gian giao dự kiến được thông báo khi xác nhận đơn, tùy địa chỉ nhận hàng.',
+            'Đơn dưới 500.000đ: phí giao hàng tính theo biểu phí của đơn vị vận chuyển và được báo trước khi gửi hàng.',
+            'Giao hàng toàn quốc, thời gian dự kiến 3–5 ngày tùy địa chỉ nhận hàng.',
             'Với sản phẩm may đo, ngày nhận đồ được hẹn sau khi đo và chọn vải; bạn có thể nhận tại showroom hoặc nhận qua giao hàng.',
             'Bạn được kiểm tra sản phẩm khi nhận hàng. Nếu sản phẩm sai mẫu, sai size hoặc hư hỏng, vui lòng báo ngay cho hotline.',
         ]),
@@ -85,6 +86,8 @@ SECTIONS = [
         ('ul', [
             'Thanh toán khi nhận hàng (COD) với đơn đặt trên website.',
             'Thanh toán trực tiếp tại showroom.',
+            'Chuyển khoản ngân hàng cho sản phẩm có sẵn (hàng mua sẵn). Vui lòng chỉ chuyển khoản theo thông tin tài khoản '
+            'do nhân viên mayLEHUONG gửi khi xác nhận đơn qua hotline hoặc Zalo chính thức.',
             'Với sản phẩm may đo, mức đặt cọc (nếu có) được thông báo khi chốt đơn và được trừ vào tổng tiền khi nhận đồ.',
             'mayLEHUONG gửi xác nhận số tiền đã thanh toán và số tiền còn lại qua Zalo hoặc hóa đơn.',
         ]),
@@ -106,7 +109,7 @@ SECTIONS = [
     ]),
     ('khieu-nai', 'support_agent', 'Tiếp nhận & giải quyết khiếu nại', [
         ('ul', [
-            'Bạn gửi phản ánh, khiếu nại qua hotline 0948.954.848, Zalo hoặc trực tiếp tại showroom.',
+            'Bạn gửi phản ánh, khiếu nại qua hotline 0948.954.848, Zalo, email xuongvestcuoibh9999@gmail.com hoặc trực tiếp tại showroom.',
             'mayLEHUONG tiếp nhận, kiểm tra và liên hệ lại với bạn để thống nhất hướng xử lý.',
             'Các bên ưu tiên giải quyết bằng thương lượng, hòa giải. Trường hợp không thống nhất được, bạn có thể '
             'liên hệ cơ quan quản lý nhà nước về bảo vệ quyền lợi người tiêu dùng hoặc giải quyết tại Tòa án theo '
@@ -230,6 +233,8 @@ def build_page(base):
 
 FOOTER_LINK_AFTER = "      '      <a href=\"/gioi-thieu.html\" style=\"color: #ffffff !important;\">Giới Thiệu Thương Hiệu</a>',"
 FOOTER_LINK = "      '      <a href=\"/chinh-sach.html\" style=\"color: #ffffff !important;\">Chính Sách & Điều Khoản</a>',"
+FOOTER_MAIL_AFTER = "      '      <p style=\"color: #ffffff !important;\">📞 Hotline Hà Nội: 0786.291.468</p>',"
+FOOTER_MAIL = "      '      <p style=\"color: #ffffff !important;\">✉️ Email: xuongvestcuoibh9999@gmail.com</p>',"
 FOOTER_MST_OLD = "'  © Công Ty TNHH Thời Trang Lê Hương. <span class=lhv-rr>"
 FOOTER_MST_NEW = "'  © Công Ty TNHH Thời Trang Lê Hương · MST 3603652314. <span class=lhv-rr>"
 BUMP = re.compile(r'((?<![\w-])footer-component\.js)(\?v=[^"\'\s>]*)?(?=["\'\s>])')
@@ -247,6 +252,10 @@ def main():
         if FOOTER_LINK_AFTER not in fc:
             raise SystemExit('footer anchor not found')
         fc = fc.replace(FOOTER_LINK_AFTER, FOOTER_LINK_AFTER + nl + FOOTER_LINK, 1)
+    if FOOTER_MAIL not in fc:
+        if FOOTER_MAIL_AFTER not in fc:
+            raise SystemExit('footer mail anchor not found')
+        fc = fc.replace(FOOTER_MAIL_AFTER, FOOTER_MAIL_AFTER + nl + FOOTER_MAIL, 1)
     if FOOTER_MST_NEW not in fc:
         if FOOTER_MST_OLD not in fc:
             raise SystemExit('footer bottom not found')
