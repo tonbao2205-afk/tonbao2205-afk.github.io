@@ -86,7 +86,7 @@
       var luxFonts = document.createElement('link');
       luxFonts.id = 'lhv-luxury-fonts';
       luxFonts.rel = 'stylesheet';
-      luxFonts.href = 'https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400..900;1,400..900&family=Be+Vietnam+Pro:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,300..900;1,300..900&display=swap';
+      luxFonts.href = 'https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400..900;1,400..900&family=Be+Vietnam+Pro:ital,wght@0,300..900;1,300..900&family=Montserrat:wght@600;700;800&display=swap';
       document.head.appendChild(luxFonts);
     }
     if (document.getElementById('lhv-nav-v5-css')) return;
