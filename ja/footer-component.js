@@ -98,6 +98,7 @@
       '      <a href="/ja/chinh-sach.html" style="color: #ffffff !important;">Chính Sách & Điều Khoản</a>',
       '      <p style="color: #ffffff !important;">📞 Hotline Đồng Nai: 0948.954.848</p>',
       '      <p style="color: #ffffff !important;">📞 Hotline Hà Nội: 0786.291.468</p>',
+      '      <p style="color: #ffffff !important;">✉️ Email: xuongvestcuoibh9999@gmail.com</p>',
       '    </div>',
       '  </div>',
       '</div>',
