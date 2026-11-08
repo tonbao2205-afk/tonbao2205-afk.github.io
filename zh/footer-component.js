@@ -95,13 +95,14 @@
       '      <a href="/zh/dich-vu.html" style="color: #ffffff !important;">Đặc Quyền Dịch Vụ Khách Hàng</a>',
       '      <a href="/zh/tu-van.html" style="color: #ffffff !important;">Liên Hệ Tư Vấn</a>',
       '      <a href="/zh/gioi-thieu.html" style="color: #ffffff !important;">Giới Thiệu Thương Hiệu</a>',
+      '      <a href="/zh/chinh-sach.html" style="color: #ffffff !important;">Chính Sách & Điều Khoản</a>',
       '      <p style="color: #ffffff !important;">📞 Hotline Đồng Nai: 0948.954.848</p>',
       '      <p style="color: #ffffff !important;">📞 Hotline Hà Nội: 0786.291.468</p>',
       '    </div>',
       '  </div>',
       '</div>',
       '<div class="lhv-footer-bottom" style="color: #d1d5db !important;">',
-      '  © Công Ty TNHH Thời Trang Lê Hương. <span class=lhv-rr>All Rights Reserved.</span><span class=lhv-cr><span>Design by HarryDuong</span><i>·</i><span>Planning by Haris Nguyen</span><i>·</i><span>Coding by Sophie Tran</span></span>',
+      '  © Công Ty TNHH Thời Trang Lê Hương · MST 3603652314. <span class=lhv-rr>All Rights Reserved.</span><span class=lhv-cr><span>Design by HarryDuong</span><i>·</i><span>Planning by Haris Nguyen</span><i>·</i><span>Coding by Sophie Tran</span></span>',
       '</div>'
     ].join('\n');
     
