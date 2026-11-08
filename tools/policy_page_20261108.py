@@ -119,33 +119,47 @@ SECTIONS = [
 ]
 
 STYLE = '''<style id="mlh-policy">
-#chinh-sach{background:#f5f0eb!important;padding:24px 16px 72px}
-#chinh-sach .cs-wrap{max-width:880px;margin:0 auto}
-#chinh-sach .cs-kicker{display:inline-block;font-family:'Montserrat',sans-serif;font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#9d0208!important;-webkit-text-fill-color:#9d0208!important;margin-bottom:10px}
-#chinh-sach .cs-kicker::after{content:"";display:block;width:32px;height:2px;background:#a17f22;margin-top:8px}
-#chinh-sach h1{font-family:'Noto Serif',serif;font-weight:700;font-size:clamp(28px,4.5vw,42px);line-height:1.2;color:#15110e!important;-webkit-text-fill-color:#15110e!important;margin:0 0 12px}
-#chinh-sach .cs-lead{font-size:16px;line-height:1.7;color:#3b3029!important;-webkit-text-fill-color:#3b3029!important;margin:0 0 6px}
-#chinh-sach .cs-updated{font-size:14px;color:#5c4a3d!important;-webkit-text-fill-color:#5c4a3d!important;margin:0 0 24px}
-#chinh-sach .cs-toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px;padding:0;list-style:none}
-#chinh-sach .cs-toc a{display:inline-block;padding:7px 14px;border:1px solid #d8c9a6;border-radius:999px;background:#fffdf8;font-size:14px;font-weight:600;color:#2b231d!important;-webkit-text-fill-color:#2b231d!important;text-decoration:none}
-#chinh-sach .cs-toc a:hover{border-color:#a17f22;color:#9d0208!important;-webkit-text-fill-color:#9d0208!important}
-#chinh-sach .cs-card{background:#fffdf8;border:1px solid #e6dcc6;border-radius:14px;padding:22px 20px;margin:0 0 18px;scroll-margin-top:110px}
-#chinh-sach h2{display:flex;align-items:center;gap:10px;font-family:'Noto Serif',serif;font-weight:700;font-size:clamp(20px,2.6vw,24px);line-height:1.3;color:#15110e!important;-webkit-text-fill-color:#15110e!important;margin:0 0 12px}
-#chinh-sach h2 .material-symbols-outlined{color:#a17f22!important;-webkit-text-fill-color:#a17f22!important;font-size:26px}
-#chinh-sach p,#chinh-sach li{font-size:15.5px;line-height:1.75;color:#2b231d!important;-webkit-text-fill-color:#2b231d!important}
-#chinh-sach p{margin:0 0 10px}
-#chinh-sach ul.cs-list{margin:0;padding-left:20px;list-style:disc}
-#chinh-sach ul.cs-list li{margin:0 0 6px}
-#chinh-sach ul.cs-list li::marker{color:#a17f22}
-#chinh-sach dl.cs-info{margin:0;display:grid;grid-template-columns:1fr;gap:0}
-#chinh-sach dl.cs-info div{display:grid;grid-template-columns:1fr;gap:2px;padding:9px 0;border-bottom:1px solid #eee4d0}
-#chinh-sach dl.cs-info div:last-child{border-bottom:0}
+#chinh-sach{background:#f5f0eb!important;padding:36px 20px 88px}
+#chinh-sach .cs-wrap{max-width:920px;margin:0 auto}
+#chinh-sach .cs-head{margin:0 0 36px}
+#chinh-sach .cs-kicker{display:block;font-family:'Montserrat',sans-serif;font-weight:700;font-size:13.5px;letter-spacing:.14em;text-transform:uppercase;color:#9d0208!important;-webkit-text-fill-color:#9d0208!important}
+#chinh-sach .cs-kicker::after{content:"";display:block;width:32px;height:2px;background:#a17f22;margin:9px 0 18px}
+#chinh-sach h1{font-family:'Noto Serif',serif;font-weight:700;font-size:clamp(31px,5.2vw,50px);line-height:1.18;color:#15110e!important;-webkit-text-fill-color:#15110e!important;margin:0 0 16px}
+#chinh-sach .cs-lead{max-width:720px;font-size:16.5px;line-height:1.75;color:#2b231d!important;-webkit-text-fill-color:#2b231d!important;margin:0 0 10px}
+#chinh-sach .cs-updated{font-size:14px;color:#5c4a3d!important;-webkit-text-fill-color:#5c4a3d!important;margin:0}
+#chinh-sach .cs-acc{border-bottom:1px solid #c9b88f}
+#chinh-sach details.cs-item{border-top:1px solid #c9b88f;scroll-margin-top:96px}
+#chinh-sach summary{display:grid;grid-template-columns:38px minmax(0,1fr) 22px;align-items:center;column-gap:6px;padding:21px 0;cursor:pointer;list-style:none}
+#chinh-sach summary::-webkit-details-marker{display:none}
+#chinh-sach summary:focus-visible{outline:2px solid #9d0208;outline-offset:3px}
+#chinh-sach .cs-no{font-family:'Noto Serif',serif;font-weight:700;font-size:16px;color:#7d5f14!important;-webkit-text-fill-color:#7d5f14!important}
+#chinh-sach h2{font-family:'Noto Serif',serif;font-weight:700;font-size:clamp(19px,2.6vw,25px);line-height:1.32;margin:0;color:#15110e!important;-webkit-text-fill-color:#15110e!important;transition:color .18s}
+#chinh-sach summary:hover h2,#chinh-sach details[open] h2{color:#9d0208!important;-webkit-text-fill-color:#9d0208!important}
+#chinh-sach .cs-plus{position:relative;width:18px;height:18px;justify-self:end}
+#chinh-sach .cs-plus::before,#chinh-sach .cs-plus::after{content:"";position:absolute;background:#7d5f14;left:0;right:0;top:8px;height:2px;transition:transform .22s ease}
+#chinh-sach .cs-plus::after{transform:rotate(90deg)}
+#chinh-sach details[open] .cs-plus::after{transform:rotate(0)}
+#chinh-sach .cs-body{padding:0 0 28px}
+#chinh-sach .cs-body p,#chinh-sach .cs-body li{font-size:16px;line-height:1.78;color:#2b231d!important;-webkit-text-fill-color:#2b231d!important}
+#chinh-sach .cs-body p{margin:0 0 12px}
+#chinh-sach ul.cs-list{margin:0;padding:0 0 0 19px;list-style:disc}
+#chinh-sach ul.cs-list li{margin:0 0 9px;padding-left:2px}
+#chinh-sach ul.cs-list li:last-child{margin-bottom:0}
+#chinh-sach ul.cs-list li::marker{color:#7d5f14}
+#chinh-sach dl.cs-info{margin:0}
+#chinh-sach dl.cs-info div{display:grid;grid-template-columns:1fr;gap:1px;padding:10px 0;border-top:1px solid #e0d5bc}
+#chinh-sach dl.cs-info div:first-child{border-top:0;padding-top:0}
 #chinh-sach dt{font-size:14px;color:#5c4a3d!important;-webkit-text-fill-color:#5c4a3d!important}
-#chinh-sach dd{margin:0;font-size:15.5px;font-weight:600;color:#15110e!important;-webkit-text-fill-color:#15110e!important}
-#chinh-sach .cs-contact{text-align:center;margin-top:26px}
-#chinh-sach .cs-contact a{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;background:#9d0208;font-weight:700;color:#ffffff!important;-webkit-text-fill-color:#ffffff!important;text-decoration:none}
-@media (min-width:640px){#chinh-sach{padding:40px 24px 96px}#chinh-sach .cs-card{padding:28px 30px}
-#chinh-sach dl.cs-info div{grid-template-columns:220px 1fr;gap:16px}}
+#chinh-sach dd{margin:0;font-size:16px;font-weight:600;overflow-wrap:anywhere;color:#15110e!important;-webkit-text-fill-color:#15110e!important}
+#chinh-sach .cs-contact{margin:34px 0 0}
+#chinh-sach .cs-contact a{display:inline-block;padding:14px 26px;border-radius:3px;background:#9d0208;font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;text-decoration:none;color:#ffffff!important;-webkit-text-fill-color:#ffffff!important}
+#chinh-sach .cs-contact a:hover{background:#7f0206}
+@media (min-width:640px){#chinh-sach{padding:56px 28px 112px}
+#chinh-sach .cs-head{margin-bottom:48px}
+#chinh-sach summary{grid-template-columns:58px minmax(0,1fr) 22px;padding:26px 0}
+#chinh-sach .cs-no{font-size:18px}
+#chinh-sach .cs-body{padding:0 28px 34px 64px}
+#chinh-sach dl.cs-info div{grid-template-columns:230px minmax(0,1fr);gap:18px}}
 </style>'''
 
 
@@ -160,25 +174,29 @@ def render_blocks(blocks):
 
 
 def main_html():
-    toc = [('thong-tin-doanh-nghiep', 'Thông tin doanh nghiệp')] + [(a, h) for a, _, h, _ in SECTIONS]
+    items = [('thong-tin-doanh-nghiep', 'Thông tin doanh nghiệp',
+              '<dl class="cs-info">' + ''.join(f'<div><dt>{E(k)}</dt><dd>{E(v)}</dd></div>' for k, v in COMPANY) + '</dl>')]
+    items += [(a, h, render_blocks(blocks)) for a, _, h, blocks in SECTIONS]
     parts = [
         '<section id="chinh-sach"><div class="cs-wrap">',
-        '<span class="cs-kicker">Chính sách</span>',
+        '<div class="cs-head"><span class="cs-kicker">Chính sách</span>',
         '<h1>Chính sách &amp; điều khoản mua hàng</h1>',
         '<p class="cs-lead">Thông tin về doanh nghiệp, giao hàng, đổi trả, bảo hành, thanh toán, bảo mật và '
         'giải quyết khiếu nại khi bạn mua sắm và sử dụng dịch vụ tại mayLEHUONG.</p>',
-        f'<p class="cs-updated">Cập nhật: {UPDATED}</p>',
-        '<ul class="cs-toc">' + ''.join(f'<li><a href="#{a}">{E(h)}</a></li>' for a, h in toc) + '</ul>',
-        '<div class="cs-card" id="thong-tin-doanh-nghiep"><h2><span class="material-symbols-outlined" aria-hidden="true">'
-        'business</span>Thông tin doanh nghiệp</h2><dl class="cs-info">'
-        + ''.join(f'<div><dt>{E(k)}</dt><dd>{E(v)}</dd></div>' for k, v in COMPANY) + '</dl></div>',
+        f'<p class="cs-updated">Cập nhật: {UPDATED}</p></div>',
+        '<div class="cs-acc">',
     ]
-    for a, icon, h, blocks in SECTIONS:
-        parts.append(f'<div class="cs-card" id="{a}"><h2><span class="material-symbols-outlined" aria-hidden="true">'
-                     f'{icon}</span>{E(h)}</h2>{render_blocks(blocks)}</div>')
-    parts.append('<div class="cs-contact"><a href="tel:0948954848"><span class="material-symbols-outlined" '
-                 'aria-hidden="true">call</span>Hỏi thêm qua hotline 0948.954.848</a></div>')
+    for i, (a, h, body) in enumerate(items, 1):
+        parts.append(f'<details class="cs-item" id="{a}"{" open" if i == 1 else ""}><summary>'
+                     f'<span class="cs-no" aria-hidden="true">{i:02d}</span><h2>{E(h)}</h2>'
+                     f'<span class="cs-plus" aria-hidden="true"></span></summary>'
+                     f'<div class="cs-body">{body}</div></details>')
+    parts.append('</div>')
+    parts.append('<p class="cs-contact"><a href="tel:0948954848">Hỏi thêm qua hotline 0948.954.848</a></p>')
     parts.append('</div></section>')
+    parts.append('<script>(function(){function o(){var d=location.hash&&document.getElementById(location.hash.slice(1));'
+                 'if(d&&d.tagName==="DETAILS"){d.open=true;d.scrollIntoView();}}'
+                 'window.addEventListener("hashchange",o);o();})();</script>')
     return '\n'.join(parts)
 
 

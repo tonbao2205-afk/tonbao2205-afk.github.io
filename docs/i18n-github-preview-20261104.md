@@ -345,3 +345,8 @@ Kiểm tra:
 - `tools/policy_menu_20261108.py` (chạy sau policy_page): thêm "Chính Sách" sau "Giới Thiệu" trong nav-component.js + site-data.js; ?v=20261108-policy 208 trang.
 - Sửa thiếu sót p33/p34: trang chủ KHÔNG dùng nav-component/footer-component mà có bản sao trong 2 gói home-app, nên link chân trang/email/MST của p33–p34 chưa có ở trang chủ. Gói mới hậu tố `-20261108-policy.js` có đủ menu + chân trang.
 - Đo: 8 trang × 390/1024/1180/1280/1366/1440/1920 (VI/EN/HI, trang chủ + trang thường), đo thêm số dòng chữ menu 7 trang × 1024/1180/1366 (đủ 6 ngôn ngữ): menu 1 hàng, 1 dòng, không đè nút bên phải, không tràn ngang; có đủ link menu/ngăn kéo điện thoại, link chân trang, email, MST; 0 lỗi JS. Build strict 0 thiếu. VPS không đổi.
+
+## p36 — 08/11/2026: làm lại giao diện trang Chính sách (chủ shop: "Trang xấu quá ... làm lại đi"; chốt cả 2 thiết bị, kiểu danh sách gập mở)
+- Bỏ mục lục viên thuốc và khung thẻ; 8 mục `<details>` số 01–08 ngăn bằng đường chỉ, dấu +/−, "Thông tin doanh nghiệp" mở sẵn, link `#giao-hang`… tự mở đúng mục. Nội dung có sẵn trong HTML, không cần JS để đọc. Câu chữ giữ nguyên, 0 câu dịch mới. Prompt `PROMPT-ANTI-CHINH-SACH-20261108.md`.
+- Lưu ý: site tự ẩn mọi thẻ `<header>` trong trang (class lhv-old-nav, display:none); phần đầu nội dung phải dùng `<div>`.
+- Đo 6 ngôn ngữ × 320/390/768/1366 = 24/24: mở/đóng từng mục, link #, tương phản ≥4,5, không tràn ngang, 0 lỗi JS. VPS không đổi.
