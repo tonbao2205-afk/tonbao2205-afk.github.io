@@ -26,7 +26,7 @@
   /* ══════════════════════════════════════════════
      1. CONFIG & NAVIGATION DATA
   ══════════════════════════════════════════════ */
-  var LOGO_SRC   = '/images/Logo Lê Hương Web.webp';
+  var LOGO_SRC   = '/assets/brand-20261108/logo-nav.webp';
   var LOGO_ALT   = 'mayLEHUONG Suit & Uniform';
   var NAV_HEIGHT = 68; // px
 
