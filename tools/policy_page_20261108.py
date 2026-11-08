@@ -28,19 +28,6 @@ DESC = ('Chính sách giao hàng, đổi trả 30 ngày, bảo hành đường m
 FOOTER_VER = '20261108-policy2'
 UPDATED = '08/11/2026'
 
-COMPANY = [
-    ('Tên doanh nghiệp', 'Công ty TNHH Thời Trang Lê Hương'),
-    ('Tên quốc tế', 'mayLEHUONG Fashion Company Limited'),
-    ('Mã số thuế / mã số doanh nghiệp', '3603652314'),
-    ('Ngày thành lập', '26/06/2019'),
-    ('Người đại diện', 'Bà Lê Thị Hương'),
-    ('Trụ sở chính', '1797 Nguyễn Ái Quốc, Khu Phố 10, Phường Tam Hiệp, Thành Phố Đồng Nai'),
-    ('Showroom Hà Nội', 'Số 7 Chính Vân, Chuyên Mỹ, Thành Phố Hà Nội'),
-    ('Hotline Đồng Nai', '0948.954.848 (8:00 – 22:00)'),
-    ('Hotline Hà Nội', '0786.291.468'),
-    ('Email', 'xuongvestcuoibh9999@gmail.com'),
-]
-
 # (anchor, icon, heading, [blocks]); block = ('p', text) | ('ul', [items])
 SECTIONS = [
     ('dieu-kien-giao-dich', 'description', 'Điều kiện giao dịch chung', [
@@ -146,11 +133,6 @@ STYLE = '''<style id="mlh-policy">
 #chinh-sach ul.cs-list li{margin:0 0 9px;padding-left:2px}
 #chinh-sach ul.cs-list li:last-child{margin-bottom:0}
 #chinh-sach ul.cs-list li::marker{color:#7d5f14}
-#chinh-sach dl.cs-info{margin:0}
-#chinh-sach dl.cs-info div{display:grid;grid-template-columns:1fr;gap:1px;padding:10px 0;border-top:1px solid #e0d5bc}
-#chinh-sach dl.cs-info div:first-child{border-top:0;padding-top:0}
-#chinh-sach dt{font-size:14px;color:#5c4a3d!important;-webkit-text-fill-color:#5c4a3d!important}
-#chinh-sach dd{margin:0;font-size:16px;font-weight:600;overflow-wrap:anywhere;color:#15110e!important;-webkit-text-fill-color:#15110e!important}
 #chinh-sach .cs-contact{margin:34px 0 0}
 #chinh-sach .cs-contact a{display:inline-block;padding:14px 26px;border-radius:3px;background:#9d0208;font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;text-decoration:none;color:#ffffff!important;-webkit-text-fill-color:#ffffff!important}
 #chinh-sach .cs-contact a:hover{background:#7f0206}
@@ -158,8 +140,7 @@ STYLE = '''<style id="mlh-policy">
 #chinh-sach .cs-head{margin-bottom:48px}
 #chinh-sach summary{grid-template-columns:58px minmax(0,1fr) 22px;padding:26px 0}
 #chinh-sach .cs-no{font-size:18px}
-#chinh-sach .cs-body{padding:0 28px 34px 64px}
-#chinh-sach dl.cs-info div{grid-template-columns:230px minmax(0,1fr);gap:18px}}
+#chinh-sach .cs-body{padding:0 28px 34px 64px}}
 </style>'''
 
 
@@ -174,14 +155,12 @@ def render_blocks(blocks):
 
 
 def main_html():
-    items = [('thong-tin-doanh-nghiep', 'Thông tin doanh nghiệp',
-              '<dl class="cs-info">' + ''.join(f'<div><dt>{E(k)}</dt><dd>{E(v)}</dd></div>' for k, v in COMPANY) + '</dl>')]
-    items += [(a, h, render_blocks(blocks)) for a, _, h, blocks in SECTIONS]
+    items = [(a, h, render_blocks(blocks)) for a, _, h, blocks in SECTIONS]
     parts = [
         '<section id="chinh-sach"><div class="cs-wrap">',
         '<div class="cs-head"><span class="cs-kicker">Chính sách</span>',
         '<h1>Chính sách &amp; điều khoản mua hàng</h1>',
-        '<p class="cs-lead">Thông tin về doanh nghiệp, giao hàng, đổi trả, bảo hành, thanh toán, bảo mật và '
+        '<p class="cs-lead">Thông tin về giao hàng, đổi trả, bảo hành, thanh toán, bảo mật và '
         'giải quyết khiếu nại khi bạn mua sắm và sử dụng dịch vụ tại mayLEHUONG.</p>',
         f'<p class="cs-updated">Cập nhật: {UPDATED}</p></div>',
         '<div class="cs-acc">',

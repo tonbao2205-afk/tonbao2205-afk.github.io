@@ -350,3 +350,7 @@ Kiểm tra:
 - Bỏ mục lục viên thuốc và khung thẻ; 8 mục `<details>` số 01–08 ngăn bằng đường chỉ, dấu +/−, "Thông tin doanh nghiệp" mở sẵn, link `#giao-hang`… tự mở đúng mục. Nội dung có sẵn trong HTML, không cần JS để đọc. Câu chữ giữ nguyên, 0 câu dịch mới. Prompt `PROMPT-ANTI-CHINH-SACH-20261108.md`.
 - Lưu ý: site tự ẩn mọi thẻ `<header>` trong trang (class lhv-old-nav, display:none); phần đầu nội dung phải dùng `<div>`.
 - Đo 6 ngôn ngữ × 320/390/768/1366 = 24/24: mở/đóng từng mục, link #, tương phản ≥4,5, không tràn ngang, 0 lỗi JS. VPS không đổi.
+
+## p37 (08/11/2026): bỏ mục Thông tin doanh nghiệp khỏi trang Chính sách
+
+Chủ shop: trang Giới thiệu đã có. `tools/policy_page_20261108.py` bỏ `COMPANY`, CSS `cs-info`, câu mở đầu không còn nhắc "doanh nghiệp" (dịch lại 5 ngôn ngữ). Còn 7 mục 01–07, mục "Điều kiện giao dịch" mở sẵn. Đã đối chiếu: tên công ty, MST, ngày thành lập, người đại diện, trụ sở, showroom Hà Nội, 2 hotline có ở `gioi-thieu.html`; email có ở chân trang. QA 6 ngôn ngữ × 320/390/768/1366 đạt 24/24. VPS chưa đổi.
