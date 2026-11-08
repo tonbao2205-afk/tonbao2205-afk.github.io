@@ -340,3 +340,8 @@ Kiểm tra:
 - Email doanh nghiệp xuongvestcuoibh9999@gmail.com (bảng thông tin, mục khiếu nại, chân trang mọi trang). Chuyển khoản ngân hàng cho hàng có sẵn (mua sẵn); số tài khoản do nhân viên gửi khi xác nhận đơn. Điều kiện đổi trả chủ shop xác nhận "chuẩn".
 - Phí ship: kiểm tra 947 hóa đơn KiotViet từ 01/11/2025 (chỉ đọc): 0 hóa đơn có giao hàng/phụ thu/dòng phí ship. Web công bố miễn phí từ 500k + "Giao hàng toàn quốc 3–5 ngày" (trang chi tiết). Trang chính sách: đơn <500k tính theo biểu phí đơn vị vận chuyển, báo trước khi gửi; thời gian 3–5 ngày. JSON-LD sản phẩm vẫn ghi shippingRate 0 VND cho mọi sản phẩm (lệch với đơn <500k) — chưa sửa.
 - `footer-component.js?v=20261108-policy2`; 5 câu dịch × 5 ngôn ngữ; logo Bộ Công Thương chủ shop tự đăng ký sau. VPS không đổi.
+
+## p35 — 08/11/2026: đưa Chính sách lên menu chính (chủ shop: "đưa lên menu luôn công khai các thông tin")
+- `tools/policy_menu_20261108.py` (chạy sau policy_page): thêm "Chính Sách" sau "Giới Thiệu" trong nav-component.js + site-data.js; ?v=20261108-policy 208 trang.
+- Sửa thiếu sót p33/p34: trang chủ KHÔNG dùng nav-component/footer-component mà có bản sao trong 2 gói home-app, nên link chân trang/email/MST của p33–p34 chưa có ở trang chủ. Gói mới hậu tố `-20261108-policy.js` có đủ menu + chân trang.
+- Đo: 8 trang × 390/1024/1180/1280/1366/1440/1920 (VI/EN/HI, trang chủ + trang thường), đo thêm số dòng chữ menu 7 trang × 1024/1180/1366 (đủ 6 ngôn ngữ): menu 1 hàng, 1 dòng, không đè nút bên phải, không tràn ngang; có đủ link menu/ngăn kéo điện thoại, link chân trang, email, MST; 0 lỗi JS. Build strict 0 thiếu. VPS không đổi.
