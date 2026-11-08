@@ -309,3 +309,9 @@ Kiểm tra:
 - units.json 5 ngôn ngữ: thêm 85 câu đường dẫn `.webp` (bản dịch giữ nguyên đường dẫn); lang-switch.js logo `.webp`.
 - Đo điện thoại (mạng chậm, máy chủ local, ảnh từ maylehuong.com), ảnh tải: trang chủ 7,0→0,8 MB; Vest Nữ 15,5→0,5 MB (load 87→17 s); Sản phẩm 12,6→3,4 MB; Cà vạt 4,0→4,1 MB (vốn đã WebP ~250KB/ảnh, cần ảnh thu nhỏ). 0 ảnh lỗi.
 - Còn PNG/JPG: 1 ảnh DHL tên có "(1)" (156KB). Chưa làm: font icon 1,1 MB, ảnh thu nhỏ cà vạt. Chỉ GitHub, VPS không đổi; khi đăng VPS phải chạy cùng công cụ trên web current + đổi runtime products.json.
+
+## p30 — 08/11/2026: rà trang chủ, sửa nội dung cũ (chủ shop: "check lại trang chủ ... triển khai sửa")
+- Rà 1366/390 với DNS trỏ đúng VPS: 41/41 ảnh tải được ở cả index.html và index-mobile.html. Ô trống quan sát được trước đó là do maylehuong.com bị đổi DNS (xem dưới), không phải trang thiếu ảnh.
+- `tools/home_refresh_20261108.py` (index.html + index-mobile.html): 4 thẻ "Sản Phẩm Nổi Bật" bỏ giá cũ gạch và % giảm không có trong catalog; giá theo catalog 04/11: Suit Đen 2.800.000đ, Vest Nữ Be 2.500.000đ, Vest Sui Gia Navy 3.800.000đ; nhãn "HOT SALE -15%"→"HOT", "LUXURY -16%"→"LUXURY"; phụ đề "The Old Sailor Style Signature Collection"→"mayLEHUONG Signature Collection"; "157+"→"170+ sản phẩm". Build strict 0 thiếu bản dịch.
+- Chưa đổi (chờ chủ shop): 3 thẻ dịch vụ ghi "Thuê từ 500.000đ / Hấp ủi miễn phí khi mua vest / Sửa vest miễn phí" trong khi trang Dịch vụ mới ghi "Báo giá khi tư vấn"; số 50.000+ khách hàng và 40+ loại vải chưa được chủ shop xác nhận.
+- SỰ CỐ 08/11 ~12:30 VN: maylehuong.com bị đổi nameserver sang mặc định Name.com (ns1kpv/ns2kry/ns3jmt/ns4dmx), A trỏ 91.195.240.94 (trang đỗ), RDAP last changed 2026-11-08T05:30:09Z, hạn tên miền 2027-07-31. VPS 103.159.53.73 vẫn chạy (health 200), dzuongtailor.com bình thường. Cần chủ shop vào tài khoản Name.com khôi phục DNS.
