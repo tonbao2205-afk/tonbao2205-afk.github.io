@@ -1,0 +1,222 @@
+[
+{
+"id": "gc003",
+"name": "Mẫu Suit GC-003",
+"views": [
+{
+"src": "/images/Ảnh May Đo/gc003/Ảnh Bìa.jpeg",
+"label": "Ảnh Bìa"
+},
+{
+"src": "/images/Ảnh May Đo/gc003/vest.jpeg",
+"label": "Áo Vest"
+},
+{
+"src": "/images/Ảnh May Đo/gc003/quần.jpeg",
+"label": "Quần Tây"
+},
+{
+"src": "/images/Ảnh May Đo/gc003/zile.jpeg",
+"label": "Áo Gile"
+}
+]
+},
+{
+"id": "gc008",
+"name": "Mẫu Suit GC-008",
+"views": [
+{
+"src": "/images/Ảnh May Đo/gc008/Ảnh Bìa.jpeg",
+"label": "Ảnh Bìa"
+},
+{
+"src": "/images/Ảnh May Đo/gc008/áo.jpeg",
+"label": "Áo Vest"
+},
+{
+"src": "/images/Ảnh May Đo/gc008/quần.jpeg",
+"label": "Quần Tây"
+},
+{
+"src": "/images/Ảnh May Đo/gc008/zile.jpeg",
+"label": "Áo Gile"
+}
+]
+},
+{
+"id": "lw001",
+"name": "Mẫu Suit LW-001",
+"views": [
+{
+"src": "/images/Ảnh May Đo/lw001/Ảnh Bìa.jpeg",
+"label": "Ảnh Bìa"
+},
+{
+"src": "/images/Ảnh May Đo/lw001/áo.jpeg",
+"label": "Áo Vest"
+},
+{
+"src": "/images/Ảnh May Đo/lw001/quần.jpeg",
+"label": "Quần Tây"
+},
+{
+"src": "/images/Ảnh May Đo/lw001/zile.jpeg",
+"label": "Áo Gile"
+}
+]
+},
+{
+"id": "lw002",
+"name": "Mẫu Suit LW-002",
+"views": [
+{
+"src": "/images/Ảnh May Đo/lw 002/Ảnh Bìa.jpeg",
+"label": "Ảnh Bìa"
+},
+{
+"src": "/images/Ảnh May Đo/lw 002/áo.jpeg",
+"label": "Áo Vest"
+},
+{
+"src": "/images/Ảnh May Đo/lw 002/quần.jpeg",
+"label": "Quần Tây"
+},
+{
+"src": "/images/Ảnh May Đo/lw 002/zile.jpeg",
+"label": "Áo Gile"
+}
+]
+},
+{
+"id": "tw001",
+"name": "Mẫu Suit TW-001",
+"views": [
+{
+"src": "/images/Ảnh May Đo/tw001/Ảnh Bìa.jpeg",
+"label": "Ảnh Bìa"
+},
+{
+"src": "/images/Ảnh May Đo/tw001/áo.jpeg",
+"label": "Áo Vest"
+},
+{
+"src": "/images/Ảnh May Đo/tw001/quần.jpeg",
+"label": "Quần Tây"
+},
+{
+"src": "/images/Ảnh May Đo/tw001/zile.jpeg",
+"label": "Áo Gile"
+}
+]
+},
+{
+"id": "tw003",
+"name": "Mẫu Suit TW-003",
+"views": [
+{
+"src": "/images/Ảnh May Đo/tw003/Ảnh Bìa.jpeg",
+"label": "Ảnh Bìa"
+},
+{
+"src": "/images/Ảnh May Đo/tw003/áo.jpeg",
+"label": "Áo Vest"
+},
+{
+"src": "/images/Ảnh May Đo/tw003/quần.jpeg",
+"label": "Quần Tây"
+},
+{
+"src": "/images/Ảnh May Đo/tw003/zile.jpeg",
+"label": "Áo Gile"
+}
+]
+},
+{
+"id": "tw007",
+"name": "Mẫu Suit TW-007",
+"views": [
+{
+"src": "/images/Ảnh May Đo/tw007/Ảnh Bìa.jpeg",
+"label": "Ảnh Bìa"
+},
+{
+"src": "/images/Ảnh May Đo/tw007/áo.jpeg",
+"label": "Áo Vest"
+},
+{
+"src": "/images/Ảnh May Đo/tw007/quần.jpeg",
+"label": "Quần Tây"
+},
+{
+"src": "/images/Ảnh May Đo/tw007/zile.jpeg",
+"label": "Áo Gile"
+}
+]
+},
+{
+"id": "tw008",
+"name": "Mẫu Suit TW-008",
+"views": [
+{
+"src": "/images/Ảnh May Đo/tw008/Ảnh Bìa.jpeg",
+"label": "Ảnh Bìa"
+},
+{
+"src": "/images/Ảnh May Đo/tw008/áo.jpeg",
+"label": "Áo Vest"
+},
+{
+"src": "/images/Ảnh May Đo/tw008/quần.jpeg",
+"label": "Quần Tây"
+},
+{
+"src": "/images/Ảnh May Đo/tw008/zile.jpeg",
+"label": "Áo Gile"
+}
+]
+},
+{
+"id": "tw020",
+"name": "Mẫu Suit TW-020",
+"views": [
+{
+"src": "/images/Ảnh May Đo/tw020/Ảnh Bìa.jpeg",
+"label": "Ảnh Bìa"
+},
+{
+"src": "/images/Ảnh May Đo/tw020/áo.jpeg",
+"label": "Áo Vest"
+},
+{
+"src": "/images/Ảnh May Đo/tw020/quần.jpeg",
+"label": "Quần Tây"
+},
+{
+"src": "/images/Ảnh May Đo/tw020/zile.jpeg",
+"label": "Áo Gile"
+}
+]
+},
+{
+"id": "wp002",
+"name": "Mẫu Suit WP-002",
+"views": [
+{
+"src": "/images/Ảnh May Đo/wp002/Ảnh Bìa.jpeg",
+"label": "Ảnh Bìa"
+},
+{
+"src": "/images/Ảnh May Đo/wp002/vest.jpeg",
+"label": "Áo Vest"
+},
+{
+"src": "/images/Ảnh May Đo/wp002/quần.jpeg",
+"label": "Quần Tây"
+},
+{
+"src": "/images/Ảnh May Đo/wp002/zile.jpeg",
+"label": "Áo Gile"
+}
+]
+}
+]

@@ -362,3 +362,10 @@ Chủ shop chốt: thông số vải có gì ghi nấy, không có thì thôi; D
 - Donatella 10500: bỏ "Micro Fiber", thẻ giới thiệu ghi 180's Wool & Lycra, Made in Italy, đúng dòng in trên nhãn 16 mẫu và khớp danh mục. Ảnh bìa thật của quyển vẫn in chữ MICRO FIBER.
 - TRS6500-02: thêm 77% Poly, đã đọc nhãn cả 14 mẫu (10% Wool, 10% Tencel, 77% Poly, 3% Spandex). Dòng in chú thích dưới ảnh mẫu của nhà cung cấp thiếu số này.
 - 3 câu dịch × 5 ngôn ngữ. QA 6 ngôn ngữ × 320/390/1366 đạt 18/18. VPS chưa đổi; khi đăng chạy thêm công cụ này sau nhóm policy.
+
+## p39 (09/11/2026): darkmode 2 web và 6 trang Dzuong (chủ shop: "có Zalo, trước mắt làm bản GitHub thôi")
+
+`tools/github_preview/add_dark_dzuong.py <site> <web đã chạy dark_mode_20261109>` chạy SAU `make_preview.py`, chạy lại được. Nguồn ở `tools/dzuong_20261109/`, ghi chú `docs/dzuong-darkmode-20261109.md`.
+- Mọi trang 6 ngôn ngữ có nút sáng/tối; Giới thiệu 6 ngôn ngữ có mục đối tác sản xuất dẫn tới `/dzuong/`.
+- Dzuong xem tại `/dzuong/` vì GitHub Pages chỉ có một tên miền; trên VPS các trang nằm ở gốc dzuongtailor.com. Liên hệ Mr. Van 0786.291.468, có nút gọi và Zalo.
+- QA: 22 trang × 1366/390 chế độ tối, 0 lỗi tương phản/JS/tràn ngang. VPS không đổi.
