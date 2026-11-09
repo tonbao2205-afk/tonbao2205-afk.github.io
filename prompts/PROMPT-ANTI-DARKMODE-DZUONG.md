@@ -25,7 +25,7 @@ Thiết bị: CẢ điện thoại và máy tính. Chỉ làm bản xem trước
 - Không gán việc mọi bộ vest Lê Hương đều do Dzuong may (Hon, Hoa Thông, Văn cũng là bên may). Không số liệu, không cam kết chưa có.
 
 ## Menu và 6 trang Dzuong (chủ shop chốt 09/11/2026)
-- Máy tính: hàng trên 2 logo ở giữa cỡ như logo Lê Hương (58px), hàng dưới các trang, chữ Montserrat như menu Lê Hương, trang đang mở màu đỏ có gạch dưới. Điện thoại: nút ba gạch trái, 2 logo giữa, nút sáng/tối phải.
+- Máy tính: hàng trên chỉ logo Dzuong ở giữa cỡ như logo Lê Hương (58px; logo mayLEHUONG đặt ở trang Pháp Lý), hàng dưới các trang, chữ Montserrat như menu Lê Hương, trang đang mở màu đỏ có gạch dưới. Điện thoại: nút ba gạch trái, logo Dzuong giữa, nút sáng/tối phải.
 - 6 trang: Trang Chủ `/`, Sản Phẩm `/san-pham`, Đồng Phục `/dong-phuc`, Năng Lực Sản Xuất `/nang-luc-san-xuat`, Giới Thiệu `/gioi-thieu`, Pháp Lý `/phap-ly`.
 - Giới thiệu và Pháp lý ghi đúng thông tin đã công bố ở `gioi-thieu.html`; lịch sử và số liệu của Lê Hương phải đứng dưới tiêu đề mayLEHUONG, không gán cho Dzuong. Không chép chính sách mua hàng/bảo hành của Lê Hương vào Dzuong.
 - Không dùng ảnh đồng phục có logo doanh nghiệp lớn (Vingroup, Vietcombank, DHL...), để khung chờ.

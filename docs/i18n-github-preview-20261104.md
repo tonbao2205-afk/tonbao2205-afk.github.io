@@ -378,3 +378,6 @@ Thêm Ban Quản lý Dự án Kinh tế mới tỉnh Ninh Bình (để chữ), P
 
 ## p42 (09/11/2026): chân trang Dzuong theo kiểu Lê Hương
 Viền đỏ, dải 4 mục, 3 cột, dòng bản quyền và tên thực hiện như `footer-component.js`. Dải 4 mục ghi năng lực xưởng thay cho cam kết giao hàng/đổi trả của Lê Hương. VPS không đổi.
+
+## p43 (09/11/2026): Dzuong menu một logo, viết lại Giới Thiệu và Pháp Lý
+Menu chỉ logo Dzuong; logo mayLEHUONG đặt ở trang Pháp Lý (vẫn có trong tường khách hàng vì là đơn vị đã sản xuất). Pháp Lý: khối doanh nghiệp + 5 mục gập mở. Giới Thiệu: Dzuong trước, phần mayLEHUONG sau. VPS không đổi.

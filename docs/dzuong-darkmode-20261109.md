@@ -29,7 +29,7 @@ Chủ shop yêu cầu đọc quy tắc UX/UI và làm sang như Lê Hương. Chu
 Ảnh `Ảnh Bìa.webp` của May Đo là bìa mẫu vải CERAZO, không phải ảnh bộ vest; thẻ mẫu mở mặc định ảnh áo, nút "Vải" mới hiện bìa. Ảnh mở đầu cắt từ `images/hero-may-do.webp` (bỏ chữ VEST LÊ HƯƠNG, làm mờ nhãn Loro Piana/Cashmere trên kệ), ghi "Ảnh minh họa"; thay bằng ảnh xưởng thật khi có.
 
 ## Menu và 6 trang Dzuong
-Chủ shop yêu cầu thanh menu chuẩn như Lê Hương: 2 logo ở giữa (58px máy tính), các trang ở hàng dưới. Hàng menu dính đầu trang khi cuộn, hàng logo cuộn đi; điện thoại giữ nút ba gạch, 2 logo, nút sáng/tối.
+Chủ shop yêu cầu thanh menu chuẩn như Lê Hương: chỉ logo Dzuong ở giữa (58px máy tính; logo mayLEHUONG ở trang Pháp Lý, vẫn có trong tường khách hàng), các trang ở hàng dưới. Hàng menu dính đầu trang khi cuộn, hàng logo cuộn đi; điện thoại giữ nút ba gạch, 2 logo, nút sáng/tối.
 
 Đường dẫn: `/`, `/san-pham`, `/dong-phuc`, `/nang-luc-san-xuat`, `/gioi-thieu`, `/phap-ly`. File `dzuong-*.html` trong webroot, nội dung từng trang ở `src/dz-pages/`, khung chung `src/dzuong-tailor.template.html`. Vào thẳng `dzuong-*.html` chuyển 301 về trang tương ứng; `/gioi-thieu.html`, `/dong-phuc.html` cũ của Dzuong về trang mới; `/san-pham/<mã>.html` và phần còn lại vẫn 301 về maylehuong.com.
 
