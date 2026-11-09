@@ -369,3 +369,6 @@ Chủ shop chốt: thông số vải có gì ghi nấy, không có thì thôi; D
 - Mọi trang 6 ngôn ngữ có nút sáng/tối; Giới thiệu 6 ngôn ngữ có mục đối tác sản xuất dẫn tới `/dzuong/`.
 - Dzuong xem tại `/dzuong/` vì GitHub Pages chỉ có một tên miền; trên VPS các trang nằm ở gốc dzuongtailor.com. Liên hệ Mr. Van 0786.291.468, có nút gọi và Zalo.
 - QA: 22 trang × 1366/390 chế độ tối, 0 lỗi tương phản/JS/tràn ngang. VPS không đổi.
+
+## p40 (09/11/2026): Dzuong năng lực sản xuất, logo khách hàng
+Viết lại trang Năng Lực Sản Xuất, thêm tường 10 đơn vị đã sản xuất ở Trang Chủ, Đồng Phục, Năng Lực; Giới Thiệu thêm mục về xưởng. QA 6 trang × 1366/390/320 × sáng/tối: 0 lỗi. VPS không đổi.

@@ -147,10 +147,11 @@ def dzuong_page(web, src):
     shell = read(os.path.join(src, 'dzuong-tailor.template.html')).replace('%%FONTS%%', local_fonts(web))
     pages = os.path.join(src, 'dz-pages')
     cta = read(os.path.join(pages, 'cta.html'))
+    clients = read(os.path.join(pages, 'clients.html'))
     models = os.path.join(src, 'models.json')
     for path, label, name, body_file, title, desc in DZ_PAGES:
         nav = ''.join('<a href="%s"%s>%s</a>' % (p, ' aria-current="page"' if p == path else '', l) for p, l, *_ in DZ_PAGES)
-        body = read(os.path.join(pages, body_file)).replace('%%CTA%%', cta)
+        body = read(os.path.join(pages, body_file)).replace('%%CTA%%', cta).replace('%%CLIENTS%%', clients)
         if '%%MODELS%%' in body:
             body = body.replace('%%MODELS%%', models_html(models))
         if '%%MODELS4%%' in body:
@@ -165,6 +166,7 @@ def dzuong_page(web, src):
         shutil.copyfile(os.path.join(src, f), os.path.join(web, f))
     dest = os.path.join(web, 'assets', 'dzuong-20261109')
     os.makedirs(dest, exist_ok=True)
+    shutil.copytree(os.path.join(src, 'clients'), os.path.join(dest, 'clients'), dirs_exist_ok=True)
     for f in ('mlh-logo.webp', 'mlh-logo-white.webp', 'hero-atelier.webp'):
         shutil.copyfile(os.path.join(src, f), os.path.join(dest, f))
 
