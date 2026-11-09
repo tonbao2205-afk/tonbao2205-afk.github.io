@@ -1,0 +1,16 @@
+/* Chi tai khi khach chon giao dien toi. theme.js xu ly phan mau con lai. */
+html[data-theme="dark"]{color-scheme:dark;background:#141210!important;color:#f4efe8}
+html[data-theme="dark"] body{background:#141210!important;color:#f4efe8}
+html[data-theme="dark"] .bg-white,html[data-theme="dark"] .bg-\[\#fcfbf9\]{background-color:#221d19!important}
+html[data-theme="dark"] .bg-\[\#f5f0eb\],html[data-theme="dark"] .bg-\[\#f8f5f0\],html[data-theme="dark"] .bg-\[\#f8f5f1\]{background-color:#181411!important}
+html[data-theme="dark"] .bg-\[\#f0e8df\],html[data-theme="dark"] .bg-\[\#e8e0d5\]{background-color:#2c2621!important}
+html[data-theme="dark"] .text-black,html[data-theme="dark"] .text-\[\#000000\],html[data-theme="dark"] .text-\[\#111111\],html[data-theme="dark"] .text-\[\#222222\]{color:#f4efe8!important}
+html[data-theme="dark"] .text-\[\#333333\],html[data-theme="dark"] .text-\[\#444444\],html[data-theme="dark"] .text-\[\#555555\],html[data-theme="dark"] .text-\[\#666666\],html[data-theme="dark"] .text-\[\#777777\]{color:#cfc6ba!important}
+html.mlh-dm-pass *{transition:none!important}
+html[data-theme="dark"] .lhv-burger-bar{background:#f4efe8!important}
+html[data-theme="dark"] #lhv-header{background:#1a1613!important}
+html[data-theme="dark"] #lux-curtain{background:#141210!important}
+html[data-theme="dark"] input::placeholder,html[data-theme="dark"] textarea::placeholder{color:#a79e92!important;-webkit-text-fill-color:#a79e92!important;opacity:1}
+html[data-theme="dark"] input,html[data-theme="dark"] select,html[data-theme="dark"] textarea{background-color:#221d19!important;color:#f4efe8!important;border-color:rgba(255,255,255,.2)!important}
+html[data-theme="dark"] option{background:#221d19;color:#f4efe8}
+html[data-theme="dark"] input:-webkit-autofill{-webkit-text-fill-color:#f4efe8!important;box-shadow:0 0 0 40px #221d19 inset!important}
