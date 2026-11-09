@@ -138,12 +138,22 @@ html:not([data-theme="dark"]) .convert{background:linear-gradient(145deg,#ffffff
 .convert p{margin:0 auto 22px;max-width:620px}
 .wait{display:block;margin:0 auto 26px;font-family:'Noto Serif',serif;font-size:18px;font-weight:600;color:var(--wait)}
 .convert .cta{justify-content:center}
-footer{background:#111111;color:#e8dfd3;padding:44px 0 40px;font-size:14px;border-top:2px solid #a17f22}
-footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
-footer .logos{display:flex;align-items:center;gap:12px}
-footer .logos img{height:36px;width:auto}
-footer p{margin:0 0 4px;color:#e8dfd3}
-footer a{color:#ffffff;font-weight:600}
+footer{background:#111111;color:#ffffff;border-top:3px solid #9d0208;font-size:13.5px;line-height:1.6}
+.ft-policy{background:#1a1a1a;border-bottom:1px solid rgba(255,255,255,.1);padding:24px 16px}
+.ft-policy-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;max-width:1240px;margin:0 auto}
+.ft-item{text-align:center}
+.ft-item svg{display:block;width:28px;height:28px;margin:0 auto 6px;fill:none;stroke:#e6c364;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ft-title{font-size:13px;font-weight:700;color:#ffffff;text-transform:uppercase}
+.ft-desc{margin-top:2px;font-size:12px;color:#d1d5db}
+.ft-main{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;max-width:1240px;margin:0 auto;padding:40px 32px 24px}
+.ft-h{margin:0 0 16px;font-size:14px;font-weight:700;color:#e6c364;text-transform:uppercase;letter-spacing:.1em}
+.ft-col p:not(.ft-h),.ft-col a{display:block;margin:0 0 10px;font-size:13.5px;color:#ffffff;text-decoration:none;transition:color .2s}
+.ft-col a:hover{color:#e6c364}
+.ft-bottom{border-top:1px solid rgba(255,255,255,.1);padding:18px 16px;text-align:center;font-size:12.5px;color:#d1d5db}
+.ft-rr{white-space:nowrap}
+.ft-cr{display:block;margin-top:8px;font-size:11px;letter-spacing:.04em;color:#9ca3af;line-height:1.7}
+.ft-cr span{display:inline-block;white-space:nowrap}
+.ft-cr i{font-style:normal;margin:0 10px;color:#e6c364}
 dialog{padding:0;border:1px solid var(--line);border-radius:14px;background:var(--tile);max-width:min(92vw,720px);max-height:92vh}
 dialog::backdrop{background:rgba(15,12,10,.72)}
 dialog img{display:block;max-width:100%;max-height:calc(92vh - 2px);width:auto;height:auto}
@@ -200,7 +210,12 @@ section.block{padding:64px 0}
 .head{margin-bottom:34px}
 .convert{padding:44px 20px}
 .card{padding:28px 22px 26px}
-footer .wrap{flex-direction:column;align-items:flex-start}
+.ft-policy-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.ft-main{grid-template-columns:minmax(0,1fr);padding:32px 20px 16px;gap:24px}
+.ft-bottom{line-height:1.6}
+.ft-cr{margin-top:10px}
+.ft-cr span{display:block}
+.ft-cr i{display:none}
 }
 @media (max-width:389px){.brand img{height:29px}.brand{gap:7px}.wrap{padding:0 16px}}
 @media (max-width:339px){.brand img{height:27px}.brand{gap:5px}}
@@ -283,17 +298,36 @@ footer .wrap{flex-direction:column;align-items:flex-start}
 
 </main>
 <footer>
-  <div class="wrap">
-    <div class="logos" aria-hidden="true">
-      <img src="https://maylehuong.com/images/dzuong/logo-dzuong-white.png" alt="" width="127" height="36" />
-      <img src="/assets/dzuong-20261109/mlh-logo-white.webp" alt="" width="92" height="36" />
-    </div>
-    <div>
-      <p><strong>Dzuong Tailor</strong> – cơ sở đối tác sản xuất của <a href="https://maylehuong.com/" rel="noopener">mayLEHUONG</a>.</p>
-      <p>Liên hệ: Mr. Van – <a href="tel:0786291468">0786.291.468</a> (Điện thoại/Zalo)</p>
-      <p>Website do Công ty TNHH Thời Trang Lê Hương quản lý.</p>
+  <div class="ft-policy">
+    <div class="ft-policy-grid">
+      <div class="ft-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z"/><path d="m14.5 12.5 2-2"/><path d="m11.5 9.5 2-2"/><path d="m8.5 6.5 2-2"/><path d="m17.5 15.5 2-2"/></svg><div class="ft-title">Lên Mẫu</div><div class="ft-desc">Dựng rập, may mẫu thử</div></div>
+      <div class="ft-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg><div class="ft-title">Sản Xuất</div><div class="ft-desc">Vest theo mẫu đã duyệt</div></div>
+      <div class="ft-item"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg><div class="ft-title">Gia Công</div><div class="ft-desc">Trọn bộ hoặc từng công đoạn</div></div>
+      <div class="ft-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><div class="ft-title">Liên Hệ Đặt May</div><div class="ft-desc">0786 291 468 (Mr. Van)</div></div>
     </div>
   </div>
+  <div class="ft-main">
+    <div class="ft-col">
+      <p class="ft-h">Dzuong Tailor</p>
+      <p>Cơ sở đối tác của mayLEHUONG về mảng sản xuất, đảm nhận lên mẫu, sản xuất, gia công và may đo vest.</p>
+      <p>Website do Công ty TNHH Thời Trang Lê Hương quản lý.</p>
+    </div>
+    <div class="ft-col">
+      <p class="ft-h">Danh Mục</p>
+      <a href="/dzuong/san-pham/">Sản Phẩm May Đo</a>
+      <a href="/dzuong/dong-phuc/">Đồng Phục Doanh Nghiệp</a>
+      <a href="/dzuong/nang-luc-san-xuat/">Năng Lực Sản Xuất</a>
+      <a href="https://maylehuong.com/" rel="noopener">Thương Hiệu mayLEHUONG</a>
+    </div>
+    <div class="ft-col">
+      <p class="ft-h">Hỗ Trợ Khách Hàng</p>
+      <a href="/dzuong/gioi-thieu/">Giới Thiệu</a>
+      <a href="/dzuong/phap-ly/">Pháp Lý</a>
+      <a href="tel:0786291468">📞 Mr. Van: 0786.291.468</a>
+      <a href="https://zalo.me/0786291468" target="_blank" rel="noopener">💬 Zalo: 0786.291.468</a>
+    </div>
+  </div>
+  <div class="ft-bottom">© Công Ty TNHH Thời Trang Lê Hương · MST 3603652314. <span class="ft-rr">All Rights Reserved.</span><span class="ft-cr"><span>Design by HarryDuong</span><i>·</i><span>Planning by Haris Nguyen</span><i>·</i><span>Coding by Sophie Tran</span></span></div>
 </footer>
 <dialog id="zoom" aria-label="Ảnh phóng to"><button class="close" type="button" aria-label="Đóng">×</button><img alt="" /></dialog>
 <script>
