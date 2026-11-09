@@ -372,3 +372,6 @@ Chủ shop chốt: thông số vải có gì ghi nấy, không có thì thôi; D
 
 ## p40 (09/11/2026): Dzuong năng lực sản xuất, logo khách hàng
 Viết lại trang Năng Lực Sản Xuất, thêm tường 10 đơn vị đã sản xuất ở Trang Chủ, Đồng Phục, Năng Lực; Giới Thiệu thêm mục về xưởng. QA 6 trang × 1366/390/320 × sáng/tối: 0 lỗi. VPS không đổi.
+
+## p41 (09/11/2026): sửa danh sách khách hàng Dzuong
+Thêm Ban Quản lý Dự án Kinh tế mới tỉnh Ninh Bình (để chữ), Phòng khám Đa khoa Tâm An dùng logo chủ shop gửi, bỏ Familia. VPS không đổi.

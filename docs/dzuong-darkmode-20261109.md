@@ -45,5 +45,5 @@ Chủ shop đã cho số liên hệ Mr. Van 0786.291.468 và xác nhận câu ch
 Chưa kiểm: Safari/iPhone thật, Admin và trang VIP (không thuộc phạm vi), trang 404 và các trang không có menu chung thì theo lựa chọn đã lưu nhưng không có nút chuyển.
 
 ## Năng lực sản xuất và logo khách hàng (GitHub p40)
-Chủ shop cho danh sách đơn vị đã sản xuất. Logo lấy từ website chính thức (`src/clients/`): Sonacons, KCN Tín Nghĩa, Thép Tiến Lên, Saigon Centre (đổi chữ trắng sang tối), BNI. Xăng dầu Tín Nghĩa và Tín Nghĩa Á Châu dùng logo Tổng công ty Tín Nghĩa vì chưa tìm được logo riêng. Bệnh viện Tâm An và Familia chưa xác định đúng đơn vị nên để chữ. familia.vn là công ty nội thất, chưa xác nhận đúng nên không dùng.
+Chủ shop cho danh sách đơn vị đã sản xuất. Logo lấy từ website chính thức (`src/clients/`): Sonacons, KCN Tín Nghĩa, Thép Tiến Lên, Saigon Centre (đổi chữ trắng sang tối), BNI. Xăng dầu Tín Nghĩa và Tín Nghĩa Á Châu dùng logo Tổng công ty Tín Nghĩa vì chưa tìm được logo riêng. Phòng khám Đa khoa Tâm An dùng logo chủ shop gửi; Ban Quản lý Dự án Kinh tế mới tỉnh Ninh Bình chưa có logo nên để chữ; chủ shop bỏ Familia.
 Quy trình 8 công đoạn viết theo công đoạn may vest thông thường, không có số liệu; chủ shop cần đọc lại. Bỏ khung chờ ảnh xưởng ở Năng Lực và ảnh đồng phục, thêm lại khi có ảnh thật.
