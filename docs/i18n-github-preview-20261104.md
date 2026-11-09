@@ -375,3 +375,6 @@ Viết lại trang Năng Lực Sản Xuất, thêm tường 10 đơn vị đã s
 
 ## p41 (09/11/2026): sửa danh sách khách hàng Dzuong
 Thêm Ban Quản lý Dự án Kinh tế mới tỉnh Ninh Bình (để chữ), Phòng khám Đa khoa Tâm An dùng logo chủ shop gửi, bỏ Familia. VPS không đổi.
+
+## p42 (09/11/2026): chân trang Dzuong theo kiểu Lê Hương
+Viền đỏ, dải 4 mục, 3 cột, dòng bản quyền và tên thực hiện như `footer-component.js`. Dải 4 mục ghi năng lực xưởng thay cho cam kết giao hàng/đổi trả của Lê Hương. VPS không đổi.
