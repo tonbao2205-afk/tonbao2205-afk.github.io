@@ -41,3 +41,11 @@ Thiết bị: CẢ điện thoại và máy tính. Chỉ làm bản xem trước
 - Quét tương phản ở 1366 và 390 cho cả sáng và tối: chữ thường ≥ 4,5:1, chữ lớn ≥ 3:1.
 - 320/390/1366 không tràn ngang, không lỗi JS; nút chuyển sáng/tối hoạt động, tải lại vẫn nhớ, chuyển về sáng trả đúng giao diện cũ.
 - Logo đổi bản trắng khi tối; nút trạng thái (tab, nút đang chọn) vẫn đổi được khi tối.
+
+## Local SEO Hà Nội + chuẩn Search Console (chủ shop yêu cầu 11/11/2026)
+- Cả 2 thiết bị, sáng và tối. NAP thống nhất: Dzuong Tailor, Số 7 Chính Vân, Chuyên Mỹ, Thành Phố Hà Nội, Mr. Van 0786.291.468 (điện thoại/Zalo); dùng giống nhau ở chân trang, khối liên hệ, hỏi đáp, Pháp Lý và JSON-LD.
+- Một tên miền chính `https://dzuongtailor.com`, URL không dấu `/` cuối; mọi biến thể `www`, `/`, `.html`, `dzuong-*.html` chuyển 301 một bước về URL chuẩn.
+- Khối `.r` không được ẩn nội dung với bot: khối đầu sau `.hero`/`.page-head` hiện ngay, bot hiện tất cả, sau 1,2 giây khối nằm trong khung nhìn tự hiện.
+- Hỏi đáp gập mở dùng `<details>`, câu trả lời chỉ dựa trên thông tin đã chốt; JSON-LD FAQPage sinh từ cùng dữ liệu nên khớp từng chữ.
+- Schema: LocalBusiness `#workshop` + WebSite + WebPage/CollectionPage/AboutPage + BreadcrumbList; không `parentOrganization`, không `Product`, không đánh giá tự chế.
+- Vùng bấm (nút, menu, chân trang) cao ít nhất 44px.

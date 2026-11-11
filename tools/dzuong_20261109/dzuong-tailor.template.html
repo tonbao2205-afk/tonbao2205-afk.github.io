@@ -12,6 +12,10 @@
 <meta property="og:title" content="%%TITLE%%" />
 <meta property="og:description" content="%%DESC%%" />
 <meta property="og:image" content="https://dzuongtailor.com/assets/dzuong-20261109/hero-atelier.webp" />
+<meta property="og:image:width" content="933" />
+<meta property="og:image:height" content="893" />
+<meta property="og:locale" content="vi_VN" />
+<meta property="og:site_name" content="Dzuong Tailor" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2026" />
 %%PRELOAD%%<script type="application/ld+json">%%JSONLD%%</script>
 <style id="dz-fonts">%%FONTS%%</style>
@@ -31,7 +35,7 @@ button{font:inherit}
 .brandbar .burger{grid-column:1;justify-self:start}
 .brandbar .brand{grid-column:2}
 .brandbar [data-mlh-theme-toggle]{grid-column:3;justify-self:end}
-.brand{display:flex;align-items:center;gap:16px;text-decoration:none;min-width:0}
+.brand{display:flex;align-items:center;gap:16px;text-decoration:none;min-width:0;min-height:44px}
 .brand img{height:58px;width:auto}
 .logo-dark{display:none}
 html[data-theme="dark"] .logo-dark{display:block}
@@ -41,7 +45,7 @@ nav.menu a{position:relative;padding:17px 0;font-family:'Montserrat',sans-serif;
 nav.menu a::after{content:"";position:absolute;left:0;right:0;bottom:7px;height:2px;background:var(--red);transform:scaleX(0);transition:transform 180ms ease}
 nav.menu a:hover,nav.menu a[aria-current="page"]{color:var(--red)}
 nav.menu a:hover::after,nav.menu a[aria-current="page"]::after{transform:scaleX(1)}
-.icon-btn{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;flex:0 0 40px;padding:0;background:transparent;border:0;border-radius:50%;color:var(--ink);cursor:pointer}
+.icon-btn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;flex:0 0 44px;padding:0;background:transparent;border:0;border-radius:50%;color:var(--ink);cursor:pointer}
 .burger{display:none;flex-direction:column;gap:5px}
 .burger span{display:block;width:22px;height:2px;background:var(--ink);transition:transform 180ms ease,opacity 180ms ease}
 .burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
@@ -127,6 +131,10 @@ a.card .more{position:relative;display:block;margin-top:16px;font-family:'Montse
 .legal ul{margin:0;padding:0 24px 22px 72px;list-style:none}
 .legal li{position:relative;padding:0 0 10px 18px}
 .legal li:last-child{padding-bottom:0}
+.faq .a{padding:0 24px 22px}
+.faq .a p{margin:0}
+.prose a{color:var(--red);font-weight:600}
+.convert .addr{margin:-14px auto 24px;font-size:15px}
 .legal li::before{content:"";position:absolute;left:0;top:13px;width:8px;height:1px;background:var(--gold)}
 .grid2.wide{max-width:1040px}
 .card ul{position:relative;margin:0;padding:0;list-style:none;font-size:15px;line-height:1.65}
@@ -169,6 +177,7 @@ footer{background:#111111;color:#ffffff;border-top:3px solid #9d0208;font-size:1
 .ft-main{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;max-width:1240px;margin:0 auto;padding:40px 32px 24px}
 .ft-h{margin:0 0 16px;font-size:14px;font-weight:700;color:#e6c364;text-transform:uppercase;letter-spacing:.1em}
 .ft-col p:not(.ft-h),.ft-col a{display:block;margin:0 0 10px;font-size:13.5px;color:#ffffff;text-decoration:none;transition:color .2s}
+.ft-col a{display:flex;align-items:center;min-height:44px;margin:0}
 .ft-col a:hover{color:#e6c364}
 .ft-bottom{border-top:1px solid rgba(255,255,255,.1);padding:18px 16px;text-align:center;font-size:12.5px;color:#d1d5db}
 .ft-rr{white-space:nowrap}
@@ -221,6 +230,7 @@ section.block{padding:64px 0}
 .legal summary{padding:14px 18px;font-size:17.5px;gap:12px}
 .legal summary .n{flex-basis:26px}
 .legal ul{padding:0 18px 20px}
+.faq .a{padding:0 18px 20px}
 .models.four{gap:10px}
 .clients{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .client .logo{padding:12px 14px}
@@ -231,6 +241,7 @@ section.block{padding:64px 0}
 .models{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 .model{padding:7px}
 .model h3{font-size:14.5px;margin:10px 0 8px}
+.views{grid-template-columns:repeat(2,minmax(0,1fr))}
 .views button{font-size:12px}
 .head{margin-bottom:34px}
 .convert{padding:44px 20px}
@@ -272,7 +283,8 @@ section.block{padding:64px 0}
   <div class="ft-main">
     <div class="ft-col">
       <p class="ft-h">Dzuong Tailor</p>
-      <p>Cơ sở đối tác của mayLEHUONG về mảng sản xuất, đảm nhận lên mẫu, sản xuất, gia công và may đo vest.</p>
+      <p>Xưởng sản xuất vest tại Hà Nội, cơ sở đối tác của mayLEHUONG về mảng sản xuất, đảm nhận lên mẫu, sản xuất, gia công và may đo vest.</p>
+      <p>📍 Số 7 Chính Vân, Chuyên Mỹ, Thành Phố Hà Nội</p>
       <p>Website do Công ty TNHH Thời Trang Lê Hương quản lý.</p>
     </div>
     <div class="ft-col">
@@ -312,10 +324,14 @@ section.block{padding:64px 0}
   function setMenu(o){menu.classList.toggle('open',o);burger.setAttribute('aria-expanded',o?'true':'false');burger.setAttribute('aria-label',o?'Đóng menu':'Mở menu')}
   burger.addEventListener('click',function(){setMenu(!menu.classList.contains('open'))});
   menu.addEventListener('click',function(e){if(e.target.tagName==='A')setMenu(false)});
-  var rs=document.querySelectorAll('.r');
-  if(!('IntersectionObserver' in window)){rs.forEach(function(x){x.classList.add('v')});return}
-  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('v');io.unobserve(en.target)}})},{threshold:0,rootMargin:'0px 0px -6% 0px'});
-  rs.forEach(function(x){io.observe(x)});
+  var rs=[].slice.call(document.querySelectorAll('.r'));
+  function show(x){x.classList.add('v')}
+  var top=document.querySelector('main > .hero, main > .page-head'),first=top&&top.nextElementSibling;
+  if(first)[].forEach.call(first.querySelectorAll('.r'),show);
+  if(!('IntersectionObserver' in window)||/bot|crawl|spider|slurp|lighthouse|inspectiontool/i.test(navigator.userAgent)){rs.forEach(show);return}
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){show(en.target);io.unobserve(en.target)}})},{threshold:0,rootMargin:'120px 0px 120px 0px'});
+  rs.forEach(function(x){if(!x.classList.contains('v'))io.observe(x)});
+  setTimeout(function(){rs.forEach(function(x){if(!x.classList.contains('v')&&x.getBoundingClientRect().top<innerHeight+120){show(x);io.unobserve(x)}})},1200);
 })();
 </script>
 </body>

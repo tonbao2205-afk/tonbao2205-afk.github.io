@@ -381,3 +381,6 @@ Viền đỏ, dải 4 mục, 3 cột, dòng bản quyền và tên thực hiện
 
 ## p43 (09/11/2026): Dzuong menu một logo, viết lại Giới Thiệu và Pháp Lý
 Menu chỉ logo Dzuong; logo mayLEHUONG đặt ở trang Pháp Lý (vẫn có trong tường khách hàng vì là đơn vị đã sản xuất). Pháp Lý: khối doanh nghiệp + 5 mục gập mở. Giới Thiệu: Dzuong trước, phần mayLEHUONG sau. VPS không đổi.
+
+## p44 (11/11/2026): Dzuong Local SEO Hà Nội
+NAP Hà Nội, title/H1/hỏi đáp/schema theo `docs/dzuong-seo-hanoi-20261111.md`. Trên GitHub các liên kết trỏ `/dzuong/...`; Nginx (www, biến thể URL, sitemap header) chỉ có hiệu lực khi đăng VPS. VPS không đổi.
